@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/airline-distribution/ndc/Documents/ndc-infocus-graphql-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:11px;font-family:DXWRUV+AktivGrotesk;color:#231f20;}
+	.ft11{font-size:11px;font-family:DXWRUV+AktivGrotesk;color:#1e31f9;}
+	.ft12{font-size:11px;font-family:DXWRUV+AktivGrotesk;color:#231f20;}
+	.ft13{font-size:10px;font-family:DXWRUV+AktivGrotesk;color:#1e31f9;}
+	.ft14{font-size:90px;font-family:DXWRUV+AktivGrotesk;color:#ffffff;}
+	.ft15{font-size:28px;font-family:DXWRUV+AktivGrotesk;color:#1e31f9;}
+	.ft16{font-size:11px;font-family:DXWRUV+AktivGrotesk;color:#1e31f9;}
+	.ft17{font-size:30px;font-family:DXWRUV+AktivGrotesk;color:#ffffff;}
+	.ft18{font-size:13px;font-family:DXWRUV+AktivGrotesk-Medium;color:#ffffff;}
+	.ft19{font-size:7px;font-family:DXWRUV+AktivGrotesk;color:#231f20;}
+	.ft110{font-size:7px;font-family:DXWRUV+AktivGrotesk;color:#ffffff;}
+	.ft111{font-size:11px;font-family:DXWRUV+AktivGrotesk;color:#ffffff;}
+	.ft112{font-size:4px;font-family:DXWRUV+AktivGrotesk;color:#231f20;}
+	.ft113{font-size:4px;font-family:DXWRUV+AktivGrotesk;color:#5914a0;}
+	.ft114{font-size:7px;font-family:DXWRUV+AktivGrotesk;color:#231f20;}
+	.ft115{font-size:7px;font-family:DXWRUV+AktivGrotesk;color:#289633;}
+	.ft116{font-size:7px;font-family:DXWRUV+AktivGrotesk;color:#ffffff;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page1-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="ndc-infocus-graphql001.png" alt="background image"/>
+<p style="position:absolute;top:1205px;left:111px;white-space:nowrap" class="ft10"><b>&#160;GraphQL for NDC&#160;</b></p>
+<p style="position:absolute;top:1205px;left:231px;white-space:nowrap" class="ft11"><b>|</b></p>
+<p style="position:absolute;top:1205px;left:234px;white-space:nowrap" class="ft10"><b>&#160;</b>June 2019</p>
+<p style="position:absolute;top:1207px;left:77px;white-space:nowrap" class="ft13"><b>1 &#160;</b></p>
+<p style="position:absolute;top:41px;left:98px;white-space:nowrap" class="ft14"><b>IN</b></p>
+<p style="position:absolute;top:165px;left:97px;white-space:nowrap" class="ft14"><b>FOCUS</b></p>
+<p style="position:absolute;top:383px;left:77px;white-space:nowrap" class="ft15">Why is this important?</p>
+<p style="position:absolute;top:436px;left:77px;white-space:nowrap" class="ft12">The&#160;NDC (and ONE&#160;Order) XML&#160;standards consist&#160;of sche-</p>
+<p style="position:absolute;top:454px;left:77px;white-space:nowrap" class="ft12">mas describing messages. &#160;These messages work in pairs&#160;</p>
+<p style="position:absolute;top:472px;left:77px;white-space:nowrap" class="ft12">(request/response), for specific actions, e.g.:</p>
+<p style="position:absolute;top:490px;left:77px;white-space:nowrap" class="ft16">•&#160;</p>
+<p style="position:absolute;top:490px;left:102px;white-space:nowrap" class="ft12">Shopping (AirShoppingRQ/AirShoppingRS)</p>
+<p style="position:absolute;top:508px;left:77px;white-space:nowrap" class="ft16">•&#160;</p>
+<p style="position:absolute;top:508px;left:102px;white-space:nowrap" class="ft12">Booking (OrderCreateRQ/OrderViewRS)</p>
+<p style="position:absolute;top:544px;left:77px;white-space:nowrap" class="ft12">The&#160;use&#160;of&#160;a&#160;full-featured&#160;language&#160;such&#160;as&#160;XML&#160;in&#160;a&#160;pro-</p>
+<p style="position:absolute;top:562px;left:77px;white-space:nowrap" class="ft12">cess-driven world makes it possible to enforce complex&#160;</p>
+<p style="position:absolute;top:580px;left:77px;white-space:nowrap" class="ft12">business requirements.</p>
+<p style="position:absolute;top:616px;left:77px;white-space:nowrap" class="ft12">However, this comes at a price. In some situations, devel-</p>
+<p style="position:absolute;top:634px;left:77px;white-space:nowrap" class="ft12">opers may prefer to work with simpler solutions, even if the&#160;</p>
+<p style="position:absolute;top:652px;left:77px;white-space:nowrap" class="ft12">associated functions are limited. In that regard, GraphQL&#160;</p>
+<p style="position:absolute;top:670px;left:77px;white-space:nowrap" class="ft12">can be an option.</p>
+<p style="position:absolute;top:706px;left:77px;white-space:nowrap" class="ft12">GraphQL&#160;is&#160;a&#160;specification&#160;of&#160;a&#160;query&#160;and&#160;manipulation&#160;lan-</p>
+<p style="position:absolute;top:724px;left:77px;white-space:nowrap" class="ft12">guage for APIs, initially developed by Facebook for internal&#160;</p>
+<p style="position:absolute;top:742px;left:77px;white-space:nowrap" class="ft12">use in 2012, and then made public in 2015. GitHub API v4 is&#160;</p>
+<p style="position:absolute;top:760px;left:77px;white-space:nowrap" class="ft12">another example of a major GraphQL API.</p>
+<p style="position:absolute;top:796px;left:77px;white-space:nowrap" class="ft12">The&#160;&#160;aim&#160;&#160;of&#160;&#160;GraphQL&#160;&#160;is&#160;&#160;to&#160;&#160;provide&#160;&#160;a&#160;&#160;simple,&#160;&#160;efficient,&#160;&#160;and&#160;</p>
+<p style="position:absolute;top:814px;left:77px;white-space:nowrap" class="ft12">straightforward&#160;interface, simplifying&#160;the&#160;development&#160;</p>
+<p style="position:absolute;top:832px;left:77px;white-space:nowrap" class="ft12">work for both the API provider and the API consumer.</p>
+<p style="position:absolute;top:868px;left:77px;white-space:nowrap" class="ft12">It can positively impact&#160;the API performance as well as the&#160;</p>
+<p style="position:absolute;top:886px;left:77px;white-space:nowrap" class="ft12">developer experience. This is even more relevant for new-</p>
+<p style="position:absolute;top:904px;left:77px;white-space:nowrap" class="ft12">comers&#160;trying&#160;to&#160;use&#160;the&#160;API&#160;for&#160;the&#160;first&#160;time,&#160;for&#160;instance&#160;</p>
+<p style="position:absolute;top:922px;left:77px;white-space:nowrap" class="ft12">in hackathons (programming and business ideas contests).</p>
+<p style="position:absolute;top:959px;left:77px;white-space:nowrap" class="ft15">Zoom into the topic</p>
+<p style="position:absolute;top:1012px;left:77px;white-space:nowrap" class="ft12">The response’s structure is in the request</p>
+<p style="position:absolute;top:1048px;left:77px;white-space:nowrap" class="ft12">The main concept of GraphQL is that the client, in the re-</p>
+<p style="position:absolute;top:1066px;left:77px;white-space:nowrap" class="ft12">quest, provides the structure of the expected response.&#160;</p>
+<p style="position:absolute;top:1084px;left:77px;white-space:nowrap" class="ft12">This solves two issues at once:</p>
+<p style="position:absolute;top:1102px;left:77px;white-space:nowrap" class="ft16">•&#160;</p>
+<p style="position:absolute;top:1102px;left:102px;white-space:nowrap" class="ft12">All required information is retrieved in a single&#160;</p>
+<p style="position:absolute;top:1120px;left:102px;white-space:nowrap" class="ft12">message (no under-fetching, so no need for several&#160;</p>
+<p style="position:absolute;top:1138px;left:102px;white-space:nowrap" class="ft12">messages in a row)</p>
+<p style="position:absolute;top:184px;left:472px;white-space:nowrap" class="ft16">•&#160;</p>
+<p style="position:absolute;top:184px;left:497px;white-space:nowrap" class="ft12">No unnecessary information is included in the&#160;</p>
+<p style="position:absolute;top:202px;left:497px;white-space:nowrap" class="ft12">response (no over-fetching, so no superfluous data&#160;</p>
+<p style="position:absolute;top:220px;left:497px;white-space:nowrap" class="ft12">transmitted)</p>
+<p style="position:absolute;top:256px;left:472px;white-space:nowrap" class="ft12">Compared to other APIs architectures, the number of mes-</p>
+<p style="position:absolute;top:274px;left:472px;white-space:nowrap" class="ft12">sages and/or their size can be reduced.</p>
+<p style="position:absolute;top:310px;left:472px;white-space:nowrap" class="ft12">An&#160;example&#160;of&#160;that&#160;is&#160;shown&#160;in&#160;the&#160;screenshot&#160;below:&#160;the&#160;re-</p>
+<p style="position:absolute;top:328px;left:472px;white-space:nowrap" class="ft12">sponse (right) looks exactly like the request (top-left); which&#160;</p>
+<p style="position:absolute;top:346px;left:472px;white-space:nowrap" class="ft12">simplifies the implementation for the client.</p>
+<p style="position:absolute;top:382px;left:472px;white-space:nowrap" class="ft12">How a GraphQL API is designed</p>
+<p style="position:absolute;top:418px;left:472px;white-space:nowrap" class="ft12">A&#160;GraphQL&#160;API&#160;(on&#160;the&#160;server&#160;side)&#160;has&#160;two&#160;main&#160;components:</p>
+<p style="position:absolute;top:436px;left:472px;white-space:nowrap" class="ft16">•&#160;</p>
+<p style="position:absolute;top:436px;left:497px;white-space:nowrap" class="ft12">A schema describing the possible queries (using the&#160;</p>
+<p style="position:absolute;top:454px;left:497px;white-space:nowrap" class="ft12">Schema Definition Language)</p>
+<p style="position:absolute;top:472px;left:472px;white-space:nowrap" class="ft16">•&#160;</p>
+<p style="position:absolute;top:472px;left:497px;white-space:nowrap" class="ft12">Resolvers, i.e. functions that process the client queries,&#160;</p>
+<p style="position:absolute;top:490px;left:497px;white-space:nowrap" class="ft12">relying on internal databases and/or other APIs.</p>
+<p style="position:absolute;top:526px;left:472px;white-space:nowrap" class="ft12">This structure helps decorrelating the front-end and the&#160;</p>
+<p style="position:absolute;top:544px;left:472px;white-space:nowrap" class="ft12">back-end development.</p>
+<p style="position:absolute;top:580px;left:472px;white-space:nowrap" class="ft12">For the client, the schema and the native introspection&#160;</p>
+<p style="position:absolute;top:598px;left:472px;white-space:nowrap" class="ft12">functionality (i.e. the ability to directly explore this schema)&#160;</p>
+<p style="position:absolute;top:616px;left:472px;white-space:nowrap" class="ft12">facilitates the creation of calls to the GraphQL API. Available&#160;</p>
+<p style="position:absolute;top:634px;left:472px;white-space:nowrap" class="ft12">requests (queries – fetching data – or mutations – modifying&#160;</p>
+<p style="position:absolute;top:652px;left:472px;white-space:nowrap" class="ft12">data) are entirely described, as is the structure of the re-</p>
+<p style="position:absolute;top:670px;left:472px;white-space:nowrap" class="ft12">sponse that can be requested. Because the client describes&#160;</p>
+<p style="position:absolute;top:688px;left:472px;white-space:nowrap" class="ft12">the&#160;expected&#160;response&#160;in&#160;the&#160;request,&#160;the&#160;actual&#160;response&#160;</p>
+<p style="position:absolute;top:706px;left:472px;white-space:nowrap" class="ft12">is fully predictable.<b>&#160;</b></p>
+<p style="position:absolute;top:294px;left:77px;white-space:nowrap" class="ft17"><b>&#160;GRAPHQL&#160;&#160;&#160;FOR&#160;&#160;&#160;NDC&#160;</b></p>
+<p style="position:absolute;top:49px;left:739px;white-space:nowrap" class="ft18">&#160;JUNE&#160;&#160;&#160;2019&#160;</p>
+<p style="position:absolute;top:85px;left:719px;white-space:nowrap" class="ft19">Before reading this InFocus,&#160;</p>
+<p style="position:absolute;top:97px;left:638px;white-space:nowrap" class="ft19">you should already be familiar with the following&#160;&#160;</p>
+<p style="position:absolute;top:109px;left:638px;white-space:nowrap" class="ft19">InFocus document:“How APIs can help airlines”,&#160;</p>
+<p style="position:absolute;top:121px;left:713px;white-space:nowrap" class="ft19">also available on&#160;<a href="http://www.iata.org/ndc">iata.org/ndc</a>.</p>
+<p style="position:absolute;top:746px;left:480px;white-space:nowrap" class="ft110"><b>Architecture of a GraphQL API</b></p>
+<p style="position:absolute;top:796px;left:576px;white-space:nowrap" class="ft111"><b>Client</b></p>
+<p style="position:absolute;top:989px;left:507px;white-space:nowrap" class="ft112">type Passenger {</p>
+<p style="position:absolute;top:997px;left:507px;white-space:nowrap" class="ft112">...</p>
+<p style="position:absolute;top:1005px;left:507px;white-space:nowrap" class="ft112">}</p>
+<p style="position:absolute;top:1021px;left:507px;white-space:nowrap" class="ft112">type Flight {</p>
+<p style="position:absolute;top:1029px;left:507px;white-space:nowrap" class="ft112">...</p>
+<p style="position:absolute;top:1038px;left:507px;white-space:nowrap" class="ft112">}</p>
+<p style="position:absolute;top:1054px;left:507px;white-space:nowrap" class="ft112">type Service {</p>
+<p style="position:absolute;top:1062px;left:507px;white-space:nowrap" class="ft112">...</p>
+<p style="position:absolute;top:1070px;left:507px;white-space:nowrap" class="ft112">}</p>
+<p style="position:absolute;top:1076px;left:644px;white-space:nowrap" class="ft113">Resolvers</p>
+<p style="position:absolute;top:962px;left:567px;white-space:nowrap" class="ft114"><b>GraphQL API</b></p>
+<p style="position:absolute;top:954px;left:768px;white-space:nowrap" class="ft115"><b>Server side</b></p>
+<p style="position:absolute;top:982px;left:757px;white-space:nowrap" class="ft116">Other APIs</p>
+<p style="position:absolute;top:1065px;left:758px;white-space:nowrap" class="ft116">Databases</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/airline-distribution/ndc/Documents/ndc-infocus-graphql-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft20{font-size:11px;font-family:DXWRUV+AktivGrotesk;color:#231f20;}
+	.ft21{font-size:11px;font-family:DXWRUV+AktivGrotesk;color:#1e31f9;}
+	.ft22{font-size:11px;font-family:DXWRUV+AktivGrotesk;color:#231f20;}
+	.ft23{font-size:10px;font-family:DXWRUV+AktivGrotesk;color:#1e31f9;}
+	.ft24{font-size:30px;font-family:DXWRUV+AktivGrotesk;color:#ffffff;}
+	.ft25{font-size:20px;font-family:DXWRUV+AktivGrotesk;color:#ffffff;}
+	.ft26{font-size:28px;font-family:DXWRUV+AktivGrotesk;color:#1e31f9;}
+	.ft27{font-size:7px;font-family:DXWRUV+AktivGrotesk;color:#ffffff;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page2-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="ndc-infocus-graphql002.png" alt="background image"/>
+<p style="position:absolute;top:1205px;left:111px;white-space:nowrap" class="ft20"><b>&#160; GraphQL for NDC&#160;</b></p>
+<p style="position:absolute;top:1205px;left:234px;white-space:nowrap" class="ft21"><b>|</b></p>
+<p style="position:absolute;top:1205px;left:238px;white-space:nowrap" class="ft20"><b>&#160;</b>June 2019</p>
+<p style="position:absolute;top:1207px;left:77px;white-space:nowrap" class="ft23"><b>2 &#160;</b></p>
+<p style="position:absolute;top:45px;left:84px;white-space:nowrap" class="ft24"><b>IN&#160;FOCUS</b></p>
+<p style="position:absolute;top:93px;left:77px;white-space:nowrap" class="ft25"><b>&#160;GRAPHQL&#160;&#160;&#160;FOR&#160;&#160;&#160;NDC&#160;</b></p>
+<p style="position:absolute;top:149px;left:77px;white-space:nowrap" class="ft26">Industry state of play</p>
+<p style="position:absolute;top:202px;left:77px;white-space:nowrap" class="ft22">The&#160;GraphQL&#160;Schema&#160;Definition&#160;Language&#160;is&#160;not&#160;descrip-</p>
+<p style="position:absolute;top:220px;left:77px;white-space:nowrap" class="ft22">tive enough to represent the full complexity of XSDs (XML&#160;</p>
+<p style="position:absolute;top:238px;left:77px;white-space:nowrap" class="ft22">schemas) currently used for NDC and ONE Order. However,&#160;</p>
+<p style="position:absolute;top:256px;left:77px;white-space:nowrap" class="ft22">it&#160;is&#160;possible&#160;to&#160;design&#160;and&#160;implement&#160;GraphQL&#160;APIs&#160;provid-</p>
+<p style="position:absolute;top:274px;left:77px;white-space:nowrap" class="ft22">ing a subset of the NDC/ONE Order functionalities.</p>
+<p style="position:absolute;top:310px;left:77px;white-space:nowrap" class="ft22">A study of GraphQL (and other paradigms and data formats&#160;</p>
+<p style="position:absolute;top:328px;left:77px;white-space:nowrap" class="ft22">for APIs) is available on airtechzone.iata.org. A GraphQL API&#160;</p>
+<p style="position:absolute;top:346px;left:77px;white-space:nowrap" class="ft22">prototype&#160;has&#160;also&#160;been&#160;designed&#160;and&#160;implemented:&#160;it&#160;is&#160;an&#160;</p>
+<p style="position:absolute;top:364px;left:77px;white-space:nowrap" class="ft22">additional layer on top of the IATA NDC sandboxes, provid-</p>
+<p style="position:absolute;top:202px;left:472px;white-space:nowrap" class="ft22">ing&#160;basic&#160;shopping&#160;and&#160;booking&#160;services.&#160;The&#160;source&#160;code&#160;</p>
+<p style="position:absolute;top:220px;left:472px;white-space:nowrap" class="ft22">is av<a href="https://github.com/airtechzone/ndc-graphql-api">ailable on&#160;github.com/airtechzone/ndc-graphql-api.</a></p>
+<p style="position:absolute;top:256px;left:472px;white-space:nowrap" class="ft22">GraphQL&#160;cannot&#160;be&#160;a&#160;complete&#160;solution&#160;for&#160;NDC&#160;and&#160;ONE&#160;</p>
+<p style="position:absolute;top:274px;left:472px;white-space:nowrap" class="ft22">Order as they are today, because of the complex business&#160;</p>
+<p style="position:absolute;top:292px;left:472px;white-space:nowrap" class="ft22">requirements that need to be enforced. However, a majority&#160;</p>
+<p style="position:absolute;top:310px;left:472px;white-space:nowrap" class="ft22">of&#160;APIs&#160;with&#160;a&#160;simpler&#160;logic&#160;can&#160;use&#160;this&#160;technology.&#160;Graph-</p>
+<p style="position:absolute;top:328px;left:472px;white-space:nowrap" class="ft22">QL&#160;can&#160;facilitate&#160;vAPI&#160;development&#160;and&#160;its&#160;usage,&#160;as&#160;well&#160;as&#160;</p>
+<p style="position:absolute;top:346px;left:472px;white-space:nowrap" class="ft22">contribute to their efficiency.</p>
+<p style="position:absolute;top:412px;left:86px;white-space:nowrap" class="ft27"><b>Example from the NDC GraphQL API prototype</b></p>
+</div>
+</body>
+</html>

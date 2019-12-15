@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/airline-distribution/ndc/Documents/ndc-scalability-report-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:11px;font-family:CHSDAX+AktivGrotesk;color:#231f20;}
+	.ft11{font-size:10px;font-family:CHSDAX+AktivGrotesk;color:#1e31f9;}
+	.ft12{font-size:43px;font-family:CHSDAX+AktivGrotesk;color:#231f20;}
+	.ft13{font-size:19px;font-family:WLKTUJ+AktivGrotesk;color:#231f20;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page1-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="ndc-scalability-report001.png" alt="background image"/>
+<p style="position:absolute;top:70px;left:111px;white-space:nowrap" class="ft10"><b>Addressing NDC scalability challenges in the leisure market</b></p>
+<p style="position:absolute;top:72px;left:77px;white-space:nowrap" class="ft11"><b>1 &#160;</b></p>
+<p style="position:absolute;top:206px;left:124px;white-space:nowrap" class="ft12"><b>Addressing NDC scalability&#160;</b></p>
+<p style="position:absolute;top:248px;left:124px;white-space:nowrap" class="ft12"><b>challenges in the leisure market</b></p>
+<p style="position:absolute;top:80px;left:124px;white-space:nowrap" class="ft13">March 2019</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/airline-distribution/ndc/Documents/ndc-scalability-report-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft20{font-size:11px;font-family:CHSDAX+AktivGrotesk;color:#231f20;}
+	.ft21{font-size:10px;font-family:CHSDAX+AktivGrotesk;color:#1e31f9;}
+	.ft22{font-size:28px;font-family:WLKTUJ+AktivGrotesk;color:#1e31f9;}
+	.ft23{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#231f20;}
+	.ft24{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#1e31f9;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page2-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="ndc-scalability-report002.png" alt="background image"/>
+<p style="position:absolute;top:70px;left:111px;white-space:nowrap" class="ft20"><b>Addressing NDC scalability challenges in the leisure market</b></p>
+<p style="position:absolute;top:72px;left:77px;white-space:nowrap" class="ft21"><b>2 &#160;</b></p>
+<p style="position:absolute;top:149px;left:157px;white-space:nowrap" class="ft22">Introduction</p>
+<p style="position:absolute;top:202px;left:157px;white-space:nowrap" class="ft23">Implementation of NDC-based solutions is gaining momentum. The industry is now focusing&#160;</p>
+<p style="position:absolute;top:220px;left:157px;white-space:nowrap" class="ft23">on growing toward a critical mass of transactions. The group of NDC Leaderboard airlines have&#160;</p>
+<p style="position:absolute;top:238px;left:157px;white-space:nowrap" class="ft23">agreed to target making 20% or more of their indirect bookings to be processed using solutions&#160;</p>
+<p style="position:absolute;top:256px;left:157px;white-space:nowrap" class="ft23">based on the NDC standard, by the end of 2020.&#160;</p>
+<p style="position:absolute;top:292px;left:157px;white-space:nowrap" class="ft23">Since the inception of the NDC standard, the industry has questioned the ability of all the players&#160;</p>
+<p style="position:absolute;top:310px;left:157px;white-space:nowrap" class="ft23">- airlines, airline IT vendors, aggregators, Meta Search Engines (MSEs) and Online Travel Agents&#160;</p>
+<p style="position:absolute;top:328px;left:157px;white-space:nowrap" class="ft23">(OTAs) - to handle the high volumes of transaction queries for leisure traffic and the impact&#160;</p>
+<p style="position:absolute;top:346px;left:157px;white-space:nowrap" class="ft23">this could have on the customer experience. Feedback so far has been that “look-to-book”&#160;</p>
+<p style="position:absolute;top:364px;left:157px;white-space:nowrap" class="ft23">ratios are constantly rising, requiring enhanced computing capacities, and which could result in&#160;</p>
+<p style="position:absolute;top:382px;left:157px;white-space:nowrap" class="ft23">unacceptable costs and response times.</p>
+<p style="position:absolute;top:418px;left:157px;white-space:nowrap" class="ft23">As a result, IATA commissioned a study to assess the industry’s readiness to address these&#160;</p>
+<p style="position:absolute;top:436px;left:157px;white-space:nowrap" class="ft23">challenges both from a technical and economic perspective. This study was performed by Jean&#160;</p>
+<p style="position:absolute;top:454px;left:157px;white-space:nowrap" class="ft23">Philippe Mesure, independent consultant from ITS4T, who conducted more than 25 interviews&#160;</p>
+<p style="position:absolute;top:472px;left:157px;white-space:nowrap" class="ft23">with leading industry actors. The aim was to provide observations in the following areas:</p>
+<p style="position:absolute;top:508px;left:157px;white-space:nowrap" class="ft24">•&#160;</p>
+<p style="position:absolute;top:508px;left:183px;white-space:nowrap" class="ft23">Current and future look-to-book ratios</p>
+<p style="position:absolute;top:526px;left:157px;white-space:nowrap" class="ft24">•&#160;</p>
+<p style="position:absolute;top:526px;left:183px;white-space:nowrap" class="ft23">The key challenges faced by the industry to scale up the capability of NDC channels</p>
+<p style="position:absolute;top:544px;left:157px;white-space:nowrap" class="ft24">•&#160;</p>
+<p style="position:absolute;top:544px;left:183px;white-space:nowrap" class="ft23">What may help to contain very high look-to-book ratios in an NDC environment &#160;</p>
+<p style="position:absolute;top:562px;left:157px;white-space:nowrap" class="ft24">•&#160;</p>
+<p style="position:absolute;top:562px;left:183px;white-space:nowrap" class="ft23">What techniques could make NDC distribution more efficient for the leisure travel segment,&#160;</p>
+<p style="position:absolute;top:580px;left:183px;white-space:nowrap" class="ft23">so the consumer can benefit from an improved value proposition.</p>
+<p style="position:absolute;top:616px;left:157px;white-space:nowrap" class="ft23">As a conclusion, this report shares possible actions expressed by interviewees that could help&#160;</p>
+<p style="position:absolute;top:634px;left:157px;white-space:nowrap" class="ft23">deliver the customer benefits of NDC-based channels, in an environment of high volumes, while&#160;</p>
+<p style="position:absolute;top:652px;left:157px;white-space:nowrap" class="ft23">mitigating the potential technical and commercial challenges.</p>
+<p style="position:absolute;top:688px;left:157px;white-space:nowrap" class="ft23">As always, IATA welcomes industry feedback and looks forward to further discussions with the&#160;</p>
+<p style="position:absolute;top:706px;left:157px;white-space:nowrap" class="ft23">main players.</p>
+<p style="position:absolute;top:742px;left:157px;white-space:nowrap" class="ft23">Best regards,</p>
+<p style="position:absolute;top:886px;left:157px;white-space:nowrap" class="ft23">Olivier Hours</p>
+<p style="position:absolute;top:904px;left:157px;white-space:nowrap" class="ft20"><b>Head, Industry Distribution Programs Adoption</b></p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/airline-distribution/ndc/Documents/ndc-scalability-report-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft30{font-size:11px;font-family:CHSDAX+AktivGrotesk;color:#231f20;}
+	.ft31{font-size:10px;font-family:CHSDAX+AktivGrotesk;color:#1e31f9;}
+	.ft32{font-size:28px;font-family:WLKTUJ+AktivGrotesk;color:#1e31f9;}
+	.ft33{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#231f20;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page3-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="ndc-scalability-report003.png" alt="background image"/>
+<p style="position:absolute;top:70px;left:111px;white-space:nowrap" class="ft30"><b>Addressing NDC scalability challenges in the leisure market</b></p>
+<p style="position:absolute;top:72px;left:77px;white-space:nowrap" class="ft31"><b>3 &#160;</b></p>
+<p style="position:absolute;top:476px;left:77px;white-space:nowrap" class="ft32">Look-to-book ratios:&#160;</p>
+<p style="position:absolute;top:506px;left:77px;white-space:nowrap" class="ft32">where are we today?</p>
+<p style="position:absolute;top:562px;left:77px;white-space:nowrap" class="ft33">We are still at the beginning of the learning curve. Most&#160;</p>
+<p style="position:absolute;top:580px;left:77px;white-space:nowrap" class="ft33">airlines only started using NDC-based distribution&#160;</p>
+<p style="position:absolute;top:598px;left:77px;white-space:nowrap" class="ft33">solutions in 2018, either direct to Online Travel Agent&#160;</p>
+<p style="position:absolute;top:616px;left:77px;white-space:nowrap" class="ft33">(OTAs) and Metasearch Engines (MSEs) or via Aggregators.&#160;</p>
+<p style="position:absolute;top:634px;left:77px;white-space:nowrap" class="ft33">Out of the 7 airlines interviewed, only 2 have experience&#160;</p>
+<p style="position:absolute;top:652px;left:77px;white-space:nowrap" class="ft33">with a meaningful volume of bookings. However, by the&#160;</p>
+<p style="position:absolute;top:670px;left:77px;white-space:nowrap" class="ft33">end of 2019 all airlines interviewed said they would have an&#160;</p>
+<p style="position:absolute;top:688px;left:77px;white-space:nowrap" class="ft33">active NDC-based distribution channel available. The GDSs&#160;</p>
+<p style="position:absolute;top:706px;left:77px;white-space:nowrap" class="ft33">and some aggregators have implemented live connections&#160;</p>
+<p style="position:absolute;top:724px;left:77px;white-space:nowrap" class="ft33">to a limited set of airlines’ NDC-based channels. Taking&#160;</p>
+<p style="position:absolute;top:742px;left:77px;white-space:nowrap" class="ft33">advantage of the momentum NDC has gained, more&#160;</p>
+<p style="position:absolute;top:760px;left:77px;white-space:nowrap" class="ft33">aggregators plan to launch NDC-based services in 2019.&#160;</p>
+<p style="position:absolute;top:796px;left:77px;white-space:nowrap" class="ft33">Most of the actors interviewed believe that the&#160;</p>
+<p style="position:absolute;top:814px;left:77px;white-space:nowrap" class="ft33">Leaderboard target (20% of indirect sales powered by an&#160;</p>
+<p style="position:absolute;top:832px;left:77px;white-space:nowrap" class="ft33">NDC API by end of 2020) is realistic and achievable.&#160;</p>
+<p style="position:absolute;top:868px;left:77px;white-space:nowrap" class="ft33">Current distribution trends show that look-to-book ratios in&#160;</p>
+<p style="position:absolute;top:886px;left:77px;white-space:nowrap" class="ft33">the leisure segment (through OTAs or MSEs) are extremely&#160;</p>
+<p style="position:absolute;top:904px;left:77px;white-space:nowrap" class="ft33">high. Far from the 100- to 300-to-1 observed with airlines’&#160;</p>
+<p style="position:absolute;top:922px;left:77px;white-space:nowrap" class="ft33">own websites, the look-to-book ratios for OTAs or MSEs&#160;</p>
+<p style="position:absolute;top:940px;left:77px;white-space:nowrap" class="ft33">are in the best case 1,000-to-1 but more commonly above&#160;</p>
+<p style="position:absolute;top:958px;left:77px;white-space:nowrap" class="ft33">10,000-to-1. Look-to-book ratios vary by country, the type&#160;</p>
+<p style="position:absolute;top:976px;left:77px;white-space:nowrap" class="ft33">of itineraries distributed and the experience of the NDC&#160;</p>
+<p style="position:absolute;top:994px;left:77px;white-space:nowrap" class="ft33">players involved.&#160;</p>
+<p style="position:absolute;top:1030px;left:77px;white-space:nowrap" class="ft33">A consensus seemed to appear amongst the interviewees&#160;</p>
+<p style="position:absolute;top:1048px;left:77px;white-space:nowrap" class="ft33">that an average look-to-book ratio in the range of 5,000- to&#160;</p>
+<p style="position:absolute;top:1066px;left:77px;white-space:nowrap" class="ft33">10,000-to-1 should be achievable with experience and&#160;</p>
+<p style="position:absolute;top:1084px;left:77px;white-space:nowrap" class="ft33">adequate monitoring and containment measures. It&#160;seems&#160;</p>
+<p style="position:absolute;top:1102px;left:77px;white-space:nowrap" class="ft33">that 1,000 to 1 is achievable for simple domestic itineraries.</p>
+<p style="position:absolute;top:1138px;left:77px;white-space:nowrap" class="ft33">All players acknowledge that keeping the look-to-book ratio&#160;</p>
+<p style="position:absolute;top:1156px;left:77px;white-space:nowrap" class="ft33">down requires continuous attention and actions. Look-to-</p>
+<p style="position:absolute;top:1174px;left:77px;white-space:nowrap" class="ft33">book ratios tend to be multiplied by a factor of 3 to 5 when&#160;</p>
+<p style="position:absolute;top:490px;left:472px;white-space:nowrap" class="ft33">the airline enables MSEs to poll its Offer Management solution&#160;</p>
+<p style="position:absolute;top:508px;left:472px;white-space:nowrap" class="ft33">from the initial search. So, can the technology cope at a large&#160;</p>
+<p style="position:absolute;top:526px;left:472px;white-space:nowrap" class="ft33">scale with such look-to-book ratios and can this be made&#160;</p>
+<p style="position:absolute;top:544px;left:472px;white-space:nowrap" class="ft33">economically viable for the travel distribution value chain?</p>
+<p style="position:absolute;top:591px;left:472px;white-space:nowrap" class="ft32">What are the challenges&#160;</p>
+<p style="position:absolute;top:621px;left:472px;white-space:nowrap" class="ft32">resulting from high look-to-</p>
+<p style="position:absolute;top:651px;left:472px;white-space:nowrap" class="ft32">book ratios?</p>
+<p style="position:absolute;top:706px;left:472px;white-space:nowrap" class="ft33">The main challenges identified by the interviewees are around&#160;</p>
+<p style="position:absolute;top:724px;left:472px;white-space:nowrap" class="ft33">cost, scalability of the IT infrastructure and response time for&#160;</p>
+<p style="position:absolute;top:742px;left:472px;white-space:nowrap" class="ft33">NDC-enabled solutions.</p>
+<p style="position:absolute;top:778px;left:472px;white-space:nowrap" class="ft30"><b>a.&#160;&#160;Cost&#160;</b></p>
+<p style="position:absolute;top:796px;left:497px;white-space:nowrap" class="ft33">This is by far the most significant challenge. All players&#160;</p>
+<p style="position:absolute;top:814px;left:497px;white-space:nowrap" class="ft33">across the value chain are impacted to some degree by&#160;</p>
+<p style="position:absolute;top:832px;left:497px;white-space:nowrap" class="ft33">the costs resulting from high look-to-book ratios. While&#160;</p>
+<p style="position:absolute;top:850px;left:497px;white-space:nowrap" class="ft33">this is the case with traditional distribution based on fare&#160;</p>
+<p style="position:absolute;top:868px;left:497px;white-space:nowrap" class="ft33">classes availability, the costs fall differently with NDC&#160;</p>
+<p style="position:absolute;top:886px;left:497px;white-space:nowrap" class="ft33">based solutions.&#160;</p>
+<p style="position:absolute;top:904px;left:497px;white-space:nowrap" class="ft33">Airlines potentially bear the most risk here, as they&#160;</p>
+<p style="position:absolute;top:922px;left:497px;white-space:nowrap" class="ft33">need to provide responses to a significant number of&#160;</p>
+<p style="position:absolute;top:940px;left:497px;white-space:nowrap" class="ft33">shopping queries.&#160;</p>
+<p style="position:absolute;top:958px;left:497px;white-space:nowrap" class="ft33">This risk is manageable if costs remain in line with the&#160;</p>
+<p style="position:absolute;top:976px;left:497px;white-space:nowrap" class="ft33">opportunities created by technology improvements.</p>
+<p style="position:absolute;top:1012px;left:472px;white-space:nowrap" class="ft30"><b>b.&#160;&#160;Scalability of IT solutions</b></p>
+<p style="position:absolute;top:1030px;left:497px;white-space:nowrap" class="ft33">The very large majority of industry players are&#160;</p>
+<p style="position:absolute;top:1048px;left:497px;white-space:nowrap" class="ft33">comfortable with the scalability potential of their IT&#160;</p>
+<p style="position:absolute;top:1066px;left:497px;white-space:nowrap" class="ft33">solutions, even at a high volume of transactions. The IT&#160;</p>
+<p style="position:absolute;top:1084px;left:497px;white-space:nowrap" class="ft33">solutions that support NDC-based distribution solutions&#160;</p>
+<p style="position:absolute;top:1102px;left:497px;white-space:nowrap" class="ft33">are for the most part already implemented in the Cloud.</p>
+<p style="position:absolute;top:1120px;left:497px;white-space:nowrap" class="ft33">Currently, only a few of the providers of such solutions&#160;</p>
+<p style="position:absolute;top:1138px;left:497px;white-space:nowrap" class="ft33">have experience in processing transactions with very&#160;</p>
+<p style="position:absolute;top:1156px;left:497px;white-space:nowrap" class="ft33">high throughput, so scalability for many solutions is yet&#160;</p>
+<p style="position:absolute;top:1174px;left:497px;white-space:nowrap" class="ft33">to be tested.</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/airline-distribution/ndc/Documents/ndc-scalability-report-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft40{font-size:11px;font-family:CHSDAX+AktivGrotesk;color:#231f20;}
+	.ft41{font-size:10px;font-family:CHSDAX+AktivGrotesk;color:#1e31f9;}
+	.ft42{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#231f20;}
+	.ft43{font-size:28px;font-family:WLKTUJ+AktivGrotesk;color:#1e31f9;}
+	.ft44{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#231f20;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page4-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="ndc-scalability-report004.png" alt="background image"/>
+<p style="position:absolute;top:70px;left:111px;white-space:nowrap" class="ft40"><b>Addressing NDC scalability challenges in the leisure market</b></p>
+<p style="position:absolute;top:72px;left:77px;white-space:nowrap" class="ft41"><b>4 &#160;</b></p>
+<p style="position:absolute;top:148px;left:77px;white-space:nowrap" class="ft40"><b>c.&#160;&#160;Response times</b></p>
+<p style="position:absolute;top:166px;left:102px;white-space:nowrap" class="ft42">The Offer/Shopping transactions response time&#160;</p>
+<p style="position:absolute;top:184px;left:102px;white-space:nowrap" class="ft42">can be longer (particularly when interline content is&#160;</p>
+<p style="position:absolute;top:202px;left:102px;white-space:nowrap" class="ft42">processed) than other PSS/GDS transactions, due the&#160;</p>
+<p style="position:absolute;top:220px;left:102px;white-space:nowrap" class="ft42">amount of data processing it involves.&#160;</p>
+<p style="position:absolute;top:238px;left:102px;white-space:nowrap" class="ft42">This may become an issue for GDSs, aggregators,&#160;</p>
+<p style="position:absolute;top:256px;left:102px;white-space:nowrap" class="ft42">OTAs and MSEs, as the time to produce an offer to a&#160;</p>
+<p style="position:absolute;top:274px;left:102px;white-space:nowrap" class="ft42">traveler or travel agent would be driven by the slowest&#160;</p>
+<p style="position:absolute;top:292px;left:102px;white-space:nowrap" class="ft42">responding airline. It is up to each airline to negotiate&#160;</p>
+<p style="position:absolute;top:310px;left:102px;white-space:nowrap" class="ft42">with their IT providers for SLAs on the shopping&#160;</p>
+<p style="position:absolute;top:328px;left:102px;white-space:nowrap" class="ft42">transaction response time to enable it to perform its&#160;</p>
+<p style="position:absolute;top:346px;left:102px;white-space:nowrap" class="ft42">business.</p>
+<p style="position:absolute;top:382px;left:77px;white-space:nowrap" class="ft42">To mitigate these challenges, some players have&#160;</p>
+<p style="position:absolute;top:400px;left:77px;white-space:nowrap" class="ft42">implemented or intend to implement solutions to manage&#160;</p>
+<p style="position:absolute;top:418px;left:77px;white-space:nowrap" class="ft42">the volume of shopping transactions, to reduce the volume&#160;</p>
+<p style="position:absolute;top:436px;left:77px;white-space:nowrap" class="ft42">of data exchanged during the shopping/booking process&#160;</p>
+<p style="position:absolute;top:454px;left:77px;white-space:nowrap" class="ft42">and to keep the overall cost of ownership per booking&#160;</p>
+<p style="position:absolute;top:472px;left:77px;white-space:nowrap" class="ft42">in the NDC channel acceptable. We will discuss these&#160;</p>
+<p style="position:absolute;top:490px;left:77px;white-space:nowrap" class="ft42">solutions in the next two sections.</p>
+<p style="position:absolute;top:537px;left:77px;white-space:nowrap" class="ft43">What can be done to&#160;</p>
+<p style="position:absolute;top:567px;left:77px;white-space:nowrap" class="ft43">manage the look-to-book&#160;</p>
+<p style="position:absolute;top:597px;left:77px;white-space:nowrap" class="ft43">ratios?</p>
+<p style="position:absolute;top:652px;left:77px;white-space:nowrap" class="ft42">To&#160;manage&#160;the&#160;look-to-book&#160;ratios,&#160;different&#160;players&#160;across&#160;</p>
+<p style="position:absolute;top:670px;left:77px;white-space:nowrap" class="ft42">the value chain need to work together to ensure that&#160;</p>
+<p style="position:absolute;top:688px;left:77px;white-space:nowrap" class="ft42">customers are not misled or burdened with unreasonable&#160;</p>
+<p style="position:absolute;top:706px;left:77px;white-space:nowrap" class="ft42">offers. A typical example is a 10-hour overlay for a short&#160;</p>
+<p style="position:absolute;top:724px;left:77px;white-space:nowrap" class="ft42">haul trip while the customer intends to do a one- or&#160;</p>
+<p style="position:absolute;top:742px;left:77px;white-space:nowrap" class="ft42">two-day return trip. Computing relevant offers is more&#160;</p>
+<p style="position:absolute;top:760px;left:77px;white-space:nowrap" class="ft42">demanding than &#160;simply requesting availability through&#160;</p>
+<p style="position:absolute;top:778px;left:77px;white-space:nowrap" class="ft42">EDIFACT messages and therefore should be processed&#160;</p>
+<p style="position:absolute;top:796px;left:77px;white-space:nowrap" class="ft42">when relevant.</p>
+<p style="position:absolute;top:832px;left:77px;white-space:nowrap" class="ft42">The following strategies either have been successfully&#160;</p>
+<p style="position:absolute;top:850px;left:77px;white-space:nowrap" class="ft42">implemented by some industry players or are seen as&#160;</p>
+<p style="position:absolute;top:868px;left:77px;white-space:nowrap" class="ft42">helpful in managing shopping transactions, the payload of&#160;</p>
+<p style="position:absolute;top:886px;left:77px;white-space:nowrap" class="ft42">data transferred and the response time.&#160;</p>
+<p style="position:absolute;top:922px;left:77px;white-space:nowrap" class="ft40"><b>a.&#160;&#160;Providing relevant and consistent information to the&#160;</b></p>
+<p style="position:absolute;top:940px;left:102px;white-space:nowrap" class="ft40"><b>traveler at the right time</b></p>
+<p style="position:absolute;top:958px;left:102px;white-space:nowrap" class="ft42">Swamping aggregators/OTAs/MSEs with hundreds of&#160;</p>
+<p style="position:absolute;top:976px;left:102px;white-space:nowrap" class="ft42">offers which include very long elapsed or connecting&#160;</p>
+<p style="position:absolute;top:994px;left:102px;white-space:nowrap" class="ft42">times, unlikely itineraries, etc. is unproductive.&#160;</p>
+<p style="position:absolute;top:1012px;left:102px;white-space:nowrap" class="ft42">Similarly, presenting add-ons while the traveler still is&#160;</p>
+<p style="position:absolute;top:1030px;left:102px;white-space:nowrap" class="ft42">in his/her inspiration phase of the shopping process&#160;</p>
+<p style="position:absolute;top:1048px;left:102px;white-space:nowrap" class="ft42">creates confusion and slows down their decision-</p>
+<p style="position:absolute;top:1066px;left:102px;white-space:nowrap" class="ft42">making. Understanding where travelers are in their&#160;</p>
+<p style="position:absolute;top:1084px;left:102px;white-space:nowrap" class="ft42">travel planning process is key. Airlines should follow&#160;</p>
+<p style="position:absolute;top:1102px;left:102px;white-space:nowrap" class="ft42">retailing techniques from other industries where add-</p>
+<p style="position:absolute;top:1120px;left:102px;white-space:nowrap" class="ft42">ons are not necessarily presented at the start of the&#160;</p>
+<p style="position:absolute;top:1138px;left:102px;white-space:nowrap" class="ft42">process (hotels, cars etc).&#160;</p>
+<p style="position:absolute;top:1156px;left:102px;white-space:nowrap" class="ft42">Travelers tend to search for the same content using&#160;</p>
+<p style="position:absolute;top:1174px;left:102px;white-space:nowrap" class="ft42">many sources (MSEs, OTAs etc.). Airlines should&#160;</p>
+<p style="position:absolute;top:148px;left:497px;white-space:nowrap" class="ft42">give them the confidence that they are receiving the&#160;</p>
+<p style="position:absolute;top:166px;left:497px;white-space:nowrap" class="ft42">relevant offers through all channels, so that travelers&#160;</p>
+<p style="position:absolute;top:184px;left:497px;white-space:nowrap" class="ft42">no longer feel the need to search through multiple&#160;</p>
+<p style="position:absolute;top:202px;left:497px;white-space:nowrap" class="ft42">channels.</p>
+<p style="position:absolute;top:220px;left:497px;white-space:nowrap" class="ft42">These methods are being successfully tested by some&#160;</p>
+<p style="position:absolute;top:238px;left:497px;white-space:nowrap" class="ft42">of the industry players that participated in the study.&#160;</p>
+<p style="position:absolute;top:256px;left:497px;white-space:nowrap" class="ft42">These efforts to date are certainly not exhaustive, and&#160;</p>
+<p style="position:absolute;top:274px;left:497px;white-space:nowrap" class="ft42">require monitoring and fine-tuning.</p>
+<p style="position:absolute;top:292px;left:497px;white-space:nowrap" class="ft42">Some industry players believe that the wider use of&#160;</p>
+<p style="position:absolute;top:310px;left:497px;white-space:nowrap" class="ft42">voice-based search may change traveler behavior.</p>
+<p style="position:absolute;top:346px;left:472px;white-space:nowrap" class="ft40"><b>b.&#160;&#160;Working with OTAs/MSEs to optimize the look-to-book</b></p>
+<p style="position:absolute;top:364px;left:497px;white-space:nowrap" class="ft42">To be competitive, OTAs and MSEs must present to the&#160;</p>
+<p style="position:absolute;top:382px;left:497px;white-space:nowrap" class="ft42">traveler the best offers at the best prices. In order to do&#160;</p>
+<p style="position:absolute;top:400px;left:497px;white-space:nowrap" class="ft42">so, they tend to generate many offer queries splitting&#160;</p>
+<p style="position:absolute;top:418px;left:497px;white-space:nowrap" class="ft42">itineraries and making requests from several different&#160;</p>
+<p style="position:absolute;top:436px;left:497px;white-space:nowrap" class="ft42">points of sale, etc. A constant dialog between airlines&#160;</p>
+<p style="position:absolute;top:454px;left:497px;white-space:nowrap" class="ft42">and OTAs/MSEs can help avoid unnecessary shopping&#160;</p>
+<p style="position:absolute;top:472px;left:497px;white-space:nowrap" class="ft42">requests (for example, advise OTAs that the airline’s&#160;</p>
+<p style="position:absolute;top:490px;left:497px;white-space:nowrap" class="ft42">Offer management is agnostic to the point of sale).</p>
+<p style="position:absolute;top:526px;left:472px;white-space:nowrap" class="ft40"><b>c.&#160;&#160;Filtering out robots and limiting the deployment of&#160;</b></p>
+<p style="position:absolute;top:544px;left:497px;white-space:nowrap" class="ft40"><b>result-based caches</b></p>
+<p style="position:absolute;top:562px;left:497px;white-space:nowrap" class="ft42">Robots are believed to generate a significant number&#160;</p>
+<p style="position:absolute;top:580px;left:497px;white-space:nowrap" class="ft42">of current shopping transaction requests. These may&#160;</p>
+<p style="position:absolute;top:598px;left:497px;white-space:nowrap" class="ft42">be effectively filtered out by specialized software&#160;</p>
+<p style="position:absolute;top:616px;left:497px;white-space:nowrap" class="ft42">solutions. However, some of these robots do add value&#160;</p>
+<p style="position:absolute;top:634px;left:497px;white-space:nowrap" class="ft42">(competitive watch for example).</p>
+<p style="position:absolute;top:652px;left:497px;white-space:nowrap" class="ft42">Third party travel solution-based caches tend&#160;</p>
+<p style="position:absolute;top:670px;left:497px;white-space:nowrap" class="ft42">to contradict the premise that NDC will provide&#160;</p>
+<p style="position:absolute;top:688px;left:497px;white-space:nowrap" class="ft42">personalized offers. They are implemented by players&#160;</p>
+<p style="position:absolute;top:706px;left:497px;white-space:nowrap" class="ft42">at various levels of the distribution value chain. Indeed,&#160;</p>
+<p style="position:absolute;top:724px;left:497px;white-space:nowrap" class="ft42">caches tend to generate unproductive shopping&#160;</p>
+<p style="position:absolute;top:742px;left:497px;white-space:nowrap" class="ft42">transactions just to get refreshed. In contrast, airlines&#160;</p>
+<p style="position:absolute;top:760px;left:497px;white-space:nowrap" class="ft42">could provide solution-based caches which would&#160;</p>
+<p style="position:absolute;top:778px;left:497px;white-space:nowrap" class="ft42">reduce the average cost of a shopping transaction.</p>
+<p style="position:absolute;top:814px;left:472px;white-space:nowrap" class="ft40"><b>d.</b></p>
+<p style="position:absolute;top:814px;left:484px;white-space:nowrap" class="ft42">&#160;&#160;<b>Implementing Airline Profiles</b></p>
+<p style="position:absolute;top:832px;left:497px;white-space:nowrap" class="ft42">The Airline Profile is a repository logic for airlines to&#160;</p>
+<p style="position:absolute;top:850px;left:497px;white-space:nowrap" class="ft42">indicate the origin – destinations they are willing to&#160;</p>
+<p style="position:absolute;top:868px;left:497px;white-space:nowrap" class="ft42">provide an offer for. It should enable GDS/aggregators,&#160;</p>
+<p style="position:absolute;top:886px;left:497px;white-space:nowrap" class="ft42">OTAs and MSES to know where to send which&#160;</p>
+<p style="position:absolute;top:904px;left:497px;white-space:nowrap" class="ft42">Shopping requests.</p>
+<p style="position:absolute;top:922px;left:497px;white-space:nowrap" class="ft42">All industry players interviewed supports this initiative.&#160;</p>
+<p style="position:absolute;top:940px;left:497px;white-space:nowrap" class="ft42">However, while it is conceptually quite attractive to limit&#160;</p>
+<p style="position:absolute;top:958px;left:497px;white-space:nowrap" class="ft42">the look-to-book ratio, its practical implementation and&#160;</p>
+<p style="position:absolute;top:976px;left:497px;white-space:nowrap" class="ft42">its adoption by a critical mass of industry players are&#160;</p>
+<p style="position:absolute;top:994px;left:497px;white-space:nowrap" class="ft42">not expected in the short term.</p>
+<p style="position:absolute;top:1041px;left:472px;white-space:nowrap" class="ft43">How to deliver a&#160;&#160;</p>
+<p style="position:absolute;top:1071px;left:472px;white-space:nowrap" class="ft43">cost-effective solution?</p>
+<p style="position:absolute;top:1120px;left:472px;white-space:nowrap" class="ft42">Despite the mechanisms that could be implemented to&#160;</p>
+<p style="position:absolute;top:1138px;left:472px;white-space:nowrap" class="ft42">manage the look-to-book ratio, it is widely expected that the&#160;</p>
+<p style="position:absolute;top:1156px;left:472px;white-space:nowrap" class="ft42">ratio will remain in the several thousands to 1. Therefore, the&#160;</p>
+<p style="position:absolute;top:1174px;left:472px;white-space:nowrap" class="ft42">industry must find ways to make the shopping process as&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/airline-distribution/ndc/Documents/ndc-scalability-report-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft50{font-size:11px;font-family:CHSDAX+AktivGrotesk;color:#231f20;}
+	.ft51{font-size:10px;font-family:CHSDAX+AktivGrotesk;color:#1e31f9;}
+	.ft52{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#231f20;}
+	.ft53{font-size:11px;font-family:WLKTUJ+Symbol;color:#231f20;}
+	.ft54{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#231f20;}
+	.ft55{font-size:5px;font-family:WLKTUJ+AktivGrotesk-Medium;color:#000000;}
+	.ft56{font-size:5px;font-family:WLKTUJ+AktivGrotesk;color:#000000;}
+	.ft57{font-size:5px;font-family:WLKTUJ+AktivGrotesk-Medium;color:#1e31f9;}
+	.ft58{font-size:5px;font-family:WLKTUJ+AktivGrotesk-Medium;color:#ffffff;}
+	.ft59{font-size:5px;font-family:WLKTUJ+AktivGrotesk-Medium;color:#231f20;}
+	.ft510{font-size:10px;font-family:WLKTUJ+AktivGrotesk;color:#1e31f9;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page5-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="ndc-scalability-report005.png" alt="background image"/>
+<p style="position:absolute;top:70px;left:111px;white-space:nowrap" class="ft50"><b>Addressing NDC scalability challenges in the leisure market</b></p>
+<p style="position:absolute;top:72px;left:77px;white-space:nowrap" class="ft51"><b>5 &#160;</b></p>
+<p style="position:absolute;top:562px;left:77px;white-space:nowrap" class="ft52">cost effective as possible for the various players across the&#160;</p>
+<p style="position:absolute;top:580px;left:77px;white-space:nowrap" class="ft52">value chain &#160;(including the airlines).</p>
+<p style="position:absolute;top:616px;left:77px;white-space:nowrap" class="ft52">There is an expectation among some of the participants in&#160;</p>
+<p style="position:absolute;top:634px;left:77px;white-space:nowrap" class="ft52">the survey that, as the industry moves from the filed fares&#160;</p>
+<p style="position:absolute;top:652px;left:77px;white-space:nowrap" class="ft52">pricing structures to more dynamic pricing, the cost of&#160;</p>
+<p style="position:absolute;top:670px;left:77px;white-space:nowrap" class="ft52">processing offer/shopping transactions should decrease.&#160;</p>
+<p style="position:absolute;top:688px;left:77px;white-space:nowrap" class="ft52">However, because dynamic pricing may lead to an increase&#160;</p>
+<p style="position:absolute;top:706px;left:77px;white-space:nowrap" class="ft52">in offer requests, there could be an effect on the look-to-</p>
+<p style="position:absolute;top:724px;left:77px;white-space:nowrap" class="ft52">book ratio. This will be an area to watch.</p>
+<p style="position:absolute;top:760px;left:77px;white-space:nowrap" class="ft52">Through the interviews that were conducted for this study,&#160;</p>
+<p style="position:absolute;top:778px;left:77px;white-space:nowrap" class="ft52">the following three main options were identified as having&#160;</p>
+<p style="position:absolute;top:796px;left:77px;white-space:nowrap" class="ft52">the potential to assist in managing the costs of shopping&#160;</p>
+<p style="position:absolute;top:814px;left:77px;white-space:nowrap" class="ft52">transactions through an NDC-based solution:</p>
+<p style="position:absolute;top:850px;left:77px;white-space:nowrap" class="ft50"><b>a.&#160;&#160;Result-based Caching</b></p>
+<p style="position:absolute;top:868px;left:102px;white-space:nowrap" class="ft52">A regularly refreshed cache could store the response to&#160;</p>
+<p style="position:absolute;top:886px;left:102px;white-space:nowrap" class="ft52">shopping requests for the most frequently requested&#160;</p>
+<p style="position:absolute;top:904px;left:102px;white-space:nowrap" class="ft52">itineraries and traveler segments. Subsequent similar&#160;</p>
+<p style="position:absolute;top:922px;left:102px;white-space:nowrap" class="ft52">requests can then be answered without having to&#160;</p>
+<p style="position:absolute;top:940px;left:102px;white-space:nowrap" class="ft52">re-compute the offer response, saving IT costs and&#160;</p>
+<p style="position:absolute;top:958px;left:102px;white-space:nowrap" class="ft52">improving the response time. The offers stored in a&#160;</p>
+<p style="position:absolute;top:976px;left:102px;white-space:nowrap" class="ft52">“result-based cache” could be refreshed frequently to&#160;</p>
+<p style="position:absolute;top:994px;left:102px;white-space:nowrap" class="ft52">ensure their relevance.&#160;</p>
+<p style="position:absolute;top:1012px;left:102px;white-space:nowrap" class="ft52">To limit the number of offer requests made to populate&#160;</p>
+<p style="position:absolute;top:1030px;left:102px;white-space:nowrap" class="ft52">and update result-based caches it is recommended&#160;</p>
+<p style="position:absolute;top:1048px;left:102px;white-space:nowrap" class="ft52">that such caches be implemented:</p>
+<p style="position:absolute;top:1087px;left:102px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:1084px;left:128px;white-space:nowrap" class="ft52">At the airline level only</p>
+<p style="position:absolute;top:1105px;left:102px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:1102px;left:128px;white-space:nowrap" class="ft52">In a push model with pre-computed offers, while&#160;</p>
+<p style="position:absolute;top:1120px;left:128px;white-space:nowrap" class="ft52">also providing live offers as a complement</p>
+<p style="position:absolute;top:1156px;left:102px;white-space:nowrap" class="ft52">An airline’s NDC-based solution gateway could&#160;</p>
+<p style="position:absolute;top:1174px;left:102px;white-space:nowrap" class="ft52">determine if the request should be routed to one of&#160;</p>
+<p style="position:absolute;top:562px;left:497px;white-space:nowrap" class="ft52">its caches or to its Offer Management System, using&#160;</p>
+<p style="position:absolute;top:580px;left:497px;white-space:nowrap" class="ft52">Artificial Intelligence (AI) to identify the customer&#160;</p>
+<p style="position:absolute;top:598px;left:497px;white-space:nowrap" class="ft52">type and his or her location in the search funnel.&#160;</p>
+<p style="position:absolute;top:616px;left:497px;white-space:nowrap" class="ft52">For example, a request for travel taking place in 9&#160;</p>
+<p style="position:absolute;top:634px;left:497px;white-space:nowrap" class="ft52">months and with no fixed date could be identified as&#160;</p>
+<p style="position:absolute;top:652px;left:497px;white-space:nowrap" class="ft52">inspirational, and be routed to the cache.</p>
+<p style="position:absolute;top:922px;left:496px;white-space:nowrap" class="ft52">Such caching techniques however, can only help&#160;</p>
+<p style="position:absolute;top:940px;left:496px;white-space:nowrap" class="ft52">manage costs when the volumes of shopping requests&#160;</p>
+<p style="position:absolute;top:958px;left:496px;white-space:nowrap" class="ft52">are significant enough to warrant incurring the fixed&#160;</p>
+<p style="position:absolute;top:976px;left:496px;white-space:nowrap" class="ft52">cost of creating/populating/refreshing the cache</p>
+<p style="position:absolute;top:1012px;left:472px;white-space:nowrap" class="ft50"><b>b.&#160;</b></p>
+<p style="position:absolute;top:1012px;left:497px;white-space:nowrap" class="ft54"><b>Distributed Offer/Shopping servers</b></p>
+<p style="position:absolute;top:1030px;left:497px;white-space:nowrap" class="ft52">Distributed offer/shopping processing servers replicating&#160;</p>
+<p style="position:absolute;top:1048px;left:497px;white-space:nowrap" class="ft52">the airline’s Offer/Shopping server can be implemented&#160;</p>
+<p style="position:absolute;top:1066px;left:497px;white-space:nowrap" class="ft52">in the cloud close to where results to offer/shopping&#160;</p>
+<p style="position:absolute;top:1084px;left:497px;white-space:nowrap" class="ft52">transactions are consumed (OTAs, MSEs, GDSs and&#160;</p>
+<p style="position:absolute;top:1102px;left:497px;white-space:nowrap" class="ft52">aggregators). Such distributed Offer/Shopping servers&#160;</p>
+<p style="position:absolute;top:1120px;left:497px;white-space:nowrap" class="ft52">would use the same logic as the airline’s Offer/Shopping&#160;</p>
+<p style="position:absolute;top:1138px;left:497px;white-space:nowrap" class="ft52">processing server, and would be kept synchronized,&#160;</p>
+<p style="position:absolute;top:1156px;left:497px;white-space:nowrap" class="ft52">exchanging the offer calculation parameters.</p>
+<p style="position:absolute;top:1174px;left:497px;white-space:nowrap" class="ft52">Such distributed Offer/Shopping Servers operated in&#160;</p>
+<p style="position:absolute;top:775px;left:637px;white-space:nowrap" class="ft55">&#160;</p>
+<p style="position:absolute;top:780px;left:629px;white-space:nowrap" class="ft55">&#160;</p>
+<p style="position:absolute;top:856px;left:662px;white-space:nowrap" class="ft55">&#160;</p>
+<p style="position:absolute;top:813px;left:831px;white-space:nowrap" class="ft56">&#160;</p>
+<p style="position:absolute;top:726px;left:541px;white-space:nowrap" class="ft57">Airline IT environment&#160;</p>
+<p style="position:absolute;top:767px;left:542px;white-space:nowrap" class="ft58">Airline&#160;</p>
+<p style="position:absolute;top:776px;left:544px;white-space:nowrap" class="ft58">Offer&#160;</p>
+<p style="position:absolute;top:785px;left:542px;white-space:nowrap" class="ft58">Cache</p>
+<p style="position:absolute;top:809px;left:653px;white-space:nowrap" class="ft58">Airline&#160;</p>
+<p style="position:absolute;top:818px;left:656px;white-space:nowrap" class="ft58">NDC&#160;</p>
+<p style="position:absolute;top:827px;left:649px;white-space:nowrap" class="ft58">Gateway</p>
+<p style="position:absolute;top:775px;left:749px;white-space:nowrap" class="ft58">Aggregators</p>
+<p style="position:absolute;top:864px;left:750px;white-space:nowrap" class="ft58">OTAs/MSES</p>
+<p style="position:absolute;top:841px;left:543px;white-space:nowrap" class="ft58">Airline Offer&#160;</p>
+<p style="position:absolute;top:850px;left:541px;white-space:nowrap" class="ft58">Management</p>
+<p style="position:absolute;top:867px;left:552px;white-space:nowrap" class="ft58">Airline&#160;</p>
+<p style="position:absolute;top:876px;left:556px;white-space:nowrap" class="ft58">PSS</p>
+<p style="position:absolute;top:748px;left:580px;white-space:nowrap" class="ft59">Inspirational stage of&#160;&#160;</p>
+<p style="position:absolute;top:756px;left:580px;white-space:nowrap" class="ft59">traveler’s search or</p>
+<p style="position:absolute;top:763px;left:580px;white-space:nowrap" class="ft59">Offers for calendar dates&#160;&#160;</p>
+<p style="position:absolute;top:770px;left:580px;white-space:nowrap" class="ft59">other than requested date(s)</p>
+<p style="position:absolute;top:857px;left:599px;white-space:nowrap" class="ft59">Real time offer&#160;</p>
+<p style="position:absolute;top:864px;left:599px;white-space:nowrap" class="ft59">processing when&#160;</p>
+<p style="position:absolute;top:871px;left:599px;white-space:nowrap" class="ft59">probability to book&#160;</p>
+<p style="position:absolute;top:879px;left:599px;white-space:nowrap" class="ft59">is higher and for&#160;</p>
+<p style="position:absolute;top:886px;left:599px;white-space:nowrap" class="ft59">Requested date</p>
+<p style="position:absolute;top:838px;left:706px;white-space:nowrap" class="ft59">Direct&#160;</p>
+<p style="position:absolute;top:845px;left:703px;white-space:nowrap" class="ft59">connect</p>
+<p style="position:absolute;top:852px;left:701px;white-space:nowrap" class="ft59">to Airline</p>
+<p style="position:absolute;top:806px;left:778px;white-space:nowrap" class="ft59">Access&#160;&#160;</p>
+<p style="position:absolute;top:813px;left:778px;white-space:nowrap" class="ft59">through&#160;&#160;</p>
+<p style="position:absolute;top:821px;left:778px;white-space:nowrap" class="ft59">Aggregators</p>
+<p style="position:absolute;top:834px;left:568px;white-space:nowrap" class="ft510">RESULT BASED OFFER CACHES</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/airline-distribution/ndc/Documents/ndc-scalability-report-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft60{font-size:11px;font-family:CHSDAX+AktivGrotesk;color:#231f20;}
+	.ft61{font-size:10px;font-family:CHSDAX+AktivGrotesk;color:#1e31f9;}
+	.ft62{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#231f20;}
+	.ft63{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#231f20;}
+	.ft64{font-size:28px;font-family:WLKTUJ+AktivGrotesk;color:#1e31f9;}
+	.ft65{font-size:20px;font-family:WLKTUJ+AktivGrotesk;color:#1e31f9;}
+	.ft66{font-size:11px;font-family:WLKTUJ+AktivGrotesk;color:#1e31f9;}
+	.ft67{font-size:10px;font-family:WLKTUJ+AktivGrotesk;color:#1e31f9;}
+	.ft68{font-size:5px;font-family:WLKTUJ+AktivGrotesk-Medium;color:#ffffff;}
+	.ft69{font-size:4px;font-family:WLKTUJ+AktivGrotesk;color:#ef4433;}
+	.ft610{font-size:3px;font-family:WLKTUJ+AktivGrotesk;color:#ffffff;}
+	.ft611{font-size:4px;font-family:WLKTUJ+AktivGrotesk-Medium;color:#231f20;}
+	.ft612{font-size:5px;font-family:WLKTUJ+AktivGrotesk-Medium;color:#ef4433;}
+	.ft613{font-size:5px;font-family:WLKTUJ+AktivGrotesk-Medium;color:#1e31f9;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page6-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="ndc-scalability-report006.png" alt="background image"/>
+<p style="position:absolute;top:70px;left:111px;white-space:nowrap" class="ft60"><b>Addressing NDC scalability challenges in the leisure market</b></p>
+<p style="position:absolute;top:72px;left:77px;white-space:nowrap" class="ft61"><b>6 &#160;</b></p>
+<p style="position:absolute;top:148px;left:102px;white-space:nowrap" class="ft62">the Cloud are (or will soon) be available from the main&#160;</p>
+<p style="position:absolute;top:166px;left:102px;white-space:nowrap" class="ft62">airline IT providers. They provide an interesting way&#160;</p>
+<p style="position:absolute;top:184px;left:102px;white-space:nowrap" class="ft62">to manage the potentially high number of shopping&#160;</p>
+<p style="position:absolute;top:202px;left:102px;white-space:nowrap" class="ft62">queries.</p>
+<p style="position:absolute;top:472px;left:77px;white-space:nowrap" class="ft60"><b>c.&#160;</b></p>
+<p style="position:absolute;top:472px;left:102px;white-space:nowrap" class="ft63"><b>Cost effective solutions</b></p>
+<p style="position:absolute;top:490px;left:102px;white-space:nowrap" class="ft62">Several IT providers already propose, for their offer/</p>
+<p style="position:absolute;top:508px;left:102px;white-space:nowrap" class="ft62">shopping transaction solution, to split the cost per&#160;</p>
+<p style="position:absolute;top:526px;left:102px;white-space:nowrap" class="ft62">booking (or per passenger boarded) and the cost to&#160;</p>
+<p style="position:absolute;top:544px;left:102px;white-space:nowrap" class="ft62">respond to volumes of queries, the latter being closely&#160;</p>
+<p style="position:absolute;top:562px;left:102px;white-space:nowrap" class="ft62">aligned with actual costs to process a relevant number&#160;</p>
+<p style="position:absolute;top:580px;left:102px;white-space:nowrap" class="ft62">of transactions. This transparent pricing approach, which&#160;</p>
+<p style="position:absolute;top:598px;left:102px;white-space:nowrap" class="ft62">is made easily implementable when the offer/shopping&#160;</p>
+<p style="position:absolute;top:616px;left:102px;white-space:nowrap" class="ft62">solution is operated in the Cloud, is one potential&#160;</p>
+<p style="position:absolute;top:634px;left:102px;white-space:nowrap" class="ft62">approach. There are many other solutions that can be&#160;</p>
+<p style="position:absolute;top:652px;left:102px;white-space:nowrap" class="ft62">discussed between airlines and their IT providers.&#160;&#160;</p>
+<p style="position:absolute;top:699px;left:77px;white-space:nowrap" class="ft64">Way forward</p>
+<p style="position:absolute;top:742px;left:77px;white-space:nowrap" class="ft62">As NDC-based distribution solutions scale up, the number&#160;</p>
+<p style="position:absolute;top:760px;left:77px;white-space:nowrap" class="ft62">of shopping transactions will remain high in the leisure&#160;</p>
+<p style="position:absolute;top:778px;left:77px;white-space:nowrap" class="ft62">segment. The industry therefore must find ways to manage&#160;</p>
+<p style="position:absolute;top:796px;left:77px;white-space:nowrap" class="ft62">high volumes of offer/shopping transactions in a manner&#160;</p>
+<p style="position:absolute;top:814px;left:77px;white-space:nowrap" class="ft62">that is commercially viable. To make this possible, here is a&#160;</p>
+<p style="position:absolute;top:832px;left:77px;white-space:nowrap" class="ft62">set of best practices we have gathered through this study&#160;</p>
+<p style="position:absolute;top:850px;left:77px;white-space:nowrap" class="ft62">for each type of actor involved in NDC-based distribution&#160;</p>
+<p style="position:absolute;top:868px;left:77px;white-space:nowrap" class="ft62">value chains:</p>
+<p style="position:absolute;top:894px;left:77px;white-space:nowrap" class="ft65">Airlines</p>
+<p style="position:absolute;top:922px;left:77px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:922px;left:102px;white-space:nowrap" class="ft62">Implement the Airline Profile and a traffic filtering&#160;</p>
+<p style="position:absolute;top:940px;left:102px;white-space:nowrap" class="ft62">solution&#160;</p>
+<p style="position:absolute;top:958px;left:77px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:958px;left:102px;white-space:nowrap" class="ft62">Respond to offer requests with solutions that are&#160;</p>
+<p style="position:absolute;top:976px;left:102px;white-space:nowrap" class="ft62">reasonable and relevant for the traveler (reasonable&#160;</p>
+<p style="position:absolute;top:994px;left:102px;white-space:nowrap" class="ft62">elapsed time, reasonable connecting time…)</p>
+<p style="position:absolute;top:1012px;left:77px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:1012px;left:102px;white-space:nowrap" class="ft62">Implement retailing techniques to route shopping&#160;</p>
+<p style="position:absolute;top:1030px;left:102px;white-space:nowrap" class="ft62">request to the Offer Management or to the cache&#160;</p>
+<p style="position:absolute;top:1048px;left:77px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:1048px;left:102px;white-space:nowrap" class="ft62">Implement API management to monitor shopping&#160;</p>
+<p style="position:absolute;top:1066px;left:102px;white-space:nowrap" class="ft62">volumes per seller</p>
+<p style="position:absolute;top:1084px;left:77px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:1084px;left:102px;white-space:nowrap" class="ft62">As NDC-based distribution volumes pick up,&#160;</p>
+<p style="position:absolute;top:1102px;left:102px;white-space:nowrap" class="ft62">implement a result-based cache for shopping&#160;</p>
+<p style="position:absolute;top:1120px;left:102px;white-space:nowrap" class="ft62">transactions for travelers in the inspirational phase</p>
+<p style="position:absolute;top:1138px;left:77px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:1138px;left:102px;white-space:nowrap" class="ft62">Implement Distributed Offer/Shopping servers</p>
+<p style="position:absolute;top:588px;left:472px;white-space:nowrap" class="ft65">IT Providers &amp; Aggregators &#160;&#160;</p>
+<p style="position:absolute;top:616px;left:472px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:616px;left:497px;white-space:nowrap" class="ft62">Build highly scalable Shopping/Offer, Distributed Offer/</p>
+<p style="position:absolute;top:634px;left:497px;white-space:nowrap" class="ft62">Shopping solutions for Airlines</p>
+<p style="position:absolute;top:660px;left:472px;white-space:nowrap" class="ft65">Aggregators</p>
+<p style="position:absolute;top:688px;left:472px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:688px;left:497px;white-space:nowrap" class="ft62">Study Airline Profile&#160;</p>
+<p style="position:absolute;top:706px;left:472px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:706px;left:497px;white-space:nowrap" class="ft62">Implement retailing techniques to route shopping&#160;</p>
+<p style="position:absolute;top:724px;left:497px;white-space:nowrap" class="ft62">request to the offer management, distributed offer/</p>
+<p style="position:absolute;top:742px;left:497px;white-space:nowrap" class="ft62">shopping processing servers or to the cache&#160;</p>
+<p style="position:absolute;top:760px;left:472px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:760px;left:497px;white-space:nowrap" class="ft62">Present to the travel agent only those solutions&#160;</p>
+<p style="position:absolute;top:778px;left:497px;white-space:nowrap" class="ft62">that are reasonable and relevant for the traveler&#160;</p>
+<p style="position:absolute;top:796px;left:497px;white-space:nowrap" class="ft62">(reasonable elapse time, reasonable connecting&#160;</p>
+<p style="position:absolute;top:814px;left:497px;white-space:nowrap" class="ft62">time…)</p>
+<p style="position:absolute;top:840px;left:472px;white-space:nowrap" class="ft65">OTAs and MSEs</p>
+<p style="position:absolute;top:868px;left:472px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:868px;left:497px;white-space:nowrap" class="ft62">Implement the Airline Profile&#160;</p>
+<p style="position:absolute;top:886px;left:472px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:886px;left:497px;white-space:nowrap" class="ft62">Monitor your look-to-book ratio with your airline&#160;</p>
+<p style="position:absolute;top:904px;left:497px;white-space:nowrap" class="ft62">partners and try to maximize efficiency.</p>
+<p style="position:absolute;top:922px;left:472px;white-space:nowrap" class="ft66">•&#160;</p>
+<p style="position:absolute;top:922px;left:497px;white-space:nowrap" class="ft62">Present to the traveler only those solutions that are&#160;</p>
+<p style="position:absolute;top:940px;left:497px;white-space:nowrap" class="ft62">reasonable and relevant (reasonable elapse time,&#160;</p>
+<p style="position:absolute;top:958px;left:497px;white-space:nowrap" class="ft62">reasonable connecting time…)</p>
+<p style="position:absolute;top:237px;left:122px;white-space:nowrap" class="ft67">AIRLINE REMOTE OFFER PROCESSING SERVERS</p>
+<p style="position:absolute;top:332px;left:130px;white-space:nowrap" class="ft68">Airline Offer&#160;</p>
+<p style="position:absolute;top:341px;left:128px;white-space:nowrap" class="ft68">Management</p>
+<p style="position:absolute;top:363px;left:132px;white-space:nowrap" class="ft68">Airline PSS</p>
+<p style="position:absolute;top:300px;left:251px;white-space:nowrap" class="ft69">&#160;</p>
+<p style="position:absolute;top:298px;left:400px;white-space:nowrap" class="ft610">s</p>
+<p style="position:absolute;top:352px;left:203px;white-space:nowrap" class="ft611">Offer</p>
+<p style="position:absolute;top:358px;left:203px;white-space:nowrap" class="ft611">request</p>
+<p style="position:absolute;top:284px;left:341px;white-space:nowrap" class="ft611">Offer</p>
+<p style="position:absolute;top:291px;left:338px;white-space:nowrap" class="ft611">request</p>
+<p style="position:absolute;top:347px;left:340px;white-space:nowrap" class="ft611">Offer</p>
+<p style="position:absolute;top:354px;left:336px;white-space:nowrap" class="ft611">request</p>
+<p style="position:absolute;top:389px;left:335px;white-space:nowrap" class="ft611">Offer</p>
+<p style="position:absolute;top:396px;left:332px;white-space:nowrap" class="ft611">request</p>
+<p style="position:absolute;top:294px;left:169px;white-space:nowrap" class="ft612">Synchronization of&#160;</p>
+<p style="position:absolute;top:301px;left:173px;white-space:nowrap" class="ft612">offer processing&#160;</p>
+<p style="position:absolute;top:308px;left:182px;white-space:nowrap" class="ft612">parameters</p>
+<p style="position:absolute;top:273px;left:123px;white-space:nowrap" class="ft613">Airline IT environment&#160;</p>
+<p style="position:absolute;top:380px;left:202px;white-space:nowrap" class="ft68">Airline&#160;</p>
+<p style="position:absolute;top:389px;left:205px;white-space:nowrap" class="ft68">NDC</p>
+<p style="position:absolute;top:398px;left:198px;white-space:nowrap" class="ft68">Gateway</p>
+<p style="position:absolute;top:294px;left:280px;white-space:nowrap" class="ft68">Airline Remote&#160;</p>
+<p style="position:absolute;top:303px;left:277px;white-space:nowrap" class="ft68">Offer Processor</p>
+<p style="position:absolute;top:353px;left:280px;white-space:nowrap" class="ft68">Airline Remote&#160;</p>
+<p style="position:absolute;top:362px;left:277px;white-space:nowrap" class="ft68">Offer Processor</p>
+<p style="position:absolute;top:298px;left:367px;white-space:nowrap" class="ft68">Aggregators</p>
+<p style="position:absolute;top:353px;left:377px;white-space:nowrap" class="ft68">Large</p>
+<p style="position:absolute;top:362px;left:366px;white-space:nowrap" class="ft68">OTAs/MSEs</p>
+<p style="position:absolute;top:400px;left:377px;white-space:nowrap" class="ft68">Small</p>
+<p style="position:absolute;top:409px;left:366px;white-space:nowrap" class="ft68">OTAs/MSEs</p>
+<p style="position:absolute;top:1035px;left:485px;white-space:nowrap" class="ft60"><b>ITS4T</b></p>
+<p style="position:absolute;top:1035px;left:522px;white-space:nowrap" class="ft62">&#160;focuses on advising Airlines with their IT and&#160;</p>
+<p style="position:absolute;top:1053px;left:485px;white-space:nowrap" class="ft62">Distribution services sourcing strategy and supporting&#160;</p>
+<p style="position:absolute;top:1071px;left:485px;white-space:nowrap" class="ft62">them in the execution of their strategy. ITS4T has been&#160;</p>
+<p style="position:absolute;top:1089px;left:485px;white-space:nowrap" class="ft62">providing consultancy in the last two years to large Air&#160;</p>
+<p style="position:absolute;top:1107px;left:485px;white-space:nowrap" class="ft62">line Groups as well as to smaller Airlines, primarily with&#160;</p>
+<p style="position:absolute;top:1125px;left:485px;white-space:nowrap" class="ft62">regards to their Passenger Services / e-commerce&#160;</p>
+<p style="position:absolute;top:1143px;left:485px;white-space:nowrap" class="ft62">solutions as well as with their NDC strategy. ITS4T also&#160;</p>
+<p style="position:absolute;top:1161px;left:485px;white-space:nowrap" class="ft62">performs studies for industry bodies such as IATA.</p>
+</div>
+</body>
+</html>
