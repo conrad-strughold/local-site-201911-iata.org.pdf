@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:13px;font-family:ArialMT;color:#000000;}
+	.ft11{font-size:34px;font-family:KCLMZU+Arial,BoldItalic;color:#000000;}
+	.ft12{font-size:34px;font-family:Verdana;color:#000000;}
+	.ft13{font-size:34px;font-family:IJLFXY+Arial,Bold;color:#000000;}
+	.ft14{font-size:27px;font-family:Verdana;color:#000000;}
+	.ft15{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;}
+	.ft16{font-size:14px;font-family:OJNEDI+Calibri,Bold;color:#000000;}
+	.ft17{font-size:14px;font-family:OJNELG+Calibri;color:#000000;}
+	.ft18{font-size:20px;font-family:Verdana;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page1-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="IATA SIS Major Release  1 5 Communication v 1 0001.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:81px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:1120px;left:405px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:60px;left:465px;white-space:nowrap" class="ft11"><i><b>&#160;</b></i></p>
+<p style="position:absolute;top:134px;left:465px;white-space:nowrap" class="ft12"><b>&#160;</b></p>
+<p style="position:absolute;top:209px;left:258px;white-space:nowrap" class="ft12"><b>IATA SIS Production&#160;</b></p>
+<p style="position:absolute;top:283px;left:121px;white-space:nowrap" class="ft12"><b>Major Release 1.5 Communication</b></p>
+<p style="position:absolute;top:283px;left:810px;white-space:nowrap" class="ft13"><b>&#160;</b></p>
+<p style="position:absolute;top:358px;left:347px;white-space:nowrap" class="ft14">Version No: 1.0&#160;</p>
+<p style="position:absolute;top:422px;left:465px;white-space:nowrap" class="ft14">&#160;</p>
+<p style="position:absolute;top:488px;left:135px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:519px;left:135px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:550px;left:135px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:545px;left:189px;white-space:nowrap" class="ft15"><b>REVISION&#160;HISTORY&#160;LOG&#160;</b></p>
+<p style="position:absolute;top:582px;left:278px;white-space:nowrap" class="ft16"><b>Version Ref&#160;</b></p>
+<p style="position:absolute;top:582px;left:555px;white-space:nowrap" class="ft16"><b>Creation Date&#160;</b></p>
+<p style="position:absolute;top:603px;left:302px;white-space:nowrap" class="ft17">V1.0&#160;</p>
+<p style="position:absolute;top:603px;left:561px;white-space:nowrap" class="ft17">14-Jan-2014&#160;</p>
+<p style="position:absolute;top:632px;left:135px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:663px;left:135px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:694px;left:135px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:724px;left:135px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:724px;left:269px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:752px;left:465px;white-space:nowrap" class="ft18"><b>&#160;</b></p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft20{font-size:11px;font-family:ArialMT;color:#000000;}
+	.ft21{font-size:13px;font-family:ArialMT;color:#000000;}
+	.ft22{font-size:25px;font-family:Verdana;color:#000000;}
+	.ft23{font-size:25px;font-family:Verdana;color:#000000;}
+	.ft24{font-size:16px;font-family:KCLMZU+Arial,BoldItalic;color:#000000;}
+	.ft25{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft26{font-size:14px;font-family:IJLFXY+Arial,Bold;color:#000000;}
+	.ft27{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page2-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="IATA SIS Major Release  1 5 Communication v 1 0002.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:81px;white-space:nowrap" class="ft20">&#160;</p>
+<p style="position:absolute;top:1120px;left:81px;white-space:nowrap" class="ft21">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:1120px;left:729px;white-space:nowrap" class="ft21">&#160;</p>
+<p style="position:absolute;top:1129px;left:765px;white-space:nowrap" class="ft21">Page 2 of 21</p>
+<p style="position:absolute;top:87px;left:346px;white-space:nowrap" class="ft22">Table of Contents<b>&#160;</b></p>
+<p style="position:absolute;top:132px;left:135px;white-space:nowrap" class="ft21">&#160;</p>
+<p style="position:absolute;top:159px;left:81px;white-space:nowrap" class="ft24"><a href="IATA SIS Major Release  1 5 Communication v 1 0-3.html"><i><b>1.</b></i></a></p>
+<p style="position:absolute;top:165px;left:96px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-3.html">&#160;</a></p>
+<p style="position:absolute;top:159px;left:126px;white-space:nowrap" class="ft24"><a href="IATA SIS Major Release  1 5 Communication v 1 0-3.html"><i><b>Major&#160;Release 1.5 Deployment&#160;Schedule&#160;........................................................................&#160;3</b></i></a></p>
+<p style="position:absolute;top:165px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-3.html">&#160;</a></p>
+<p style="position:absolute;top:188px;left:81px;white-space:nowrap" class="ft24"><a href="IATA SIS Major Release  1 5 Communication v 1 0-4.html"><i><b>2.</b></i></a></p>
+<p style="position:absolute;top:195px;left:96px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-4.html">&#160;</a></p>
+<p style="position:absolute;top:188px;left:126px;white-space:nowrap" class="ft24"><a href="IATA SIS Major Release  1 5 Communication v 1 0-4.html"><i><b>Scope&#160;of Major&#160;Release&#160;1.5&#160;..............................................................................................&#160;4</b></i></a></p>
+<p style="position:absolute;top:195px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-4.html">&#160;</a></p>
+<p style="position:absolute;top:218px;left:145px;white-space:nowrap" class="ft26"><a href="IATA SIS Major Release  1 5 Communication v 1 0-5.html"><b>CMPs accepted by&#160;the&#160;SIS Steering Group&#160;...............................................................................&#160;5</b></a></p>
+<p style="position:absolute;top:223px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-5.html">&#160;</a></p>
+<p style="position:absolute;top:246px;left:145px;white-space:nowrap" class="ft26"><a href="IATA SIS Major Release  1 5 Communication v 1 0-10.html"><b>Changes as per SIS General Meeting and RA47&#160;.....................................................................&#160;10</b></a></p>
+<p style="position:absolute;top:251px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-10.html">&#160;</a></p>
+<p style="position:absolute;top:274px;left:145px;white-space:nowrap" class="ft26"><a href="IATA SIS Major Release  1 5 Communication v 1 0-13.html"><b>Other Changes&#160;...........................................................................................................................&#160;13</b></a></p>
+<p style="position:absolute;top:279px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-13.html">&#160;</a></p>
+<p style="position:absolute;top:302px;left:124px;white-space:nowrap" class="ft24"><a href="IATA SIS Major Release  1 5 Communication v 1 0-14.html"><i><b>Appendix&#160;A&#160;.......................................................................................................................&#160;14</b></i></a></p>
+<p style="position:absolute;top:308px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-14.html">&#160;</a></p>
+<p style="position:absolute;top:332px;left:124px;white-space:nowrap" class="ft24"><a href="IATA SIS Major Release  1 5 Communication v 1 0-16.html"><i><b>Appendix&#160;B&#160;.......................................................................................................................&#160;16</b></i></a></p>
+<p style="position:absolute;top:338px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-16.html">&#160;</a></p>
+<p style="position:absolute;top:361px;left:124px;white-space:nowrap" class="ft24"><a href="IATA SIS Major Release  1 5 Communication v 1 0-17.html"><i><b>Appendix&#160;C&#160;.......................................................................................................................&#160;17</b></i></a></p>
+<p style="position:absolute;top:368px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-17.html">&#160;</a></p>
+<p style="position:absolute;top:391px;left:145px;white-space:nowrap" class="ft26"><a href="IATA SIS Major Release  1 5 Communication v 1 0-17.html"><b>Structure and specific requirements of file type “Change Information for Reference Data&#160;</b></a></p>
+<p style="position:absolute;top:410px;left:145px;white-space:nowrap" class="ft26"><a href="IATA SIS Major Release  1 5 Communication v 1 0-17.html"><b>Updates”&#160;.....................................................................................................................................&#160;17</b></a></p>
+<p style="position:absolute;top:415px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-17.html">&#160;</a></p>
+<p style="position:absolute;top:438px;left:145px;white-space:nowrap" class="ft26"><a href="IATA SIS Major Release  1 5 Communication v 1 0-19.html"><b>Structure and specific requirements of file type “Complete Reference Data”&#160;....................&#160;19</b></a></p>
+<p style="position:absolute;top:443px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-19.html">&#160;</a></p>
+<p style="position:absolute;top:466px;left:145px;white-space:nowrap" class="ft26"><a href="IATA SIS Major Release  1 5 Communication v 1 0-21.html"><b>Structure and specific requirements of file type “Complete Contacts Data”&#160;......................&#160;21</b></a></p>
+<p style="position:absolute;top:471px;left:849px;white-space:nowrap" class="ft25"><a href="IATA SIS Major Release  1 5 Communication v 1 0-21.html">&#160;</a></p>
+<p style="position:absolute;top:485px;left:81px;white-space:nowrap" class="ft27"><b>&#160;</b></p>
+<p style="position:absolute;top:502px;left:81px;white-space:nowrap" class="ft27"><b>&#160;</b></p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft30{font-size:11px;font-family:ArialMT;color:#000000;}
+	.ft31{font-size:13px;font-family:ArialMT;color:#000000;}
+	.ft32{font-size:13px;font-family:Verdana;color:#000000;}
+	.ft33{font-size:16px;font-family:IJLFXY+Arial,Bold;color:#000000;}
+	.ft34{font-size:7px;font-family:ArialMT;color:#000000;}
+	.ft35{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page3-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="IATA SIS Major Release  1 5 Communication v 1 0003.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:81px;white-space:nowrap" class="ft30">&#160;</p>
+<p style="position:absolute;top:1120px;left:81px;white-space:nowrap" class="ft31">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:1120px;left:729px;white-space:nowrap" class="ft31">&#160;</p>
+<p style="position:absolute;top:1129px;left:765px;white-space:nowrap" class="ft31">Page 3 of 21</p>
+<p style="position:absolute;top:87px;left:81px;white-space:nowrap" class="ft32"><b>&#160;</b></p>
+<p style="position:absolute;top:113px;left:81px;white-space:nowrap" class="ft33"><b>1.&#160;&#160;Major&#160;Release 1.5 Deployment&#160;Schedule&#160;</b></p>
+<p style="position:absolute;top:148px;left:108px;white-space:nowrap" class="ft35">&#160;<br/>The deployment of Major&#160;Release 1.5 is planned to&#160;be executed for start of the May P1 2014 clearance.&#160;</p>
+<p style="position:absolute;top:195px;left:108px;white-space:nowrap" class="ft35">The deployment including&#160;SIS Production&#160;downtime is&#160;currently planned to occur after Apr P4 2014 period&#160;<br/>closure i.e. on May 7</p>
+<p style="position:absolute;top:209px;left:246px;white-space:nowrap" class="ft34">th</p>
+<p style="position:absolute;top:213px;left:255px;white-space:nowrap" class="ft31">, 2014 and after&#160;1700 EST. Final details&#160;regarding the time of implementation will be&#160;</p>
+<p style="position:absolute;top:230px;left:108px;white-space:nowrap" class="ft31">circulated prior to the release.&#160;</p>
+<p style="position:absolute;top:261px;left:108px;white-space:nowrap" class="ft35">The validation changes will&#160;be deployed&#160;in the Sandbox environment in early April for your reference. &#160;We will&#160;<br/>confirm this date via bulletin shortly. &#160;We ask that&#160;you&#160;test your files through the&#160;Sandbox prior to the&#160;<br/>implementation of Release 1.5.&#160;<br/>&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft40{font-size:11px;font-family:ArialMT;color:#000000;}
+	.ft41{font-size:13px;font-family:ArialMT;color:#000000;}
+	.ft42{font-size:16px;font-family:IJLFXY+Arial,Bold;color:#000000;}
+	.ft43{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;}
+	.ft44{font-size:13px;font-family:ArialMT;color:#0000ff;}
+	.ft45{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page4-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="IATA SIS Major Release  1 5 Communication v 1 0004.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:81px;white-space:nowrap" class="ft40">&#160;</p>
+<p style="position:absolute;top:1120px;left:81px;white-space:nowrap" class="ft41">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:1120px;left:729px;white-space:nowrap" class="ft41">&#160;</p>
+<p style="position:absolute;top:1129px;left:765px;white-space:nowrap" class="ft41">Page 4 of 21</p>
+<p style="position:absolute;top:86px;left:81px;white-space:nowrap" class="ft42"><b>2.&#160;&#160;Scope&#160;of Major Release 1.5&#160;</b></p>
+<p style="position:absolute;top:107px;left:108px;white-space:nowrap" class="ft42"><b>&#160;</b></p>
+<p style="position:absolute;top:137px;left:108px;white-space:nowrap" class="ft43"><b>CMPs&#160;accepted&#160;by&#160;the SIS Steering Group&#160;</b></p>
+<p style="position:absolute;top:177px;left:116px;white-space:nowrap" class="ft43"><b>CMP&#160;#&#160;&#160;Subject&#160;</b></p>
+<p style="position:absolute;top:177px;left:460px;white-space:nowrap" class="ft43"><b>Affected&#160;Billing&#160;</b></p>
+<p style="position:absolute;top:194px;left:460px;white-space:nowrap" class="ft43"><b>Categories&#160;</b></p>
+<p style="position:absolute;top:177px;left:589px;white-space:nowrap" class="ft43"><b>Affects&#160;Record&#160;</b></p>
+<p style="position:absolute;top:194px;left:589px;white-space:nowrap" class="ft43"><b>Structure?&#160;</b></p>
+<p style="position:absolute;top:177px;left:717px;white-space:nowrap" class="ft43"><b>Changes&#160;in&#160;</b></p>
+<p style="position:absolute;top:194px;left:717px;white-space:nowrap" class="ft43"><b>Validation?&#160;</b></p>
+<p style="position:absolute;top:248px;left:129px;white-space:nowrap" class="ft44"><a href="IATA SIS Major Release  1 5 Communication v 1 0-5.html">544</a></p>
+<p style="position:absolute;top:248px;left:154px;white-space:nowrap" class="ft41"><a href="IATA SIS Major Release  1 5 Communication v 1 0-5.html">&#160;</a></p>
+<p style="position:absolute;top:239px;left:184px;white-space:nowrap" class="ft45">Sync Master&#160;and Member&#160;Profile data&#160;<br/>from Production to Sandbox&#160;</p>
+<p style="position:absolute;top:248px;left:508px;white-space:nowrap" class="ft41">All No&#160;No&#160;</p>
+<p style="position:absolute;top:314px;left:129px;white-space:nowrap" class="ft44"><a href="IATA SIS Major Release  1 5 Communication v 1 0-5.html">573</a></p>
+<p style="position:absolute;top:314px;left:154px;white-space:nowrap" class="ft41"><a href="IATA SIS Major Release  1 5 Communication v 1 0-5.html">&#160;</a></p>
+<p style="position:absolute;top:297px;left:184px;white-space:nowrap" class="ft45">User to be able to reply to a&#160;<br/>Correspondence by clicking the URL in&#160;<br/>the Correspondence Alert email&#160;</p>
+<p style="position:absolute;top:314px;left:508px;white-space:nowrap" class="ft41">All No&#160;No&#160;</p>
+<p style="position:absolute;top:381px;left:129px;white-space:nowrap" class="ft44"><a href="IATA SIS Major Release  1 5 Communication v 1 0-6.html">589</a></p>
+<p style="position:absolute;top:381px;left:154px;white-space:nowrap" class="ft41"><a href="IATA SIS Major Release  1 5 Communication v 1 0-6.html">&#160;</a></p>
+<p style="position:absolute;top:372px;left:184px;white-space:nowrap" class="ft45">Scaling Factor&#160;to be included in invoice&#160;<br/>PDF&#160;</p>
+<p style="position:absolute;top:381px;left:469px;white-space:nowrap" class="ft41">Miscellaneous No&#160;</p>
+<p style="position:absolute;top:381px;left:760px;white-space:nowrap" class="ft41">No&#160;</p>
+<p style="position:absolute;top:438px;left:129px;white-space:nowrap" class="ft44"><a href="IATA SIS Major Release  1 5 Communication v 1 0-7.html">597</a></p>
+<p style="position:absolute;top:438px;left:154px;white-space:nowrap" class="ft41"><a href="IATA SIS Major Release  1 5 Communication v 1 0-7.html">&#160;</a></p>
+<p style="position:absolute;top:430px;left:184px;white-space:nowrap" class="ft45">SIS to generate weekly reference data&#160;<br/>and contacts&#160;CSV&#160;</p>
+<p style="position:absolute;top:438px;left:508px;white-space:nowrap" class="ft41">All No&#160;No&#160;</p>
+<p style="position:absolute;top:487px;left:108px;white-space:nowrap" class="ft41">&#160;</p>
+<p style="position:absolute;top:514px;left:108px;white-space:nowrap" class="ft43"><b>Changes&#160;as&#160;per&#160;SIS General Meeting&#160;and RA47&#160;</b></p>
+<p style="position:absolute;top:554px;left:116px;white-space:nowrap" class="ft43"><b>CMP&#160;#&#160;&#160;Subject&#160;</b></p>
+<p style="position:absolute;top:554px;left:460px;white-space:nowrap" class="ft43"><b>Affected&#160;Billing&#160;</b></p>
+<p style="position:absolute;top:572px;left:460px;white-space:nowrap" class="ft43"><b>Categories&#160;</b></p>
+<p style="position:absolute;top:554px;left:589px;white-space:nowrap" class="ft43"><b>Affects&#160;Record&#160;</b></p>
+<p style="position:absolute;top:572px;left:589px;white-space:nowrap" class="ft43"><b>Structure?&#160;</b></p>
+<p style="position:absolute;top:554px;left:717px;white-space:nowrap" class="ft43"><b>Changes&#160;in&#160;</b></p>
+<p style="position:absolute;top:572px;left:717px;white-space:nowrap" class="ft43"><b>Validation?&#160;</b></p>
+<p style="position:absolute;top:625px;left:129px;white-space:nowrap" class="ft44"><a href="IATA SIS Major Release  1 5 Communication v 1 0-10.html">609</a></p>
+<p style="position:absolute;top:625px;left:154px;white-space:nowrap" class="ft41"><a href="IATA SIS Major Release  1 5 Communication v 1 0-10.html">&#160;</a></p>
+<p style="position:absolute;top:617px;left:184px;white-space:nowrap" class="ft45">Miscellaneous field changes as&#160;per&#160;<br/>revision to RAM CH A13&#160;</p>
+<p style="position:absolute;top:625px;left:469px;white-space:nowrap" class="ft41">Miscellaneous Yes&#160;</p>
+<p style="position:absolute;top:625px;left:756px;white-space:nowrap" class="ft41">Yes&#160;</p>
+<p style="position:absolute;top:691px;left:129px;white-space:nowrap" class="ft44"><a href="IATA SIS Major Release  1 5 Communication v 1 0-12.html">617</a></p>
+<p style="position:absolute;top:691px;left:154px;white-space:nowrap" class="ft41"><a href="IATA SIS Major Release  1 5 Communication v 1 0-12.html">&#160;</a></p>
+<p style="position:absolute;top:674px;left:184px;white-space:nowrap" class="ft45">RA47 Agenda&#160;Item P8 - New Rejection&#160;<br/>Memo Reason&#160;Code&#160;for &#34;Wrong Airline&#160;<br/>Billed&#34; - 2K&#160;</p>
+<p style="position:absolute;top:691px;left:481px;white-space:nowrap" class="ft41">Passenger No&#160;</p>
+<p style="position:absolute;top:691px;left:760px;white-space:nowrap" class="ft41">No&#160;</p>
+<p style="position:absolute;top:749px;left:108px;white-space:nowrap" class="ft41">&#160;</p>
+<p style="position:absolute;top:776px;left:108px;white-space:nowrap" class="ft43"><b>Other&#160;Changes&#160;</b></p>
+<p style="position:absolute;top:816px;left:116px;white-space:nowrap" class="ft43"><b>CMP&#160;#&#160;&#160;Subject&#160;</b></p>
+<p style="position:absolute;top:816px;left:460px;white-space:nowrap" class="ft43"><b>Affected&#160;Billing&#160;</b></p>
+<p style="position:absolute;top:833px;left:460px;white-space:nowrap" class="ft43"><b>Categories&#160;</b></p>
+<p style="position:absolute;top:816px;left:589px;white-space:nowrap" class="ft43"><b>Affects&#160;Record&#160;</b></p>
+<p style="position:absolute;top:833px;left:589px;white-space:nowrap" class="ft43"><b>Structure?&#160;</b></p>
+<p style="position:absolute;top:816px;left:717px;white-space:nowrap" class="ft43"><b>Changes&#160;in&#160;</b></p>
+<p style="position:absolute;top:833px;left:717px;white-space:nowrap" class="ft43"><b>Validation?&#160;</b></p>
+<p style="position:absolute;top:878px;left:129px;white-space:nowrap" class="ft44"><a href="IATA SIS Major Release  1 5 Communication v 1 0-13.html">605</a></p>
+<p style="position:absolute;top:878px;left:154px;white-space:nowrap" class="ft41"><a href="IATA SIS Major Release  1 5 Communication v 1 0-13.html">&#160;</a></p>
+<p style="position:absolute;top:878px;left:184px;white-space:nowrap" class="ft41">Changes to the SIS Usage Report&#160;</p>
+<p style="position:absolute;top:878px;left:508px;white-space:nowrap" class="ft41">All&#160;</p>
+<p style="position:absolute;top:878px;left:635px;white-space:nowrap" class="ft41">No&#160;</p>
+<p style="position:absolute;top:878px;left:760px;white-space:nowrap" class="ft41">No&#160;</p>
+<p style="position:absolute;top:919px;left:108px;white-space:nowrap" class="ft41">&#160;</p>
+<p style="position:absolute;top:949px;left:108px;white-space:nowrap" class="ft45">The list of CMP (Change&#160;Management Process) items covered in this Major Release are described in greater&#160;<br/>detail in the table below.&#160;&#160;<br/>&#160;<br/>Some changes may have&#160;an impact on SIS Users so we recommend to go through the below&#160;section in details&#160;<br/>for evaluating&#160;any possible&#160;impacts&#160;(please refer to Applicability and Change sections&#160;within each CMP).&#160;<br/>&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft50{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft51{font-size:22px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft52{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft53{font-size:13px;font-family:ArialMT;color:#0000ff;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft54{font-size:13px;font-family:KCLMZU+Arial,BoldItalic;color:#ff0000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft55{font-size:13px;font-family:Arial;color:#ff0000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft56{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page5-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0005.png" alt="background image"/>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft50">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;&#160;&#160;</p>
+<p style="position:absolute;top:862px;left:1046px;white-space:nowrap" class="ft50">Page 5 of 21</p>
+<p style="position:absolute;top:83px;left:54px;white-space:nowrap" class="ft51"><b>CMPs accepted&#160;by the SIS Steering Group</b></p>
+<p style="position:absolute;top:93px;left:535px;white-space:nowrap" class="ft52"><b>&#160;</b></p>
+<p style="position:absolute;top:126px;left:68px;white-space:nowrap" class="ft52"><b>CMP&#160;</b></p>
+<p style="position:absolute;top:157px;left:69px;white-space:nowrap" class="ft52"><b>item</b></p>
+<p style="position:absolute;top:161px;left:100px;white-space:nowrap" class="ft50">&#160;</p>
+<p style="position:absolute;top:144px;left:170px;white-space:nowrap" class="ft52"><b>Scope&#160;</b></p>
+<p style="position:absolute;top:126px;left:699px;white-space:nowrap" class="ft52"><b>&#160;</b></p>
+<p style="position:absolute;top:143px;left:591px;white-space:nowrap" class="ft52"><b>CMP&#160;Release Scope Summary</b></p>
+<p style="position:absolute;top:148px;left:807px;white-space:nowrap" class="ft50">&#160;</p>
+<p style="position:absolute;top:351px;left:72px;white-space:nowrap" class="ft50">544&#160;</p>
+<p style="position:absolute;top:325px;left:123px;white-space:nowrap" class="ft56">Sync Master&#160;and&#160;<br/>Member&#160;Profile data&#160;<br/>from Production to&#160;<br/>Sandbox&#160;</p>
+<p style="position:absolute;top:202px;left:278px;white-space:nowrap" class="ft50">Description: &#160;</p>
+<p style="position:absolute;top:232px;left:278px;white-space:nowrap" class="ft56">Currently, there is no automated process&#160;that synchronizes Member Profile, Blocking Rules and selected Master&#160;data from&#160;<br/>Production&#160;with Sandbox. This CMP address this&#160;requirement.&#160;</p>
+<p style="position:absolute;top:280px;left:278px;white-space:nowrap" class="ft56">Selected fields from the Member Profile, selected Master Tables and ICH/ACH Blocking&#160;Rules&#160;data will be&#160;synced on a daily&#160;<br/>basis.&#160;</p>
+<p style="position:absolute;top:328px;left:278px;white-space:nowrap" class="ft56">&#160;<br/>Applicability:&#160;</p>
+<p style="position:absolute;top:376px;left:278px;white-space:nowrap" class="ft50">1.&#160;&#160;Select Master Tables and&#160;Member&#160;Profile fields&#160;</p>
+<p style="position:absolute;top:407px;left:305px;white-space:nowrap" class="ft50">a.&#160;&#160;The list of affected fields&#160;can be foun<a href="IATA SIS Major Release  1 5 Communication v 1 0-14.html">d in&#160;</a></p>
+<p style="position:absolute;top:407px;left:605px;white-space:nowrap" class="ft53"><a href="IATA SIS Major Release  1 5 Communication v 1 0-14.html">Appendix A</a></p>
+<p style="position:absolute;top:407px;left:681px;white-space:nowrap" class="ft50"><a href="IATA SIS Major Release  1 5 Communication v 1 0-14.html">&#160;</a></p>
+<p style="position:absolute;top:438px;left:278px;white-space:nowrap" class="ft50">Changes:&#160;</p>
+<p style="position:absolute;top:464px;left:278px;white-space:nowrap" class="ft52"><b>1.&#160;&#160;No&#160;change&#160;required&#160;for&#160;SIS Members</b></p>
+<p style="position:absolute;top:464px;left:568px;white-space:nowrap" class="ft54"><i><b>&#160;</b></i></p>
+<p style="position:absolute;top:500px;left:305px;white-space:nowrap" class="ft55"><i>&#160;</i></p>
+<p style="position:absolute;top:677px;left:72px;white-space:nowrap" class="ft50">573&#160;</p>
+<p style="position:absolute;top:634px;left:123px;white-space:nowrap" class="ft56">User to be able to&#160;<br/>reply to a&#160;<br/>Correspondence by&#160;<br/>clicking&#160;the URL in&#160;<br/>the Correspondence&#160;<br/>Alert email&#160;</p>
+<p style="position:absolute;top:540px;left:278px;white-space:nowrap" class="ft50">Description: &#160;</p>
+<p style="position:absolute;top:571px;left:278px;white-space:nowrap" class="ft56">When&#160;a user&#160;clicks the URL (hyperlink) in&#160;a correspondence&#160;email&#160;alert, he/she views the&#160;correspondence&#160;screen, but the&#160;<br/>‘Reply’ button is not shown.&#160;This forces the user to access&#160;the correspondence from the Billing History and Correspondence&#160;<br/>screen&#160;in order to reply to the correspondence. &#160;</p>
+<p style="position:absolute;top:636px;left:278px;white-space:nowrap" class="ft56">This CMP will&#160;address this&#160;requirement. Clicking&#160;the URL in&#160;the correspondence&#160;email alert will show&#160;the correspondence&#160;<br/>screen&#160;along with the ‘Reply’ button, provided the correspondence is&#160;in a state where the user&#160;can reply, and the user&#160;has the&#160;<br/>required permissions.&#160;</p>
+<p style="position:absolute;top:701px;left:278px;white-space:nowrap" class="ft56">&#160;<br/>Applicability:&#160;</p>
+<p style="position:absolute;top:749px;left:278px;white-space:nowrap" class="ft50">1.&#160;&#160;Passenger / Cargo / Miscellaneous&#160;view/initiate correspondence&#160;screen&#160;</p>
+<p style="position:absolute;top:780px;left:278px;white-space:nowrap" class="ft50">Changes:&#160;</p>
+<p style="position:absolute;top:806px;left:278px;white-space:nowrap" class="ft52"><b>1.&#160;&#160;No&#160;change&#160;required&#160;for&#160;SIS Members &#160;</b></p>
+<p style="position:absolute;top:824px;left:278px;white-space:nowrap" class="ft52"><b>&#160;</b></p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft60{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft61{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft62{font-size:-1px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft63{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page6-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0006.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft60">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft61">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:859px;left:1049px;white-space:nowrap" class="ft61">Page 6 of 21</p>
+<p style="position:absolute;top:91px;left:278px;white-space:nowrap" class="ft61">2.&#160;&#160;When the view/initiate correspondence&#160;screen is accessed&#160;by a user by&#160;clicking the URL in&#160;the correspondence email&#160;</p>
+<p style="position:absolute;top:109px;left:305px;white-space:nowrap" class="ft63">alert, the ‘Reply’ button will be visible. &#160;The user&#160;will&#160;be able to reply to the correspondence, provided&#160;the following&#160;pre-<br/>conditions&#160;are true:&#160;</p>
+<p style="position:absolute;top:143px;left:278px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:160px;left:305px;white-space:nowrap" class="ft61">a.&#160;&#160;The instance/stage of correspondence for which the&#160;URL has been clicked is the last in&#160;the&#160;entire correspondence’s&#160;</p>
+<p style="position:absolute;top:178px;left:332px;white-space:nowrap" class="ft63">chain; i.e. NO further stage&#160;exists, even in&#160;a ‘Saved’ or ‘Ready for Submit’ Sub-status&#160;<br/>&#160;</p>
+<p style="position:absolute;top:212px;left:305px;white-space:nowrap" class="ft61">b.&#160;&#160;The Status of&#160;the correspondence is&#160;‘Open’&#160;</p>
+<p style="position:absolute;top:229px;left:332px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:247px;left:305px;white-space:nowrap" class="ft61">c.&#160;&#160;The Sub-Status of the correspondence is&#160;‘Received”. &#160;</p>
+<p style="position:absolute;top:264px;left:332px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:281px;left:305px;white-space:nowrap" class="ft61">d.&#160;&#160;The correspondence cannot be expired&#160;(i.e. the&#160;Expiry Date of the correspondence cannot be equal to or later than&#160;</p>
+<p style="position:absolute;top:298px;left:332px;white-space:nowrap" class="ft63">the system time in UTC)&#160;<br/>&#160;</p>
+<p style="position:absolute;top:333px;left:305px;white-space:nowrap" class="ft61">e.&#160;&#160;The user&#160;who&#160;has clicked on&#160;the URL of the email alert (and accessing the screen) has the following Permissions:&#160;</p>
+<p style="position:absolute;top:350px;left:359px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:367px;left:332px;white-space:nowrap" class="ft61">i. Passenger.BillingHistory.ViewCorrespondence,&#160;</p>
+<p style="position:absolute;top:367px;left:678px;white-space:nowrap" class="ft61">and&#160;</p>
+<p style="position:absolute;top:385px;left:359px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:402px;left:332px;white-space:nowrap" class="ft61">ii. Passenger.BillingHistory.DraftCorrespondence&#160;</p>
+<p style="position:absolute;top:419px;left:359px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:625px;left:72px;white-space:nowrap" class="ft61">589&#160;</p>
+<p style="position:absolute;top:608px;left:123px;white-space:nowrap" class="ft63">Scaling Factor&#160;to be&#160;<br/>included in invoice&#160;<br/>PDF&#160;</p>
+<p style="position:absolute;top:446px;left:278px;white-space:nowrap" class="ft61">Description: &#160;</p>
+<p style="position:absolute;top:477px;left:278px;white-space:nowrap" class="ft63">The Miscellaneous PDF invoice does not display the&#160;Scaling Factor.&#160;As a result&#160;of this, when the Scaling&#160;Factor&#160;is greater than&#160;<br/>one, the viewer of the PDF&#160;cannot understand the basis on which the ‘Base Amount’ (charge amount)&#160;was calculated. &#160;</p>
+<p style="position:absolute;top:525px;left:278px;white-space:nowrap" class="ft61">As part of this CMP, the Scaling Factor&#160;will be displayed when&#160;it is greater&#160;than&#160;one.&#160;</p>
+<p style="position:absolute;top:556px;left:278px;white-space:nowrap" class="ft63">&#160;<br/>Applicability:&#160;</p>
+<p style="position:absolute;top:604px;left:278px;white-space:nowrap" class="ft61">1.&#160;&#160;All Miscellaneous billing transactions&#160;</p>
+<p style="position:absolute;top:632px;left:278px;white-space:nowrap" class="ft62">&#160;</p>
+<p style="position:absolute;top:650px;left:278px;white-space:nowrap" class="ft61">Changes:&#160;</p>
+<p style="position:absolute;top:680px;left:278px;white-space:nowrap" class="ft63">1.&#160;&#160;Miscellaneous Invoice PDF&#160;<br/>&#160;</p>
+<p style="position:absolute;top:715px;left:305px;white-space:nowrap" class="ft61">a.&#160;&#160;Scaling Factor&#160;will be shown below&#160;the Unit Price&#160;field,&#160;if the Scaling Factor is&#160;greater than 1&#160;&#160;</p>
+<p style="position:absolute;top:732px;left:278px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:749px;left:305px;white-space:nowrap" class="ft61">b.&#160;&#160;Example 1: If&#160;Unit Price is&#160;263.125 and the Scaling Factor is&#160;1, then&#160;value of field Unit Price&#160;will be shown as&#160;263.125&#160;</p>
+<p style="position:absolute;top:767px;left:332px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:784px;left:305px;white-space:nowrap" class="ft61">c.&#160;&#160;Example 2: If Unit Price is 263.125 and&#160;the Scaling Factor&#160;is 2, then the value of field Unit Price will be&#160;shown as&#160;</p>
+<p style="position:absolute;top:801px;left:332px;white-space:nowrap" class="ft63">263.125 @ SF&#160;2. In such&#160;cases, information about Scaling Factor will be&#160;shown below&#160;the&#160;Unit Price; i.e. Unit Price&#160;<br/>and Scaling Factor&#160;will be shown in 2 different lines&#160;within the Line Item row&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft70{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft71{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft72{font-size:14px;font-family:OJNELG+Calibri;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft73{font-size:10px;font-family:Tahoma;color:#000000;-moz-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-webkit-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-o-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-ms-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft74{font-size:-1px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft75{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page7-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0007.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft70">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft71">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft71">&#160;</p>
+<p style="position:absolute;top:859px;left:1049px;white-space:nowrap" class="ft71">Page 7 of 21</p>
+<p style="position:absolute;top:92px;left:332px;white-space:nowrap" class="ft72"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Scaling_Factor_PDF_Sample.pdf">&#160;</a></p>
+<p style="position:absolute;top:165px;left:339px;white-space:nowrap" class="ft73"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Scaling_Factor_PDF_Sample.pdf">Scaling&#160;Factor&#160;PDF&#160;</a></p>
+<p style="position:absolute;top:179px;left:355px;white-space:nowrap" class="ft73"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Scaling_Factor_PDF_Sample.pdf">Sample.docx</a></p>
+<p style="position:absolute;top:190px;left:447px;white-space:nowrap" class="ft71"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Scaling_Factor_PDF_Sample.pdf">&#160;</a></p>
+<p style="position:absolute;top:204px;left:332px;white-space:nowrap" class="ft71">&#160;</p>
+<p style="position:absolute;top:521px;left:72px;white-space:nowrap" class="ft71">597&#160;</p>
+<p style="position:absolute;top:496px;left:123px;white-space:nowrap" class="ft75">SIS to generate&#160;<br/>weekly&#160;reference&#160;<br/>data and&#160;contacts&#160;<br/>CSV&#160;</p>
+<p style="position:absolute;top:231px;left:278px;white-space:nowrap" class="ft71">Description: &#160;</p>
+<p style="position:absolute;top:261px;left:278px;white-space:nowrap" class="ft75">To ensure that Billing Members stay updated&#160;with the latest applicable Reference&#160;Data and&#160;Contacts of other Members, a new&#160;<br/>CSV file will be available&#160;containing such&#160;information.&#160;</p>
+<p style="position:absolute;top:310px;left:278px;white-space:nowrap" class="ft71">Members&#160;wishing to receive such files have any or all&#160;of the following options:&#160;</p>
+<p style="position:absolute;top:340px;left:278px;white-space:nowrap" class="ft71">1.&#160;&#160;Receive information only about changes in Reference&#160;Data, that are applicable&#160;at the start of a Billing Period&#160;&#160;</p>
+<p style="position:absolute;top:371px;left:278px;white-space:nowrap" class="ft71">2.&#160;&#160;Receive complete Reference Data of all Members, that is applicable at the start of a Billing Period (irrespective of any&#160;</p>
+<p style="position:absolute;top:388px;left:305px;white-space:nowrap" class="ft71">changes were applicable&#160;or not) &#160;&#160;</p>
+<p style="position:absolute;top:419px;left:278px;white-space:nowrap" class="ft71">3.&#160;&#160;Receive complete Contacts&#160;Data of all&#160;Members, that is applicable at the start of a Billing Period (irrespective of any&#160;</p>
+<p style="position:absolute;top:436px;left:305px;white-space:nowrap" class="ft71">changes were applicable&#160;or not)&#160;</p>
+<p style="position:absolute;top:467px;left:278px;white-space:nowrap" class="ft75">Please note that a Member&#160;making changes to their own&#160;Reference Data will receive information about additions/changes&#160;<br/>made to its Locations in the update file(s). Similarly, a Member&#160;will&#160;receive information about its own&#160;Contacts. &#160;This report&#160;will&#160;<br/>be available&#160;at the start of each period.&#160;</p>
+<p style="position:absolute;top:532px;left:278px;white-space:nowrap" class="ft75">&#160;<br/>Applicability:&#160;</p>
+<p style="position:absolute;top:580px;left:278px;white-space:nowrap" class="ft71">1.&#160;&#160;Download File Screens&#160;</p>
+<p style="position:absolute;top:611px;left:278px;white-space:nowrap" class="ft71">2. Member&#160;</p>
+<p style="position:absolute;top:611px;left:364px;white-space:nowrap" class="ft71">Profile&#160;</p>
+<p style="position:absolute;top:639px;left:305px;white-space:nowrap" class="ft74">&#160;</p>
+<p style="position:absolute;top:657px;left:278px;white-space:nowrap" class="ft71">Changes:&#160;</p>
+<p style="position:absolute;top:688px;left:278px;white-space:nowrap" class="ft71">1. Member&#160;</p>
+<p style="position:absolute;top:688px;left:364px;white-space:nowrap" class="ft71">Profile&#160;</p>
+<p style="position:absolute;top:705px;left:305px;white-space:nowrap" class="ft75">&#160;<br/>a.&#160;&#160;Location Tab&#160;- The following&#160;fields will become&#160;“Postdated – Period” changes, as&#160;opposed to immediate&#160;changes&#160;</p>
+<p style="position:absolute;top:739px;left:332px;white-space:nowrap" class="ft75">&#160;<br/>i.&#160;</p>
+<p style="position:absolute;top:757px;left:359px;white-space:nowrap" class="ft71">Member Legal Name&#160;</p>
+<p style="position:absolute;top:774px;left:332px;white-space:nowrap" class="ft71">ii. Active&#160;</p>
+<p style="position:absolute;top:774px;left:404px;white-space:nowrap" class="ft71">(checkbox)&#160;</p>
+<p style="position:absolute;top:791px;left:359px;white-space:nowrap" class="ft71">&#160;</p>
+<p style="position:absolute;top:809px;left:332px;white-space:nowrap" class="ft75">&#160;<br/>&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft80{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft81{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft82{font-size:13px;font-family:KCLMZU+Arial,BoldItalic;color:#0000ff;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft83{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#0000ff;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft84{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page8-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0008.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft80">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft81">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft81">&#160;</p>
+<p style="position:absolute;top:859px;left:1049px;white-space:nowrap" class="ft81">Page 8 of 21</p>
+<p style="position:absolute;top:91px;left:332px;white-space:nowrap" class="ft81">&#160;</p>
+<p style="position:absolute;top:109px;left:278px;white-space:nowrap" class="ft81">2. E-Billing&#160;</p>
+<p style="position:absolute;top:109px;left:364px;white-space:nowrap" class="ft81">Tab&#160;</p>
+<p style="position:absolute;top:109px;left:394px;white-space:nowrap" class="ft81">&#160;</p>
+<p style="position:absolute;top:126px;left:305px;white-space:nowrap" class="ft84">&#160;<br/>A new section “Receipt of Files in iiNET&#160;Accounts” will appear as follows&#160;<br/>&#160;</p>
+<p style="position:absolute;top:508px;left:984px;white-space:nowrap" class="ft81">&#160;</p>
+<p style="position:absolute;top:522px;left:305px;white-space:nowrap" class="ft81">&#160;</p>
+<p style="position:absolute;top:539px;left:278px;white-space:nowrap" class="ft81">3.&#160;&#160;Naming&#160;convention defined&#160;for the&#160;three additional file types created&#160;</p>
+<p style="position:absolute;top:557px;left:305px;white-space:nowrap" class="ft84">&#160;<br/>a.&#160;&#160;“Change Information for Reference Data Updates” file&#160;</p>
+<p style="position:absolute;top:591px;left:332px;white-space:nowrap" class="ft84">&#160;<br/>i. REFDATA-CHG-</p>
+<p style="position:absolute;top:604px;left:472px;white-space:nowrap" class="ft82"><i><b>&#160;</b></i></p>
+<p style="position:absolute;top:604px;left:477px;white-space:nowrap" class="ft83"><b>CCCCCCCC</b></p>
+<p style="position:absolute;top:608px;left:563px;white-space:nowrap" class="ft81">.CSV/ZIP&#160;</p>
+<p style="position:absolute;top:626px;left:332px;white-space:nowrap" class="ft81">ii. Where&#160;</p>
+<p style="position:absolute;top:621px;left:407px;white-space:nowrap" class="ft83"><b>CCCCCCCC&#160;</b></p>
+<p style="position:absolute;top:626px;left:498px;white-space:nowrap" class="ft81">is the&#160;Billing Year/Month/Period&#160;for which the&#160;file is generated&#160;</p>
+<p style="position:absolute;top:643px;left:332px;white-space:nowrap" class="ft81">iii.&#160;&#160;Example: The file generated&#160;at the start&#160;of Billing Period 2014-May-P1 will be named as&#160;&#160;</p>
+<p style="position:absolute;top:660px;left:359px;white-space:nowrap" class="ft84">REFDATA-CHG-20140501.CSV/ZIP&#160;<br/>&#160;</p>
+<p style="position:absolute;top:695px;left:305px;white-space:nowrap" class="ft81">b.&#160;&#160;“Complete Reference Data&#160;Updates”&#160;file&#160;</p>
+<p style="position:absolute;top:712px;left:332px;white-space:nowrap" class="ft84">&#160;<br/>i. REFDATA-COMP-</p>
+<p style="position:absolute;top:725px;left:484px;white-space:nowrap" class="ft83"><b>&#160;CCCCCCCC</b></p>
+<p style="position:absolute;top:729px;left:575px;white-space:nowrap" class="ft81">.CSV/ZIP&#160;</p>
+<p style="position:absolute;top:746px;left:332px;white-space:nowrap" class="ft81">ii. Where&#160;</p>
+<p style="position:absolute;top:742px;left:407px;white-space:nowrap" class="ft83"><b>CCCCCCCC</b></p>
+<p style="position:absolute;top:746px;left:494px;white-space:nowrap" class="ft81">&#160;is the&#160;Billing Year/Month/Period&#160;for which the&#160;file is generated&#160;</p>
+<p style="position:absolute;top:764px;left:332px;white-space:nowrap" class="ft81">iii.&#160;&#160;Example: The file generated&#160;at the start&#160;of Billing Period 2014-May-P1 will be named as&#160;&#160;</p>
+<p style="position:absolute;top:781px;left:359px;white-space:nowrap" class="ft84">REFDATA-COMP-20140501.CSV/ZIP&#160;<br/>&#160;</p>
+<p style="position:absolute;top:815px;left:305px;white-space:nowrap" class="ft81">c.&#160;&#160;“Complete&#160;Contacts&#160;Data” file&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft90{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft91{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft92{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#0000ff;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft93{font-size:13px;font-family:ArialMT;color:#0000ff;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft94{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page9-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0009.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft90">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft91">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft91">&#160;</p>
+<p style="position:absolute;top:859px;left:1049px;white-space:nowrap" class="ft91">Page 9 of 21</p>
+<p style="position:absolute;top:91px;left:332px;white-space:nowrap" class="ft94">&#160;<br/>i. CTCDATA-COMP-</p>
+<p style="position:absolute;top:104px;left:485px;white-space:nowrap" class="ft92"><b>&#160;CCCCCCCC</b></p>
+<p style="position:absolute;top:109px;left:576px;white-space:nowrap" class="ft91">.CSV/ZIP&#160;</p>
+<p style="position:absolute;top:126px;left:332px;white-space:nowrap" class="ft91">ii. Where&#160;</p>
+<p style="position:absolute;top:121px;left:408px;white-space:nowrap" class="ft92"><b>CCCCCCCC</b></p>
+<p style="position:absolute;top:126px;left:494px;white-space:nowrap" class="ft91">&#160;is the&#160;Billing Year/Month/Period&#160;for which the&#160;file is generated&#160;</p>
+<p style="position:absolute;top:143px;left:332px;white-space:nowrap" class="ft91">iii.&#160;&#160;Example: The file generated&#160;at the start&#160;of Billing Period 2014-May-P1 will be named as&#160;&#160;</p>
+<p style="position:absolute;top:160px;left:359px;white-space:nowrap" class="ft94">CTCDATA-COMP-20140501.CSV/ZIP&#160;<br/>&#160;</p>
+<p style="position:absolute;top:195px;left:278px;white-space:nowrap" class="ft91">4. Refer&#160;</p>
+<p style="position:absolute;top:195px;left:346px;white-space:nowrap" class="ft91"><a href="IATA SIS Major Release  1 5 Communication v 1 0-16.html">to&#160;</a></p>
+<p style="position:absolute;top:195px;left:363px;white-space:nowrap" class="ft93"><a href="IATA SIS Major Release  1 5 Communication v 1 0-16.html">Appendix B</a></p>
+<p style="position:absolute;top:195px;left:439px;white-space:nowrap" class="ft91"><a href="IATA SIS Major Release  1 5 Communication v 1 0-16.html">&#160;for list of fields incl</a>uded in these&#160;new reports.&#160;</p>
+<p style="position:absolute;top:212px;left:305px;white-space:nowrap" class="ft91">&#160;</p>
+<p style="position:absolute;top:229px;left:278px;white-space:nowrap" class="ft91">5.&#160;&#160;An email alert will be generated&#160;and&#160;sent to the&#160;assigned “Reference&#160;Data&#160;Updates” contact for each organization&#160;</p>
+<p style="position:absolute;top:247px;left:305px;white-space:nowrap" class="ft91">indicating that&#160;the reference CSV file has been generated&#160;and is&#160;available to be&#160;picked up via&#160;iiNET or IS-Web.&#160;</p>
+<p style="position:absolute;top:264px;left:278px;white-space:nowrap" class="ft94">&#160;<br/>6.&#160;&#160;For file specifications, please refe<a href="IATA SIS Major Release  1 5 Communication v 1 0-17.html">r to&#160;</a></p>
+<p style="position:absolute;top:281px;left:554px;white-space:nowrap" class="ft93"><a href="IATA SIS Major Release  1 5 Communication v 1 0-17.html">Appendix C</a></p>
+<p style="position:absolute;top:281px;left:631px;white-space:nowrap" class="ft91"><a href="IATA SIS Major Release  1 5 Communication v 1 0-17.html">&#160;</a></p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft100{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft101{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft102{font-size:22px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft103{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft104{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page10-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0010.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft100">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft101">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft101">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft101">Page 10 of 21</p>
+<p style="position:absolute;top:94px;left:54px;white-space:nowrap" class="ft102"><b>Changes as per SIS General Meeting and RA47</b></p>
+<p style="position:absolute;top:104px;left:589px;white-space:nowrap" class="ft103"><b>&#160;</b></p>
+<p style="position:absolute;top:137px;left:67px;white-space:nowrap" class="ft103"><b>CMP&#160;</b></p>
+<p style="position:absolute;top:168px;left:69px;white-space:nowrap" class="ft103"><b>item&#160;</b></p>
+<p style="position:absolute;top:152px;left:122px;white-space:nowrap" class="ft103"><b>Scope&#160;</b></p>
+<p style="position:absolute;top:137px;left:275px;white-space:nowrap" class="ft103"><b>&#160;</b></p>
+<p style="position:absolute;top:154px;left:275px;white-space:nowrap" class="ft103"><b>CMP&#160;Release Scope Summary&#160;</b></p>
+<p style="position:absolute;top:505px;left:72px;white-space:nowrap" class="ft101">609&#160;</p>
+<p style="position:absolute;top:479px;left:122px;white-space:nowrap" class="ft104">Miscellaneous field&#160;<br/>changes&#160;as&#160;per&#160;<br/>revision to RAM CH&#160;<br/>A13&#160;</p>
+<p style="position:absolute;top:213px;left:275px;white-space:nowrap" class="ft101">Description: &#160;</p>
+<p style="position:absolute;top:243px;left:275px;white-space:nowrap" class="ft101">This CMP is related to changes included in IATA RAM 2014, Chapter A13 (Miscellaneous Billing). &#160;</p>
+<p style="position:absolute;top:274px;left:275px;white-space:nowrap" class="ft101">There are&#160;changes in validation rules for some&#160;combinations&#160;of Charge&#160;Category / Charge Codes. &#160;&#160;</p>
+<p style="position:absolute;top:305px;left:275px;white-space:nowrap" class="ft101">&#160;</p>
+<p style="position:absolute;top:336px;left:275px;white-space:nowrap" class="ft101">Applicability:&#160;</p>
+<p style="position:absolute;top:366px;left:275px;white-space:nowrap" class="ft101">1. Miscellaneous&#160;</p>
+<p style="position:absolute;top:366px;left:401px;white-space:nowrap" class="ft101">Transactions&#160;</p>
+<p style="position:absolute;top:397px;left:275px;white-space:nowrap" class="ft101">2.&#160;&#160;IS-WEB &#160;and IS-XML validations&#160;</p>
+<p style="position:absolute;top:428px;left:329px;white-space:nowrap" class="ft101">&#160;</p>
+<p style="position:absolute;top:459px;left:275px;white-space:nowrap" class="ft101">Changes:&#160;</p>
+<p style="position:absolute;top:489px;left:275px;white-space:nowrap" class="ft101">1.&#160;&#160;Specific&#160;Charge Category / Charge Code&#160;changes&#160;</p>
+<p style="position:absolute;top:529px;left:292px;white-space:nowrap" class="ft103"><b>#&#160;</b></p>
+<p style="position:absolute;top:521px;left:340px;white-space:nowrap" class="ft103"><b>CHARGE&#160;</b></p>
+<p style="position:absolute;top:538px;left:330px;white-space:nowrap" class="ft103"><b>CATEGORY&#160;</b></p>
+<p style="position:absolute;top:521px;left:459px;white-space:nowrap" class="ft103"><b>CHARGE&#160;</b></p>
+<p style="position:absolute;top:538px;left:470px;white-space:nowrap" class="ft103"><b>CODE&#160;</b></p>
+<p style="position:absolute;top:529px;left:804px;white-space:nowrap" class="ft103"><b>CHANGE&#160;</b></p>
+<p style="position:absolute;top:578px;left:292px;white-space:nowrap" class="ft101">1 Miscellaneous</p>
+<p style="position:absolute;top:578px;left:438px;white-space:nowrap" class="ft101">All&#160;</p>
+<p style="position:absolute;top:569px;left:563px;white-space:nowrap" class="ft104">Charge&#160;Category discontinued. Post deployment, transactions submitted under&#160;<br/>Charge&#160;Category “Miscellaneous” will result in a Sanity Check error.&#160;</p>
+<p style="position:absolute;top:622px;left:292px;white-space:nowrap" class="ft101">2 Finance&#160;</p>
+<p style="position:absolute;top:622px;left:438px;white-space:nowrap" class="ft101">---&#160;</p>
+<p style="position:absolute;top:613px;left:563px;white-space:nowrap" class="ft104">New Charge&#160;Category introduced, replaces&#160;discontinued Charge Category&#160;<br/>Miscellaneous and inherits all its attributes/Charge Codes&#160;</p>
+<p style="position:absolute;top:666px;left:292px;white-space:nowrap" class="ft101">3 ATC&#160;</p>
+<p style="position:absolute;top:666px;left:438px;white-space:nowrap" class="ft101">Approach&#160;</p>
+<p style="position:absolute;top:657px;left:563px;white-space:nowrap" class="ft104">Line Item Detail fields ‘Flight No’&#160;&#160;and ‘Flight&#160;Date Time’&#160;change from&#160;<br/>Recommended to Mandatory&#160;</p>
+<p style="position:absolute;top:710px;left:292px;white-space:nowrap" class="ft101">4 ATC&#160;</p>
+<p style="position:absolute;top:710px;left:438px;white-space:nowrap" class="ft101">Communication&#160;</p>
+<p style="position:absolute;top:701px;left:563px;white-space:nowrap" class="ft104">Line Item Detail field ‘Location Code&#160;ICAO’ changes from Recommended Always&#160;<br/>to Recommended&#160;</p>
+<p style="position:absolute;top:754px;left:292px;white-space:nowrap" class="ft101">5 ATC&#160;</p>
+<p style="position:absolute;top:754px;left:438px;white-space:nowrap" class="ft101">En-Route&#160;</p>
+<p style="position:absolute;top:745px;left:563px;white-space:nowrap" class="ft104">Line Item Detail fields ‘Flight No’&#160;&#160;and ‘Flight&#160;Date Time’&#160;change from&#160;<br/>Recommended to Mandatory &#160;</p>
+<p style="position:absolute;top:798px;left:292px;white-space:nowrap" class="ft101">6 ATC&#160;</p>
+<p style="position:absolute;top:798px;left:438px;white-space:nowrap" class="ft101">Over-flight&#160;</p>
+<p style="position:absolute;top:789px;left:563px;white-space:nowrap" class="ft104">Line Item Detail fields ‘Flight No’ , ‘Flight&#160;Date Time’&#160;and ‘Location&#160;Code ICAO&#160;@&#160;<br/>Type’ change&#160;from Recommended to Mandatory&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft110{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft111{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft112{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft113{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page11-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0011.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft110">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft111">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft111">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft111">Page 11 of 21</p>
+<p style="position:absolute;top:105px;left:292px;white-space:nowrap" class="ft111">7 Engineering&#160;&#160;Loans&#160;</p>
+<p style="position:absolute;top:96px;left:563px;white-space:nowrap" class="ft113">Line Item Detail field ‘Aircraft Type Code ICAO’ changes from&#160;Recommended&#160;<br/>Always to Recommended&#160;</p>
+<p style="position:absolute;top:149px;left:292px;white-space:nowrap" class="ft111">8 Engineering&#160;</p>
+<p style="position:absolute;top:140px;left:438px;white-space:nowrap" class="ft113">Sales and&#160;<br/>Purchase&#160;</p>
+<p style="position:absolute;top:140px;left:563px;white-space:nowrap" class="ft113">Line Item Detail field ‘Aircraft Type Code ICAO’ changes from&#160;Recommended&#160;<br/>Always to Recommended&#160;</p>
+<p style="position:absolute;top:193px;left:292px;white-space:nowrap" class="ft111">9&#160;</p>
+<p style="position:absolute;top:184px;left:325px;white-space:nowrap" class="ft113">Ground&#160;<br/>Handling&#160;</p>
+<p style="position:absolute;top:193px;left:438px;white-space:nowrap" class="ft111">Baggage&#160;</p>
+<p style="position:absolute;top:184px;left:562px;white-space:nowrap" class="ft113">Line Item Detail field ‘Flight Date Time’ changes from Recommended to&#160;<br/>Mandatory&#160;</p>
+<p style="position:absolute;top:237px;left:288px;white-space:nowrap" class="ft111">10&#160;</p>
+<p style="position:absolute;top:228px;left:325px;white-space:nowrap" class="ft113">Ground&#160;<br/>Handling&#160;</p>
+<p style="position:absolute;top:237px;left:438px;white-space:nowrap" class="ft111">Catering&#160;</p>
+<p style="position:absolute;top:228px;left:562px;white-space:nowrap" class="ft113">Line Item Detail field ‘Flight Date Time’ changes from Recommended to&#160;<br/>Mandatory&#160;</p>
+<p style="position:absolute;top:281px;left:288px;white-space:nowrap" class="ft111">11&#160;</p>
+<p style="position:absolute;top:272px;left:325px;white-space:nowrap" class="ft113">Ground&#160;<br/>Handling&#160;</p>
+<p style="position:absolute;top:272px;left:438px;white-space:nowrap" class="ft113">Crew&#160;<br/>Accommodation</p>
+<p style="position:absolute;top:272px;left:562px;white-space:nowrap" class="ft113">Line Item Detail field ‘Flight Date Time’ changes from Recommended to&#160;<br/>Mandatory&#160;</p>
+<p style="position:absolute;top:325px;left:288px;white-space:nowrap" class="ft111">12&#160;</p>
+<p style="position:absolute;top:316px;left:325px;white-space:nowrap" class="ft113">Ground&#160;<br/>Handling&#160;</p>
+<p style="position:absolute;top:316px;left:438px;white-space:nowrap" class="ft113">Crew&#160;<br/>Transportation&#160;</p>
+<p style="position:absolute;top:316px;left:562px;white-space:nowrap" class="ft113">Line Item Detail field ‘Flight Date Time’ changes from Recommended to&#160;<br/>Mandatory&#160;</p>
+<p style="position:absolute;top:369px;left:288px;white-space:nowrap" class="ft111">13&#160;</p>
+<p style="position:absolute;top:360px;left:325px;white-space:nowrap" class="ft113">Ground&#160;<br/>Handling&#160;</p>
+<p style="position:absolute;top:369px;left:438px;white-space:nowrap" class="ft111">Lounge&#160;</p>
+<p style="position:absolute;top:360px;left:562px;white-space:nowrap" class="ft113">Line Item Detail field ‘Passenger Name’ changes from&#160;Recommended Always&#160;to&#160;<br/>Mandatory&#160;</p>
+<p style="position:absolute;top:413px;left:288px;white-space:nowrap" class="ft111">14&#160;</p>
+<p style="position:absolute;top:404px;left:325px;white-space:nowrap" class="ft113">Ground&#160;<br/>Handling&#160;</p>
+<p style="position:absolute;top:404px;left:438px;white-space:nowrap" class="ft113">Mishandling&#160;<br/>Baggage&#160;</p>
+<p style="position:absolute;top:404px;left:562px;white-space:nowrap" class="ft113">Line Item Detail field ‘Reference&#160;No&#160;@ Name’&#160;changes from&#160;Recommended&#160;<br/>Always to Mandatory&#160;</p>
+<p style="position:absolute;top:457px;left:288px;white-space:nowrap" class="ft111">15&#160;</p>
+<p style="position:absolute;top:448px;left:325px;white-space:nowrap" class="ft113">Ground&#160;<br/>Handling&#160;</p>
+<p style="position:absolute;top:448px;left:438px;white-space:nowrap" class="ft113">Passenger&#160;<br/>Transportation&#160;</p>
+<p style="position:absolute;top:448px;left:562px;white-space:nowrap" class="ft113">Line Item Detail field ‘Flight Date Time’ changes from Recommended to&#160;<br/>Mandatory&#160;</p>
+<p style="position:absolute;top:501px;left:288px;white-space:nowrap" class="ft111">16&#160;</p>
+<p style="position:absolute;top:492px;left:325px;white-space:nowrap" class="ft113">Ground&#160;<br/>Handling&#160;</p>
+<p style="position:absolute;top:492px;left:438px;white-space:nowrap" class="ft113">Rent&#160;<br/>Equipment&#160;</p>
+<p style="position:absolute;top:492px;left:562px;white-space:nowrap" class="ft113">Line Item Detail fields ‘Aircraft Type Code’ and ‘Flight No’ change from Mandatory&#160;<br/>to Recommended&#160;</p>
+<p style="position:absolute;top:545px;left:288px;white-space:nowrap" class="ft111">17&#160;</p>
+<p style="position:absolute;top:536px;left:325px;white-space:nowrap" class="ft113">Service&#160;<br/>Provider&#160;</p>
+<p style="position:absolute;top:536px;left:438px;white-space:nowrap" class="ft113">Meetings&#160;and&#160;<br/>Conferences&#160;</p>
+<p style="position:absolute;top:545px;left:562px;white-space:nowrap" class="ft111">Line Item Detail field ‘Staff&#160;Name’&#160;changes from Optional to Mandatory&#160;</p>
+<p style="position:absolute;top:589px;left:288px;white-space:nowrap" class="ft111">18&#160;</p>
+<p style="position:absolute;top:580px;left:325px;white-space:nowrap" class="ft113">Service&#160;<br/>Provider&#160;</p>
+<p style="position:absolute;top:589px;left:438px;white-space:nowrap" class="ft111">Training&#160;</p>
+<p style="position:absolute;top:589px;left:562px;white-space:nowrap" class="ft111">Line Item Detail field ‘Staff&#160;Name’&#160;changes from&#160;Recommended to Mandatory&#160;</p>
+<p style="position:absolute;top:628px;left:302px;white-space:nowrap" class="ft111">&#160;</p>
+<p style="position:absolute;top:659px;left:275px;white-space:nowrap" class="ft111">2.&#160;&#160;Discontinued Charge Category&#160;“Miscellaneous”&#160;</p>
+<p style="position:absolute;top:690px;left:302px;white-space:nowrap" class="ft111">a.&#160;&#160;When&#160;rejecting a Charge&#160;Category Miscellaneous transaction or&#160;initiating a correspondence invoice through&#160;</p>
+<p style="position:absolute;top:685px;left:1048px;white-space:nowrap" class="ft112"><b>IS-Web</b></p>
+<p style="position:absolute;top:690px;left:1099px;white-space:nowrap" class="ft111">,&#160;</p>
+<p style="position:absolute;top:707px;left:329px;white-space:nowrap" class="ft111">the charge&#160;category of the new transaction&#160;will automatically be set to “Finance”.&#160;</p>
+<p style="position:absolute;top:738px;left:302px;white-space:nowrap" class="ft111">b.&#160;&#160;When&#160;rejecting a Charge&#160;Category Miscellaneous transaction or&#160;initiating a correspondence invoice through&#160;</p>
+<p style="position:absolute;top:734px;left:1048px;white-space:nowrap" class="ft112"><b>IS-XML</b></p>
+<p style="position:absolute;top:738px;left:1098px;white-space:nowrap" class="ft111">,&#160;</p>
+<p style="position:absolute;top:755px;left:329px;white-space:nowrap" class="ft111">the charge&#160;category of the new transaction can&#160;be set to any valid,&#160;existing Charge Category.&#160;</p>
+<p style="position:absolute;top:786px;left:275px;white-space:nowrap" class="ft111">3.&#160;&#160;When a certain field and/or an attribute becomes Mandatory (from Optional / Recommended / Recommended Always),&#160;</p>
+<p style="position:absolute;top:803px;left:302px;white-space:nowrap" class="ft111">mandatory check of such fields&#160;will be conditional.&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft120{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft121{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft122{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page12-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0012.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft120">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft121">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft121">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft121">Page 12 of 21</p>
+<p style="position:absolute;top:91px;left:302px;white-space:nowrap" class="ft121">a.&#160;&#160;Original Invoices&#160;– Mandatory checks are always&#160;applied&#160;</p>
+<p style="position:absolute;top:122px;left:302px;white-space:nowrap" class="ft121">b.&#160;&#160;Credit Notes – Mandatory checks are applied only when Line&#160;Item Details are provided&#160;</p>
+<p style="position:absolute;top:153px;left:302px;white-space:nowrap" class="ft121">c.&#160;&#160;Rejection Invoices (all&#160;stages)&#160;</p>
+<p style="position:absolute;top:184px;left:329px;white-space:nowrap" class="ft121">i.&#160;</p>
+<p style="position:absolute;top:184px;left:356px;white-space:nowrap" class="ft122">If the Original&#160;Billing Month&#160;is equal to or later than&#160;2014-May-P1 and if Line Item Details have been provided for&#160;<br/>the combination of Charge&#160;Category/Charge&#160;Code, then the mandatory check should be applied&#160;</p>
+<p style="position:absolute;top:232px;left:329px;white-space:nowrap" class="ft121">ii.&#160;&#160;If the Original&#160;Billing Month&#160;is equal to or earlier than 2014-Apr-P4, then validation should be ignored even if&#160;Line&#160;</p>
+<p style="position:absolute;top:249px;left:356px;white-space:nowrap" class="ft121">Item Details have been provided for the combination&#160;of Charge Category/Charge&#160;Code&#160;</p>
+<p style="position:absolute;top:280px;left:302px;white-space:nowrap" class="ft121">d.&#160;&#160;Correspondence Invoices&#160;– Mandatory checks are applied only when Line&#160;Item Details are provided&#160;</p>
+<p style="position:absolute;top:436px;left:72px;white-space:nowrap" class="ft121">617&#160;</p>
+<p style="position:absolute;top:401px;left:122px;white-space:nowrap" class="ft122">RA47&#160;Agenda&#160;Item&#160;<br/>P8 - New Rejection&#160;<br/>Memo Reason&#160;<br/>Code&#160;for &#34;Wrong&#160;<br/>Airline Billed&#34; - 2K&#160;</p>
+<p style="position:absolute;top:320px;left:275px;white-space:nowrap" class="ft121">Description: &#160;</p>
+<p style="position:absolute;top:351px;left:275px;white-space:nowrap" class="ft122">A new Passenger&#160;RM reason code has&#160;been introduced as a&#160;result&#160;of a paper put forth in RA47. &#160;Reason&#160;Code&#160;“2K”&#160;will&#160;be&#160;<br/>added for “Wrong Airline Billed”. &#160;The reason&#160;code&#160;will&#160;be applicable&#160;for rejections&#160;on all 7 monetary fields (Gross, ISC, Tax,&#160;<br/>etc.).&#160;</p>
+<p style="position:absolute;top:416px;left:275px;white-space:nowrap" class="ft122">&#160;<br/>Applicability:&#160;</p>
+<p style="position:absolute;top:464px;left:302px;white-space:nowrap" class="ft121">a. Passenger&#160;</p>
+<p style="position:absolute;top:464px;left:405px;white-space:nowrap" class="ft121">Rejection&#160;</p>
+<p style="position:absolute;top:464px;left:471px;white-space:nowrap" class="ft121">Transactions&#160;</p>
+<p style="position:absolute;top:495px;left:275px;white-space:nowrap" class="ft121">Changes:&#160;</p>
+<p style="position:absolute;top:526px;left:275px;white-space:nowrap" class="ft121">1.&#160;&#160;No change required for SIS Members&#160;&#160;</p>
+<p style="position:absolute;top:552px;left:275px;white-space:nowrap" class="ft121">&#160;</p>
+<p style="position:absolute;top:592px;left:108px;white-space:nowrap" class="ft121">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft130{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft131{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft132{font-size:22px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft133{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft134{font-size:10px;font-family:Tahoma;color:#000000;-moz-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-webkit-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-o-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-ms-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft135{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page13-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0013.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft130">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft131">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft131">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft131">Page 13 of 21</p>
+<p style="position:absolute;top:85px;left:54px;white-space:nowrap" class="ft132"><b>Other Changes</b></p>
+<p style="position:absolute;top:95px;left:226px;white-space:nowrap" class="ft133"><b>&#160;</b></p>
+<p style="position:absolute;top:128px;left:67px;white-space:nowrap" class="ft133"><b>CMP&#160;</b></p>
+<p style="position:absolute;top:159px;left:69px;white-space:nowrap" class="ft133"><b>item&#160;</b></p>
+<p style="position:absolute;top:143px;left:122px;white-space:nowrap" class="ft133"><b>Scope&#160;</b></p>
+<p style="position:absolute;top:128px;left:275px;white-space:nowrap" class="ft133"><b>&#160;</b></p>
+<p style="position:absolute;top:145px;left:275px;white-space:nowrap" class="ft133"><b>CMP&#160;Release Scope Summary&#160;</b></p>
+<p style="position:absolute;top:487px;left:72px;white-space:nowrap" class="ft131">605&#160;</p>
+<p style="position:absolute;top:479px;left:122px;white-space:nowrap" class="ft135">Changes to the SIS&#160;<br/>Usage Report&#160;</p>
+<p style="position:absolute;top:204px;left:275px;white-space:nowrap" class="ft131">Description: &#160;</p>
+<p style="position:absolute;top:234px;left:275px;white-space:nowrap" class="ft135">The SIS Usage report will&#160;be enhanced&#160;to also include the count of Invoices / Credit Notes received (i.e. from a Payables&#160;<br/>perspective).&#160;</p>
+<p style="position:absolute;top:282px;left:275px;white-space:nowrap" class="ft131">&#160;</p>
+<p style="position:absolute;top:313px;left:275px;white-space:nowrap" class="ft131">Applicability:&#160;</p>
+<p style="position:absolute;top:344px;left:275px;white-space:nowrap" class="ft131">1.&#160;&#160;Reports module – all billing categories&#160;</p>
+<p style="position:absolute;top:375px;left:275px;white-space:nowrap" class="ft131">&#160;</p>
+<p style="position:absolute;top:405px;left:275px;white-space:nowrap" class="ft131">Changes:&#160;</p>
+<p style="position:absolute;top:436px;left:275px;white-space:nowrap" class="ft131">1.&#160;&#160;4 new&#160;columns will be added to this report:&#160;</p>
+<p style="position:absolute;top:453px;left:302px;white-space:nowrap" class="ft135">a.&#160;&#160;PAX Invoices Received (IS)&#160;<br/>b.&#160;&#160;CGO&#160;Invoices&#160;Received&#160;(IS)&#160;<br/>c.&#160;&#160;MISC Invoices&#160;Received (IS)&#160;<br/>d.&#160;&#160;UATP Invoices&#160;Received (IS)&#160;</p>
+<p style="position:absolute;top:522px;left:329px;white-space:nowrap" class="ft131">&#160;</p>
+<p style="position:absolute;top:540px;left:275px;white-space:nowrap" class="ft131">2.&#160;&#160;Values&#160;should&#160;reflect the&#160;count of Invoices / Credit Notes received&#160;(i.e. from a Payables perspective):&#160;</p>
+<p style="position:absolute;top:557px;left:302px;white-space:nowrap" class="ft135">a.&#160;&#160;By the Member&#160;&#160;<br/>b.&#160;&#160;For the particular Billing Period&#160;&#160;<br/>c.&#160;&#160;Per Billing Category &#160;<br/>d.&#160;&#160;Per Submission Method&#160;<br/>e.&#160;&#160;Having Status&#160;‘Presented’&#160;</p>
+<p style="position:absolute;top:652px;left:275px;white-space:nowrap" class="ft131">3.&#160;&#160;Please&#160;refer to&#160;the below&#160;example for additional information.&#160;</p>
+<p style="position:absolute;top:683px;left:302px;white-space:nowrap" class="ft131">&#160;</p>
+<p style="position:absolute;top:749px;left:294px;white-space:nowrap" class="ft134"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Sample_Usage_Report.xls">Sample&#160;Usage&#160;</a></p>
+<p style="position:absolute;top:763px;left:304px;white-space:nowrap" class="ft134"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Sample_Usage_Report.xls">Report.xls</a></p>
+<p style="position:absolute;top:774px;left:390px;white-space:nowrap" class="ft131"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Sample_Usage_Report.xls">&#160;</a></p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft140{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft141{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft142{font-size:16px;font-family:KCLMZU+Arial,BoldItalic;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft143{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft144{font-size:13px;font-family:OJNIMB+SymbolMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft145{font-size:13px;font-family:CourierNewPSMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page14-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0014.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft140">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft141">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft141">Page 14 of 21</p>
+<p style="position:absolute;top:100px;left:108px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:126px;left:54px;white-space:nowrap" class="ft142"><i><b>Appendix&#160;A&#160;</b></i></p>
+<p style="position:absolute;top:156px;left:54px;white-space:nowrap" class="ft143"><b>Table&#160;1: Items&#160;that&#160;will&#160;be synced&#160;from Production to Sandbox&#160;</b></p>
+<p style="position:absolute;top:200px;left:73px;white-space:nowrap" class="ft143"><b>#&#160;</b></p>
+<p style="position:absolute;top:200px;left:272px;white-space:nowrap" class="ft143"><b>ITEM&#160;</b></p>
+<p style="position:absolute;top:200px;left:760px;white-space:nowrap" class="ft143"><b>COMMENTS&#160;</b></p>
+<p style="position:absolute;top:253px;left:73px;white-space:nowrap" class="ft141">1&#160;</p>
+<p style="position:absolute;top:253px;left:110px;white-space:nowrap" class="ft141">Member&#160;Profile tab ‘Member Details’&#160;</p>
+<p style="position:absolute;top:232px;left:500px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:236px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:232px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:236px;left:556px;white-space:nowrap" class="ft141">&#160;fields of the tab will be synced,&#160;</p>
+<p style="position:absolute;top:232px;left:767px;white-space:nowrap" class="ft143"><b>EXCEPT:&#160;</b></p>
+<p style="position:absolute;top:236px;left:837px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:255px;left:526px;white-space:nowrap" class="ft145">o</p>
+<p style="position:absolute;top:254px;left:535px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:254px;left:567px;white-space:nowrap" class="ft141">The Logo of the Member&#160;&#160;</p>
+<p style="position:absolute;top:272px;left:527px;white-space:nowrap" class="ft145">o</p>
+<p style="position:absolute;top:271px;left:536px;white-space:nowrap" class="ft141">&#160;Contacts&#160;</p>
+<p style="position:absolute;top:302px;left:73px;white-space:nowrap" class="ft141">2&#160;</p>
+<p style="position:absolute;top:302px;left:110px;white-space:nowrap" class="ft141">Member&#160;Profile tab ‘Locations’&#160;</p>
+<p style="position:absolute;top:298px;left:499px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:302px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:298px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:302px;left:556px;white-space:nowrap" class="ft141">&#160;fields of the tab will be synced</p>
+<p style="position:absolute;top:298px;left:759px;white-space:nowrap" class="ft143"><b>&#160;</b></p>
+<p style="position:absolute;top:351px;left:73px;white-space:nowrap" class="ft141">3&#160;</p>
+<p style="position:absolute;top:351px;left:110px;white-space:nowrap" class="ft141">Member Profile tab ‘e-Billing’&#160;</p>
+<p style="position:absolute;top:330px;left:500px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:334px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:329px;left:526px;white-space:nowrap" class="ft143"><b>ALL&#160;</b></p>
+<p style="position:absolute;top:334px;left:560px;white-space:nowrap" class="ft141">fields of the tab will be synced,&#160;</p>
+<p style="position:absolute;top:329px;left:767px;white-space:nowrap" class="ft143"><b>EXCEPT:&#160;</b></p>
+<p style="position:absolute;top:353px;left:526px;white-space:nowrap" class="ft145">o</p>
+<p style="position:absolute;top:351px;left:535px;white-space:nowrap" class="ft141">&#160;Contacts&#160;</p>
+<p style="position:absolute;top:370px;left:527px;white-space:nowrap" class="ft145">o</p>
+<p style="position:absolute;top:368px;left:536px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:368px;left:567px;white-space:nowrap" class="ft141">Twelve checkboxes related to Reference Data files&#160;</p>
+<p style="position:absolute;top:399px;left:73px;white-space:nowrap" class="ft141">4&#160;</p>
+<p style="position:absolute;top:399px;left:110px;white-space:nowrap" class="ft141">Member&#160;Profile tab ‘Passenger’&#160;</p>
+<p style="position:absolute;top:396px;left:499px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:400px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:395px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:400px;left:556px;white-space:nowrap" class="ft141">&#160;fields of the tab will be synced,&#160;</p>
+<p style="position:absolute;top:395px;left:767px;white-space:nowrap" class="ft143"><b>EXCEPT</b></p>
+<p style="position:absolute;top:400px;left:827px;white-space:nowrap" class="ft141">&#160;Contacts&#160;</p>
+<p style="position:absolute;top:443px;left:73px;white-space:nowrap" class="ft141">5&#160;</p>
+<p style="position:absolute;top:443px;left:110px;white-space:nowrap" class="ft141">Member&#160;Profile tab ‘Cargo’&#160;</p>
+<p style="position:absolute;top:440px;left:499px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:444px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:439px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:444px;left:556px;white-space:nowrap" class="ft141">&#160;fields of the tab will be synced,&#160;</p>
+<p style="position:absolute;top:439px;left:767px;white-space:nowrap" class="ft143"><b>EXCEPT</b></p>
+<p style="position:absolute;top:444px;left:827px;white-space:nowrap" class="ft141">&#160;Contacts&#160;</p>
+<p style="position:absolute;top:487px;left:73px;white-space:nowrap" class="ft141">6&#160;</p>
+<p style="position:absolute;top:487px;left:110px;white-space:nowrap" class="ft141">Member&#160;Profile tab ‘Miscellaneous’&#160;</p>
+<p style="position:absolute;top:483px;left:499px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:488px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:483px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:488px;left:556px;white-space:nowrap" class="ft141">&#160;fields of the tab will be synced,&#160;</p>
+<p style="position:absolute;top:483px;left:767px;white-space:nowrap" class="ft143"><b>EXCEPT</b></p>
+<p style="position:absolute;top:488px;left:827px;white-space:nowrap" class="ft141">&#160;Contacts&#160;</p>
+<p style="position:absolute;top:531px;left:73px;white-space:nowrap" class="ft141">7&#160;</p>
+<p style="position:absolute;top:531px;left:110px;white-space:nowrap" class="ft141">Member&#160;Profile tab ‘UATP’&#160;</p>
+<p style="position:absolute;top:527px;left:499px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:532px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:527px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:532px;left:556px;white-space:nowrap" class="ft141">&#160;fields of the tab will be synced,&#160;</p>
+<p style="position:absolute;top:527px;left:767px;white-space:nowrap" class="ft143"><b>EXCEPT</b></p>
+<p style="position:absolute;top:532px;left:827px;white-space:nowrap" class="ft141">&#160;Contacts&#160;</p>
+<p style="position:absolute;top:575px;left:73px;white-space:nowrap" class="ft141">8&#160;</p>
+<p style="position:absolute;top:575px;left:110px;white-space:nowrap" class="ft141">Member&#160;Profile tab ‘ICH’&#160;</p>
+<p style="position:absolute;top:571px;left:499px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:576px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:571px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:576px;left:556px;white-space:nowrap" class="ft141">&#160;fields of the tab will be synced,&#160;</p>
+<p style="position:absolute;top:571px;left:767px;white-space:nowrap" class="ft143"><b>EXCEPT</b></p>
+<p style="position:absolute;top:576px;left:827px;white-space:nowrap" class="ft141">&#160;Contacts&#160;</p>
+<p style="position:absolute;top:619px;left:73px;white-space:nowrap" class="ft141">9&#160;</p>
+<p style="position:absolute;top:619px;left:110px;white-space:nowrap" class="ft141">Member&#160;Profile tab ‘ACH’&#160;</p>
+<p style="position:absolute;top:615px;left:499px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:620px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:615px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:620px;left:556px;white-space:nowrap" class="ft141">&#160;fields of the tab will be synced,&#160;</p>
+<p style="position:absolute;top:615px;left:767px;white-space:nowrap" class="ft143"><b>EXCEPT</b></p>
+<p style="position:absolute;top:620px;left:827px;white-space:nowrap" class="ft141">&#160;Contacts&#160;</p>
+<p style="position:absolute;top:663px;left:69px;white-space:nowrap" class="ft141">10&#160;</p>
+<p style="position:absolute;top:663px;left:110px;white-space:nowrap" class="ft141">Master&#160;ISO Country and&#160;DS Setup&#160;</p>
+<p style="position:absolute;top:659px;left:500px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:664px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:659px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:664px;left:556px;white-space:nowrap" class="ft141">&#160;fields&#160;of the record will be synced&#160;</p>
+<p style="position:absolute;top:707px;left:69px;white-space:nowrap" class="ft141">11&#160;</p>
+<p style="position:absolute;top:707px;left:110px;white-space:nowrap" class="ft141">Master&#160;City and Airport Setup&#160;</p>
+<p style="position:absolute;top:703px;left:500px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:708px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:703px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:708px;left:556px;white-space:nowrap" class="ft141">&#160;fields&#160;of the record will be synced&#160;</p>
+<p style="position:absolute;top:751px;left:69px;white-space:nowrap" class="ft141">12&#160;</p>
+<p style="position:absolute;top:751px;left:110px;white-space:nowrap" class="ft141">Master&#160;UN&#160;Location&#160;Setup&#160;</p>
+<p style="position:absolute;top:747px;left:500px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:752px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:747px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:752px;left:556px;white-space:nowrap" class="ft141">&#160;fields&#160;of the record will be synced&#160;</p>
+<p style="position:absolute;top:795px;left:69px;white-space:nowrap" class="ft141">13&#160;</p>
+<p style="position:absolute;top:795px;left:110px;white-space:nowrap" class="ft141">Master ICAO&#160;Country Setup&#160;</p>
+<p style="position:absolute;top:791px;left:500px;white-space:nowrap" class="ft144"></p>
+<p style="position:absolute;top:795px;left:506px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:791px;left:526px;white-space:nowrap" class="ft143"><b>ALL</b></p>
+<p style="position:absolute;top:795px;left:556px;white-space:nowrap" class="ft141">&#160;fields&#160;of the record will be synced&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft150{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft151{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft152{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft153{font-size:13px;font-family:OJNIMB+SymbolMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page15-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0015.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft150">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft151">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft151">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft151">Page 15 of 21</p>
+<p style="position:absolute;top:100px;left:73px;white-space:nowrap" class="ft152"><b>#&#160;</b></p>
+<p style="position:absolute;top:100px;left:272px;white-space:nowrap" class="ft152"><b>ITEM&#160;</b></p>
+<p style="position:absolute;top:100px;left:760px;white-space:nowrap" class="ft152"><b>COMMENTS&#160;</b></p>
+<p style="position:absolute;top:148px;left:69px;white-space:nowrap" class="ft151">14&#160;</p>
+<p style="position:absolute;top:148px;left:110px;white-space:nowrap" class="ft151">Master&#160;ICAO&#160;Location Setup&#160;</p>
+<p style="position:absolute;top:144px;left:500px;white-space:nowrap" class="ft153"></p>
+<p style="position:absolute;top:149px;left:506px;white-space:nowrap" class="ft151">&#160;</p>
+<p style="position:absolute;top:144px;left:526px;white-space:nowrap" class="ft152"><b>ALL</b></p>
+<p style="position:absolute;top:149px;left:556px;white-space:nowrap" class="ft151">&#160;fields&#160;of the record will be synced&#160;</p>
+<p style="position:absolute;top:192px;left:69px;white-space:nowrap" class="ft151">15&#160;</p>
+<p style="position:absolute;top:192px;left:110px;white-space:nowrap" class="ft151">Master EMD&#160;RFIC Setup&#160;</p>
+<p style="position:absolute;top:188px;left:500px;white-space:nowrap" class="ft153"></p>
+<p style="position:absolute;top:193px;left:506px;white-space:nowrap" class="ft151">&#160;</p>
+<p style="position:absolute;top:188px;left:526px;white-space:nowrap" class="ft152"><b>ALL</b></p>
+<p style="position:absolute;top:193px;left:556px;white-space:nowrap" class="ft151">&#160;fields&#160;of the record will be synced&#160;</p>
+<p style="position:absolute;top:236px;left:69px;white-space:nowrap" class="ft151">16&#160;</p>
+<p style="position:absolute;top:236px;left:110px;white-space:nowrap" class="ft151">Master&#160;EMD&#160;RFISC Setup&#160;</p>
+<p style="position:absolute;top:232px;left:500px;white-space:nowrap" class="ft153"></p>
+<p style="position:absolute;top:237px;left:506px;white-space:nowrap" class="ft151">&#160;</p>
+<p style="position:absolute;top:232px;left:526px;white-space:nowrap" class="ft152"><b>ALL</b></p>
+<p style="position:absolute;top:237px;left:556px;white-space:nowrap" class="ft151">&#160;fields&#160;of the record will be synced&#160;</p>
+<p style="position:absolute;top:280px;left:69px;white-space:nowrap" class="ft151">17&#160;</p>
+<p style="position:absolute;top:280px;left:110px;white-space:nowrap" class="ft151">Master&#160;Aircraft Type Setup&#160;</p>
+<p style="position:absolute;top:276px;left:500px;white-space:nowrap" class="ft153"></p>
+<p style="position:absolute;top:281px;left:506px;white-space:nowrap" class="ft151">&#160;</p>
+<p style="position:absolute;top:276px;left:526px;white-space:nowrap" class="ft152"><b>ALL</b></p>
+<p style="position:absolute;top:281px;left:556px;white-space:nowrap" class="ft151">&#160;fields&#160;of the record will be synced&#160;</p>
+<p style="position:absolute;top:324px;left:69px;white-space:nowrap" class="ft151">18&#160;</p>
+<p style="position:absolute;top:324px;left:110px;white-space:nowrap" class="ft151">Master Aircraft Type ICAO Setup&#160;</p>
+<p style="position:absolute;top:320px;left:500px;white-space:nowrap" class="ft153"></p>
+<p style="position:absolute;top:325px;left:506px;white-space:nowrap" class="ft151">&#160;</p>
+<p style="position:absolute;top:320px;left:526px;white-space:nowrap" class="ft152"><b>ALL</b></p>
+<p style="position:absolute;top:325px;left:556px;white-space:nowrap" class="ft151">&#160;fields&#160;of the record will be synced&#160;</p>
+<p style="position:absolute;top:364px;left:54px;white-space:nowrap" class="ft151">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft160{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft161{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft162{font-size:16px;font-family:KCLMZU+Arial,BoldItalic;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft163{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft164{font-size:9px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft165{font-size:9px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft166{font-size:9px;font-family:OJNIMB+SymbolMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft167{font-size:9px;font-family:ArialMT;color:#0000ff;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft168{font-size:9px;line-height:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft169{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page16-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0016.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft160">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft161">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft161">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft161">Page 16 of 21</p>
+<p style="position:absolute;top:86px;left:54px;white-space:nowrap" class="ft162"><i><b>Appendix&#160;B&#160;</b></i></p>
+<p style="position:absolute;top:116px;left:54px;white-space:nowrap" class="ft163"><b>Table&#160;2: Scenarios&#160;of&#160;Actions&#160;for possible&#160;inclusion in&#160;weekly&#160;CSV updates&#160;</b></p>
+<p style="position:absolute;top:162px;left:64px;white-space:nowrap" class="ft164"><b>#&#160;</b></p>
+<p style="position:absolute;top:162px;left:238px;white-space:nowrap" class="ft164"><b>SCENARIO&#160;</b></p>
+<p style="position:absolute;top:162px;left:510px;white-space:nowrap" class="ft164"><b>ACTION&#160;APPLICABLE&#160;FOR&#160;FIELDS&#160;</b></p>
+<p style="position:absolute;top:155px;left:844px;white-space:nowrap" class="ft164"><b>INLCUDED IN&#160;FILE BELONGING TO&#160;&#160;</b></p>
+<p style="position:absolute;top:169px;left:896px;white-space:nowrap" class="ft164"><b>BILLING&#160;PERIOD&#160;&#160;</b></p>
+<p style="position:absolute;top:210px;left:63px;white-space:nowrap" class="ft165">1&#160;</p>
+<p style="position:absolute;top:199px;left:90px;white-space:nowrap" class="ft166"></p>
+<p style="position:absolute;top:203px;left:95px;white-space:nowrap" class="ft165">&#160;</p>
+<p style="position:absolute;top:203px;left:117px;white-space:nowrap" class="ft165">New&#160;Location added to an existing Member&#160;</p>
+<p style="position:absolute;top:214px;left:90px;white-space:nowrap" class="ft166"></p>
+<p style="position:absolute;top:218px;left:95px;white-space:nowrap" class="ft165">&#160;</p>
+<p style="position:absolute;top:218px;left:117px;white-space:nowrap" class="ft165">Done manually&#160;by&#160;the Member user or by&#160;a SIS&#160;Ops user&#160;</p>
+<p style="position:absolute;top:203px;left:468px;white-space:nowrap" class="ft165">All fields for the new&#160;location&#160;added. See&#160;</p>
+<p style="position:absolute;top:203px;left:715px;white-space:nowrap" class="ft167">Note 1</p>
+<p style="position:absolute;top:203px;left:754px;white-space:nowrap" class="ft165">&#160;</p>
+<p style="position:absolute;top:217px;left:468px;white-space:nowrap" class="ft165">below&#160;</p>
+<p style="position:absolute;top:210px;left:771px;white-space:nowrap" class="ft165">Immediate next&#160;Billing Period &#160;</p>
+<p style="position:absolute;top:254px;left:63px;white-space:nowrap" class="ft165">2&#160;</p>
+<p style="position:absolute;top:237px;left:90px;white-space:nowrap" class="ft166"></p>
+<p style="position:absolute;top:240px;left:95px;white-space:nowrap" class="ft165">&#160;</p>
+<p style="position:absolute;top:240px;left:117px;white-space:nowrap" class="ft168">New&#160;Member&#160;added, Main Location defined during profile&#160;<br/>creation&#160;</p>
+<p style="position:absolute;top:265px;left:90px;white-space:nowrap" class="ft166"></p>
+<p style="position:absolute;top:268px;left:95px;white-space:nowrap" class="ft165">&#160;</p>
+<p style="position:absolute;top:268px;left:117px;white-space:nowrap" class="ft165">Done manually&#160;by&#160;a SIS&#160;Ops user&#160;</p>
+<p style="position:absolute;top:254px;left:468px;white-space:nowrap" class="ft165">All fields&#160;for Location ID ‘Main’. See&#160;</p>
+<p style="position:absolute;top:254px;left:660px;white-space:nowrap" class="ft167">Note 1</p>
+<p style="position:absolute;top:254px;left:695px;white-space:nowrap" class="ft165">&#160;below&#160;</p>
+<p style="position:absolute;top:254px;left:771px;white-space:nowrap" class="ft165">Immediate next&#160;Billing Period&#160;</p>
+<p style="position:absolute;top:298px;left:63px;white-space:nowrap" class="ft165">3&#160;</p>
+<p style="position:absolute;top:287px;left:90px;white-space:nowrap" class="ft166"></p>
+<p style="position:absolute;top:291px;left:95px;white-space:nowrap" class="ft165">&#160;</p>
+<p style="position:absolute;top:291px;left:117px;white-space:nowrap" class="ft165">One or&#160;more fields modified for an existing Location &#160;</p>
+<p style="position:absolute;top:302px;left:90px;white-space:nowrap" class="ft166"></p>
+<p style="position:absolute;top:305px;left:95px;white-space:nowrap" class="ft165">&#160;</p>
+<p style="position:absolute;top:305px;left:117px;white-space:nowrap" class="ft165">Done manually&#160;by&#160;the Member user or by&#160;a SIS&#160;Ops user&#160;</p>
+<p style="position:absolute;top:298px;left:468px;white-space:nowrap" class="ft165">Fields that were&#160;modified. See&#160;</p>
+<p style="position:absolute;top:298px;left:632px;white-space:nowrap" class="ft167">Note 2</p>
+<p style="position:absolute;top:298px;left:668px;white-space:nowrap" class="ft165">&#160;below&#160;</p>
+<p style="position:absolute;top:298px;left:771px;white-space:nowrap" class="ft165">Future&#160;Billing Period defined for&#160;the field. This may&#160;vary&#160;per&#160;field&#160;</p>
+<p style="position:absolute;top:337px;left:108px;white-space:nowrap" class="ft161">&#160;</p>
+<p style="position:absolute;top:363px;left:54px;white-space:nowrap" class="ft163"><b>Note&#160;1:&#160;</b></p>
+<p style="position:absolute;top:398px;left:54px;white-space:nowrap" class="ft169">Only the following fields&#160;will&#160;be considered for possible inclusion:&#160;<br/>1.&#160;&#160;Member&#160;Legal Name&#160;<br/>2.&#160;&#160;Company Registration&#160;ID&#160;<br/>3.&#160;&#160;Tax/VAT Registration #&#160;<br/>4.&#160;&#160;Add. Tax/VAT Registration&#160;#&#160;<br/>5. Address&#160;</p>
+<p style="position:absolute;top:484px;left:140px;white-space:nowrap" class="ft161">Line1&#160;</p>
+<p style="position:absolute;top:502px;left:54px;white-space:nowrap" class="ft161">6. Address&#160;</p>
+<p style="position:absolute;top:502px;left:140px;white-space:nowrap" class="ft161">Line2&#160;</p>
+<p style="position:absolute;top:519px;left:54px;white-space:nowrap" class="ft161">7. Address&#160;</p>
+<p style="position:absolute;top:519px;left:140px;white-space:nowrap" class="ft161">Line3&#160;</p>
+<p style="position:absolute;top:536px;left:54px;white-space:nowrap" class="ft161">8. City&#160;</p>
+<p style="position:absolute;top:536px;left:111px;white-space:nowrap" class="ft161">Name&#160;</p>
+<p style="position:absolute;top:553px;left:54px;white-space:nowrap" class="ft161">9. Postal&#160;</p>
+<p style="position:absolute;top:553px;left:127px;white-space:nowrap" class="ft161">Code&#160;</p>
+<p style="position:absolute;top:571px;left:54px;white-space:nowrap" class="ft169">10. Subdivision&#160;Name&#160;<br/>11. Country&#160;<br/>12. Active&#160;<br/>&#160;<br/>Other fields will NOT be&#160;considered, such as:&#160;<br/>1.&#160;&#160;Member&#160;Commercial Name&#160;<br/>2.&#160;&#160;Invoice Footer&#160;&#160;<br/>3.&#160;&#160;Bank Details&#160;for Bilateral Settlement (multiple fields)&#160;<br/>4.&#160;&#160;Any additional fields added&#160;in future in this screen&#160;</p>
+<p style="position:absolute;top:735px;left:108px;white-space:nowrap" class="ft161">&#160;</p>
+<p style="position:absolute;top:761px;left:54px;white-space:nowrap" class="ft163"><b>Note&#160;2:&#160;</b></p>
+<p style="position:absolute;top:796px;left:54px;white-space:nowrap" class="ft161">1.&#160;&#160;Modification&#160;means actual&#160;change of value&#160;</p>
+<p style="position:absolute;top:827px;left:54px;white-space:nowrap" class="ft161">2.&#160;&#160;If a user defines the current/existing value as the&#160;“new” value, it should NOT be considered as&#160;a change&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft170{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft171{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft172{font-size:16px;font-family:KCLMZU+Arial,BoldItalic;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft173{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft174{font-size:13px;line-height:26px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft175{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft176{font-size:13px;line-height:30px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page17-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0017.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft170">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft171">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft171">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft171">Page 17 of 21</p>
+<p style="position:absolute;top:86px;left:54px;white-space:nowrap" class="ft172"><i><b>Appendix&#160;C&#160;</b></i></p>
+<p style="position:absolute;top:117px;left:54px;white-space:nowrap" class="ft174"><b>Structure&#160;and&#160;specific requirements&#160;of&#160;file type&#160;“Change&#160;Information&#160;for&#160;Reference&#160;Data&#160;Updates”&#160;<br/>Table&#160;3:&#160;Columns&#160;in file type&#160;“Change&#160;Information&#160;for Reference&#160;Data&#160;Updates”&#160;</b></p>
+<p style="position:absolute;top:187px;left:73px;white-space:nowrap" class="ft173"><b>#&#160;</b></p>
+<p style="position:absolute;top:187px;left:193px;white-space:nowrap" class="ft173"><b>COLUMN&#160;NAME&#160;</b></p>
+<p style="position:absolute;top:187px;left:719px;white-space:nowrap" class="ft173"><b>COMMENTS&#160;</b></p>
+<p style="position:absolute;top:249px;left:73px;white-space:nowrap" class="ft171">1 Serial&#160;</p>
+<p style="position:absolute;top:249px;left:152px;white-space:nowrap" class="ft171">No.&#160;</p>
+<p style="position:absolute;top:223px;left:407px;white-space:nowrap" class="ft175">1.&#160;&#160;A running&#160;serial number printed to the file&#160;<br/>2.&#160;&#160;Will be 1 for the first row printed after the&#160;header row/record&#160;&#160;<br/>3.&#160;&#160;Will be incremented by 1 for every subsequent row/record &#160;<br/>4.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:305px;left:73px;white-space:nowrap" class="ft171">2 Action&#160;</p>
+<p style="position:absolute;top:297px;left:407px;white-space:nowrap" class="ft175">1.&#160;&#160;Valid values&#160;are C&#160;(for&#160;change) or&#160;N (for&#160;new)&#160;<br/>2.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:354px;left:73px;white-space:nowrap" class="ft171">3 Participant&#160;</p>
+<p style="position:absolute;top:354px;left:185px;white-space:nowrap" class="ft171">Code&#160;</p>
+<p style="position:absolute;top:336px;left:407px;white-space:nowrap" class="ft175">1.&#160;&#160;Maps to the&#160;Prefix / Accounting Code /&#160;Numeric&#160;Code of a Member&#160;<br/>2.&#160;&#160;Example: 125&#160;in case of BA / British Airways&#160;<br/>3.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:406px;left:73px;white-space:nowrap" class="ft171">4 Location&#160;</p>
+<p style="position:absolute;top:406px;left:171px;white-space:nowrap" class="ft171">Id&#160;</p>
+<p style="position:absolute;top:389px;left:407px;white-space:nowrap" class="ft175">1.&#160;&#160;Maps to Location ID for which information in included&#160;<br/>2.&#160;&#160;Example: Main, UATP, 1, 2, 3 etc.&#160;<br/>3.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:476px;left:73px;white-space:nowrap" class="ft171">5 Field&#160;</p>
+<p style="position:absolute;top:476px;left:147px;white-space:nowrap" class="ft171">Name&#160;</p>
+<p style="position:absolute;top:441px;left:407px;white-space:nowrap" class="ft175">1.&#160;&#160;The name of the field for which information is provided&#160;<br/>2.&#160;&#160;Example: Active, Address Line1 etc.&#160;<br/>3.&#160;&#160;This is&#160;a mandatory field&#160;<br/>4. See&#160;</p>
+<p style="position:absolute;top:489px;left:465px;white-space:nowrap" class="ft173"><b>Error!&#160;Reference&#160;source&#160;not&#160;found.</b></p>
+<p style="position:absolute;top:493px;left:720px;white-space:nowrap" class="ft171">&#160;below for the list of field names&#160;which&#160;will be printed to the&#160;</p>
+<p style="position:absolute;top:510px;left:434px;white-space:nowrap" class="ft171">file, also mapped to field on&#160;the Member&#160;Profile screen&#160;</p>
+<p style="position:absolute;top:563px;left:73px;white-space:nowrap" class="ft171">6 Old&#160;</p>
+<p style="position:absolute;top:563px;left:137px;white-space:nowrap" class="ft171">Value&#160;</p>
+<p style="position:absolute;top:528px;left:407px;white-space:nowrap" class="ft171">1.&#160;&#160;The old value of the field,&#160;which existed in the previous&#160;period and before execution of the Member&#160;</p>
+<p style="position:absolute;top:546px;left:434px;white-space:nowrap" class="ft171">Profile Update Service&#160;</p>
+<p style="position:absolute;top:563px;left:407px;white-space:nowrap" class="ft175">2.&#160;&#160;Example: If value was&#160;changed from&#160;ABC to ABCD, then ABC will&#160;be printed here&#160;<br/>3.&#160;&#160;This is an optional field. When a blank value is&#160;changed to a non-blank value, nothing will be&#160;shown for&#160;</p>
+<p style="position:absolute;top:597px;left:434px;white-space:nowrap" class="ft171">this&#160;field&#160;</p>
+<p style="position:absolute;top:641px;left:73px;white-space:nowrap" class="ft171">7 New&#160;</p>
+<p style="position:absolute;top:641px;left:144px;white-space:nowrap" class="ft171">Value&#160;</p>
+<p style="position:absolute;top:615px;left:407px;white-space:nowrap" class="ft175">1.&#160;&#160;The new value of the field,&#160;which came into effect&#160;after execution of the Member&#160;Profile Update Service&#160;<br/>2.&#160;&#160;Example: If value was&#160;changed from ABC&#160;to ABCD, then ABCD will be printed here&#160;<br/>3.&#160;&#160;This is an optional field. When a non-blank value is&#160;changed to a blank value, nothing will be shown for&#160;</p>
+<p style="position:absolute;top:667px;left:434px;white-space:nowrap" class="ft171">this&#160;field&#160;</p>
+<p style="position:absolute;top:694px;left:54px;white-space:nowrap" class="ft171">&#160;</p>
+<p style="position:absolute;top:720px;left:54px;white-space:nowrap" class="ft176"><b>&#160;<br/>&#160;<br/>&#160;<br/>&#160;</b></p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft180{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft181{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft182{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page18-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0018.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft180">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft181">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft181">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft181">Page 18 of 21</p>
+<p style="position:absolute;top:86px;left:54px;white-space:nowrap" class="ft182"><b>Table&#160;4: Sequence and values of ‘Field&#160;Name’ for file&#160;type&#160;“Change&#160;Information&#160;for Reference&#160;Data Updates”&#160;</b></p>
+<p style="position:absolute;top:122px;left:66px;white-space:nowrap" class="ft182"><b>SEQUENCE&#160;</b></p>
+<p style="position:absolute;top:139px;left:95px;white-space:nowrap" class="ft182"><b>NO.&#160;</b></p>
+<p style="position:absolute;top:131px;left:208px;white-space:nowrap" class="ft182"><b>VALUE&#160;OF ‘FIELD&#160;NAME’&#160;PRINTED&#160;IN THE FILE&#160;</b></p>
+<p style="position:absolute;top:122px;left:628px;white-space:nowrap" class="ft182"><b>MAPS&#160;TO FIELD NAME IN LOCATION&#160;TAB OF MEMBER PROFILE&#160;</b></p>
+<p style="position:absolute;top:139px;left:829px;white-space:nowrap" class="ft182"><b>SCREEN&#160;</b></p>
+<p style="position:absolute;top:179px;left:104px;white-space:nowrap" class="ft181">1 Active&#160;</p>
+<p style="position:absolute;top:179px;left:603px;white-space:nowrap" class="ft181">Active&#160;</p>
+<p style="position:absolute;top:223px;left:104px;white-space:nowrap" class="ft181">2&#160;</p>
+<p style="position:absolute;top:223px;left:171px;white-space:nowrap" class="ft181">Member&#160;Legal Name&#160;</p>
+<p style="position:absolute;top:223px;left:603px;white-space:nowrap" class="ft181">Member&#160;Legal Name&#160;</p>
+<p style="position:absolute;top:267px;left:104px;white-space:nowrap" class="ft181">3&#160;</p>
+<p style="position:absolute;top:267px;left:171px;white-space:nowrap" class="ft181">Tax Vat Registration Id&#160;</p>
+<p style="position:absolute;top:267px;left:603px;white-space:nowrap" class="ft181">Tax/VAT Registration #&#160;</p>
+<p style="position:absolute;top:311px;left:104px;white-space:nowrap" class="ft181">4&#160;</p>
+<p style="position:absolute;top:311px;left:171px;white-space:nowrap" class="ft181">Additional Tax Vat Registration Id&#160;</p>
+<p style="position:absolute;top:311px;left:603px;white-space:nowrap" class="ft181">Add. Tax/VAT Registration&#160;#&#160;</p>
+<p style="position:absolute;top:355px;left:104px;white-space:nowrap" class="ft181">5&#160;</p>
+<p style="position:absolute;top:355px;left:171px;white-space:nowrap" class="ft181">Company Registration&#160;Id&#160;</p>
+<p style="position:absolute;top:355px;left:603px;white-space:nowrap" class="ft181">Company Registration&#160;ID&#160;</p>
+<p style="position:absolute;top:399px;left:104px;white-space:nowrap" class="ft181">6&#160;</p>
+<p style="position:absolute;top:399px;left:171px;white-space:nowrap" class="ft181">Address Line1&#160;</p>
+<p style="position:absolute;top:399px;left:603px;white-space:nowrap" class="ft181">Address Line1&#160;</p>
+<p style="position:absolute;top:443px;left:104px;white-space:nowrap" class="ft181">7&#160;</p>
+<p style="position:absolute;top:443px;left:171px;white-space:nowrap" class="ft181">Address Line2&#160;</p>
+<p style="position:absolute;top:443px;left:603px;white-space:nowrap" class="ft181">Address Line2&#160;</p>
+<p style="position:absolute;top:487px;left:104px;white-space:nowrap" class="ft181">8&#160;</p>
+<p style="position:absolute;top:487px;left:171px;white-space:nowrap" class="ft181">Address Line3&#160;</p>
+<p style="position:absolute;top:487px;left:603px;white-space:nowrap" class="ft181">Address Line3&#160;</p>
+<p style="position:absolute;top:531px;left:104px;white-space:nowrap" class="ft181">9&#160;</p>
+<p style="position:absolute;top:531px;left:171px;white-space:nowrap" class="ft181">City&#160;Name&#160;</p>
+<p style="position:absolute;top:531px;left:603px;white-space:nowrap" class="ft181">City&#160;Name&#160;</p>
+<p style="position:absolute;top:575px;left:100px;white-space:nowrap" class="ft181">10&#160;</p>
+<p style="position:absolute;top:575px;left:171px;white-space:nowrap" class="ft181">Subdivision&#160;Name&#160;</p>
+<p style="position:absolute;top:575px;left:603px;white-space:nowrap" class="ft181">Subdivision&#160;Name&#160;</p>
+<p style="position:absolute;top:618px;left:100px;white-space:nowrap" class="ft181">11&#160;Country&#160;</p>
+<p style="position:absolute;top:618px;left:227px;white-space:nowrap" class="ft181">Code&#160;</p>
+<p style="position:absolute;top:640px;left:603px;white-space:nowrap" class="ft181">Country&#160;Name&#160;</p>
+<p style="position:absolute;top:662px;left:100px;white-space:nowrap" class="ft181">12&#160;Country&#160;</p>
+<p style="position:absolute;top:662px;left:227px;white-space:nowrap" class="ft181">Name&#160;</p>
+<p style="position:absolute;top:706px;left:100px;white-space:nowrap" class="ft181">13&#160;</p>
+<p style="position:absolute;top:706px;left:171px;white-space:nowrap" class="ft181">Postal Code&#160;</p>
+<p style="position:absolute;top:706px;left:603px;white-space:nowrap" class="ft181">Postal Code&#160;</p>
+<p style="position:absolute;top:742px;left:54px;white-space:nowrap" class="ft182"><b>&#160;</b></p>
+<p style="position:absolute;top:777px;left:81px;white-space:nowrap" class="ft181">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft190{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft191{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft192{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft193{font-size:13px;font-family:Arial;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft194{font-size:13px;line-height:26px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft195{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page19-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0019.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft190">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft191">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft191">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft191">Page 19 of 21</p>
+<p style="position:absolute;top:96px;left:54px;white-space:nowrap" class="ft194"><b>Structure&#160;and&#160;specific requirements&#160;of&#160;file type&#160;“Complete Reference&#160;Data”&#160;<br/>Table&#160;5:&#160;Columns&#160;in file type&#160;“Complete Reference&#160;Data”&#160;</b></p>
+<p style="position:absolute;top:167px;left:73px;white-space:nowrap" class="ft192"><b>#&#160;</b></p>
+<p style="position:absolute;top:167px;left:176px;white-space:nowrap" class="ft192"><b>COLUMN&#160;NAME&#160;</b></p>
+<p style="position:absolute;top:158px;left:393px;white-space:nowrap" class="ft192"><b>MAPS&#160;TO FIELD NAME IN MEMBER&#160;</b></p>
+<p style="position:absolute;top:175px;left:449px;white-space:nowrap" class="ft192"><b>PROFILE&#160;SCREENS&#160;</b></p>
+<p style="position:absolute;top:167px;left:857px;white-space:nowrap" class="ft192"><b>COMMENTS&#160;</b></p>
+<p style="position:absolute;top:228px;left:73px;white-space:nowrap" class="ft191">1 Serial&#160;</p>
+<p style="position:absolute;top:228px;left:152px;white-space:nowrap" class="ft191">No.&#160;</p>
+<p style="position:absolute;top:228px;left:373px;white-space:nowrap" class="ft193"><i>Not applicable&#160;</i></p>
+<p style="position:absolute;top:202px;left:684px;white-space:nowrap" class="ft195">1.&#160;&#160;A running&#160;serial number printed to the file&#160;<br/>2.&#160;&#160;Will be 1 for the first row printed after the&#160;header row/record&#160;&#160;<br/>3.&#160;&#160;Will be incremented by 1 for every subsequent row/record &#160;<br/>4.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:285px;left:73px;white-space:nowrap" class="ft191">2 Participant&#160;</p>
+<p style="position:absolute;top:285px;left:185px;white-space:nowrap" class="ft191">Code&#160;</p>
+<p style="position:absolute;top:276px;left:373px;white-space:nowrap" class="ft195">Member&#160;Prefix (Accounting Code&#160;or&#160;<br/>Numeric Code)&#160;</p>
+<p style="position:absolute;top:285px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:329px;left:73px;white-space:nowrap" class="ft191">3&#160;</p>
+<p style="position:absolute;top:329px;left:110px;white-space:nowrap" class="ft191">Location Id&#160;</p>
+<p style="position:absolute;top:329px;left:373px;white-space:nowrap" class="ft191">Location ID&#160;</p>
+<p style="position:absolute;top:329px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:373px;left:73px;white-space:nowrap" class="ft191">4&#160;</p>
+<p style="position:absolute;top:373px;left:110px;white-space:nowrap" class="ft191">Active&#160;</p>
+<p style="position:absolute;top:373px;left:373px;white-space:nowrap" class="ft191">Active&#160;</p>
+<p style="position:absolute;top:373px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:417px;left:73px;white-space:nowrap" class="ft191">5&#160;</p>
+<p style="position:absolute;top:417px;left:110px;white-space:nowrap" class="ft191">Member&#160;Legal Name&#160;</p>
+<p style="position:absolute;top:417px;left:373px;white-space:nowrap" class="ft191">Member&#160;Legal Name&#160;</p>
+<p style="position:absolute;top:417px;left:683px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:461px;left:73px;white-space:nowrap" class="ft191">6&#160;</p>
+<p style="position:absolute;top:461px;left:110px;white-space:nowrap" class="ft191">Tax Vat Registration Id&#160;</p>
+<p style="position:absolute;top:461px;left:373px;white-space:nowrap" class="ft191">Tax/VAT Registration #&#160;</p>
+<p style="position:absolute;top:461px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;an optional field&#160;</p>
+<p style="position:absolute;top:505px;left:73px;white-space:nowrap" class="ft191">7&#160;</p>
+<p style="position:absolute;top:505px;left:110px;white-space:nowrap" class="ft191">Additional Tax Vat Registration Id&#160;</p>
+<p style="position:absolute;top:505px;left:373px;white-space:nowrap" class="ft191">Add. Tax/VAT Registration&#160;#&#160;</p>
+<p style="position:absolute;top:505px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;an optional field&#160;</p>
+<p style="position:absolute;top:548px;left:73px;white-space:nowrap" class="ft191">8&#160;</p>
+<p style="position:absolute;top:548px;left:110px;white-space:nowrap" class="ft191">Company Registration Id&#160;</p>
+<p style="position:absolute;top:548px;left:373px;white-space:nowrap" class="ft191">Company Registration&#160;ID&#160;</p>
+<p style="position:absolute;top:548px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;an optional field&#160;</p>
+<p style="position:absolute;top:592px;left:73px;white-space:nowrap" class="ft191">9&#160;</p>
+<p style="position:absolute;top:592px;left:110px;white-space:nowrap" class="ft191">Address Line1&#160;</p>
+<p style="position:absolute;top:592px;left:373px;white-space:nowrap" class="ft191">Address Line1&#160;</p>
+<p style="position:absolute;top:592px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:636px;left:69px;white-space:nowrap" class="ft191">10&#160;</p>
+<p style="position:absolute;top:636px;left:110px;white-space:nowrap" class="ft191">Address Line2&#160;</p>
+<p style="position:absolute;top:636px;left:373px;white-space:nowrap" class="ft191">Address Line2&#160;</p>
+<p style="position:absolute;top:636px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;an optional field&#160;</p>
+<p style="position:absolute;top:680px;left:69px;white-space:nowrap" class="ft191">11&#160;</p>
+<p style="position:absolute;top:680px;left:110px;white-space:nowrap" class="ft191">Address Line3&#160;</p>
+<p style="position:absolute;top:680px;left:373px;white-space:nowrap" class="ft191">Address Line3&#160;</p>
+<p style="position:absolute;top:680px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;an optional field&#160;</p>
+<p style="position:absolute;top:724px;left:69px;white-space:nowrap" class="ft191">12&#160;</p>
+<p style="position:absolute;top:724px;left:110px;white-space:nowrap" class="ft191">City Name&#160;</p>
+<p style="position:absolute;top:724px;left:373px;white-space:nowrap" class="ft191">City Name&#160;</p>
+<p style="position:absolute;top:724px;left:684px;white-space:nowrap" class="ft191">1.&#160;&#160;This is&#160;a mandatory field&#160;</p>
+<p style="position:absolute;top:772px;left:69px;white-space:nowrap" class="ft191">13&#160;Subdivision&#160;</p>
+<p style="position:absolute;top:772px;left:191px;white-space:nowrap" class="ft191">Code&#160;</p>
+<p style="position:absolute;top:773px;left:373px;white-space:nowrap" class="ft193"><i>Not applicable</i></p>
+<p style="position:absolute;top:773px;left:468px;white-space:nowrap" class="ft191">&#160;</p>
+<p style="position:absolute;top:755px;left:684px;white-space:nowrap" class="ft195">1.&#160;&#160;This field is not visible in IS-WEB &#160;<br/>2.&#160;&#160;This is&#160;an optional field&#160;<br/>3.&#160;&#160;This is included as it exists&#160;in report ‘Invoice&#160;Reference Data’&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft200{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft201{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft202{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page20-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0020.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft200">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft201">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft201">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft201">Page 20 of 21</p>
+<p style="position:absolute;top:100px;left:73px;white-space:nowrap" class="ft202"><b>#&#160;</b></p>
+<p style="position:absolute;top:100px;left:176px;white-space:nowrap" class="ft202"><b>COLUMN&#160;NAME&#160;</b></p>
+<p style="position:absolute;top:91px;left:393px;white-space:nowrap" class="ft202"><b>MAPS&#160;TO FIELD NAME IN MEMBER&#160;</b></p>
+<p style="position:absolute;top:109px;left:449px;white-space:nowrap" class="ft202"><b>PROFILE&#160;SCREENS&#160;</b></p>
+<p style="position:absolute;top:100px;left:857px;white-space:nowrap" class="ft202"><b>COMMENTS&#160;</b></p>
+<p style="position:absolute;top:148px;left:69px;white-space:nowrap" class="ft201">14&#160;</p>
+<p style="position:absolute;top:148px;left:110px;white-space:nowrap" class="ft201">Subdivision&#160;Name&#160;</p>
+<p style="position:absolute;top:148px;left:373px;white-space:nowrap" class="ft201">Subdivision&#160;Name&#160;</p>
+<p style="position:absolute;top:148px;left:684px;white-space:nowrap" class="ft201">1.&#160;&#160;This is&#160;an optional field&#160;</p>
+<p style="position:absolute;top:192px;left:69px;white-space:nowrap" class="ft201">15&#160;Country&#160;</p>
+<p style="position:absolute;top:192px;left:167px;white-space:nowrap" class="ft201">Code&#160;</p>
+<p style="position:absolute;top:214px;left:373px;white-space:nowrap" class="ft201">Country Name&#160;</p>
+<p style="position:absolute;top:214px;left:684px;white-space:nowrap" class="ft201">1.&#160;&#160;These are mandatory fields&#160;</p>
+<p style="position:absolute;top:236px;left:69px;white-space:nowrap" class="ft201">16&#160;Country&#160;</p>
+<p style="position:absolute;top:236px;left:167px;white-space:nowrap" class="ft201">Name&#160;</p>
+<p style="position:absolute;top:280px;left:69px;white-space:nowrap" class="ft201">17&#160;</p>
+<p style="position:absolute;top:280px;left:110px;white-space:nowrap" class="ft201">Postal Code&#160;</p>
+<p style="position:absolute;top:280px;left:373px;white-space:nowrap" class="ft201">Postal Code&#160;</p>
+<p style="position:absolute;top:280px;left:684px;white-space:nowrap" class="ft201">1.&#160;&#160;This is&#160;an optional field&#160;</p>
+<p style="position:absolute;top:320px;left:54px;white-space:nowrap" class="ft201">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./services/finance/sis/Documents/IATA SIS Major Release  1 5 Communication v 1 0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft210{font-size:11px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft211{font-size:13px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft212{font-size:13px;font-family:IJLFXY+Arial,Bold;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft213{font-size:10px;font-family:Tahoma;color:#000000;-moz-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-webkit-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-o-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-ms-transform: matrix(         0,         -1, 0.9988364624,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+	.ft214{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;-moz-transform: matrix(         0,         -1,          1,          0, 0, 0);-webkit-transform: matrix(         0,         -1,          1,          0, 0, 0);-o-transform: matrix(         0,         -1,          1,          0, 0, 0);-ms-transform: matrix(         0,         -1,          1,          0, 0, 0);-moz-transform-origin: left 75%;-webkit-transform-origin: left 75%;-o-transform-origin: left 75%;-ms-transform-origin: left 75%;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page21-div" style="position:relative;width:1188px;height:918px;">
+<img width="1188" height="918" src="IATA SIS Major Release  1 5 Communication v 1 0021.png" alt="background image"/>
+<p style="position:absolute;top:66px;left:54px;white-space:nowrap" class="ft210">&#160;</p>
+<p style="position:absolute;top:850px;left:54px;white-space:nowrap" class="ft211">IATA SIS Major Release &#160;1&#160;5 Communication v 1 0.doc&#160;</p>
+<p style="position:absolute;top:850px;left:702px;white-space:nowrap" class="ft211">&#160;</p>
+<p style="position:absolute;top:859px;left:1041px;white-space:nowrap" class="ft211">Page 21 of 21</p>
+<p style="position:absolute;top:87px;left:54px;white-space:nowrap" class="ft212"><b>Structure&#160;and&#160;specific requirements&#160;of&#160;file&#160;type&#160;“Complete Contacts&#160;Data”&#160;</b></p>
+<p style="position:absolute;top:118px;left:54px;white-space:nowrap" class="ft214">The structure&#160;and contents of this file will be identical to the Contact&#160;Details&#160;CSV&#160;file offered for download by&#160;the system in&#160;the IS-WEB Member and&#160;Contact&#160;<br/>Report, when:&#160;</p>
+<p style="position:absolute;top:166px;left:54px;white-space:nowrap" class="ft211">1.&#160;&#160;No filter criteria have been defined anywhere, i.e.:&#160;</p>
+<p style="position:absolute;top:196px;left:81px;white-space:nowrap" class="ft211">a.&#160;&#160;Member&#160;Name&#160;is not defined&#160;</p>
+<p style="position:absolute;top:227px;left:81px;white-space:nowrap" class="ft211">b.&#160;&#160;Country is not defined&#160;</p>
+<p style="position:absolute;top:258px;left:81px;white-space:nowrap" class="ft211">c.&#160;&#160;ACH Members or ICH Members,&#160;Dual Members, Non-CH Members, IATA Members are unchecked&#160;</p>
+<p style="position:absolute;top:289px;left:81px;white-space:nowrap" class="ft211">d.&#160;&#160;Contact Name&#160;is not defined&#160;</p>
+<p style="position:absolute;top:319px;left:81px;white-space:nowrap" class="ft211">e.&#160;&#160;Email is not defined&#160;&#160;</p>
+<p style="position:absolute;top:350px;left:54px;white-space:nowrap" class="ft211">2.&#160;&#160;Tabular&#160;Format is chosen&#160;as the Report Display Option&#160;</p>
+<p style="position:absolute;top:381px;left:54px;white-space:nowrap" class="ft211">3.&#160;&#160;All ‘Available Fields’ have been&#160;selected/moved into ‘Selected Fields’&#160;</p>
+<p style="position:absolute;top:412px;left:54px;white-space:nowrap" class="ft211">4.&#160;&#160;No sort criteria&#160;have been defined&#160;</p>
+<p style="position:absolute;top:478px;left:68px;white-space:nowrap" class="ft213"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Sample_Contacts_File.xlsx">Sample&#160;contacts&#160;</a></p>
+<p style="position:absolute;top:492px;left:90px;white-space:nowrap" class="ft213"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Sample_Contacts_File.xlsx">file.xlsx</a></p>
+<p style="position:absolute;top:503px;left:169px;white-space:nowrap" class="ft211"><a href="http://iata.org/services/finance/sis/Documents/Additional Items/Sample_Contacts_File.xlsx">&#160;</a></p>
+</div>
+</body>
+</html>
