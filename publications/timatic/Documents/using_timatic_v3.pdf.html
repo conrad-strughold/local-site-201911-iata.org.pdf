@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft11{font-size:31px;font-family:Arial;color:#000000;}
+	.ft12{font-size:22px;font-family:Arial;color:#000000;}
+	.ft13{font-size:31px;font-family:Arial;color:#000000;}
+	.ft14{font-size:14px;font-family:Arial;color:#000000;}
+	.ft15{font-size:14px;font-family:Arial;color:#000000;}
+	.ft16{font-size:14px;font-family:Arial;color:#ff0000;}
+	.ft17{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft18{font-size:14px;line-height:19px;font-family:Arial;color:#000000;}
+	.ft19{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page1-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3001.png" alt="background image"/>
+<p style="position:absolute;top:167px;left:516px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:184px;left:135px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:208px;left:459px;white-space:nowrap" class="ft11"><b>&#160;</b></p>
+<p style="position:absolute;top:243px;left:206px;white-space:nowrap" class="ft12"><b>Using the Timatic CLI Mainframe application&#160;</b></p>
+<p style="position:absolute;top:273px;left:459px;white-space:nowrap" class="ft13">&#160;</p>
+<p style="position:absolute;top:307px;left:135px;white-space:nowrap" class="ft19">The purpose of this document is to explain to users the latest Timatic software&#160;<br/>development and Timatic structure.&#160;<br/>&#160;<br/>Timatic has been redeveloped to ensure the consistency making it easier for check-in&#160;<br/>agents understand the&#160;responses given as the relevant information will always be&#160;<br/>displayed in&#160;the same order and place.&#160;<br/>&#160;<br/>Newly introduced commands are described further in this document.&#160;<br/>&#160;<br/><b>Contents&#160;<br/></b>&#160;</p>
+<p style="position:absolute;top:517px;left:135px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:537px;left:135px;white-space:nowrap" class="ft17">Timatic structure................................................................................................................&#160;2&#160;<br/>&#160;Full Text structure&#160;............................................................................................................&#160;3&#160;</p>
+<p style="position:absolute;top:575px;left:151px;white-space:nowrap" class="ft14">Example - Timatic Full Text response:&#160;..........................................................................&#160;4</p>
+<p style="position:absolute;top:574px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:594px;left:135px;white-space:nowrap" class="ft14">Specific Database structure&#160;..............................................................................................&#160;5</p>
+<p style="position:absolute;top:593px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:613px;left:151px;white-space:nowrap" class="ft14">Visa information.............................................................................................................&#160;6</p>
+<p style="position:absolute;top:612px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:632px;left:151px;white-space:nowrap" class="ft14">Departure Warning&#160;........................................................................................................&#160;7</p>
+<p style="position:absolute;top:631px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:651px;left:151px;white-space:nowrap" class="ft14">Examples of TIMATIC Specific Database responses....................................................&#160;8</p>
+<p style="position:absolute;top:650px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:670px;left:151px;white-space:nowrap" class="ft14">Health information&#160;.......................................................................................................&#160;10</p>
+<p style="position:absolute;top:669px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:689px;left:151px;white-space:nowrap" class="ft14">Example - TIMATIC&#160;Health response:.........................................................................&#160;10</p>
+<p style="position:absolute;top:688px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:708px;left:135px;white-space:nowrap" class="ft14">Miscellaneous queries.....................................................................................................&#160;11</p>
+<p style="position:absolute;top:707px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:727px;left:151px;white-space:nowrap" class="ft14">TIRULES: Timatic Rules..............................................................................................&#160;11</p>
+<p style="position:absolute;top:726px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:745px;left:151px;white-space:nowrap" class="ft14">TIRGL: Timatic Groups................................................................................................&#160;13</p>
+<p style="position:absolute;top:745px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:764px;left:135px;white-space:nowrap" class="ft14">Links: Improved in TIMATIC Specific Database&#160;.............................................................&#160;14</p>
+<p style="position:absolute;top:764px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:783px;left:135px;white-space:nowrap" class="ft16">NEW:&#160;</p>
+<p style="position:absolute;top:783px;left:183px;white-space:nowrap" class="ft14">TIBACK Command&#160;...............................................................................................&#160;15</p>
+<p style="position:absolute;top:783px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:802px;left:135px;white-space:nowrap" class="ft14">Appendix 1 Passport section format&#160;...............................................................................&#160;16</p>
+<p style="position:absolute;top:802px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:821px;left:135px;white-space:nowrap" class="ft14">Appendix 2 Visa section&#160;format.......................................................................................&#160;17</p>
+<p style="position:absolute;top:821px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:840px;left:135px;white-space:nowrap" class="ft14">Appendix 3 TIBACK Example 1&#160;......................................................................................&#160;18</p>
+<p style="position:absolute;top:840px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:859px;left:151px;white-space:nowrap" class="ft14">TIBACK Example 2......................................................................................................&#160;19</p>
+<p style="position:absolute;top:859px;left:782px;white-space:nowrap" class="ft10">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft20{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft21{font-size:14px;font-family:Arial;color:#000000;}
+	.ft22{font-size:11px;font-family:Arial;color:#000000;}
+	.ft23{font-size:18px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft24{font-size:14px;font-family:Arial;color:#000000;}
+	.ft25{font-size:16px;font-family:Arial;color:#000000;}
+	.ft26{font-size:13px;font-family:Arial;color:#000000;}
+	.ft27{font-size:14px;font-family:EADNFI+Wingdings;color:#000000;}
+	.ft28{font-size:14px;font-family:Arial;color:#0000ff;}
+	.ft29{font-size:31px;font-family:Arial;color:#000000;}
+	.ft210{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft211{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft212{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft213{font-size:31px;line-height:37px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page2-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3002.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft20">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft210">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft21">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft22">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 2&#160;&#160;&#160;</p>
+<p style="position:absolute;top:137px;left:459px;white-space:nowrap" class="ft23"><b>&#160;</b></p>
+<p style="position:absolute;top:160px;left:459px;white-space:nowrap" class="ft211"><b>&#160;<br/>&#160;<br/>&#160;<br/>&#160;</b></p>
+<p style="position:absolute;top:236px;left:392px;white-space:nowrap" class="ft24"><b>Timatic structure&#160;</b></p>
+<p style="position:absolute;top:255px;left:459px;white-space:nowrap" class="ft25"><b>&#160;</b></p>
+<p style="position:absolute;top:275px;left:135px;white-space:nowrap" class="ft26"><b>Basic Principles&#160;</b></p>
+<p style="position:absolute;top:293px;left:135px;white-space:nowrap" class="ft212">&#160;<br/>The information contained in the Timatic database is retrievable by query response&#160;<br/>transactions. Three types of queries&#160;are possible:&#160;</p>
+<p style="position:absolute;top:347px;left:162px;white-space:nowrap" class="ft27"></p>
+<p style="position:absolute;top:350px;left:170px;white-space:nowrap" class="ft21">&#160;Full&#160;</p>
+<p style="position:absolute;top:350px;left:220px;white-space:nowrap" class="ft21">Text&#160;</p>
+<p style="position:absolute;top:366px;left:162px;white-space:nowrap" class="ft27"></p>
+<p style="position:absolute;top:369px;left:170px;white-space:nowrap" class="ft21">&#160;Specific&#160;</p>
+<p style="position:absolute;top:369px;left:251px;white-space:nowrap" class="ft21">Database&#160;</p>
+<p style="position:absolute;top:384px;left:162px;white-space:nowrap" class="ft27"></p>
+<p style="position:absolute;top:387px;left:170px;white-space:nowrap" class="ft21">&#160;Miscellaneous&#160;</p>
+<p style="position:absolute;top:406px;left:135px;white-space:nowrap" class="ft212">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:444px;left:135px;white-space:nowrap" class="ft26"><b>Full Text</b></p>
+<p style="position:absolute;top:443px;left:197px;white-space:nowrap" class="ft24"><b>&#160;&#160;</b></p>
+<p style="position:absolute;top:462px;left:135px;white-space:nowrap" class="ft20">&#160;</p>
+<p style="position:absolute;top:482px;left:135px;white-space:nowrap" class="ft212">A Full Text query returns a complete, up-to-date display of&#160;the topic requested. This&#160;<br/>topic may be defined by country and section and/or subsection (see&#160;</p>
+<p style="position:absolute;top:501px;left:633px;white-space:nowrap" class="ft28"><i>Full Text&#160;structure</i></p>
+<p style="position:absolute;top:501px;left:765px;white-space:nowrap" class="ft21">).&#160;</p>
+<p style="position:absolute;top:520px;left:135px;white-space:nowrap" class="ft212">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:558px;left:135px;white-space:nowrap" class="ft26"><b>Specific Database</b></p>
+<p style="position:absolute;top:557px;left:263px;white-space:nowrap" class="ft24"><b>&#160;&#160;</b></p>
+<p style="position:absolute;top:576px;left:135px;white-space:nowrap" class="ft20">&#160;</p>
+<p style="position:absolute;top:596px;left:135px;white-space:nowrap" class="ft212">A Specific Database query returns a tailor-made response to&#160;an itinerary-specific query,&#160;<br/>based on passenger’s&#160;nationality, transit, destination and embarkation points, and&#160;<br/>country (ies) visited in the past 6 days. Health information is part of the Specific&#160;<br/>Database (see&#160;</p>
+<p style="position:absolute;top:653px;left:247px;white-space:nowrap" class="ft28"><i>Specific Database&#160;structure</i></p>
+<p style="position:absolute;top:653px;left:449px;white-space:nowrap" class="ft21">).&#160;</p>
+<p style="position:absolute;top:672px;left:135px;white-space:nowrap" class="ft212">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:710px;left:135px;white-space:nowrap" class="ft26"><b>Miscellaneous</b></p>
+<p style="position:absolute;top:709px;left:238px;white-space:nowrap" class="ft24"><b>&#160;&#160;</b></p>
+<p style="position:absolute;top:728px;left:135px;white-space:nowrap" class="ft20">&#160;</p>
+<p style="position:absolute;top:748px;left:135px;white-space:nowrap" class="ft212">There are also miscellaneous queries comprising&#160;of News, Rules (&#34;Terms &amp;&#160;<br/>Definitions&#34;), Group lists and City/Country code tables.&#160;</p>
+<p style="position:absolute;top:790px;left:459px;white-space:nowrap" class="ft213">&#160;<br/>&#160;<br/>&#160;</p>
+<p style="position:absolute;top:900px;left:135px;white-space:nowrap" class="ft212">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:941px;left:459px;white-space:nowrap" class="ft213">&#160;<br/>&#160;<br/>&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft30{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft31{font-size:14px;font-family:Arial;color:#000000;}
+	.ft32{font-size:11px;font-family:Arial;color:#000000;}
+	.ft33{font-size:14px;font-family:Arial;color:#000000;}
+	.ft34{font-size:13px;font-family:Arial;color:#000000;}
+	.ft35{font-size:13px;font-family:Arial;color:#000000;}
+	.ft36{font-size:13px;font-family:Arial;color:#ff0000;}
+	.ft37{font-size:7px;font-family:Arial;color:#000000;}
+	.ft38{font-size:14px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft39{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft310{font-size:13px;line-height:17px;font-family:Arial;color:#000000;}
+	.ft311{font-size:13px;line-height:18px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page3-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3003.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft30">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft39">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft31">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft32">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 3&#160;&#160;&#160;</p>
+<p style="position:absolute;top:131px;left:387px;white-space:nowrap" class="ft33"><b>Full Text structure&#160;</b></p>
+<p style="position:absolute;top:149px;left:135px;white-space:nowrap" class="ft311">&#160;<br/>Each country listing consists of&#160;seven sections, some of which&#160;have sub-sections. There&#160;are&#160;<br/>minor changes (such as to the&#160;ordering of sub-sections) compared with Timatic.The Full Text&#160;<br/>responses are returned&#160;for&#160;<b>TIDFT&#160;</b>commands, or via the Menu/Keywords.&#160;<br/>Two subsections were removed from the Visa (VI)&#160;section: Re-Entry Permit&#160;(<b>RP</b>) and Exit&#160;<br/>Permit (<b>EP</b>).The newly&#160;added access codes for subsections appear in&#160;<b>bold&#160;</b></p>
+<p style="position:absolute;top:239px;left:663px;white-space:nowrap" class="ft36"><b>red</b></p>
+<p style="position:absolute;top:239px;left:687px;white-space:nowrap" class="ft34">&#160;below.&#160;</p>
+<p style="position:absolute;top:257px;left:135px;white-space:nowrap" class="ft34">The sections and subsections&#160;are (section and subsection&#160;codes appear in brackets):&#160;</p>
+<p style="position:absolute;top:274px;left:135px;white-space:nowrap" class="ft37">&#160;</p>
+<p style="position:absolute;top:285px;left:162px;white-space:nowrap" class="ft310">1.&#160;&#160;Geographical&#160;information (GE)&#160;<br/>2. Passport&#160;</p>
+<p style="position:absolute;top:302px;left:252px;white-space:nowrap" class="ft34">(PA)&#160;</p>
+<p style="position:absolute;top:320px;left:216px;white-space:nowrap" class="ft310">a.&#160;&#160;Passport Exemptions: (PT)&#160;<br/>b.&#160;&#160;Document Validity: (VA)&#160;<br/>c.&#160;&#160;Admission and&#160;Transit&#160;Restrictions:&#160;(RE)&#160;<br/>d.&#160;&#160;Crew&#160;Members:&#160;(CR)&#160;<br/>e. Military:&#160;</p>
+<p style="position:absolute;top:389px;left:299px;white-space:nowrap" class="ft34">(ML)&#160;</p>
+<p style="position:absolute;top:406px;left:216px;white-space:nowrap" class="ft34">f.&#160;</p>
+<p style="position:absolute;top:406px;left:243px;white-space:nowrap" class="ft34">Additional Information: (AI)&#160;</p>
+<p style="position:absolute;top:423px;left:216px;white-space:nowrap" class="ft34">g. Minors:&#160;</p>
+<p style="position:absolute;top:423px;left:296px;white-space:nowrap" class="ft34">(MI)&#160;</p>
+<p style="position:absolute;top:441px;left:216px;white-space:nowrap" class="ft34">h. Warning:&#160;</p>
+<p style="position:absolute;top:441px;left:307px;white-space:nowrap" class="ft34">(WA)&#160;</p>
+<p style="position:absolute;top:458px;left:216px;white-space:nowrap" class="ft34">i. Notes:&#160;</p>
+<p style="position:absolute;top:458px;left:291px;white-space:nowrap" class="ft34">(NO)&#160;</p>
+<p style="position:absolute;top:475px;left:162px;white-space:nowrap" class="ft34">3. Visa&#160;</p>
+<p style="position:absolute;top:475px;left:222px;white-space:nowrap" class="ft34">(VI)&#160;</p>
+<p style="position:absolute;top:492px;left:216px;white-space:nowrap" class="ft310">a.&#160;&#160;Visa Exemptions: (VS)&#160;<br/>b.&#160;&#160;TWOV (Transit Without Visa): (TW)&#160;<br/>c.&#160;&#160;Merchant Seamen: (SE)&#160;<br/>d.&#160;&#160;Crew&#160;Members:&#160;(CR)&#160;<br/>e. Military:&#160;</p>
+<p style="position:absolute;top:561px;left:299px;white-space:nowrap" class="ft34">(ML)&#160;</p>
+<p style="position:absolute;top:579px;left:216px;white-space:nowrap" class="ft34">f.&#160;</p>
+<p style="position:absolute;top:579px;left:243px;white-space:nowrap" class="ft34">Visa&#160;Issuance: (IS)&#160;</p>
+<p style="position:absolute;top:596px;left:216px;white-space:nowrap" class="ft310">g.&#160;&#160;Additional Information: (AI)&#160;<br/>h. Minors:&#160;</p>
+<p style="position:absolute;top:613px;left:296px;white-space:nowrap" class="ft34">(MI)&#160;</p>
+<p style="position:absolute;top:630px;left:216px;white-space:nowrap" class="ft34">i.&#160;</p>
+<p style="position:absolute;top:630px;left:243px;white-space:nowrap" class="ft34">Compulsory&#160;Currency Exchange: (CO)&#160;</p>
+<p style="position:absolute;top:647px;left:216px;white-space:nowrap" class="ft34">j. Warning:&#160;</p>
+<p style="position:absolute;top:647px;left:307px;white-space:nowrap" class="ft34">(WA)&#160;</p>
+<p style="position:absolute;top:665px;left:216px;white-space:nowrap" class="ft34">k.&#160;Notes:&#160;</p>
+<p style="position:absolute;top:665px;left:291px;white-space:nowrap" class="ft34">(NO)&#160;</p>
+<p style="position:absolute;top:682px;left:162px;white-space:nowrap" class="ft34">4. Health&#160;</p>
+<p style="position:absolute;top:682px;left:237px;white-space:nowrap" class="ft34">(HE)&#160;</p>
+<p style="position:absolute;top:699px;left:216px;white-space:nowrap" class="ft34">a.&#160;&#160;Exempt from Yellow Fever vaccination: (</p>
+<p style="position:absolute;top:699px;left:511px;white-space:nowrap" class="ft36"><b>EM</b></p>
+<p style="position:absolute;top:699px;left:534px;white-space:nowrap" class="ft34">)&#160;</p>
+<p style="position:absolute;top:716px;left:216px;white-space:nowrap" class="ft34">b. Recommended:&#160;</p>
+<p style="position:absolute;top:716px;left:353px;white-space:nowrap" class="ft34">(</p>
+<p style="position:absolute;top:716px;left:358px;white-space:nowrap" class="ft36"><b>RC</b></p>
+<p style="position:absolute;top:716px;left:380px;white-space:nowrap" class="ft34">)&#160;</p>
+<p style="position:absolute;top:734px;left:216px;white-space:nowrap" class="ft34">c. Warning:&#160;</p>
+<p style="position:absolute;top:734px;left:307px;white-space:nowrap" class="ft34">(</p>
+<p style="position:absolute;top:734px;left:312px;white-space:nowrap" class="ft36"><b>WA</b></p>
+<p style="position:absolute;top:734px;left:337px;white-space:nowrap" class="ft35"><b>)</b>&#160;</p>
+<p style="position:absolute;top:751px;left:216px;white-space:nowrap" class="ft34">d. Notes:&#160;</p>
+<p style="position:absolute;top:751px;left:291px;white-space:nowrap" class="ft34">(</p>
+<p style="position:absolute;top:751px;left:296px;white-space:nowrap" class="ft36"><b>NO</b></p>
+<p style="position:absolute;top:751px;left:318px;white-space:nowrap" class="ft34">)&#160;</p>
+<p style="position:absolute;top:768px;left:162px;white-space:nowrap" class="ft34">5. Tax&#160;</p>
+<p style="position:absolute;top:768px;left:218px;white-space:nowrap" class="ft34">(TX)&#160;</p>
+<p style="position:absolute;top:786px;left:162px;white-space:nowrap" class="ft34">6. Customs&#160;</p>
+<p style="position:absolute;top:786px;left:252px;white-space:nowrap" class="ft34">(CS)&#160;</p>
+<p style="position:absolute;top:803px;left:216px;white-space:nowrap" class="ft34">a. Import:&#160;</p>
+<p style="position:absolute;top:803px;left:294px;white-space:nowrap" class="ft34">(IM)&#160;</p>
+<p style="position:absolute;top:820px;left:216px;white-space:nowrap" class="ft34">b.&#160;&#160;Arms and Ammunition: (</p>
+<p style="position:absolute;top:820px;left:404px;white-space:nowrap" class="ft36"><b>AA</b></p>
+<p style="position:absolute;top:820px;left:426px;white-space:nowrap" class="ft34">)&#160;</p>
+<p style="position:absolute;top:837px;left:216px;white-space:nowrap" class="ft34">c.&#160;&#160;Wild Fauna and Flora: (</p>
+<p style="position:absolute;top:837px;left:400px;white-space:nowrap" class="ft36"><b>WF</b></p>
+<p style="position:absolute;top:837px;left:423px;white-space:nowrap" class="ft34">)&#160;</p>
+<p style="position:absolute;top:854px;left:216px;white-space:nowrap" class="ft34">d.&#160;&#160;Additional Information: (</p>
+<p style="position:absolute;top:854px;left:401px;white-space:nowrap" class="ft36"><b>AI</b></p>
+<p style="position:absolute;top:854px;left:417px;white-space:nowrap" class="ft34">)&#160;</p>
+<p style="position:absolute;top:872px;left:216px;white-space:nowrap" class="ft34">e. Export:&#160;</p>
+<p style="position:absolute;top:872px;left:295px;white-space:nowrap" class="ft34">(EX)&#160;</p>
+<p style="position:absolute;top:889px;left:216px;white-space:nowrap" class="ft34">f.&#160;</p>
+<p style="position:absolute;top:889px;left:243px;white-space:nowrap" class="ft34">Crew&#160;Members:&#160;(CR)&#160;</p>
+<p style="position:absolute;top:906px;left:216px;white-space:nowrap" class="ft34">g. Pets:&#160;</p>
+<p style="position:absolute;top:906px;left:281px;white-space:nowrap" class="ft34">(PE)&#160;</p>
+<p style="position:absolute;top:923px;left:216px;white-space:nowrap" class="ft310">h.&#160;&#160;Baggage Clearance: (BC)&#160;<br/>i. Exempt:&#160;</p>
+<p style="position:absolute;top:941px;left:302px;white-space:nowrap" class="ft34">(</p>
+<p style="position:absolute;top:941px;left:307px;white-space:nowrap" class="ft36"><b>EM</b></p>
+<p style="position:absolute;top:941px;left:330px;white-space:nowrap" class="ft34">)&#160;</p>
+<p style="position:absolute;top:958px;left:216px;white-space:nowrap" class="ft34">j. Notes:&#160;</p>
+<p style="position:absolute;top:958px;left:291px;white-space:nowrap" class="ft34">(NO)&#160;</p>
+<p style="position:absolute;top:975px;left:162px;white-space:nowrap" class="ft34">7. Currency&#160;</p>
+<p style="position:absolute;top:975px;left:254px;white-space:nowrap" class="ft34">(CY)&#160;</p>
+<p style="position:absolute;top:992px;left:216px;white-space:nowrap" class="ft34">a. Import:&#160;</p>
+<p style="position:absolute;top:992px;left:294px;white-space:nowrap" class="ft34">(IM)&#160;</p>
+<p style="position:absolute;top:1010px;left:216px;white-space:nowrap" class="ft34">b. Export:&#160;</p>
+<p style="position:absolute;top:1010px;left:295px;white-space:nowrap" class="ft34">(EX)&#160;</p>
+<p style="position:absolute;top:1027px;left:216px;white-space:nowrap" class="ft34">c.&#160;&#160;Notes:&#160;(NO)&#160;</p>
+<p style="position:absolute;top:1045px;left:135px;white-space:nowrap" class="ft33"><b>&#160;</b></p>
+<p style="position:absolute;top:1065px;left:135px;white-space:nowrap" class="ft38">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft40{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft41{font-size:14px;font-family:Arial;color:#000000;}
+	.ft42{font-size:11px;font-family:Arial;color:#000000;}
+	.ft43{font-size:14px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft44{font-size:14px;font-family:Arial;color:#000000;}
+	.ft45{font-size:11px;font-family:Arial;color:#000000;}
+	.ft46{font-size:11px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft47{font-size:11px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft48{font-size:11px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft49{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft410{font-size:14px;line-height:18px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft411{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft412{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft413{font-size:11px;line-height:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft414{font-size:11px;line-height:15px;font-family:TimesNewRomanPSMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page4-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3004.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft40">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft49">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft41">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft42">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 4&#160;&#160;&#160;</p>
+<p style="position:absolute;top:131px;left:135px;white-space:nowrap" class="ft410"><b>&#160;<br/>&#160;<br/>Example - Timatic Full Text response:</b></p>
+<p style="position:absolute;top:168px;left:406px;white-space:nowrap" class="ft44"><b>&#160;</b></p>
+<p style="position:absolute;top:187px;left:135px;white-space:nowrap" class="ft41">&#160;</p>
+<p style="position:absolute;top:206px;left:89px;white-space:nowrap" class="ft42">&#160;TIDFT/GB&#160;</p>
+<p style="position:absolute;top:206px;left:303px;white-space:nowrap" class="ft42">&#160;</p>
+<p style="position:absolute;top:221px;left:238px;white-space:nowrap" class="ft411">TIMATIC-3 / 17MAR08&#160;/ 1445 UTC&#160;<br/>ALL SECTIONS FULL TEXT&#160;FOR: UNITED&#160;KINGDOM (GREAT&#160;BRITAIN) (GB)&#160;<br/>&#160;<br/>GEOGRAPHICAL INFORMATION ********&#160;<br/>&#160;<br/>CAPITAL - LONDON (LON).&#160;<br/>&#160;<br/>PASSPORT&#160;********&#160;<br/>&#160;<br/>PASSPORT&#160;REQUIRED. &#160;<br/>&#160;<br/><b>PASSPORT EXEMPTIONS:&#160;<br/></b>- HOLDERS OF IDENTITY&#160;CARDS ISSUED BY&#160;THE GIBRALTAR&#160;<br/>&#160; AUTHORITIES&#160;TO&#160;&#34;BRITISH&#160;CITIZENS&#34;&#160;AND &#34;BRITISH&#160;OVERSEAS&#160;<br/>&#160;&#160;TERRITORIES&#160;CITIZENS&#34;.&#160;NOTE&#160;THAT&#160;THESE CARDS&#160;HAVE A RED&#160;<br/>&#160; STRIPE AND&#160;MAY BE VALID ON ARRIVAL.&#160;<br/>- HOLDERS OF NATIONAL ID&#160;CARDS ISSUED TO&#160;NATIONALS OF&#160;<br/>&#160; AUSTRIA, BELGIUM, BULGARIA, CYPRUS, CZECH REP., ESTONIA,&#160;<br/>&#160; FINLAND, FRANCE, GERMANY,&#160;GREECE, HUNGARY, ITALY, LATVIA,&#160;<br/>&#160; LIECHTENSTEIN, LITHUANIA,&#160;LUXEMBOURG, MALTA,&#160;MONACO,&#160;<br/>&#160; NETHERLANDS, POLAND,[…]&#160;<br/>- HOLDERS OF A &#34;LAISSEZ-PASSER&#34;,&#160;WHILST&#160;TRAVELLING ON DUTY,&#160;<br/>&#160; ISSUED BY:&#160;&#160;<br/>&#160;-&#160;THE UNITED NATIONS; &#160;<br/>&#160;-&#160;THE EUROPEAN UNION.&#160;<br/>[…]&#160;<br/>&#160;<br/><b>DOCUMENT VALIDITY:&#160;<br/></b>- PASSPORT&#160;AND/OR PASSPORT REPLACING DOCUMENTS&#160;MUST&#160;BE VALID&#160;<br/>&#160; FOR&#160;THE&#160;PERIOD OF&#160;INTENDED STAY.&#160;<br/>&#160;- EXPIRED BRITISH PASSPORT (NO&#160;TIME LIMIT)&#160;ENDORSED &#34;BRITISH&#160;<br/>&#160; &#160;CITIZEN&#34; IS&#160;ACCEPTED. […]&#160;<br/>&#160;<br/><b>ADMISSION&#160;AND TRANSIT RESTRICTIONS:&#160;<br/></b>- SINCE JULY 3, 2003, PASSPORTS&#160;ISSUED BY SOMALIA ARE NOT&#160;<br/>&#160; RECOGNISED, IRRESPECTIVE OF WHEN&#160;THEY&#160;WERE ISSUED.&#160;<br/>&#160;<b>&#160;(SEE NOTE&#160;29908)&#160;<br/></b>&#160; &#160;&#160;<b>NOTE&#160;29908:&#160;</b>THEY ARE&#160;ONLY PERMITTED ENTRY&#160;IF HOLDING A&#160;<br/>&#160; &#160;&#34;DECLARATION OF&#160;IDENTITY&#160;FOR VISA&#160;PURPOSES&#34; (ALSO KNOWN AS&#160;<br/>&#160; &#160;A &#34;FORM GV3&#34;), ISSUED BY&#160;A&#160;BRITISH CONSULATE OR&#160;HIGH&#160;<br/>&#160; &#160;COMMISSION. IT&#160;IS A SINGLE SHEET&#160;DOCUMENT&#160;SHOWING PHOTO AND&#160;<br/>&#160; &#160;PERSONAL DETAILS. AT&#160;THE BOTTOM&#160;OF&#160;THE&#160;FORM&#160;THERE IS SPACE&#160;<br/>&#160; &#160;FOR&#160;THE APPROPRIATE&#160;VISA.&#160;THIS&#160;FORM SHOULD&#160;BE USED FOR&#160;<br/>&#160; &#160;ENTRY&#160;TO/TRANSIT&#160;THROUGH THE UNITED KINGDOM.&#160;THE FORM MUST&#160;<br/>&#160; &#160;BE ENDORSED WITH&#160;A VALID VISA.&#160;<br/>- AS OF JANUARY 1, 2008 THE &#34;N&#34; SERIES PASSPORTS ISSUED BY&#160;<br/>&#160; IRAQ AS&#160;&#160;THESE WERE CANCELLED BY&#160;THE IRAQI&#160;GOVERNMENT AND&#160;<br/>&#160; ARE&#160;THEREFORE NO LONGER BE VALID FOR&#160;TRAVEL, REGARDLESS&#160;THE&#160;<br/>&#160; DATE&#160;OF&#160;ISSUE OR EXPIRY.&#160;<br/>&#160;<br/><b>CREW MEMBERS:&#160;<br/></b>- OPERATIONAL CREW: PASSPORT AND CREW MEMBER IDENTIFICATION&#160;<br/>&#160; CARD REQUIRED. […]&#160;</p>
+<p style="position:absolute;top:486px;left:65px;white-space:nowrap" class="ft46"><b>New:</b></p>
+<p style="position:absolute;top:486px;left:95px;white-space:nowrap" class="ft47">&#160;clear&#160;paragraph&#160;</p>
+<p style="position:absolute;top:501px;left:65px;white-space:nowrap" class="ft413">structure&#160;is&#160;preceded&#160;<br/>by&#160;Subsection&#160;</p>
+<p style="position:absolute;top:517px;left:145px;white-space:nowrap" class="ft46"><b>headers</b></p>
+<p style="position:absolute;top:517px;left:190px;white-space:nowrap" class="ft47">&#160;</p>
+<p style="position:absolute;top:795px;left:65px;white-space:nowrap" class="ft47">A new system of&#160;</p>
+<p style="position:absolute;top:795px;left:160px;white-space:nowrap" class="ft46"><b>Notes</b></p>
+<p style="position:absolute;top:795px;left:192px;white-space:nowrap" class="ft47">&#160;is&#160;</p>
+<p style="position:absolute;top:811px;left:65px;white-space:nowrap" class="ft414">introduced, showing the&#160;<br/>Note</p>
+<p style="position:absolute;top:826px;left:92px;white-space:nowrap" class="ft48"><i>&#160;right under</i></p>
+<p style="position:absolute;top:826px;left:175px;white-space:nowrap" class="ft47">&#160;the&#160;</p>
+<p style="position:absolute;top:842px;left:65px;white-space:nowrap" class="ft47">paragraph&#160;referencing&#160;it&#160;</p>
+<p style="position:absolute;top:666px;left:65px;white-space:nowrap" class="ft46"><b>New:</b></p>
+<p style="position:absolute;top:666px;left:95px;white-space:nowrap" class="ft47">&#160;paragraph&#160;</p>
+<p style="position:absolute;top:682px;left:65px;white-space:nowrap" class="ft414">indentation.&#160;Paragraphs&#160;<br/>are bulleted&#160;to&#160;aid clarity&#160;<br/>and to&#160;indicate&#160;separate&#160;<br/>information. Paragraph&#160;</p>
+<p style="position:absolute;top:744px;left:65px;white-space:nowrap" class="ft48"><i>numbering</i></p>
+<p style="position:absolute;top:744px;left:124px;white-space:nowrap" class="ft47">&#160;removed&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft50{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft51{font-size:14px;font-family:Arial;color:#000000;}
+	.ft52{font-size:11px;font-family:Arial;color:#000000;}
+	.ft53{font-size:14px;font-family:Arial;color:#000000;}
+	.ft54{font-size:16px;font-family:Arial;color:#000000;}
+	.ft55{font-size:14px;font-family:EADNFI+Wingdings;color:#000000;}
+	.ft56{font-size:14px;font-family:Arial;color:#0000ff;}
+	.ft57{font-size:16px;font-family:TimesNewRomanPS;color:#0000ff;}
+	.ft58{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft59{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft510{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft511{font-size:14px;line-height:19px;font-family:Arial;color:#000000;}
+	.ft512{font-size:14px;line-height:20px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page5-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3005.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft50">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft58">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft51">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft52">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 5&#160;&#160;&#160;</p>
+<p style="position:absolute;top:131px;left:135px;white-space:nowrap" class="ft53"><b>&#160;</b></p>
+<p style="position:absolute;top:150px;left:459px;white-space:nowrap" class="ft59"><b>&#160;<br/>&#160;</b></p>
+<p style="position:absolute;top:187px;left:350px;white-space:nowrap" class="ft53"><b>Specific Database structure&#160;</b></p>
+<p style="position:absolute;top:207px;left:135px;white-space:nowrap" class="ft54">&#160;</p>
+<p style="position:absolute;top:227px;left:135px;white-space:nowrap" class="ft510">Timatic returns responses&#160;for Specific Database&#160;queries in a&#160;standard format.&#160;<br/>&#160;<br/>The following&#160;describes&#160;the way Specific Database responses&#160;are constructed:&#160;<br/>&#160;<br/>-&#160;</p>
+<p style="position:absolute;top:303px;left:162px;white-space:nowrap" class="ft510">Specific Database responses are returned only for&#160;<b>TIRV</b>,&#160;<b>TIRA</b>&#160;and&#160;<b>TIRH</b>&#160;<br/>commands, or via the Menu (<b>TIFV</b>/<b>TIFA</b>).&#160;</p>
+<p style="position:absolute;top:341px;left:135px;white-space:nowrap" class="ft510">&#160;<br/>-&#160;</p>
+<p style="position:absolute;top:360px;left:162px;white-space:nowrap" class="ft510">Only the Passport, Visa&#160;and Health sections are&#160;included in&#160;the responses, which&#160;<br/>are always formatted as defined below. None of the other Sections or&#160;sub-sections is&#160;<br/>used.&#160;</p>
+<p style="position:absolute;top:414px;left:162px;white-space:nowrap" class="ft55"></p>
+<p style="position:absolute;top:417px;left:170px;white-space:nowrap" class="ft51">&#160;Passport&#160;</p>
+<p style="position:absolute;top:417px;left:259px;white-space:nowrap" class="ft51">information;&#160;</p>
+<p style="position:absolute;top:433px;left:162px;white-space:nowrap" class="ft55"></p>
+<p style="position:absolute;top:436px;left:170px;white-space:nowrap" class="ft51">&#160;Visa&#160;</p>
+<p style="position:absolute;top:436px;left:226px;white-space:nowrap" class="ft51">information;&#160;</p>
+<p style="position:absolute;top:452px;left:162px;white-space:nowrap" class="ft55"></p>
+<p style="position:absolute;top:455px;left:170px;white-space:nowrap" class="ft51">&#160;&#160;Health information - for requests including Health; (<b>TIRA/TIRH</b>&#160;commands).&#160;</p>
+<p style="position:absolute;top:474px;left:162px;white-space:nowrap" class="ft51">&#160;</p>
+<p style="position:absolute;top:493px;left:135px;white-space:nowrap" class="ft51">-&#160;</p>
+<p style="position:absolute;top:493px;left:162px;white-space:nowrap" class="ft51">Only those paragraphs&#160;that apply to the request&#160;are returned.&#160;</p>
+<p style="position:absolute;top:512px;left:135px;white-space:nowrap" class="ft510">&#160;<br/>-&#160;</p>
+<p style="position:absolute;top:531px;left:162px;white-space:nowrap" class="ft510">Unlike Full Text responses, no section headers&#160;are displayed in SD responses (e.g.&#160;<br/>“Passport” or “Visa”).&#160;</p>
+<p style="position:absolute;top:566px;left:162px;white-space:nowrap" class="ft55"></p>
+<p style="position:absolute;top:569px;left:170px;white-space:nowrap" class="ft51">&#160;&#160;&#160;Whereas Full Text responses always contain a&#160;section and/or subsection&#160;header&#160;</p>
+<p style="position:absolute;top:588px;left:189px;white-space:nowrap" class="ft510">(e.g. “Document Validity:”), these are not always displayed for SD responses&#160;<br/>(see:&#160;</p>
+<p style="position:absolute;top:606px;left:230px;white-space:nowrap" class="ft56"><i>Examples of TIMATIC Specific Database&#160;responses</i></p>
+<p style="position:absolute;top:606px;left:610px;white-space:nowrap" class="ft51">).&#160;</p>
+<p style="position:absolute;top:625px;left:162px;white-space:nowrap" class="ft51">&#160;</p>
+<p style="position:absolute;top:644px;left:135px;white-space:nowrap" class="ft51">-&#160;</p>
+<p style="position:absolute;top:644px;left:162px;white-space:nowrap" class="ft51">Paragraphs are bulleted&#160;to aid clarity and to indicate separate&#160;information.&#160;</p>
+<p style="position:absolute;top:660px;left:162px;white-space:nowrap" class="ft55"></p>
+<p style="position:absolute;top:663px;left:170px;white-space:nowrap" class="ft51">&#160;&#160;&#160;A hyphen (“-“) is used as the bullet&#160;character and is indented by one space for&#160;</p>
+<p style="position:absolute;top:682px;left:189px;white-space:nowrap" class="ft51">each level. (See:<b>&#160;</b></p>
+<p style="position:absolute;top:682px;left:316px;white-space:nowrap" class="ft56"><i>Examples of TIMATIC Specific Database responses</i></p>
+<p style="position:absolute;top:682px;left:696px;white-space:nowrap" class="ft50">&#160;&#160;</p>
+<p style="position:absolute;top:682px;left:705px;white-space:nowrap" class="ft51">for&#160;</p>
+<p style="position:absolute;top:701px;left:189px;white-space:nowrap" class="ft510">examples of this). Subsection headers, (if displayed) and paragraphs “Passport&#160;<br/>required.” and “Visa required.” are not bulleted.&#160;</p>
+<p style="position:absolute;top:739px;left:135px;white-space:nowrap" class="ft512">&#160;<br/>&#160;<br/><b>Passport information&#160;<br/></b>&#160;<br/>When Timatic receives a&#160;Specific Database request, Passport section&#160;information is&#160;<br/>always displayed first, in&#160;accordance&#160;with the format outlined in&#160;</p>
+<p style="position:absolute;top:836px;left:600px;white-space:nowrap" class="ft56"><i>Appendix 1</i></p>
+<p style="position:absolute;top:835px;left:683px;white-space:nowrap" class="ft57"><i><b>.</b></i></p>
+<p style="position:absolute;top:836px;left:687px;white-space:nowrap" class="ft51">&#160;Information&#160;</p>
+<p style="position:absolute;top:855px;left:135px;white-space:nowrap" class="ft510">from Passport subsections (if relevant) is included in the response and&#160;is displayed after&#160;<br/>the instruction “Passport required.”&#160;<br/>&#160;<br/>&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft60{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft61{font-size:14px;font-family:Arial;color:#000000;}
+	.ft62{font-size:11px;font-family:Arial;color:#000000;}
+	.ft63{font-size:14px;font-family:Arial;color:#000000;}
+	.ft64{font-size:14px;font-family:Arial;color:#0000ff;}
+	.ft65{font-size:14px;font-family:Arial;color:#0000ff;}
+	.ft66{font-size:14px;font-family:Arial;color:#000000;}
+	.ft67{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft68{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft69{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page6-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3006.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft60">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft67">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft62">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 6&#160;&#160;&#160;</p>
+<p style="position:absolute;top:131px;left:135px;white-space:nowrap" class="ft69"><b>&#160;<br/>&#160;<br/>Visa information&#160;<br/></b>&#160;<br/>In each Timatic Specific Database request, Visa&#160;information always follows Passport&#160;<br/>information, separated by&#160;a blank line. Visa section information is displayed according to&#160;<br/>the format outlined in the&#160;</p>
+<p style="position:absolute;top:244px;left:321px;white-space:nowrap" class="ft64"><i>Appendix 2<b>.</b></i></p>
+<p style="position:absolute;top:244px;left:408px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:263px;left:135px;white-space:nowrap" class="ft69">&#160;<br/>Timatic always returns a consistent format for Visa section information. (This is different&#160;<br/>from Timatic 2 where variable formatting and ordering was the&#160;case). There are three&#160;<br/>possible rules that will be&#160;returned from a Timatic Specific Database Visa request. They&#160;<br/>are: &#160;<br/>&#160;</p>
+<p style="position:absolute;top:377px;left:162px;white-space:nowrap" class="ft69">1.&#160;&#160;A visa is never&#160;required; or&#160;<br/>&#160;<br/>2.&#160;&#160;A visa is always&#160;required and there are no exemptions; or&#160;<br/>&#160;<br/>3.&#160;&#160;A visa is required, unless&#160;a certain&#160;condition is&#160;met.&#160;</p>
+<p style="position:absolute;top:472px;left:135px;white-space:nowrap" class="ft69">&#160;<br/>&#160;<br/>Example 1 – A visa is&#160;<i><b>never</b></i>&#160;required:&#160;<br/>&#160;</p>
+<p style="position:absolute;top:548px;left:189px;white-space:nowrap" class="ft69">E.g. for a French national travelling&#160;to France;&#160;<br/>&#160;<br/>SD command: TIRV/NAFR/DEFR&#160;<br/>&#160;<br/>Response: VISA&#160;NOT&#160;REQUIRED.&#160;</p>
+<p style="position:absolute;top:643px;left:135px;white-space:nowrap" class="ft69">&#160;<br/>Example 2 – A visa is&#160;<i><b>always</b></i>&#160;required and there are no exemptions:&#160;<br/>&#160;</p>
+<p style="position:absolute;top:700px;left:189px;white-space:nowrap" class="ft69">E.g. for a Dutch national travelling to&#160;Russia;&#160;<br/>&#160;<br/>SD command: TIRV/NANL/DERU&#160;<br/>&#160;<br/>Response: VISA&#160;REQUIRED.&#160;</p>
+<p style="position:absolute;top:794px;left:135px;white-space:nowrap" class="ft69">&#160;<br/>Example 3 – A visa is required&#160;<i><b>unless</b></i>&#160;a certain&#160;condition is&#160;met:&#160;<br/>&#160;</p>
+<p style="position:absolute;top:851px;left:189px;white-space:nowrap" class="ft69">E.g. for a US national travelling to India;&#160;<br/>&#160;<br/>SD command: TIRV/NAUS/DEIN&#160;&#160;<br/>&#160;<br/>Response:&#160;<b>VISA REQUIRED, EXCEPT FOR</b>&#160;THOSE HOLDING&#160;A PIO&#160;<br/>(PERSON OF&#160;INDIAN&#160;ORIGIN)&#160;CARD.&#160;</p>
+<p style="position:absolute;top:965px;left:135px;white-space:nowrap" class="ft69">&#160;<br/>A correct interpretation&#160;of the third case is that,&#160;unless the&#160;condition is&#160;met (in this&#160;case&#160;<br/>the passenger holds a PIO card) a visa is required.&#160;<br/>&#160;<br/>&#160;<br/>&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft70{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft71{font-size:14px;font-family:Arial;color:#000000;}
+	.ft72{font-size:11px;font-family:Arial;color:#000000;}
+	.ft73{font-size:14px;font-family:Arial;color:#000000;}
+	.ft74{font-size:8px;font-family:Arial;color:#000000;}
+	.ft75{font-size:11px;font-family:Arial;color:#000000;}
+	.ft76{font-size:11px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft77{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft78{font-size:14px;line-height:19px;font-family:Arial;color:#000000;}
+	.ft79{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft710{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft711{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft712{font-size:11px;line-height:15px;font-family:TimesNewRomanPSMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page7-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3007.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft70">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft77">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft71">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft72">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 7&#160;&#160;&#160;</p>
+<p style="position:absolute;top:130px;left:135px;white-space:nowrap" class="ft79">&#160;<br/><b>&#160;<br/>Departure Warning&#160;</b></p>
+<p style="position:absolute;top:187px;left:459px;white-space:nowrap" class="ft73"><b>&#160;</b></p>
+<p style="position:absolute;top:206px;left:135px;white-space:nowrap" class="ft71">Since October 1</p>
+<p style="position:absolute;top:203px;left:253px;white-space:nowrap" class="ft74">st</p>
+<p style="position:absolute;top:206px;left:262px;white-space:nowrap" class="ft71">&#160;2007, the US government requires all nationals departing the US to&#160;</p>
+<p style="position:absolute;top:225px;left:135px;white-space:nowrap" class="ft710">hold a (valid) passport, or&#160;certain specific passport replacing documents. Although&#160;<br/>passengers&#160;might not require a passport to enter a certain country, they&#160;will require&#160;a&#160;<br/>(valid) passport to depart the USA.&#160;Therefore a departure warning for the US has been&#160;<br/>added to those WHTI affected countries that do not require a&#160;passport.&#160;<br/>&#160;</p>
+<p style="position:absolute;top:320px;left:135px;white-space:nowrap" class="ft711">TIRV/NAUS/DEMX&#160;&#160;<br/>TIMATIC-3 / 18JUN08 / 0914&#160;UTC&#160;<br/>NATIONAL U.S.A. (US) &#160;&#160; &#160;&#160; &#160;&#160;&#160; &#160;/DESTINATION MEXICO (MX)&#160;<br/>&#160;<br/>VISA DESTINATION MEXICO (MX)&#160;<br/>&#160;<br/>......&#160;NORMAL PASSPORTS ONLY&#160;......&#160;<br/><b>PASSPORT REQUIRED</b>.&#160;<br/>- PASSPORT&#160;AND/OR PASSPORT REPLACING DOCUMENTS&#160;MUST&#160;BE VALID&#160;<br/>&#160; ON ARRIVAL.&#160;<br/>-&#160;<b>WARNING</b>: IF DEPARTING FROM&#160;THE&#160;U.S.A., A&#160;(VALID) PASSPORT&#160;<br/>&#160; WILL BE REQUIRED BY&#160;THE U.S.&#160;IMMIGRATION AUTHORITIES.&#160;FOR&#160;<br/>&#160; FULL LISTING OF ACCEPTED DOCUMENTS&#160;TIRULES/R9&#160;<br/><b>PASSPORT EXEMPTIONS</b>:&#160;<br/>- NATIONALS&#160;OF U.S.A.&#160;HOLDING AN ORIGINAL (OR NOTARIZED COPY&#160;<br/>&#160; OF)&#160;COUNTY&#160;OR STATE-ISSUED BIRTH&#160;CERTIFICATE.&#160;&#160;<br/>- NATIONALS&#160;OF&#160;THE U.S.A.&#160;HOLDING A&#160;VOTER'S REGISTRATION CARD.&#160;<br/>- NATIONALS&#160;OF&#160;THE U.S.A.&#160;HOLDING AN ORIGINAL (OR A CERTIFIED&#160;<br/>&#160; COPY OF) COUNTY&#160;OR STATE-ISSUED BIRTH REGISTRATION PAPERS. &#160;<br/>- ACCEPTED&#160;PASSPORT&#160;REPLACING DOCUMENTS&#160;ISSUED TO&#160;NATIONALS OF&#160;<br/>&#160; U.S.A. MUST&#160;BE ACCOMPANIED BY&#160;AN OFFICIAL&#160;GOVERNMENT&#160;ISSUED&#160;<br/>&#160; PHOTO ID,&#160;TIDFT/MX/PA/PT/ID29880&#160;<br/>&#160;<br/>VISA REQUIRED, EXCEPT&#160;FOR A STAY&#160;OF MAX.&#160;180 DAYS, PROVIDED&#160;<br/>TRAVELLING FOR TOURISTIC&#160;PURPOSES&#160;ONLY:&#160;<br/>&#160;<br/>VISA REQUIRED, EXCEPT&#160;FOR&#160;THOSE&#160;COMING FOR&#160;BUSINESS PURPOSES,&#160;<br/>FOR A MAX.&#160;STAY&#160;OF 30 DAYS (EXTENSION POSSIBLE) AND HOLDING A&#160;<br/>FORM FMTTV.&#160;THIS&#160;FORM&#160;CAN BE ISSUED BY&#160;TRAVEL AGENCIES,&#160;<br/>AIRLINES OR ON ARRIVAL. &#160; &#160;&#160;&#160; &#160;&#160; &#160;<br/>MINORS:&#160;<br/>- MINORS UNDER 14 YEARS OF AGE,&#160;WHEN TRAVELLING ALONE, SHOULD&#160;<br/>&#160; BE MET BY&#160;AN ADULT.&#160;&#160;<br/>ADDITIONAL INFORMATION:&#160;<br/>- ALL VISITORS&#160;MUST HOLD ONWARD OR RETURN&#160;TICKETS AND&#160;<br/>&#160; SUFFICIENT&#160;FUNDS FOR MAINTENANCE DURING THEIR STAY IN&#160;<br/>&#160; MEXICO.&#160;<br/>&#160;- EXCEPT&#160;FOR NATIONALS OF U.S.A.&#160;WHO CAN ENTER ON A ONE-WAY&#160;<br/>&#160; &#160;TICKET.&#160;<br/>- PASSENGERS MUST&#160;HOLD A TOURIST CARD/FMT&#160;FORM ISSUED&#160;TO EACH&#160;<br/>&#160; PASSENGER FREE OF CHARGE BY AIRLINES,&#160;TRAVEL AGENCIES OR ON&#160;<br/>&#160; ARRIVAL. IMMIGRATION AUTHORITIES&#160;MAY DECIDE THE MAX.&#160;PERIOD&#160;<br/>&#160; OF&#160;STAY&#160;ON ARRIVAL.&#160;<br/>WARNING:&#160;<br/>- NON-COMPLIANCE WITH&#160;ENTRY REGULATIONS WILL&#160;RESULT&#160;IN&#160;FINES&#160;<br/>&#160; FOR CARRIER,&#160;TIDFT/MX/VI/WA/ID24949 &#160;</p>
+<p style="position:absolute;top:1034px;left:135px;white-space:nowrap" class="ft710">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:333px;left:632px;white-space:nowrap" class="ft712">A US&#160;citizen&#160;can&#160;enter Mexico&#160;<br/>with a&#160;birth&#160;certificate but will&#160;<br/>require a (valid)&#160;passport to depart&#160;<br/>the USA; hence&#160;a departure&#160;<br/>warning has&#160;been added&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft80{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft81{font-size:14px;font-family:Arial;color:#000000;}
+	.ft82{font-size:11px;font-family:Arial;color:#000000;}
+	.ft83{font-size:14px;font-family:Arial;color:#000000;}
+	.ft84{font-size:13px;font-family:Arial;color:#000000;}
+	.ft85{font-size:16px;font-family:Arial;color:#000000;}
+	.ft86{font-size:11px;font-family:Arial;color:#000000;}
+	.ft87{font-size:11px;font-family:Arial;color:#008000;}
+	.ft88{font-size:11px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft89{font-size:11px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft810{font-size:11px;font-family:TimesNewRomanPS;color:#008000;}
+	.ft811{font-size:11px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft812{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft813{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft814{font-size:13px;line-height:17px;font-family:Arial;color:#000000;}
+	.ft815{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft816{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft817{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft818{font-size:11px;line-height:15px;font-family:TimesNewRomanPSMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page8-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3008.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft80">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft812">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft81">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft82">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 8&#160;&#160;&#160;</p>
+<p style="position:absolute;top:131px;left:135px;white-space:nowrap" class="ft813"><b>&#160;<br/>&#160;<br/></b>&#160;</p>
+<p style="position:absolute;top:187px;left:135px;white-space:nowrap" class="ft814"><b>&#160;<br/>Examples of TIMATIC Specific Database responses&#160;</b></p>
+<p style="position:absolute;top:222px;left:135px;white-space:nowrap" class="ft85">&#160;</p>
+<p style="position:absolute;top:243px;left:135px;white-space:nowrap" class="ft815">The examples below are provided to illustrate&#160;how Timatic 3 builds responses for the&#160;<br/>Specific Database queries and to show the output format:&#160;</p>
+<p style="position:absolute;top:281px;left:135px;white-space:nowrap" class="ft85">&#160;</p>
+<p style="position:absolute;top:301px;left:89px;white-space:nowrap" class="ft82">&#160;</p>
+<p style="position:absolute;top:301px;left:332px;white-space:nowrap" class="ft816">TIRV/NAES/DENL &#160;&#160;<br/>TIMATIC-3 / 21MAY08 / 0948&#160;UTC&#160;<br/>NATIONAL SPAIN (ES) &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160; &#160;/DESTINATION NETHERLANDS (NL)&#160;<br/>&#160;<br/>VISA DESTINATION NETHERLANDS (NL)&#160;<br/>&#160;<br/>......&#160;NORMAL PASSPORTS ONLY&#160;......&#160;<br/><b>PASSPORT REQUIRED</b>.&#160;<br/>- EXPIRED PASSPORT (MAX.&#160;5 YEARS) ISSUED TO&#160;NATIONALS OF&#160;SPAIN&#160;<br/>&#160; IS ACCEPTED. &#160;<br/>- PASSPORT&#160;REPLACING DOCUMENTS&#160;ISSUED TO&#160;NATIONALS OF&#160;SPAIN&#160;<br/>&#160; MUST&#160;BE VALID ON ARRIVAL.&#160;<br/><b>PASSPORT EXEMPTIONS:&#160;<br/></b>- HOLDERS OF A NATIONAL IDENTITY CARD ISSUED TO: &#160;<br/>&#160;- NATIONALS&#160;OF SPAIN.&#160;<br/>- CHILDREN UP&#160;TO&#160;/ INCLUDING 15&#160;YEARS OF AGE,&#160;TRAVELLING&#160;WITH&#160;<br/>&#160; A PARENT&#160;OR GUARDIAN.&#160;</p>
+<p style="position:absolute;top:549px;left:514px;white-space:nowrap" class="ft87"><b>TIDFT/NL/PA/PT/ID19470 &#160;</b></p>
+<p style="position:absolute;top:564px;left:332px;white-space:nowrap" class="ft816">&#160;<br/>VISA NOT&#160;REQUIRED.&#160;<br/>&#160;<br/><b>MINORS:&#160;<br/></b>- CHILDREN UP&#160;TO&#160;/ INCLUDING&#160;15 YEARS OF AGE&#160;AND TRAVELLING&#160;<br/>&#160; WITH&#160;PARENT&#160;OR GUARDIAN,</p>
+<p style="position:absolute;top:642px;left:535px;white-space:nowrap" class="ft87"><b>&#160;TIDFT/NL/VI/MI/ID19672&#160;</b></p>
+<p style="position:absolute;top:657px;left:332px;white-space:nowrap" class="ft816"><b>WARNING:&#160;<br/></b>- EFFECTIVE&#160;FROM APRIL&#160;1, 2008, UP TO/INCL. SEPTEMBER 30,&#160;<br/>&#160; 2008: AIRLINES FLYING FROM&#160;THE FOLLOWING AIRPORTS&#160;TO&#160;THE&#160;<br/>&#160; NETHERLANDS: ABUJA INTERNATIONAL, BANJUL INTERNATIONAL,&#160;<br/>&#160; CAIRO INTERNATIONAL,&#160;DAMASCUS INTERNATIONAL, HAVANA JOSE&#160;<br/>&#160; MARTI&#160;INTERNATIONAL,&#160;HONG KONG INTERNATIONAL, ISTANBUL&#160;<br/>&#160; ATATURK, KUALA LUMPUR INTERNATIONAL, LAGOS MURTALA &#160;&#160;<br/>MUHAMMED INTERNATIONAL, MEXICO CITY&#160;INTERNATIONAL, NAIROBI&#160;<br/>JOMO KENYATTA, SAO PAOLO GUARULHOS, SINGAPORE CHANGI, ST.&#160;<br/>&#160; PETERSBURG PULKOVO,&#160;TEHERAN IMAM KHOMEINI.&#160;</p>
+<p style="position:absolute;top:813px;left:332px;white-space:nowrap" class="ft87"><b>TIDFT/NL/VI/WA/ID31996&#160;</b></p>
+<p style="position:absolute;top:813px;left:493px;white-space:nowrap" class="ft82">&#160;</p>
+<p style="position:absolute;top:828px;left:332px;white-space:nowrap" class="ft816">&#160;<br/>SIMPLIFY YOUR REQUEST USE&#160;TIFA,&#160;TIFV AND&#160;TIFH&#160;<br/>FULL TEXT&#160;AVAILABLE USE&#160;TIDFT&#160;<br/>CHECK TINEWS/N1 - UEFA CHAMPIONS LEAGUE FINAL, MOSCOW,&#160;MAY&#160;<br/>21, 2008&#160;<br/>&#160;<br/>SCAN COMPLETE&#160;</p>
+<p style="position:absolute;top:427px;left:65px;white-space:nowrap" class="ft88">Passport information&#160;appears&#160;first, showing:&#160;</p>
+<p style="position:absolute;top:442px;left:92px;white-space:nowrap" class="ft82">-&#160;</p>
+<p style="position:absolute;top:443px;left:119px;white-space:nowrap" class="ft88">validity&#160;for&#160;</p>
+<p style="position:absolute;top:443px;left:183px;white-space:nowrap" class="ft89"><b>all</b></p>
+<p style="position:absolute;top:443px;left:197px;white-space:nowrap" class="ft88">&#160;travel&#160;documents;&#160;</p>
+<p style="position:absolute;top:458px;left:92px;white-space:nowrap" class="ft82">-&#160;</p>
+<p style="position:absolute;top:458px;left:119px;white-space:nowrap" class="ft88">passport exemptions&#160;</p>
+<p style="position:absolute;top:686px;left:65px;white-space:nowrap" class="ft89"><b>New:</b></p>
+<p style="position:absolute;top:686px;left:95px;white-space:nowrap" class="ft88">&#160;</p>
+<p style="position:absolute;top:686px;left:99px;white-space:nowrap" class="ft810"><b>clickable&#160;links</b></p>
+<p style="position:absolute;top:686px;left:181px;white-space:nowrap" class="ft88">, taking the&#160;user&#160;</p>
+<p style="position:absolute;top:686px;left:271px;white-space:nowrap" class="ft811"><i><b>directly</b></i></p>
+<p style="position:absolute;top:686px;left:313px;white-space:nowrap" class="ft88">&#160;</p>
+<p style="position:absolute;top:701px;left:65px;white-space:nowrap" class="ft818">to the&#160;paragraph, eliminating the need to&#160;<br/>scroll the&#160;Full Text!&#160;<br/>&#160;<br/>Links need only be followed if the&#160;situation&#160;<br/>is relevant&#160;</p>
+<p style="position:absolute;top:538px;left:65px;white-space:nowrap" class="ft89"><b>New:</b></p>
+<p style="position:absolute;top:538px;left:95px;white-space:nowrap" class="ft88">&#160;clear paragraph structure is&#160;</p>
+<p style="position:absolute;top:554px;left:65px;white-space:nowrap" class="ft88">preceded by&#160;</p>
+<p style="position:absolute;top:554px;left:135px;white-space:nowrap" class="ft89"><b>headers</b></p>
+<p style="position:absolute;top:554px;left:179px;white-space:nowrap" class="ft88">&#160;</p>
+<p style="position:absolute;top:311px;left:65px;white-space:nowrap" class="ft818">New formatting&#160;introduced, showing&#160;<br/>structured&#160;responses,&#160;condensed&#160;to fit&#160;<br/>terminals&#160;even&#160;with a&#160;limited number of lines&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft90{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft91{font-size:14px;font-family:Arial;color:#000000;}
+	.ft92{font-size:11px;font-family:Arial;color:#000000;}
+	.ft93{font-size:13px;font-family:Arial;color:#000000;}
+	.ft94{font-size:11px;font-family:Arial;color:#000000;}
+	.ft95{font-size:11px;font-family:Arial;color:#ff0000;}
+	.ft96{font-size:11px;font-family:Arial;color:#008000;}
+	.ft97{font-size:11px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft98{font-size:11px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft99{font-size:11px;font-family:TimesNewRomanPS;color:#ff0000;}
+	.ft910{font-size:11px;font-family:TimesNewRomanPS;color:#008000;}
+	.ft911{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft912{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft913{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft914{font-size:11px;line-height:15px;font-family:TimesNewRomanPSMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page9-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3009.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft90">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft911">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft91">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft92">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 9&#160;&#160;&#160;</p>
+<p style="position:absolute;top:146px;left:135px;white-space:nowrap" class="ft93"><b>&#160;</b></p>
+<p style="position:absolute;top:164px;left:135px;white-space:nowrap" class="ft90">&#160;</p>
+<p style="position:absolute;top:183px;left:89px;white-space:nowrap" class="ft92">&#160;TIRV/NAGB/DENZ&#160;</p>
+<p style="position:absolute;top:183px;left:449px;white-space:nowrap" class="ft92">&#160;</p>
+<p style="position:absolute;top:199px;left:332px;white-space:nowrap" class="ft912">TIMATIC-3 / 21MAY08 / 0942&#160;UTC&#160;<br/>NATIONAL UNITED KINGDOM (GREAT&#160;BRITAIN) (GB)&#160;<br/>DESTINATION&#160;NEW ZEALAND (NZ) &#160; &#160;&#160;<br/>&#160;<br/>VISA DESTINATION NEW&#160;ZEALAND (NZ)&#160;<br/>&#160;<br/>......&#160;NORMAL PASSPORTS ONLY&#160;......&#160;<br/><b>PASSPORT REQUIRED</b>.&#160;<br/>- PASSPORT&#160;AND PASSPORT&#160;REPLACING DOCUMENTS&#160;MUST&#160;BE&#160;VALID&#160;<br/>FOR AT&#160;LEAST 3 MONTHS&#160;BEYOND THE&#160;INTENDED STAY.&#160;<br/>&#160;</p>
+<p style="position:absolute;top:369px;left:332px;white-space:nowrap" class="ft95"><b>VISA&#160;REQUIRED, EXCEPT FOR</b></p>
+<p style="position:absolute;top:369px;left:532px;white-space:nowrap" class="ft92">&#160;HOLDERS OF BRITISH&#160;PASSPORTS&#160;</p>
+<p style="position:absolute;top:385px;left:332px;white-space:nowrap" class="ft912">PROVIDED HOLDING: &#160;<br/>&#160;- PASSPORT&#160;ENDORSED &#34;BRITISH CITIZEN&#34;(MAX.&#160;PERMITTED STAY&#160;6&#160;<br/>&#160; &#160;MONTHS); &#160;<br/>&#160;- PASSPORT&#160;WHICH CLEARLY ESTABLISHES RIGHT&#160;OF ABODE&#160;IN&#160;THE&#160;<br/>&#160; &#160;UNITED KINGDOM(MAX.&#160;PERMITTED STAY&#160;6 MONTHS); &#160;&#160;<br/>&#160;- IN ADDITION TO&#160;THEIR PASSPORT, ALTERNATIVE&#160;DOCUMENTARY&#160;<br/>&#160; &#160;EVIDENCE TO ESTABLISH RIGHT OF&#160;ABODE IN&#160;THE&#160;UNITED&#160;<br/>&#160; &#160;KINGDOM,</p>
+<p style="position:absolute;top:494px;left:412px;white-space:nowrap" class="ft96"><b>TIDFT/NZ/VI/VS/ID27071&#160;</b></p>
+<p style="position:absolute;top:509px;left:332px;white-space:nowrap" class="ft912">&#160;- PASSPORT&#160;ENDORSED &#34;BRITISH NATIONAL (OVERSEAS)&#34;(MAX.&#160;<br/>&#160; &#160;PERMITTED STAY 3 MONTHS). &#160;</p>
+<p style="position:absolute;top:540px;left:332px;white-space:nowrap" class="ft95"><b>VISA&#160;REQUIRED, EXCEPT FOR</b></p>
+<p style="position:absolute;top:540px;left:532px;white-space:nowrap" class="ft92">&#160;HOLDERS OF AN APEC BUSINESS TRAVEL&#160;</p>
+<p style="position:absolute;top:556px;left:332px;white-space:nowrap" class="ft913">CARD. THE BACK OF&#160;THE&#160;CARD MUST&#160;STATE IT IS&#160;VALID FOR&#160;TRAVEL&#160;<br/>TO NEW&#160;ZEALAND.&#160;<br/><b>MINORS:&#160;<br/></b>- MINORS ENTERING NEW&#160;ZEALAND&#160;</p>
+<p style="position:absolute;top:602px;left:573px;white-space:nowrap" class="ft96"><b>TIDFT/NZ/PA/MI/ID18845&#160;</b></p>
+<p style="position:absolute;top:618px;left:332px;white-space:nowrap" class="ft912"><b>ADDITIONAL&#160;INFORMATION:&#160;<br/></b>- ALL PASSENGERS (EXCEPT RESIDENTS OF&#160;TOKELAU) MUST&#160;OBTAIN A&#160;<br/>&#160;&#160;PERMIT&#160;TO ENTER TOKELAU&#160;</p>
+<p style="position:absolute;top:649px;left:533px;white-space:nowrap" class="ft96"><b>TIDFT/NZ/VI/AI/ID9503&#160;</b></p>
+<p style="position:absolute;top:664px;left:332px;white-space:nowrap" class="ft912">- &#160;VISITORS MUST&#160;HOLD VALID DOCUMENTS&#160;PERMITTING RE-ENTRY&#160;INTO&#160;<br/>&#160; COUNTRY&#160;OF&#160;ORIGIN OR&#160;ENTRY INTO&#160;THE COUNTRY&#160;TO&#160;WHICH THEY&#160;<br/>&#160; INTEND&#160;TO&#160;PROCEED. &#160;<br/>- ALL VISITORS&#160;MUST, ON ARRIVAL, BE ABLE TO PRODUCE ONWARD&#160;<br/>&#160;&#160;TICKETS&#160;TO&#160;A COUNTRY&#160;TO WHICH&#160;THEY&#160;CAN SHOW&#160;THEY HAVE A&#160;<br/>&#160; RIGHT&#160;OF ENTRY&#160;</p>
+<p style="position:absolute;top:742px;left:457px;white-space:nowrap" class="ft96"><b>TIDFT/NZ/VI/AI/ID9505&#160;</b></p>
+<p style="position:absolute;top:758px;left:332px;white-space:nowrap" class="ft912">- ON ARRIVAL, VISITORS WILL BE EXPECTED&#160;TO HAVE&#160;THE MEANS&#160;TO&#160;<br/>&#160; MAINTAIN&#160;THEMSELVES&#160;WHILST IN NEW ZEALAND AND&#160;</p>
+<p style="position:absolute;top:789px;left:332px;white-space:nowrap" class="ft96"><b>&#160; TIDFT/NZ/VI/AI/ID9506&#160;</b></p>
+<p style="position:absolute;top:804px;left:332px;white-space:nowrap" class="ft912"><b>WARNING:&#160;<br/></b>- NON-COMPLIANCE WITH&#160;VISA REQUIREMENTS&#160;WILL RESULT&#160;IN REMOVAL&#160;<br/>&#160; OF PASSENGER&#160;TO&#160;COUNTRY OF ORIGIN AT&#160;CARRIER'S EXPENSE&#160;AND&#160;<br/>&#160; COULD RESULT&#160;IN PROSECUTION&#160;OF&#160;CARRIER.&#160;<br/>&#160;<br/>SIMPLIFY YOUR REQUEST USE&#160;TIFA,&#160;TIFV AND&#160;TIFH&#160;<br/>FULL TEXT&#160;AVAILABLE USE&#160;TIDFT&#160;<br/>CHECK TINEWS/N1 - UEFA CHAMPIONS LEAGUE FINAL, MOSCOW,&#160;MAY&#160;<br/>21, 2008&#160;<br/>&#160;<br/>SCAN COMPLETE&#160;</p>
+<p style="position:absolute;top:976px;left:135px;white-space:nowrap" class="ft90">&#160;</p>
+<p style="position:absolute;top:372px;left:79px;white-space:nowrap" class="ft97"><b>ALL&#160;</b></p>
+<p style="position:absolute;top:372px;left:114px;white-space:nowrap" class="ft98">visa exemptions applicable to&#160;the&#160;</p>
+<p style="position:absolute;top:388px;left:79px;white-space:nowrap" class="ft914">query&#160;are shown, each one of them&#160;<br/>starting with&#160;</p>
+<p style="position:absolute;top:403px;left:181px;white-space:nowrap" class="ft99"><b>VISA REQUIRED,&#160;</b></p>
+<p style="position:absolute;top:419px;left:79px;white-space:nowrap" class="ft99"><b>EXCEPT FOR&#160;</b></p>
+<p style="position:absolute;top:651px;left:79px;white-space:nowrap" class="ft98">Use&#160;</p>
+<p style="position:absolute;top:651px;left:112px;white-space:nowrap" class="ft910"><b>clickable links</b></p>
+<p style="position:absolute;top:651px;left:203px;white-space:nowrap" class="ft98">&#160;only&#160;when the&#160;</p>
+<p style="position:absolute;top:667px;left:79px;white-space:nowrap" class="ft914">information applies&#160;to&#160;your&#160;passenger!&#160;<br/>&#160;<br/>For example,&#160;if&#160;a passenger&#160;is not a Minor&#160;<br/>– you&#160;do&#160;</p>
+<p style="position:absolute;top:713px;left:175px;white-space:nowrap" class="ft97"><b>not</b></p>
+<p style="position:absolute;top:713px;left:194px;white-space:nowrap" class="ft98">&#160;have to read&#160;</p>
+<p style="position:absolute;top:729px;left:79px;white-space:nowrap" class="ft910"><b>TIDFT/NZ/PA/MI/ID18845</b></p>
+<p style="position:absolute;top:729px;left:239px;white-space:nowrap" class="ft98">&#160;</p>
+<p style="position:absolute;top:475px;left:79px;white-space:nowrap" class="ft914">Paragraphs&#160;are bulleted&#160;with a hyphen&#160;to&#160;<br/>aid clarity and to indicate&#160;separate&#160;<br/>information.&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft100{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft101{font-size:14px;font-family:Arial;color:#000000;}
+	.ft102{font-size:11px;font-family:Arial;color:#000000;}
+	.ft103{font-size:13px;font-family:Arial;color:#000000;}
+	.ft104{font-size:16px;font-family:Arial;color:#000000;}
+	.ft105{font-size:11px;font-family:Arial;color:#000000;}
+	.ft106{font-size:11px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft107{font-size:11px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft108{font-size:11px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft109{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft1010{font-size:13px;line-height:17px;font-family:Arial;color:#000000;}
+	.ft1011{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft1012{font-size:16px;line-height:20px;font-family:Arial;color:#000000;}
+	.ft1013{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft1014{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft1015{font-size:11px;line-height:15px;font-family:TimesNewRomanPSMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page10-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3010.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft100">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft109">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft101">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft102">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 10</p>
+<p style="position:absolute;top:146px;left:135px;white-space:nowrap" class="ft1010"><b>&#160;<br/>&#160;<br/>Health information&#160;</b></p>
+<p style="position:absolute;top:198px;left:135px;white-space:nowrap" class="ft1011">&#160;<br/>The responses in the Health section&#160;have changed only to the extent that for clarity,&#160;<br/>headers have been introduced into the text, making responses more consistent and&#160;<br/>readable.</p>
+<p style="position:absolute;top:254px;left:204px;white-space:nowrap" class="ft104">&#160;</p>
+<p style="position:absolute;top:274px;left:135px;white-space:nowrap" class="ft1012">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:315px;left:135px;white-space:nowrap" class="ft103"><b>Example - TIMATIC&#160;Health response:&#160;</b></p>
+<p style="position:absolute;top:332px;left:135px;white-space:nowrap" class="ft104">&#160;</p>
+<p style="position:absolute;top:352px;left:89px;white-space:nowrap" class="ft102">&#160;TIRH/EMAO/DEAF&#160;</p>
+<p style="position:absolute;top:352px;left:451px;white-space:nowrap" class="ft102">&#160;</p>
+<p style="position:absolute;top:368px;left:332px;white-space:nowrap" class="ft1013">TIMATIC-3 / 02MAY08 / 1001&#160;UTC&#160;<br/>EMBARKATION&#160;ANGOLA (AO) &#160;&#160;&#160; &#160;&#160; &#160;/DESTINATION AFGHANISTAN (AF)&#160;<br/>&#160;<br/>HEALTH&#160;DESTINATION AFGHANISTAN (AF)&#160;<br/>&#160;<br/>VACCINATION AGAINST&#160;YELLOW FEVER&#160;REQUIRED, IF ARRIVING&#160;WITHIN&#160;<br/>6 DAYS AFTER LEAVING OR TRANSITING COUNTRIES&#160;WITH&#160;INFECTED&#160;<br/>AREAS. &#160;<br/>&#160;<br/><b>EXEMPT FROM YELLOW&#160;FEVER VACCINATION:&#160;<br/></b>-&#160;THOSE NOT&#160;LEAVING THE&#160;AIRPORT&#160;IN&#160;THE YELLOW&#160;FEVER INFECTED&#160;<br/>&#160; COUNTRIES.&#160;<br/>-&#160;TRANSIT&#160;PASSENGERS NOT&#160;LEAVING&#160;THE AIRPORT IN AFGHANISTAN.&#160;<br/><b>RECOMMENDED:&#160;<br/></b>- MALARIA PROPHYLAXIS. MALARIA RISK - P. VIVAX&#160;AND P.&#160;<br/>&#160; FALCIPARUM - EXISTS&#160;FROM MAY&#160;THROUGH NOVEMBER BELOW&#160;2000&#160;<br/>&#160; METERS. P.&#160;FALCIPARUM RESISTANT&#160;TO CHLOROQUINE AND&#160;<br/>&#160; SULFADOXINE-PYRIMETHAMINE REPORTED. RECOMMENDED&#160;<br/>PREVENTION:&#160;<br/>&#160; IV.&#160;&#160;<br/>&#160;<br/>SIMPLIFY YOUR REQUEST USE&#160;TIFA,&#160;TIFV AND&#160;TIFH&#160;<br/>FULL TEXT&#160;AVAILABLE USE&#160;TIDFT&#160;<br/>CHECK TINEWS/N1 - AUSTRIA&#160;TO&#160;TEMPORARILY REINSTATE&#160;PASSPORT&#160;<br/>CONTROL WITH&#160;THE OTHER&#160;SCHENGEN MEMBER STATES&#160;<br/>&#160;<br/>SCAN COMPLETE&#160;<br/>=&gt;&#160;</p>
+<p style="position:absolute;top:507px;left:66px;white-space:nowrap" class="ft106"><b>New:</b></p>
+<p style="position:absolute;top:507px;left:96px;white-space:nowrap" class="ft107">&#160;clear paragraph structure is&#160;</p>
+<p style="position:absolute;top:523px;left:66px;white-space:nowrap" class="ft107">preceded by&#160;</p>
+<p style="position:absolute;top:523px;left:135px;white-space:nowrap" class="ft106"><b>headers</b></p>
+<p style="position:absolute;top:523px;left:180px;white-space:nowrap" class="ft107">&#160;</p>
+<p style="position:absolute;top:575px;left:66px;white-space:nowrap" class="ft106"><b>New:</b></p>
+<p style="position:absolute;top:575px;left:96px;white-space:nowrap" class="ft107">&#160;paragraph&#160;indentation.&#160;</p>
+<p style="position:absolute;top:590px;left:66px;white-space:nowrap" class="ft1015">Paragraphs are bulleted to aid clarity&#160;<br/>and to&#160;indicate separate information.&#160;<br/>Paragraph&#160;</p>
+<p style="position:absolute;top:621px;left:124px;white-space:nowrap" class="ft108"><i>numbering</i></p>
+<p style="position:absolute;top:621px;left:183px;white-space:nowrap" class="ft107">&#160;removed&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft110{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft111{font-size:14px;font-family:Arial;color:#000000;}
+	.ft112{font-size:11px;font-family:Arial;color:#000000;}
+	.ft113{font-size:14px;font-family:Arial;color:#000000;}
+	.ft114{font-size:11px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft115{font-size:11px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft116{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft117{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft118{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft119{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page11-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3011.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft110">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft116">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft111">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft112">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 11</p>
+<p style="position:absolute;top:130px;left:459px;white-space:nowrap" class="ft111">&#160;</p>
+<p style="position:absolute;top:150px;left:135px;white-space:nowrap" class="ft110">&#160;</p>
+<p style="position:absolute;top:170px;left:371px;white-space:nowrap" class="ft113"><b>Miscellaneous queries&#160;</b></p>
+<p style="position:absolute;top:189px;left:135px;white-space:nowrap" class="ft118"><b>TIRULES: Timatic Rules&#160;<br/></b>&#160;<br/>When executing a TIRULES command, the user&#160;will be presented with an overview of&#160;<br/>the paragraphs containing “Rules, Terms &amp; Definitions” of Timatic &#160;&#160;<br/>&#160;<br/>In Timatic the numbering convention has been changed to allow for three digit rules.&#160;&#160;<br/>This gives&#160;more flexibility and structuring of rules information (e.g. TIRULES/R211).&#160;&#160;<br/>&#160;<br/>Importantly,&#160;the ordering&#160;of Rules in&#160;Timatic is dynamic, depending on the&#160;changes and&#160;<br/>additions that are made. &#160;&#160;<br/>&#160;<br/>&#160;</p>
+<p style="position:absolute;top:416px;left:89px;white-space:nowrap" class="ft112">&#160;TIRULES&#160;</p>
+<p style="position:absolute;top:416px;left:393px;white-space:nowrap" class="ft112">&#160;</p>
+<p style="position:absolute;top:432px;left:332px;white-space:nowrap" class="ft119">TIMATIC-3 / 02JUN08 / 1010&#160;UTC&#160;<br/>RULES&#160;<br/>&#160;<br/>&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; RULES,&#160;TERMS &amp;&#160;DEFINITIONS&#160;INDEX&#160;<br/>&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; ................................................................. &#160;<br/>R0 - &#160;TIMATIC&#160;&#160;CONTACT INFORMATION&#160;&#160;&#160; &#160;&#160;&#160;TIRULES/R0&#160;<br/>R1 - &#160;DOCUMENT&#160;GROUPS &#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160;TIRULES/R1&#160;<br/>R2 - &#160;PASSPORT&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;TIRULES/R2&#160;<br/>R3 - &#160;VISA &#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;TIRULES/R3&#160;<br/>R4 - &#160;HEALTH&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;TIRULES/R4&#160;<br/>R5 - &#160;AIRPORT&#160;TAX&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160;TIRULES/R5&#160;<br/>R6 - &#160;CUSTOMS&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;TIRULES/R6&#160;<br/>R7 - &#160;CURRENCY &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;TIRULES/R7&#160;<br/>R8 - &#160;DEFINITIONS OF&#160;INTERNATIONAL&#160;<br/>&#160; &#160;&#160;&#160; ORGANISATIONS &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160;TIRULES/R8&#160;<br/>&#160;<br/>&#160; &#160;&#160;&#160; &#160;&#160; &#160;USE APPLICABLE CODE FOR SELECTED DETAILS&#160;<br/>&#160;<br/>CHECK TINEWS/N1 - AUSTRIA&#160;TO&#160;TEMPORARILY REINSTATE&#160;PASSPORT&#160;<br/>CONTROL WITH&#160;THE OTHER&#160;SCHENGEN MEMBER STATES&#160;<br/>&#160;<br/>TEXT&#160;DISPLAY COMPLETE&#160;<br/>=&gt;&#160;</p>
+<p style="position:absolute;top:545px;left:92px;white-space:nowrap" class="ft114"><b>New:</b></p>
+<p style="position:absolute;top:545px;left:122px;white-space:nowrap" class="ft115">&#160;dynamic&#160;numbering&#160;of&#160;the&#160;</p>
+<p style="position:absolute;top:561px;left:92px;white-space:nowrap" class="ft115">menus&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft120{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft121{font-size:14px;font-family:Arial;color:#000000;}
+	.ft122{font-size:11px;font-family:Arial;color:#000000;}
+	.ft123{font-size:11px;font-family:Arial;color:#000000;}
+	.ft124{font-size:11px;font-family:Arial;color:#ff0000;}
+	.ft125{font-size:11px;font-family:TimesNewRomanPS;color:#000000;}
+	.ft126{font-size:11px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft127{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft128{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page12-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3012.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft120">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft127">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft121">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft122">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 12</p>
+<p style="position:absolute;top:143px;left:89px;white-space:nowrap" class="ft128">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:143px;left:332px;white-space:nowrap" class="ft128">&#160;<br/>TIRULES/R2 &#160;<br/>TIMATIC-3 / 02JUN08 / 1018&#160;UTC&#160;<br/>RULES&#160;<br/>&#160;<br/>R2) &#160; &#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;PASSPORT&#160;INDEX&#160;<br/>&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;...................................&#160;<br/>&#160;<br/>R20 - DOCUMENTS&#160;CHECK&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;TIRULES/R20&#160;<br/>R21 - GENERAL INFORMATION &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;TIRULES/R21&#160;<br/>R22 - PASSPORT&#160;TYPES AND OTHER&#160;TRAVEL&#160;<br/>&#160; &#160;&#160;&#160; DOCUMENTS&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;TIRULES/R22&#160;<br/>R23 - DOCUMENT&#160;VALIDITY&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;TIRULES/R23&#160;<br/>[…]&#160;<br/><b>R</b></p>
+<p style="position:absolute;top:360px;left:342px;white-space:nowrap" class="ft124"><b>210</b></p>
+<p style="position:absolute;top:360px;left:364px;white-space:nowrap" class="ft122">- CHINA (PEOPLE'S REP.)&#160;TRAVEL DOCUMENTS&#160;&#160;<b>TIRULES/R</b></p>
+<p style="position:absolute;top:360px;left:754px;white-space:nowrap" class="ft124"><b>210</b></p>
+<p style="position:absolute;top:360px;left:777px;white-space:nowrap" class="ft122">&#160;</p>
+<p style="position:absolute;top:375px;left:332px;white-space:nowrap" class="ft123"><b>R</b></p>
+<p style="position:absolute;top:375px;left:342px;white-space:nowrap" class="ft124"><b>211</b></p>
+<p style="position:absolute;top:375px;left:364px;white-space:nowrap" class="ft122">- PALESTINIAN PASSPORTS&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;<b>TIRULES/R</b></p>
+<p style="position:absolute;top:375px;left:753px;white-space:nowrap" class="ft124"><b>211</b></p>
+<p style="position:absolute;top:375px;left:775px;white-space:nowrap" class="ft122">&#160;</p>
+<p style="position:absolute;top:391px;left:332px;white-space:nowrap" class="ft128">&#160;<br/>&#160; &#160;&#160;&#160; &#160;&#160; &#160;USE APPLICABLE CODE FOR SELECTED DETAILS&#160;<br/>&#160;<br/>CHECK TINEWS/N1 - AUSTRIA&#160;TO&#160;TEMPORARILY REINSTATE&#160;PASSPORT&#160;<br/>CONTROL WITH&#160;THE OTHER&#160;SCHENGEN MEMBER STATES&#160;<br/>&#160;<br/>TEXT&#160;DISPLAY COMPLETE&#160;<br/>=&gt;&#160;</p>
+<p style="position:absolute;top:314px;left:92px;white-space:nowrap" class="ft125"><b>New:</b></p>
+<p style="position:absolute;top:314px;left:122px;white-space:nowrap" class="ft126">&#160;the numbering increased to&#160;</p>
+<p style="position:absolute;top:329px;left:92px;white-space:nowrap" class="ft126">more than&#160;two digits (max.&#160;three)&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft130{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft131{font-size:14px;font-family:Arial;color:#000000;}
+	.ft132{font-size:11px;font-family:Arial;color:#000000;}
+	.ft133{font-size:13px;font-family:Arial;color:#000000;}
+	.ft134{font-size:14px;font-family:Arial;color:#000000;}
+	.ft135{font-size:14px;font-family:Arial;color:#ff0000;}
+	.ft136{font-size:11px;font-family:Arial;color:#ff0000;}
+	.ft137{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft138{font-size:13px;line-height:17px;font-family:Arial;color:#000000;}
+	.ft139{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft1310{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page13-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3013.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft130">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft137">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft131">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft132">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 13</p>
+<p style="position:absolute;top:146px;left:135px;white-space:nowrap" class="ft138"><b>&#160;<br/>TIRGL:&#160;Timatic Groups</b></p>
+<p style="position:absolute;top:162px;left:299px;white-space:nowrap" class="ft134"><b>&#160;</b></p>
+<p style="position:absolute;top:181px;left:135px;white-space:nowrap" class="ft130">&#160;</p>
+<p style="position:absolute;top:201px;left:135px;white-space:nowrap" class="ft139">When executing a TIRGL command,&#160;the user&#160;will be presented&#160;with an overview of&#160;<br/>groups in Timatic. In addition to already existing groups in Timatic, new groups&#160;<br/>containing four letters (appearing in&#160;</p>
+<p style="position:absolute;top:239px;left:398px;white-space:nowrap" class="ft135"><b>red</b></p>
+<p style="position:absolute;top:239px;left:424px;white-space:nowrap" class="ft131">&#160;and&#160;<b>bold</b>&#160;below) have been introduced.&#160;</p>
+<p style="position:absolute;top:258px;left:135px;white-space:nowrap" class="ft131">&#160;</p>
+<p style="position:absolute;top:276px;left:204px;white-space:nowrap" class="ft1310">TIRGL&#160;&#160;<br/>TIMATIC-3 / 03JUN08 / 1318&#160;UTC&#160;<br/>&#160;<br/>TIRGL/YFAF -&#160;&#160;AFRICAN&#160;YELLOW FEVER ENDEMIC AREAS&#160;<br/>TIRGL/ARAB -&#160; ARAB LEAGUE&#160;<br/>TIRGL/APEC -&#160; ASIA PACIFIC&#160;ECONOMIC COOPERATION&#160;<br/>TIRGL/ASEA -&#160;&#160;ASSOCIATION OF&#160;SOUTHEAST ASIAN&#160;NATIONS&#160;<br/>TIRGL/CARI - &#160;CARIBBEAN COMMUNITY&#160;<br/>TIRGL/CHOL - &#160;CHOLERA INFECTED AREAS&#160;<br/>TIRGL/CIS &#160;- &#160;COMMONWEALTH OF INDEPENDENT&#160;STATES&#160;<br/>TIRGL/CITE&#160;-&#160;&#160;CONVENTION&#160;ON INTERNATIONAL&#160;TRADE IN ENDANGERED&#160;<br/>SPECIES (CITES)&#160;<br/>TIRGL/ECOW&#160;- &#160;ECONOMIC&#160;COMMUNITY&#160;OF WEST&#160;AFRICAN STATES&#160;<br/>TIRGL/EEA &#160;-&#160;&#160;EUROPEAN ECONOMIC AREA&#160;<br/>TIRGL/</p>
+<p style="position:absolute;top:494px;left:247px;white-space:nowrap" class="ft136"><b>ENID&#160;</b></p>
+<p style="position:absolute;top:494px;left:283px;white-space:nowrap" class="ft132">- &#160;EUROPEAN ECONOMIC AREA NATIONAL ID CARD ISSUING&#160;</p>
+<p style="position:absolute;top:509px;left:204px;white-space:nowrap" class="ft1310">STATES&#160;<br/>TIRGL/EFTA&#160;-&#160;&#160;EUROPEAN FREE TRADE ASSOCIATION&#160;<br/>TIRGL/EEU &#160;-&#160;&#160;EUROPEAN UNION MEMBER STATES&#160;<br/>TIRGL/GCC &#160;-&#160;&#160;GULF COOPERATION COUNCIL&#160;<br/>TIRGL/COMM&#160;- &#160;INDEPENDENT&#160;COMMONWEALTH&#160;COUNTRIES&#160;<br/>TIRGL/ILO1 - &#160;INTERNATIONAL&#160;LABOUR ORGANISATION ILO 108&#160;<br/>TIRGL/ILO2 - &#160;INTERNATIONAL&#160;LABOUR ORGANISATION ILO 22 &#160;<br/>TIRGL/MALA -&#160; MALARIOUS AREAS &#160;<br/>TIRGL/NATO&#160;- &#160;NORTH ATLANTIC TREATY&#160;ORGANIZATION&#160;<br/>TIRGL/OECD -&#160; ORGANISATION FOR ECONOMIC COOPERATION AND&#160;<br/>DEVELOPMENT&#160;&#160;<br/>TIRGL/OAS&#160;&#160;- &#160;ORGANISATION OF AMERICAN STATES&#160;<br/>TIRGL/PLAG -&#160;&#160;PLAGUE INFECTED AREAS&#160;<br/>TIRGL/SCHN - &#160;SCHENGEN STATES&#160;<br/>TIRGL/</p>
+<p style="position:absolute;top:727px;left:247px;white-space:nowrap" class="ft136"><b>NZEA&#160;</b></p>
+<p style="position:absolute;top:727px;left:288px;white-space:nowrap" class="ft132">-&#160;&#160;TERRITORIES&#160;ASSOCIATED&#160;WITH&#160;NEW&#160;ZEALAND&#160;</p>
+<p style="position:absolute;top:742px;left:204px;white-space:nowrap" class="ft132">TIRGL/</p>
+<p style="position:absolute;top:742px;left:248px;white-space:nowrap" class="ft136"><b>AUST</b></p>
+<p style="position:absolute;top:742px;left:284px;white-space:nowrap" class="ft132">&#160;- &#160;TERRITORIES DEPENDENT&#160;ON AUSTRALIA&#160;</p>
+<p style="position:absolute;top:758px;left:204px;white-space:nowrap" class="ft132">TIRGL/</p>
+<p style="position:absolute;top:758px;left:247px;white-space:nowrap" class="ft136"><b>FRAN</b></p>
+<p style="position:absolute;top:758px;left:285px;white-space:nowrap" class="ft132">&#160;-&#160;TERRITORIES DEPENDENT&#160;ON FRANCE.&#160;</p>
+<p style="position:absolute;top:773px;left:204px;white-space:nowrap" class="ft132">TIRGL/</p>
+<p style="position:absolute;top:773px;left:247px;white-space:nowrap" class="ft136"><b>BRIT</b></p>
+<p style="position:absolute;top:773px;left:279px;white-space:nowrap" class="ft132">&#160;- &#160;TERRITORIES&#160;DEPENDENT&#160;ON THE&#160;UNITED&#160;KINGDOM&#160;</p>
+<p style="position:absolute;top:789px;left:204px;white-space:nowrap" class="ft132">TIRGL/</p>
+<p style="position:absolute;top:789px;left:247px;white-space:nowrap" class="ft136"><b>NETH</b></p>
+<p style="position:absolute;top:789px;left:284px;white-space:nowrap" class="ft132">&#160;- &#160;TERRITORIES UNDER ADMINISTRATION OF&#160;THE&#160;</p>
+<p style="position:absolute;top:804px;left:204px;white-space:nowrap" class="ft1310">NETHERLANDS&#160;<br/>TIRGL/</p>
+<p style="position:absolute;top:820px;left:247px;white-space:nowrap" class="ft136"><b>USAD</b></p>
+<p style="position:absolute;top:820px;left:285px;white-space:nowrap" class="ft132">&#160;-&#160;TERRITORIES UNDER ADMINISTRATION OF&#160;THE U.S.A.&#160;</p>
+<p style="position:absolute;top:835px;left:204px;white-space:nowrap" class="ft1310">TIRGL/YFEN -&#160;&#160;YELLOW FEVER ENDEMIC AREAS&#160;<br/>TIRGL/YFIN -&#160;&#160;YELLOW FEVER INFECTED&#160;AREAS&#160;<br/>&#160;<br/>CHECK TINEWS/N1 - AUSTRIA&#160;TO&#160;TEMPORARILY REINSTATE&#160;BORDER&#160;<br/>CONTROL WITH&#160;THE OTHER&#160;SCHENGEN MEMBER STATES&#160;<br/>END GROUP LIST&#160;<br/>=&gt;&#160;</p>
+<p style="position:absolute;top:945px;left:135px;white-space:nowrap" class="ft131">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft140{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft141{font-size:14px;font-family:Arial;color:#000000;}
+	.ft142{font-size:11px;font-family:Arial;color:#000000;}
+	.ft143{font-size:14px;font-family:Arial;color:#000000;}
+	.ft144{font-size:14px;font-family:Arial;color:#000000;}
+	.ft145{font-size:14px;font-family:Arial;color:#0000ff;}
+	.ft146{font-size:14px;font-family:Arial;color:#000000;}
+	.ft147{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft148{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page14-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3014.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft140">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft147">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft142">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 14</p>
+<p style="position:absolute;top:133px;left:135px;white-space:nowrap" class="ft147">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:174px;left:277px;white-space:nowrap" class="ft143"><b>Links: Improved in TIMATIC Specific Database&#160;</b></p>
+<p style="position:absolute;top:193px;left:135px;white-space:nowrap" class="ft148">&#160;<br/>Timatic makes use of links to refer to&#160;additional&#160;information that might, in certain cases,&#160;<br/>be relevant to a particular query.&#160;<br/>&#160;<br/>Timatic groups link&#160;information closely within the relevant section or subsection &#160;<br/>In addition,&#160;a link takes the user&#160;<i>directly</i>&#160;to the&#160;paragraph referenced, eliminating the&#160;<br/>need to review text to reach a certain paragraph. Timatic also makes more widespread&#160;<br/>use of links to&#160;ensure that&#160;the most concise and relevant information is displayed.&#160;<br/>&#160;<br/>Links can be&#160;present in&#160;any sections or subsection of Timatic 3. The user&#160;can simply&#160;<br/>“click” on the link to view&#160;the relevant information. For examples of links,&#160;see&#160;</p>
+<p style="position:absolute;top:382px;left:696px;white-space:nowrap" class="ft145"><i>Examples&#160;</i></p>
+<p style="position:absolute;top:401px;left:135px;white-space:nowrap" class="ft145"><i>of TIMATIC&#160;Specific Database responses</i></p>
+<p style="position:absolute;top:401px;left:438px;white-space:nowrap" class="ft141">&#160;</p>
+<p style="position:absolute;top:420px;left:135px;white-space:nowrap" class="ft148">&#160;<br/>It should be&#160;noted that it&#160;is&#160;<i><b>not&#160;</b></i>necessary to follow (view) the&#160;link if&#160;it does not apply to&#160;<br/>the traveller. For example, if there’s&#160;a link appearing in subsection Minors, the user only&#160;<br/>needs to follow it when dealing with&#160;Minors. The use of links&#160;saves the user valuable&#160;<br/>time by only having to read the most relevant information and only having to follow the&#160;<br/>link in the specific&#160;cases.&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft150{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft151{font-size:14px;font-family:Arial;color:#000000;}
+	.ft152{font-size:11px;font-family:Arial;color:#000000;}
+	.ft153{font-size:14px;font-family:Arial;color:#000000;}
+	.ft154{font-size:14px;font-family:Arial;color:#ff0000;}
+	.ft155{font-size:14px;font-family:Arial;color:#0000ff;}
+	.ft156{font-size:14px;font-family:Arial;color:#008000;}
+	.ft157{font-size:16px;font-family:Arial;color:#000000;}
+	.ft158{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft159{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft1510{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page15-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3015.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft150">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft158">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft151">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft152">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 15</p>
+<p style="position:absolute;top:131px;left:135px;white-space:nowrap" class="ft153"><b>&#160;</b></p>
+<p style="position:absolute;top:150px;left:135px;white-space:nowrap" class="ft150">&#160;</p>
+<p style="position:absolute;top:170px;left:361px;white-space:nowrap" class="ft154"><b>NEW:&#160;</b></p>
+<p style="position:absolute;top:170px;left:409px;white-space:nowrap" class="ft153"><b>TIBACK Command&#160;</b></p>
+<p style="position:absolute;top:189px;left:135px;white-space:nowrap" class="ft1510"><b>&#160;<br/></b>A new command,&#160;<b>TIBACK</b>&#160;is introduced in Timatic the purpose of the TIBACK command&#160;<br/>is to allow a&#160;user to navigate back to&#160;the results&#160;of the previous TIMATIC command, if&#160;<br/>required.&#160;<br/>&#160;<br/>TIBACK is functional&#160;system wide and when entered will execute the command before&#160;<br/>last (executed by the same user in that session). &#160;&#160;<br/>&#160;<br/>Please note:&#160;it is only possible to&#160;use&#160;the TIBACK command after previously executing&#160;<br/>at least two&#160;commands in a session.&#160;<br/>&#160;<br/>The main benefit of TIBACK is that it&#160;allows a user&#160;who has followed a&#160;</p>
+<p style="position:absolute;top:398px;left:652px;white-space:nowrap" class="ft155">link</p>
+<p style="position:absolute;top:398px;left:677px;white-space:nowrap" class="ft151">&#160;to go back to&#160;</p>
+<p style="position:absolute;top:417px;left:135px;white-space:nowrap" class="ft1510">the previous page viewed if they wish. &#160;<br/>&#160;<br/>For example,&#160;looking at the TIRV/NAES/DENL command in the&#160;</p>
+<p style="position:absolute;top:455px;left:601px;white-space:nowrap" class="ft155">example</p>
+<p style="position:absolute;top:455px;left:663px;white-space:nowrap" class="ft151">&#160;on page 10,&#160;we&#160;</p>
+<p style="position:absolute;top:474px;left:135px;white-space:nowrap" class="ft151">see a link to&#160;information regarding minors (</p>
+<p style="position:absolute;top:474px;left:448px;white-space:nowrap" class="ft156">TIDFT/NL/PA/PT/ID19470</p>
+<p style="position:absolute;top:474px;left:639px;white-space:nowrap" class="ft151">). If the user&#160;</p>
+<p style="position:absolute;top:493px;left:135px;white-space:nowrap" class="ft1510">decides to use the link, then, after viewing the information about minors, use of the&#160;<br/>TIBACK command&#160;will take the user&#160;back to the&#160;previous page. i.e. TIRV/NAES/DENL.&#160;<br/>&#160;<br/>More examples of TIBACK can be found in&#160;</p>
+<p style="position:absolute;top:550px;left:452px;white-space:nowrap" class="ft155">Appendix 3</p>
+<p style="position:absolute;top:550px;left:535px;white-space:nowrap" class="ft151">.</p>
+<p style="position:absolute;top:548px;left:540px;white-space:nowrap" class="ft157">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft160{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft161{font-size:14px;font-family:Arial;color:#000000;}
+	.ft162{font-size:11px;font-family:Arial;color:#000000;}
+	.ft163{font-size:16px;font-family:Arial;color:#000000;}
+	.ft164{font-size:14px;font-family:Arial;color:#000000;}
+	.ft165{font-size:13px;font-family:Arial;color:#000000;}
+	.ft166{font-size:11px;font-family:Arial;color:#000000;}
+	.ft167{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft168{font-size:16px;line-height:20px;font-family:Arial;color:#000000;}
+	.ft169{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft1610{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft1611{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page16-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3016.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft160">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft167">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft161">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft162">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 16</p>
+<p style="position:absolute;top:132px;left:135px;white-space:nowrap" class="ft168">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:174px;left:415px;white-space:nowrap" class="ft164"><b>Appendix 1&#160;</b></p>
+<p style="position:absolute;top:192px;left:135px;white-space:nowrap" class="ft165"><b>&#160;</b></p>
+<p style="position:absolute;top:211px;left:135px;white-space:nowrap" class="ft160">&#160;</p>
+<p style="position:absolute;top:231px;left:135px;white-space:nowrap" class="ft1610"><b>Passport section format &#160;<br/></b>&#160;<br/>&#160;<br/>When TIMATIC receives a Specific&#160;Database request, Passport section&#160;information is&#160;<br/>always displayed first, in&#160;accordance&#160;with the format below.&#160;<br/>&#160;</p>
+<p style="position:absolute;top:353px;left:226px;white-space:nowrap" class="ft166"><b>Subsection&#160;</b></p>
+<p style="position:absolute;top:353px;left:535px;white-space:nowrap" class="ft166"><b>Formatting Rules&#160;</b></p>
+<p style="position:absolute;top:379px;left:143px;white-space:nowrap" class="ft162">Document Validity:&#160;</p>
+<p style="position:absolute;top:379px;left:398px;white-space:nowrap" class="ft162">Header is not displayed.&#160;</p>
+<p style="position:absolute;top:404px;left:143px;white-space:nowrap" class="ft162">Passport Exemptions:&#160;</p>
+<p style="position:absolute;top:404px;left:398px;white-space:nowrap" class="ft162">Header is displayed.&#160;</p>
+<p style="position:absolute;top:429px;left:143px;white-space:nowrap" class="ft162">Admission&#160;and&#160;Transit Restrictions&#160;</p>
+<p style="position:absolute;top:429px;left:398px;white-space:nowrap" class="ft162">Header is displayed.&#160;</p>
+<p style="position:absolute;top:455px;left:143px;white-space:nowrap" class="ft162">Minors:&#160;</p>
+<p style="position:absolute;top:455px;left:398px;white-space:nowrap" class="ft1611">The paragraphs&#160;from this subsection are displayed in the Minors&#160;<br/>subsection, appearing underneath&#160;the body&#160;text of the Visa&#160;<br/>section. The text of the paragraphs in&#160;Minors&#160;subsection of the&#160;<br/>Passport section appear first, followed by&#160;the paragraphs of&#160;the&#160;<br/>Minors subsection of the Visa&#160;section. The header is displayed.&#160;</p>
+<p style="position:absolute;top:542px;left:143px;white-space:nowrap" class="ft162">Additional Information:&#160;</p>
+<p style="position:absolute;top:542px;left:398px;white-space:nowrap" class="ft1611">The paragraphs&#160;from&#160;this subsection are displayed in the&#160;<br/>Additional Information (AI) subsection, appearing under the&#160;<br/>body text of the Visa section. The text of the paragraphs in&#160;AI&#160;<br/>subsection of the Passport section appear first, followed by&#160;the&#160;<br/>paragraphs of the AI subsection of&#160;the Visa&#160;section. The header&#160;<br/>is displayed.&#160;</p>
+<p style="position:absolute;top:645px;left:143px;white-space:nowrap" class="ft162">Warning:&#160;</p>
+<p style="position:absolute;top:645px;left:398px;white-space:nowrap" class="ft1611">The paragraphs&#160;from this subsection are displayed in the&#160;<br/>Warning subsection, appearing underneath the body&#160;text of the&#160;<br/>Visa section. The text of the paragraphs in&#160;Warning subsection&#160;<br/>of the Passport&#160;section appear&#160;first,&#160;followed&#160;by&#160;the paragraphs&#160;<br/>of the Warning&#160;subsection of the Visa section.&#160;The header is&#160;<br/>displayed.&#160;</p>
+<p style="position:absolute;top:739px;left:135px;white-space:nowrap" class="ft161">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft170{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft171{font-size:14px;font-family:Arial;color:#000000;}
+	.ft172{font-size:11px;font-family:Arial;color:#000000;}
+	.ft173{font-size:14px;font-family:Arial;color:#000000;}
+	.ft174{font-size:13px;font-family:Arial;color:#000000;}
+	.ft175{font-size:11px;font-family:Arial;color:#000000;}
+	.ft176{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft177{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft178{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page17-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3017.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft170">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft176">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft171">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft172">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 17</p>
+<p style="position:absolute;top:131px;left:415px;white-space:nowrap" class="ft173"><b>Appendix 2&#160;</b></p>
+<p style="position:absolute;top:149px;left:135px;white-space:nowrap" class="ft177">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:187px;left:135px;white-space:nowrap" class="ft174"><b>Visa section&#160;format &#160;</b></p>
+<p style="position:absolute;top:205px;left:135px;white-space:nowrap" class="ft177">&#160;<br/>&#160;<br/>Visa section&#160;information is displayed according to&#160;the format below.&#160;<br/>&#160;</p>
+<p style="position:absolute;top:289px;left:226px;white-space:nowrap" class="ft175"><b>Subsection&#160;</b></p>
+<p style="position:absolute;top:289px;left:535px;white-space:nowrap" class="ft175"><b>Formatting Rules&#160;</b></p>
+<p style="position:absolute;top:315px;left:143px;white-space:nowrap" class="ft172">Visa Exemptions:&#160;</p>
+<p style="position:absolute;top:315px;left:398px;white-space:nowrap" class="ft172">Header is not displayed.&#160;</p>
+<p style="position:absolute;top:340px;left:143px;white-space:nowrap" class="ft172">TWOV (Transit Without Visa)&#160;</p>
+<p style="position:absolute;top:340px;left:398px;white-space:nowrap" class="ft172">Header is displayed.&#160;</p>
+<p style="position:absolute;top:365px;left:143px;white-space:nowrap" class="ft172">Merchant Seamen:&#160;</p>
+<p style="position:absolute;top:365px;left:398px;white-space:nowrap" class="ft172">Header is not displayed.&#160;</p>
+<p style="position:absolute;top:391px;left:143px;white-space:nowrap" class="ft172">Visa Issuance:&#160;</p>
+<p style="position:absolute;top:391px;left:398px;white-space:nowrap" class="ft172">Header is displayed.&#160;</p>
+<p style="position:absolute;top:416px;left:143px;white-space:nowrap" class="ft172">Compulsory&#160;Currency Exchange:&#160;</p>
+<p style="position:absolute;top:416px;left:398px;white-space:nowrap" class="ft172">Header is displayed.&#160;</p>
+<p style="position:absolute;top:441px;left:143px;white-space:nowrap" class="ft172">Minors:&#160;</p>
+<p style="position:absolute;top:441px;left:398px;white-space:nowrap" class="ft178">Header is displayed. (Information from Passport and Visa&#160;<br/>sections is merged under one&#160;header; see above)&#160;</p>
+<p style="position:absolute;top:482px;left:143px;white-space:nowrap" class="ft172">Additional Information:&#160;</p>
+<p style="position:absolute;top:482px;left:398px;white-space:nowrap" class="ft178">Header is displayed.&#160;(AI from the Passport section is displayed&#160;<br/>first, followed by&#160;the AI from the Visa section and merged&#160;under&#160;<br/>one header; see above)&#160;</p>
+<p style="position:absolute;top:538px;left:143px;white-space:nowrap" class="ft172">Warning:&#160;</p>
+<p style="position:absolute;top:538px;left:398px;white-space:nowrap" class="ft178">Header is displayed. (Warning&#160;from the Passport section is&#160;<br/>displayed first,&#160;followed by&#160;the&#160;Warning from&#160;the Visa section&#160;<br/>and merged&#160;under one header; see above)&#160;</p>
+<p style="position:absolute;top:587px;left:135px;white-space:nowrap" class="ft176">&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft180{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft181{font-size:14px;font-family:Arial;color:#000000;}
+	.ft182{font-size:11px;font-family:Arial;color:#000000;}
+	.ft183{font-size:14px;font-family:Arial;color:#000000;}
+	.ft184{font-size:13px;font-family:Arial;color:#000000;}
+	.ft185{font-size:11px;font-family:Arial;color:#000000;}
+	.ft186{font-size:13px;font-family:Arial;color:#000000;}
+	.ft187{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft188{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft189{font-size:14px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft1810{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft1811{font-size:11px;line-height:15px;font-family:Arial;color:#000000;}
+	.ft1812{font-size:11px;line-height:18px;font-family:Arial;color:#000000;}
+	.ft1813{font-size:11px;line-height:16px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page18-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3018.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft180">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft187">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft181">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft182">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 18</p>
+<p style="position:absolute;top:133px;left:135px;white-space:nowrap" class="ft180">&#160;</p>
+<p style="position:absolute;top:153px;left:415px;white-space:nowrap" class="ft183"><b>Appendix 3&#160;</b></p>
+<p style="position:absolute;top:172px;left:135px;white-space:nowrap" class="ft181">&#160;</p>
+<p style="position:absolute;top:191px;left:135px;white-space:nowrap" class="ft184"><b>TIBACK Example 1&#160;</b></p>
+<p style="position:absolute;top:208px;left:135px;white-space:nowrap" class="ft189"><b>&#160;<br/></b>A Somali minor is travelling with his&#160;parents and&#160;an agent would like to&#160;have more&#160;<br/>information:&#160;<br/>&#160;</p>
+<p style="position:absolute;top:284px;left:135px;white-space:nowrap" class="ft184"><b>TIRV/NASO/DEGB &#160;</b></p>
+<p style="position:absolute;top:301px;left:135px;white-space:nowrap" class="ft1810">TIMATIC-3 / 18JUN08 / 1038&#160;UTC&#160;<br/>NATIONAL SOMALIA (SO) &#160;&#160; &#160;&#160; &#160;&#160;&#160; &#160;<br/>DESTINATION&#160;UNITED KINGDOM&#160;(GREAT&#160;BRITAIN)&#160;(GB)&#160;<br/>&#160;<br/>VISA DESTINATION UNITED KINGDOM (GREAT BRITAIN) (GB)&#160;<br/>&#160;<br/>......&#160;NORMAL PASSPORTS ONLY&#160;......&#160;<br/>PASSPORT&#160;REQUIRED. &#160;<br/>- PASSPORT&#160;AND/OR PASSPORT REPLACING DOCUMENTS&#160;MUST&#160;BE VALID&#160;<br/>&#160; FOR&#160;THE&#160;PERIOD OF&#160;INTENDED STAY.&#160;<br/>ADMISSION AND TRANSIT&#160;RESTRICTIONS:&#160;<br/>- SINCE JULY 3, 2003, PASSPORTS&#160;ISSUED BY SOMALIA ARE NOT&#160;<br/>&#160; RECOGNISED, IRRESPECTIVE OF WHEN&#160;THEY&#160;WERE ISSUED. (SEE NOTE&#160;<br/>&#160; 29908)&#160;<br/>&#160; &#160; NOTE&#160;29908:&#160;THEY ARE ONLY PERMITTED ENTRY&#160;IF&#160;HOLDING A&#160;<br/>&#160; &#160;&#34;DECLARATION OF&#160;IDENTITY&#160;FOR VISA&#160;PURPOSES&#34; (ALSO KNOWN AS&#160;<br/>&#160; &#160;A &#34;FORM GV3&#34;), ISSUED BY&#160;A&#160;BRITISH CONSULATE OR&#160;HIGH&#160;<br/>&#160; &#160;COMMISSION. IT&#160;IS A SINGLE SHEET&#160;DOCUMENT&#160;SHOWING PHOTO AND&#160;<br/>&#160; &#160;PERSONAL DETAILS. AT&#160;THE BOTTOM&#160;OF&#160;THE&#160;FORM&#160;THERE IS SPACE&#160;<br/>&#160; &#160;FOR&#160;THE APPROPRIATE&#160;VISA.&#160;THIS&#160;FORM SHOULD&#160;BE USED FOR&#160;<br/>&#160; &#160;ENTRY&#160;TO/TRANSIT&#160;THROUGH THE UNITED KINGDOM.&#160;THE FORM MUST&#160;<br/>&#160; &#160;BE ENDORSED WITH&#160;A VALID VISA.&#160;<br/>&#160;<br/>VISA REQUIRED.&#160;<br/>&#160;<br/><b>MINORS:&#160;<br/></b>- WHEN&#160;THEIR NAMES ARE REGISTERED IN&#160;THE PASSPORT OF (ONE OF)&#160;<br/>&#160;&#160;THEIR PARENTS&#160;OR GUARDIANS, TIDFT/GB/PA/MI/ID17270&#160;<br/>- CHILDREN&#160;MUST&#160;ALSO COMPLY WITH&#160;THE ENTRY&#160;OR TRANSIT&#160;<br/>&#160; REGULATIONS.&#160;<b>TIDFT/GB/VI/MI/ID14075</b>&#160;</p>
+<p style="position:absolute;top:767px;left:135px;white-space:nowrap" class="ft186">ADDITIONAL&#160;INFORMATION:&#160;</p>
+<p style="position:absolute;top:783px;left:135px;white-space:nowrap" class="ft1812">- FLIGHTS&#160;FROM UNITED KINGDOM&#160;TO&#160;CHANNEL ISLANDS, IRELAND&#160;<br/>&#160; (REP. OF) AND ISLE OF MAN ARE DOMESTIC FLIGHTS.&#160;THEREFORE&#160;<br/>&#160; PASSPORTS&#160;ARE NOT&#160;REQUIRED FOR&#160;ANY NATIONALITY.&#160;&#160;<br/>- ALTHOUGH&#160;THE UNITED&#160;KINGDOM WILL NO LONGER RECOGNISE&#160;<br/>&#160; PASSPORTS&#160;ISSUED BY SOMALIA, VALID VISAS WILL STILL BE&#160;<br/>&#160; HONOURED, PROVIDING&#160;THAT&#160;THEY&#160;HAVE BEEN PLACED IN SOMALI&#160;<br/>&#160; PASSPORTS&#160;PRIOR&#160;TO&#160;JULY 3, 2003, INCLUDING PASSENGERS WHOSE&#160;<br/>&#160; LAST&#160;PERMISSION&#160;TO&#160;ENTER&#160;OR REMAIN WAS MORE THAN SIX&#160;MONTHS&#160;<br/>&#160; AND IS STILL VALID. &#34;SOMALILAND&#34; AND &#34;TRANSITIONAL NATIONAL&#160;<br/>&#160; GOVERNMENT&#34;&#160;DOCUMENTS&#160;ARE NOT RECOGNISED.&#160;<br/>WARNING</p>
+<p style="position:absolute;top:939px;left:200px;white-space:nowrap" class="ft181">:&#160;</p>
+<p style="position:absolute;top:958px;left:135px;white-space:nowrap" class="ft189">&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;</p>
+<p style="position:absolute;top:659px;left:457px;white-space:nowrap" class="ft186">If the agent now clicks the&#160;link…&#160;</p>
+<p style="position:absolute;top:868px;left:226px;white-space:nowrap" class="ft1810">The next screen&#160;will show&#160;the&#160;information&#160;<br/>as in&#160;<b>TIDFT/GB/VI/MI/ID14075</b>&#160;on minors&#160;</p>
+<p style="position:absolute;top:916px;left:269px;white-space:nowrap" class="ft1813"><b>TIPN</b>, or page down,&#160;will show&#160;the next page&#160;<br/>of information on&#160;<b>TIDFT/GB/VI/MI/ID14075</b>&#160;</p>
+<p style="position:absolute;top:967px;left:312px;white-space:nowrap" class="ft1810">Repeat until&#160;all&#160;the text has been read or until&#160;<br/>you deem necessary. &#160;<br/>&#160;<br/>When entering&#160;<b>TIBACK</b>, the command&#160;will&#160;<br/>take the user back to the original&#160;<br/><b>TIRV/NASO/DEGB</b>&#160;command&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./publications/timatic/Documents/using_timatic_v3-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft190{font-size:16px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft191{font-size:14px;font-family:Arial;color:#000000;}
+	.ft192{font-size:11px;font-family:Arial;color:#000000;}
+	.ft193{font-size:13px;font-family:Arial;color:#000000;}
+	.ft194{font-size:9px;font-family:Arial;color:#000000;}
+	.ft195{font-size:9px;font-family:Arial;color:#000000;}
+	.ft196{font-size:16px;font-family:Arial;color:#000000;}
+	.ft197{font-size:11px;font-family:Arial;color:#000000;}
+	.ft198{font-size:16px;font-family:Arial;color:#000000;}
+	.ft199{font-size:13px;font-family:Arial;color:#000000;}
+	.ft1910{font-size:16px;line-height:20px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft1911{font-size:9px;line-height:13px;font-family:Arial;color:#000000;}
+	.ft1912{font-size:16px;line-height:20px;font-family:Arial;color:#000000;}
+	.ft1913{font-size:13px;line-height:17px;font-family:Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page19-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="using_timatic_v3019.png" alt="background image"/>
+<p style="position:absolute;top:58px;left:135px;white-space:nowrap" class="ft190">&#160;</p>
+<p style="position:absolute;top:1097px;left:135px;white-space:nowrap" class="ft1910">&#160;<br/>&#160;</p>
+<p style="position:absolute;top:1096px;left:135px;white-space:nowrap" class="ft191">&#160;</p>
+<p style="position:absolute;top:1114px;left:135px;white-space:nowrap" class="ft192">Using the Timatic CLI Mainframe application&#160;v3 &#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; Page 19</p>
+<p style="position:absolute;top:130px;left:135px;white-space:nowrap" class="ft191">&#160;</p>
+<p style="position:absolute;top:149px;left:135px;white-space:nowrap" class="ft193"><b>TIBACK Example 2&#160;</b></p>
+<p style="position:absolute;top:166px;left:459px;white-space:nowrap" class="ft192">&#160;</p>
+<p style="position:absolute;top:182px;left:135px;white-space:nowrap" class="ft193"><b>TIRV/NAUS/DEAF &#160;</b></p>
+<p style="position:absolute;top:198px;left:135px;white-space:nowrap" class="ft1911">TIMATIC-3 / 18JUN08 / 1233 UTC&#160;<br/>NATIONAL U.S.A. (US) &#160; &#160; &#160; &#160; &#160;&#160;&#160;/DESTINATION AFGHANISTAN (AF)&#160;<br/>&#160;<br/>VISA DESTINATION AFGHANISTAN (AF)&#160;<br/>&#160;<br/>...... NORMAL PASSPORTS&#160;ONLY&#160;......&#160;<br/>PASSPORT REQUIRED. &#160;<br/>- PASSPORT AND/OR PASSPORT REPLACING&#160;DOCUMENTS MUST BE VALID&#160;<br/>&#160; ON&#160;ARRIVAL.&#160;<br/>&#160;<br/>VISA REQUIRED.&#160;<br/>&#160;<br/>ADDITIONAL INFORMATION:&#160;<br/>- VISA NOT REQUIRED&#160;FOR THOSE, IRRESPECTIVE OF NATIONALITY,&#160;<br/>&#160; WHO&#160;ARE BORN:&#160;<br/>&#160; &#160;- IN AFGHANISTAN;&#160;<br/>&#160; &#160;- TO&#160;PARENTS WHO&#160;ARE NATIONALS OF AFGHANISTAN;&#160;<br/>&#160; &#160;- TO&#160;PARENTS WHO&#160;ARE BORN IN AFGHANISTAN BUT ARE&#160;NOT&#160;<br/>&#160; NATIONALS&#160;OF AFGHANISTAN. &#160;<br/>- VISITORS MUST HOLD RETURN OR ONWARD TICKETS AND ALL&#160;<br/>&#160; DOCUMENTS&#160;REQUIRED FOR THEIR NEXT&#160;DESTINATION AND SUFFICIENT&#160;<br/>&#160; FUNDS&#160;FOR THEIR MAINTENANCE.&#160;<br/>- WOMEN&#160;OF&#160;ALL NATIONALITIES&#160;<b>TIDFT/AF/VI/AI/ID35</b>&#160;<br/>- TOURISTS AND JOURNALISTS ARE ADVISED TO&#160;REPORT&#160;ON ARRIVAL TO&#160;<br/>&#160; THE TOURIST&#160;BUREAU, PRESS DEPARTMENT, KABUL.&#160;<br/>- ALIEN RESIDENTS AND&#160;TOURISTS WHOSE VISA HAS BEEN EXTENDED</p>
+<p style="position:absolute;top:542px;left:554px;white-space:nowrap" class="ft192">&#160;</p>
+<p style="position:absolute;top:558px;left:135px;white-space:nowrap" class="ft192">&#160;</p>
+<p style="position:absolute;top:574px;left:135px;white-space:nowrap" class="ft196">If the agent now selects the link (</p>
+<p style="position:absolute;top:578px;left:397px;white-space:nowrap" class="ft195"><b>TIDFT/AF/VI/AI/ID35)&#160;</b></p>
+<p style="position:absolute;top:574px;left:516px;white-space:nowrap" class="ft196">the following information will be&#160;</p>
+<p style="position:absolute;top:595px;left:135px;white-space:nowrap" class="ft1912">displayed:&#160;<br/>&#160;</p>
+<p style="position:absolute;top:635px;left:135px;white-space:nowrap" class="ft192">=&gt;<b>TIDFT/AF/VI/AI/ID35</b>&#160;&#160;</p>
+<p style="position:absolute;top:650px;left:135px;white-space:nowrap" class="ft1911">TIMATIC-3 / 18JUN08 / 1233 UTC&#160;<br/>VISA &#160; &#160; &#160; &#160; FULL&#160;TEXT FOR: AFGHANISTAN&#160;(AF)&#160;<br/>&#160;<br/>&#160;ADDITIONAL INFORMATION:&#160;<br/>- WOMEN&#160;OF&#160;ALL NATIONALITIES SHOULD&#160;COVER THEIR BODY&#160;WITH&#160;<br/>&#160; CLOTHING, EXCEPT FOR&#160;THE&#160;FACE, HANDS AND FEET,&#160;DURING THEIR&#160;<br/>&#160; STAY&#160;IN&#160;AFGHANISTAN.&#160;</p>
+<p style="position:absolute;top:747px;left:135px;white-space:nowrap" class="ft192">&#160;</p>
+<p style="position:absolute;top:764px;left:135px;white-space:nowrap" class="ft1912">If the agent wishes to return to the earlier entry that command does&#160;not need to&#160;<br/>be repeated because entering&#160;<b>TIBACK</b>&#160;will return to the original command:&#160;<br/>&#160;</p>
+<p style="position:absolute;top:825px;left:135px;white-space:nowrap" class="ft193"><b>TIRV/NAUS/DEAF &#160;</b></p>
+<p style="position:absolute;top:842px;left:135px;white-space:nowrap" class="ft1911">TIMATIC-3 / 18JUN08 / 1233 UTC&#160;<br/>NATIONAL U.S.A. (US) &#160; &#160; &#160; &#160; &#160;&#160;&#160;/DESTINATION AFGHANISTAN (AF)&#160;<br/>&#160;<br/>VISA DESTINATION AFGHANISTAN (AF)&#160;<br/>&#160;<br/>...... NORMAL PASSPORTS&#160;ONLY&#160;......&#160;<br/>PASSPORT REQUIRED. &#160;<br/>- PASSPORT AND/OR PASSPORT REPLACING&#160;DOCUMENTS MUST BE VALID&#160;<br/>&#160; ON&#160;ARRIVAL.&#160;<br/>&#160;<br/>VISA REQUIRED.&#160;<br/>&#160;<br/>ADDITIONAL INFORMATION:&#160;<br/>- VISA NOT REQUIRED&#160;FOR THOSE, IRRESPECTIVE OF NATIONALITY,&#160;<br/>&#160; WHO&#160;ARE BORN:&#160;<br/>&#160; &#160; …………</p>
+<p style="position:absolute;top:1044px;left:196px;white-space:nowrap" class="ft196">&#160;</p>
+<p style="position:absolute;top:1063px;left:135px;white-space:nowrap" class="ft194">&#160; &#160; …………</p>
+<p style="position:absolute;top:1058px;left:196px;white-space:nowrap" class="ft196">&#160;</p>
+<p style="position:absolute;top:407px;left:646px;white-space:nowrap" class="ft1913">If the passenger is a&#160;woman,&#160;<br/>the following&#160;link could be&#160;<br/>selected&#160;</p>
+</div>
+</body>
+</html>
