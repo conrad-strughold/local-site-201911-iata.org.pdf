@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/CUWG/Business-requirements-at-Common-Use-positions-June-2016-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:14px;font-family:ArialMT;color:#00427b;}
+	.ft11{font-size:10px;font-family:ArialMT;color:#00427b;}
+	.ft12{font-size:16px;font-family:Arial;color:#00427b;}
+	.ft13{font-size:14px;font-family:Arial;color:#00427b;}
+	.ft14{font-size:12px;font-family:Arial;color:#001f5f;}
+	.ft15{font-size:12px;font-family:Arial;color:#00427b;}
+	.ft16{font-size:14px;line-height:19px;font-family:ArialMT;color:#00427b;}
+	.ft17{font-size:14px;line-height:18px;font-family:ArialMT;color:#00427b;}
+	.ft18{font-size:14px;line-height:15px;font-family:ArialMT;color:#00427b;}
+	.ft19{font-size:14px;line-height:22px;font-family:ArialMT;color:#00427b;}
+	.ft110{font-size:14px;line-height:21px;font-family:ArialMT;color:#00427b;}
+	.ft111{font-size:12px;line-height:17px;font-family:Arial;color:#001f5f;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page1-div" style="position:relative;width:893px;height:1262px;">
+<img width="893" height="1262" src="Business-requirements-at-Common-Use-positions-June-2016001.png" alt="background image"/>
+<p style="position:absolute;top:188px;left:893px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:1198px;left:443px;white-space:nowrap" class="ft11">1&#160;</p>
+<p style="position:absolute;top:1213px;left:135px;white-space:nowrap" class="ft11">&#160;</p>
+<p style="position:absolute;top:222px;left:174px;white-space:nowrap" class="ft12"><b>Card&#160;Payment&#160;acceptance&#160;at Common Use&#160;positions&#160;at&#160;airports&#160;</b></p>
+<p style="position:absolute;top:260px;left:355px;white-space:nowrap" class="ft13"><b>Business&#160;requirements&#160;</b></p>
+<p style="position:absolute;top:297px;left:314px;white-space:nowrap" class="ft13"><b>Version&#160;1,&#160;published&#160;in&#160;June&#160;2016&#160;</b></p>
+<p style="position:absolute;top:334px;left:135px;white-space:nowrap" class="ft13"><b>&#160;</b></p>
+<p style="position:absolute;top:371px;left:135px;white-space:nowrap" class="ft13"><b>Preamble&#160;</b></p>
+<p style="position:absolute;top:408px;left:135px;white-space:nowrap" class="ft16">Common&#160;Use&#160;(CU)&#160;touchpoints&#160;(self-service&#160;positions&#160;such&#160;as&#160;self-service&#160;kiosks&#160;or&#160;<br/>bag&#160;drops,&#160;and&#160;agent&#160;positions&#160;such&#160;as&#160;check-in&#160;desks,&#160;bag&#160;drops,&#160;gate&#160;positions)&#160;are&#160;<br/>increasingly&#160;called&#160;to&#160;perform&#160;sales&#160;transactions,&#160;which&#160;requires&#160;the&#160;acceptance&#160;of&#160;a&#160;<br/>payment&#160;instrument&#160;if&#160;the&#160;transaction&#160;is&#160;to&#160;be&#160;performed&#160;end-to-end&#160;at&#160;the&#160;CU&#160;position.&#160;<br/>Card&#160;payment&#160;is&#160;presently&#160;the&#160;payment&#160;instrument&#160;of&#160;choice&#160;for&#160;the&#160;passengers&#160;and&#160;<br/>for&#160;the&#160;airlines.&#160;However,&#160;accepting&#160;card payment&#160;at&#160;CU&#160;positions&#160;is&#160;practiced&#160;only&#160;by&#160;<br/>some&#160;airlines&#160;in&#160;some&#160;regions,&#160;hence&#160;it&#160;is&#160;currently&#160;conducted&#160;in very&#160;disparate&#160;ways.&#160;</p>
+<p style="position:absolute;top:559px;left:135px;white-space:nowrap" class="ft19">The&#160;card&#160;industry&#160;is&#160;progressively&#160;rolling&#160;out&#160;EMV&#160;chip&#160;cards,&#160;which&#160;substitute&#160;chip to&#160;<br/>magnetic&#160;&#160;stripe&#160;&#160;acceptance.&#160;&#160;In&#160;&#160;addition,&#160;&#160;there&#160;&#160;is&#160;&#160;an&#160;&#160;over-riding&#160;&#160;demand&#160;&#160;that&#160;&#160;card&#160;<br/>payment&#160;&#160;acceptance&#160;&#160;be&#160;&#160;conducted&#160;&#160;with&#160;&#160;strict&#160;&#160;PCI&#160;&#160;DSS&#160;&#160;compliance,&#160;&#160;in&#160;&#160;order&#160;&#160;to&#160;<br/>safeguard&#160;customer’s&#160;data&#160;and&#160;merchant’s&#160;reputation.&#160;While&#160;some&#160;airlines&#160;process&#160;CU&#160;<br/>transactions&#160;as&#160;Card&#160;Not&#160;Present,&#160;the&#160;business&#160;trend&#160;is&#160;to&#160;move&#160;towards&#160;Card&#160;Present.&#160;</p>
+<p style="position:absolute;top:672px;left:135px;white-space:nowrap" class="ft110">Consequently,&#160;the&#160;industry&#160;has&#160;been&#160;reviewing&#160;how&#160;card&#160;payment&#160;acceptance&#160;should&#160;<br/>be&#160;conducted&#160;at&#160;CU&#160;positions,&#160;and&#160;there&#160;is&#160;an&#160;increasing&#160;demand&#160;for&#160;guidance&#160;on&#160;what&#160;<br/>are&#160;&#160;the&#160;&#160;desirable&#160;&#160;components&#160;&#160;of&#160;&#160;a&#160;&#160;solution&#160;&#160;that&#160;&#160;would&#160;&#160;support&#160;&#160;the&#160;&#160;unique&#160;&#160;‘multi-<br/>merchants/multi-</p>
+<p style="position:absolute;top:726px;left:257px;white-space:nowrap" class="ft10">acquirers’&#160;&#160;business&#160;&#160;model&#160;&#160;of&#160;&#160;CU&#160;&#160;positions&#160;&#160;which&#160;&#160;are&#160;&#160;shared&#160;&#160;by&#160;</p>
+<p style="position:absolute;top:748px;left:135px;white-space:nowrap" class="ft10">several&#160;airlines.&#160;</p>
+<p style="position:absolute;top:785px;left:135px;white-space:nowrap" class="ft16">The&#160;&#160;following&#160;&#160;business&#160;&#160;requirements&#160;&#160;stream&#160;&#160;from&#160;&#160;the&#160;&#160;on-going&#160;&#160;discussions&#160;&#160;held&#160;&#160;at&#160;<br/>industry&#160;forums&#160;&#160;and&#160;represent&#160;&#160;recommendations&#160;that&#160;&#160;airports&#160;&#160;and/or&#160;&#160;airlines&#160;&#160;should&#160;<br/>consider&#160;when&#160;drawing&#160;up&#160;their&#160;own&#160;business&#160;requirements.&#160;They&#160;do&#160;not&#160;recommend&#160;<br/>any&#160;&#160;technology&#160;&#160;or&#160;&#160;provider,&#160;&#160;and&#160;&#160;only&#160;&#160;seek&#160;&#160;to&#160;&#160;establish&#160;&#160;the&#160;&#160;key&#160;&#160;components&#160;&#160;of&#160;&#160;an&#160;<br/>effective industry&#160;card&#160;payment&#160;for&#160;this&#160;specific&#160;environment.&#160;</p>
+<p style="position:absolute;top:897px;left:135px;white-space:nowrap" class="ft11">&#160;</p>
+<p style="position:absolute;top:911px;left:135px;white-space:nowrap" class="ft14"><i>Disclaimer:</i></p>
+<p style="position:absolute;top:911px;left:209px;white-space:nowrap" class="ft15"><i>&#160;</i></p>
+<p style="position:absolute;top:911px;left:213px;white-space:nowrap" class="ft14"><i>The&#160;information&#160;contained&#160;in&#160;this&#160;document&#160;is&#160;subject&#160;to&#160;constant&#160;review&#160;in&#160;light&#160;of&#160;</i></p>
+<p style="position:absolute;top:928px;left:135px;white-space:nowrap" class="ft111"><i>changing&#160;&#160;requirements&#160;&#160;and&#160;&#160;regulations.&#160;&#160;No&#160;&#160;reader&#160;&#160;should&#160;&#160;act&#160;&#160;on&#160;&#160;the&#160;&#160;basis&#160;&#160;of&#160;&#160;any&#160;&#160;such&#160;<br/>information&#160;without&#160;referring&#160;to&#160;applicable&#160;laws&#160;and&#160;regulations&#160;and&#160;without&#160;taking&#160;appropriate&#160;<br/>professional&#160;advice.&#160;Although&#160;every&#160;effort has&#160;been&#160;made&#160;to&#160;ensure&#160;that&#160;the&#160;information&#160;in&#160;this&#160;<br/>document&#160;&#160;is&#160;&#160;accurate&#160;&#160;and&#160;&#160;current,&#160;&#160;IATA&#160;&#160;shall&#160;&#160;not&#160;&#160;be&#160;&#160;held&#160;&#160;responsible&#160;&#160;for&#160;&#160;loss&#160;&#160;or&#160;&#160;damage&#160;<br/>caused&#160;by&#160;errors,&#160;omissions,&#160;misprints&#160;or&#160;misinterpretation&#160;of&#160;the&#160;content&#160;hereof.&#160;Furthermore,&#160;<br/>IATA&#160;&#160;expressly&#160;&#160;disclaims&#160;&#160;all&#160;&#160;and&#160;&#160;any&#160;&#160;liability&#160;&#160;to&#160;&#160;any&#160;&#160;person&#160;&#160;in&#160;&#160;respect&#160;&#160;of&#160;&#160;anything&#160;&#160;done&#160;&#160;or&#160;<br/>omitted, and&#160;the&#160;consequences&#160;of&#160;anything&#160;done&#160;or omitted,&#160;by&#160;any&#160;such&#160;person&#160;in&#160;reliance&#160;on&#160;<br/>the&#160;contents&#160;hereof.</i></p>
+<p style="position:absolute;top:1048px;left:268px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:1049px;left:484px;white-space:nowrap" class="ft15"><i>&#160;</i></p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/CUWG/Business-requirements-at-Common-Use-positions-June-2016-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft20{font-size:14px;font-family:ArialMT;color:#00427b;}
+	.ft21{font-size:10px;font-family:ArialMT;color:#00427b;}
+	.ft22{font-size:14px;font-family:Arial;color:#1f487c;}
+	.ft23{font-size:14px;font-family:Arial;color:#00427b;}
+	.ft24{font-size:14px;line-height:18px;font-family:ArialMT;color:#00427b;}
+	.ft25{font-size:14px;line-height:19px;font-family:ArialMT;color:#00427b;}
+	.ft26{font-size:14px;line-height:21px;font-family:ArialMT;color:#00427b;}
+	.ft27{font-size:14px;line-height:18px;font-family:Arial;color:#00427b;}
+	.ft28{font-size:14px;line-height:15px;font-family:ArialMT;color:#00427b;}
+	.ft29{font-size:14px;line-height:22px;font-family:ArialMT;color:#00427b;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page2-div" style="position:relative;width:893px;height:1262px;">
+<img width="893" height="1262" src="Business-requirements-at-Common-Use-positions-June-2016002.png" alt="background image"/>
+<p style="position:absolute;top:188px;left:893px;white-space:nowrap" class="ft20">&#160;</p>
+<p style="position:absolute;top:1198px;left:443px;white-space:nowrap" class="ft21">2&#160;</p>
+<p style="position:absolute;top:1213px;left:135px;white-space:nowrap" class="ft21">&#160;</p>
+<p style="position:absolute;top:222px;left:162px;white-space:nowrap" class="ft22"><b>1.&#160;&#160;A&#160;few&#160;definitions&#160;</b></p>
+<p style="position:absolute;top:258px;left:135px;white-space:nowrap" class="ft24">The&#160;card&#160;industry&#160;is&#160;in&#160;the&#160;process&#160;of&#160;conducting&#160;a&#160;world-wide&#160;technology&#160;migration&#160;of&#160;<br/>the&#160;</p>
+<p style="position:absolute;top:274px;left:165px;white-space:nowrap" class="ft20">‘face-to-face,&#160;&#160;card&#160;&#160;and&#160;&#160;cardholder&#160;&#160;present’&#160;&#160;sales,&#160;&#160;moving&#160;&#160;from&#160;&#160;magnetic&#160;&#160;stripe&#160;</p>
+<p style="position:absolute;top:296px;left:135px;white-space:nowrap" class="ft25">(magstripe)&#160;&#160;to&#160;&#160;EMV&#160;&#160;chip.&#160;&#160;The&#160;&#160;following&#160;&#160;seeks&#160;&#160;to&#160;&#160;clarify&#160;&#160;terms&#160;&#160;and&#160;&#160;some&#160;&#160;of&#160;&#160;the&#160;&#160;key&#160;<br/>business&#160;&#160;principles&#160;&#160;that&#160;&#160;drive&#160;&#160;the&#160;&#160;ensuing&#160;&#160;business&#160;&#160;requirements&#160;&#160;for&#160;&#160;an&#160;&#160;effective&#160;<br/>industry&#160;card&#160;payment&#160;solution&#160;for&#160;CU&#160;positions.&#160;</p>
+<p style="position:absolute;top:361px;left:135px;white-space:nowrap" class="ft21">&#160;</p>
+<p style="position:absolute;top:376px;left:162px;white-space:nowrap" class="ft22"><b>1.1.&#160;Stakeholders&#160;</b></p>
+<p style="position:absolute;top:413px;left:135px;white-space:nowrap" class="ft24">Because&#160;&#160;of&#160;&#160;the&#160;&#160;complex&#160;&#160;multi-merchants,&#160;&#160;multi-acquirers&#160;&#160;nature&#160;&#160;of&#160;&#160;Common&#160;&#160;Use&#160;<br/>payments&#160;in&#160;an&#160;airport&#160;environment,&#160;as&#160;many&#160;as&#160;thirteen&#160;different&#160;stakeholders&#160;could&#160;<br/>be&#160;&#160;contracted&#160;&#160;to&#160;&#160;deliver&#160;&#160;services&#160;&#160;for&#160;&#160;the&#160;&#160;overall&#160;&#160;solution.&#160;&#160;For&#160;&#160;the&#160;&#160;purpose&#160;&#160;of&#160;&#160;this&#160;<br/>document,&#160;three categories of&#160;stakeholders&#160;have been&#160;defined&#160;below.&#160;<br/>&#160;</p>
+<p style="position:absolute;top:508px;left:135px;white-space:nowrap" class="ft23"><i>Merchant&#160;</i></p>
+<p style="position:absolute;top:542px;left:135px;white-space:nowrap" class="ft26">The&#160;&#160;‘merchant&#160;&#160;of&#160;&#160;record’&#160;&#160;is&#160;&#160;the&#160;&#160;entity&#160;&#160;that&#160;&#160;is&#160;&#160;selling&#160;&#160;the&#160;&#160;product&#160;&#160;or&#160;&#160;service&#160;&#160;to&#160;&#160;the&#160;<br/>cardholder,&#160;and&#160;collecting the&#160;produce&#160;of&#160;the card&#160;sale.&#160;</p>
+<p style="position:absolute;top:601px;left:135px;white-space:nowrap" class="ft24">A&#160;&#160;merchant&#160;&#160;is&#160;&#160;contractually&#160;&#160;responsible&#160;&#160;vis-à-vis&#160;&#160;the&#160;&#160;acquirer&#160;&#160;for&#160;&#160;the&#160;&#160;PCI&#160;&#160;DSS&#160;<br/>compliance&#160;of&#160;the&#160;entire&#160;transaction&#160;lifecycle.&#160;When&#160;an&#160;airline&#160;contracts&#160;an&#160;airport&#160;and&#160;<br/>the&#160;airport&#160;contracts&#160;in&#160;turn&#160;a&#160;vendor&#160;to&#160;provide&#160;card&#160;payment&#160;services&#160;related&#160;to&#160;CU&#160;<br/>environment,&#160;&#160;PCI&#160;&#160;DSS&#160;demands&#160;that&#160;&#160;the&#160;&#160;roles&#160;and&#160;&#160;responsibilities&#160;&#160;of&#160;&#160;each&#160;&#160;entity&#160;&#160;in&#160;<br/>terms&#160;of&#160;safeguarding&#160;sensitive card data&#160;be&#160;specified.&#160;</p>
+<p style="position:absolute;top:696px;left:135px;white-space:nowrap" class="ft27"><i>&#160;<br/>Acquirer&#160;</i></p>
+<p style="position:absolute;top:752px;left:135px;white-space:nowrap" class="ft24">The&#160;acquirer,&#160;or&#160;acquiring&#160;bank,&#160;is&#160;the&#160;financial&#160;entity&#160;that&#160;has&#160;entered&#160;into&#160;a&#160;bilateral&#160;<br/>card&#160;acceptance&#160;merchant&#160;agreement&#160;with&#160;the&#160;merchant&#160;(see&#160;merchant’s&#160;&#160;definition)&#160;<br/>selling&#160;products&#160;or&#160;services&#160;to&#160;the&#160;cardholder.&#160;The&#160;acquirer&#160;is&#160;chosen&#160;by&#160;the&#160;merchant.&#160;<br/>The&#160;acquirer&#160;is&#160;operating&#160;under&#160;a&#160;license,&#160;or&#160;other&#160;form&#160;of&#160;agreement,&#160;from&#160;a&#160;scheme,&#160;<br/>which&#160;&#160;has&#160;&#160;similar&#160;&#160;arrangements&#160;&#160;with&#160;&#160;the&#160;&#160;issuer&#160;&#160;who&#160;&#160;services&#160;&#160;the&#160;&#160;cardholder&#160;&#160;(see&#160;<br/>issuer’s&#160;definition).&#160;For&#160;some&#160;card&#160;brands,&#160;the&#160;card&#160;scheme&#160;may&#160;also&#160;operate&#160;as&#160;the&#160;<br/>acquirer&#160;and/or&#160;issuer,&#160;and&#160;supports&#160;directly&#160;the&#160;merchant&#160;and/or&#160;the&#160;cardholder.&#160;<br/>&#160;</p>
+<p style="position:absolute;top:904px;left:135px;white-space:nowrap" class="ft23"><i>Issuer&#160;</i></p>
+<p style="position:absolute;top:940px;left:135px;white-space:nowrap" class="ft24">The&#160;&#160;issuer,&#160;&#160;or&#160;&#160;issuing&#160;&#160;bank,&#160;&#160;is&#160;&#160;the&#160;&#160;financial&#160;&#160;entity&#160;&#160;that&#160;&#160;has&#160;&#160;entered&#160;&#160;into&#160;&#160;a&#160;&#160;bilateral&#160;<br/>agreement&#160;with&#160;the&#160;cardholder.&#160;The&#160;issuer&#160;is&#160;operating&#160;under&#160;a&#160;license,&#160;or&#160;other&#160;form&#160;<br/>of&#160;agreement,&#160;from&#160;a&#160;card&#160;scheme,&#160;which&#160;has&#160;similar&#160;arrangements&#160;with&#160;the&#160;acquirer&#160;<br/>who&#160;services&#160;the&#160;merchant&#160;(see&#160;acquirer&#160;and&#160;merchant’s&#160;definitions).&#160;For&#160;some&#160;card&#160;<br/>brands,&#160;the&#160;card&#160;scheme&#160;may&#160;also&#160;operate&#160;as&#160;the&#160;acquirer&#160;and/or&#160;issuer,&#160;and&#160;supports&#160;<br/>directly&#160;the&#160;merchant&#160;and/or&#160;the&#160;cardholder.&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/CUWG/Business-requirements-at-Common-Use-positions-June-2016-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft30{font-size:14px;font-family:ArialMT;color:#00427b;}
+	.ft31{font-size:10px;font-family:ArialMT;color:#00427b;}
+	.ft32{font-size:14px;font-family:Arial;color:#1f487c;}
+	.ft33{font-size:14px;font-family:Arial;color:#00427b;}
+	.ft34{font-size:14px;font-family:ArialMT;color:#0075bc;}
+	.ft35{font-size:14px;font-family:ArialMT;color:#1f487c;}
+	.ft36{font-size:8px;font-family:ABCDEE+Calibri;color:#1f487c;}
+	.ft37{font-size:14px;font-family:ABCDEE+Calibri;color:#1f487c;}
+	.ft38{font-size:14px;font-family:ArialMT;color:#ffffff;}
+	.ft39{font-size:7px;font-family:ArialMT;color:#001f5f;}
+	.ft310{font-size:12px;font-family:ArialMT;color:#001f5f;}
+	.ft311{font-size:12px;font-family:ArialMT;color:#000000;}
+	.ft312{font-size:14px;line-height:19px;font-family:ArialMT;color:#00427b;}
+	.ft313{font-size:14px;line-height:18px;font-family:ArialMT;color:#00427b;}
+	.ft314{font-size:14px;line-height:21px;font-family:ArialMT;color:#1f487c;}
+	.ft315{font-size:14px;line-height:21px;font-family:ArialMT;color:#00427b;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page3-div" style="position:relative;width:893px;height:1262px;">
+<img width="893" height="1262" src="Business-requirements-at-Common-Use-positions-June-2016003.png" alt="background image"/>
+<p style="position:absolute;top:188px;left:893px;white-space:nowrap" class="ft30">&#160;</p>
+<p style="position:absolute;top:1198px;left:443px;white-space:nowrap" class="ft31">3&#160;</p>
+<p style="position:absolute;top:1213px;left:135px;white-space:nowrap" class="ft31">&#160;</p>
+<p style="position:absolute;top:222px;left:162px;white-space:nowrap" class="ft32"><b>1.2.&#160;Further&#160;definitions&#160;</b></p>
+<p style="position:absolute;top:258px;left:135px;white-space:nowrap" class="ft33"><i>Card&#160;Authentication Method (CAM)&#160;</i></p>
+<p style="position:absolute;top:295px;left:135px;white-space:nowrap" class="ft312">It&#160;&#160;describes&#160;&#160;how&#160;&#160;the&#160;&#160;card&#160;&#160;interacts&#160;&#160;with&#160;&#160;the&#160;&#160;card&#160;&#160;acceptance&#160;&#160;device,&#160;&#160;and&#160;&#160;how&#160;&#160;it&#160;&#160;is&#160;<br/>recognized&#160;by&#160;the&#160;terminal&#160;as a&#160;valid card.&#160;</p>
+<p style="position:absolute;top:351px;left:135px;white-space:nowrap" class="ft312">While&#160;the&#160;worldwide&#160;EMV&#160;migration&#160;is&#160;on-going,&#160;cards&#160;continue&#160;to&#160;retain&#160;their&#160;magnetic&#160;<br/>strip&#160;feature&#160;for&#160;the&#160;time&#160;being.&#160;</p>
+<p style="position:absolute;top:407px;left:135px;white-space:nowrap" class="ft313">At&#160;the&#160;time&#160;the&#160;present&#160;document&#160;is&#160;written,&#160;the&#160;current&#160;EMV&#160;Chip&#160;specification&#160;is&#160;EMV&#160;<br/>4.3&#160;&#160;from&#160;&#160;November&#160;&#160;2011.&#160;&#160;More&#160;&#160;information&#160;&#160;on&#160;&#160;EMV&#160;&#160;can&#160;&#160;be&#160;&#160;found&#160;&#160;at&#160;</p>
+<p style="position:absolute;top:445px;left:135px;white-space:nowrap" class="ft34"><a href="http://www.emvco.com/">http://www.emvco.com/</a></p>
+<p style="position:absolute;top:445px;left:306px;white-space:nowrap" class="ft30"><a href="http://www.emvco.com/">&#160;</a>&#160;</p>
+<p style="position:absolute;top:482px;left:135px;white-space:nowrap" class="ft33"><i>Cardholder&#160;Verification&#160;Method (CVM)&#160;</i></p>
+<p style="position:absolute;top:519px;left:135px;white-space:nowrap" class="ft313">A&#160;method&#160;used&#160;to&#160;verify&#160;whether&#160;the&#160;person&#160;using&#160;the&#160;card&#160;application&#160;is&#160;the&#160;legitimate&#160;<br/>cardholder.&#160;The&#160;following CVMs&#160;exist:&#160;</p>
+<p style="position:absolute;top:575px;left:162px;white-space:nowrap" class="ft35">-&#160;</p>
+<p style="position:absolute;top:575px;left:189px;white-space:nowrap" class="ft35">No CVM&#160;Required&#160;</p>
+<p style="position:absolute;top:597px;left:162px;white-space:nowrap" class="ft35">-&#160;</p>
+<p style="position:absolute;top:597px;left:189px;white-space:nowrap" class="ft35">Signature</p>
+<p style="position:absolute;top:595px;left:260px;white-space:nowrap" class="ft36">1</p>
+<p style="position:absolute;top:597px;left:265px;white-space:nowrap" class="ft37">&#160;</p>
+<p style="position:absolute;top:597px;left:269px;white-space:nowrap" class="ft35">&#160;</p>
+<p style="position:absolute;top:597px;left:273px;white-space:nowrap" class="ft38">1</p>
+<p style="position:absolute;top:597px;left:282px;white-space:nowrap" class="ft35">&#160;</p>
+<p style="position:absolute;top:620px;left:162px;white-space:nowrap" class="ft35">-&#160;</p>
+<p style="position:absolute;top:620px;left:189px;white-space:nowrap" class="ft314">On-line&#160;PIN&#160;validation:&#160;the&#160;PIN&#160;is&#160;encrypted&#160;and&#160;transported&#160;in&#160;the&#160;authorization&#160;<br/>request,&#160;in&#160;order&#160;to&#160;be&#160;verified&#160;by&#160;the&#160;issuer,&#160;and&#160;the&#160;verification&#160;result&#160;is&#160;sent&#160;<br/>back&#160;within&#160;the&#160;authorization response&#160;message.&#160;</p>
+<p style="position:absolute;top:686px;left:162px;white-space:nowrap" class="ft35">-&#160;</p>
+<p style="position:absolute;top:686px;left:189px;white-space:nowrap" class="ft35">Off-line&#160;PIN&#160;validation:&#160;the PIN&#160;is&#160;verified&#160;off-line&#160;by&#160;the&#160;chip.&#160;</p>
+<p style="position:absolute;top:723px;left:135px;white-space:nowrap" class="ft30">A&#160;chip card&#160;may&#160;be&#160;programmed&#160;by&#160;the&#160;issuer:&#160;</p>
+<p style="position:absolute;top:759px;left:162px;white-space:nowrap" class="ft37">-</p>
+<p style="position:absolute;top:760px;left:167px;white-space:nowrap" class="ft35">&#160;</p>
+<p style="position:absolute;top:760px;left:189px;white-space:nowrap" class="ft314">To&#160;&#160;demand&#160;&#160;that&#160;&#160;a&#160;&#160;PIN&#160;&#160;validates&#160;&#160;all&#160;&#160;purchases,&#160;&#160;or&#160;&#160;only&#160;&#160;purchases&#160;&#160;above&#160;&#160;a&#160;<br/>certain amount.&#160;This&#160;is&#160;referred&#160;to a</p>
+<p style="position:absolute;top:779px;left:450px;white-space:nowrap" class="ft35">s&#160;‘chip and PIN’.&#160;</p>
+<p style="position:absolute;top:803px;left:162px;white-space:nowrap" class="ft37">-</p>
+<p style="position:absolute;top:804px;left:167px;white-space:nowrap" class="ft35">&#160;</p>
+<p style="position:absolute;top:804px;left:189px;white-space:nowrap" class="ft314">Not&#160;to&#160;demand&#160;a&#160;PIN&#160;for&#160;any&#160;purchase,&#160;which&#160;is&#160;then&#160;validated&#160;by&#160;the&#160;signature,&#160;<br/>as&#160;for&#160;magstripe-</p>
+<p style="position:absolute;top:822px;left:313px;white-space:nowrap" class="ft35">only&#160;cards.&#160;This&#160;is&#160;referred&#160;to&#160;as&#160;‘chip and signature’.&#160;</p>
+<p style="position:absolute;top:859px;left:135px;white-space:nowrap" class="ft315">Issuers&#160;are&#160;free&#160;to&#160;decide&#160;if&#160;they&#160;want&#160;to&#160;issue&#160;‘chip&#160;and&#160;PIN’&#160;or&#160;‘chip&#160;and&#160;signature’&#160;<br/>cards.&#160;</p>
+<p style="position:absolute;top:915px;left:135px;white-space:nowrap" class="ft312">In&#160;the&#160;US,&#160;the&#160;expression&#160;‘chip&#160;and&#160;choice’&#160;is&#160;commonly&#160;used&#160;to&#160;describe&#160;a&#160;situation&#160;<br/>where&#160;the&#160;&#160;issuers&#160;&#160;are&#160;&#160;releasing&#160;&#160;both&#160;&#160;‘chip&#160;and&#160;&#160;PIN’&#160;&#160;and&#160;&#160;‘chip&#160;and&#160;&#160;signature’&#160;&#160;cards,&#160;<br/>which may&#160;also be&#160;called&#160;‘PIN&#160;preferring’&#160;and ‘signature&#160;preferring’.&#160;</p>
+<p style="position:absolute;top:1024px;left:135px;white-space:nowrap" class="ft30">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160; &#160; &#160; &#160;&#160;</p>
+<p style="position:absolute;top:1042px;left:135px;white-space:nowrap" class="ft39">1</p>
+<p style="position:absolute;top:1042px;left:140px;white-space:nowrap" class="ft310">&#160;No self-service&#160;terminal&#160;can support signature-verification&#160;as&#160;this&#160;function&#160;can&#160;only&#160;be&#160;</p>
+<p style="position:absolute;top:1060px;left:135px;white-space:nowrap" class="ft310">performed&#160;by&#160;a sales&#160;attendant.</p>
+<p style="position:absolute;top:1060px;left:346px;white-space:nowrap" class="ft311">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/CUWG/Business-requirements-at-Common-Use-positions-June-2016-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft40{font-size:14px;font-family:ArialMT;color:#00427b;}
+	.ft41{font-size:10px;font-family:ArialMT;color:#00427b;}
+	.ft42{font-size:14px;font-family:Arial;color:#00427b;}
+	.ft43{font-size:14px;font-family:ABCDEE+Calibri;color:#1f487c;}
+	.ft44{font-size:14px;font-family:ArialMT;color:#1f487c;}
+	.ft45{font-size:14px;line-height:18px;font-family:ArialMT;color:#00427b;}
+	.ft46{font-size:14px;line-height:19px;font-family:ArialMT;color:#00427b;}
+	.ft47{font-size:14px;line-height:21px;font-family:ArialMT;color:#1f487c;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page4-div" style="position:relative;width:893px;height:1262px;">
+<img width="893" height="1262" src="Business-requirements-at-Common-Use-positions-June-2016004.png" alt="background image"/>
+<p style="position:absolute;top:188px;left:893px;white-space:nowrap" class="ft40">&#160;</p>
+<p style="position:absolute;top:1198px;left:443px;white-space:nowrap" class="ft41">4&#160;</p>
+<p style="position:absolute;top:1213px;left:135px;white-space:nowrap" class="ft41">&#160;</p>
+<p style="position:absolute;top:222px;left:135px;white-space:nowrap" class="ft42"><i>Chargeback&#160;rules&#160;</i></p>
+<p style="position:absolute;top:259px;left:135px;white-space:nowrap" class="ft45">A&#160;chargeback&#160;is&#160;a&#160;function&#160;initiated&#160;by&#160;the&#160;issuer&#160;requesting&#160;the&#160;acquirer&#160;to&#160;credit&#160;the&#160;<br/>issuer&#160;for&#160;the&#160;amount&#160;in&#160;question&#160;of&#160;a&#160;given&#160;transaction.&#160;Chargeback&#160;rules&#160;materialize&#160;<br/>the&#160;exact&#160;measure&#160;of&#160;protection&#160;(or&#160;left&#160;over&#160;risk)&#160;that&#160;the&#160;merchant&#160;bears.&#160;Rules&#160;can&#160;<br/>be&#160;defined at:&#160;</p>
+<p style="position:absolute;top:352px;left:162px;white-space:nowrap" class="ft43">-</p>
+<p style="position:absolute;top:353px;left:167px;white-space:nowrap" class="ft44">&#160;</p>
+<p style="position:absolute;top:353px;left:189px;white-space:nowrap" class="ft47">National&#160;level&#160;(where&#160;both&#160;the&#160;card&#160;and&#160;the&#160;place&#160;of&#160;transaction&#160;are&#160;from&#160;the&#160;<br/>same&#160;country)&#160;</p>
+<p style="position:absolute;top:396px;left:162px;white-space:nowrap" class="ft43">-</p>
+<p style="position:absolute;top:397px;left:167px;white-space:nowrap" class="ft44">&#160;</p>
+<p style="position:absolute;top:397px;left:189px;white-space:nowrap" class="ft47">Intra&#160;regional&#160;level&#160;(where&#160;the&#160;card&#160;and&#160;the&#160;place&#160;of&#160;transaction&#160;are&#160;from&#160;two&#160;<br/>different&#160;countries&#160;belonging&#160;both&#160;to&#160;the&#160;same&#160;region)&#160;</p>
+<p style="position:absolute;top:440px;left:162px;white-space:nowrap" class="ft43">-</p>
+<p style="position:absolute;top:441px;left:167px;white-space:nowrap" class="ft44">&#160;</p>
+<p style="position:absolute;top:441px;left:189px;white-space:nowrap" class="ft47">Inter&#160;regional&#160;level&#160;(the&#160;card&#160;and&#160;the&#160;place&#160;of&#160;transaction&#160;are&#160;from&#160;two&#160;different&#160;<br/>countries&#160;belonging&#160;to&#160;two&#160;different&#160;regions)&#160;</p>
+<p style="position:absolute;top:499px;left:135px;white-space:nowrap" class="ft45">As&#160;a&#160;consequence,&#160;the&#160;protection&#160;the&#160;merchant&#160;has&#160;against&#160;fraud&#160;chargebacks&#160;may&#160;<br/>differ&#160;depending&#160;on&#160;the&#160;geographic&#160;location&#160;of&#160;the&#160;transaction.&#160;&#160;</p>
+<p style="position:absolute;top:555px;left:135px;white-space:nowrap" class="ft45">It&#160;&#160;is&#160;&#160;up&#160;&#160;to&#160;&#160;each&#160;&#160;merchant&#160;&#160;to&#160;&#160;analyse&#160;&#160;with&#160;&#160;its&#160;&#160;acquirers&#160;&#160;the&#160;&#160;exact&#160;&#160;chargeback&#160;&#160;rules&#160;<br/>applying&#160;to his&#160;business,&#160;per&#160;card&#160;brand&#160;and per&#160;country&#160;of&#160;origin of&#160;the&#160;card.&#160;</p>
+<p style="position:absolute;top:611px;left:135px;white-space:nowrap" class="ft42"><i>(Fraud)&#160;liability&#160;shift&#160;</i></p>
+<p style="position:absolute;top:648px;left:135px;white-space:nowrap" class="ft45">Under&#160;&#160;the&#160;&#160;terms&#160;&#160;of&#160;&#160;the&#160;&#160;merchant&#160;&#160;agreement,&#160;&#160;a&#160;&#160;merchant&#160;&#160;attains&#160;&#160;some&#160;&#160;level&#160;&#160;of&#160;<br/>protection&#160;against&#160;the&#160;consequences&#160;of&#160;fraud&#160;(i.e.&#160;the&#160;fraud&#160;chargebacks)&#160;depending&#160;<br/>on&#160;the&#160;capability&#160;of&#160;the&#160;card acceptance&#160;device.&#160;</p>
+<p style="position:absolute;top:723px;left:135px;white-space:nowrap" class="ft45">As&#160;&#160;a&#160;&#160;rule,&#160;&#160;the&#160;&#160;merchant&#160;&#160;deploying&#160;&#160;the&#160;&#160;highest&#160;&#160;capability&#160;&#160;for&#160;&#160;secure&#160;&#160;card&#160;&#160;payment&#160;<br/>acceptance&#160;attains&#160;the&#160;highest&#160;level&#160;of&#160;protection,&#160;even&#160;if&#160;the&#160;card&#160;or&#160;the&#160;issuer&#160;do&#160;not&#160;<br/>match&#160;that&#160;highest&#160;level&#160;of&#160;security.&#160;</p>
+<p style="position:absolute;top:798px;left:135px;white-space:nowrap" class="ft40">As&#160;an&#160;example,&#160;a&#160;</p>
+<p style="position:absolute;top:795px;left:267px;white-space:nowrap" class="ft40">‘chip&#160;and&#160;PIN’&#160;terminal&#160;will&#160;usually&#160;protect&#160;the&#160;merchant&#160;against&#160;any&#160;</p>
+<p style="position:absolute;top:817px;left:135px;white-space:nowrap" class="ft46">fraud&#160;that&#160;can&#160;be&#160;perpetrated&#160;against&#160;a&#160;magstripe-only&#160;credit&#160;card,&#160;as&#160;the&#160;card&#160;has&#160;no&#160;<br/>chip&#160;(to&#160;prevent&#160;Counterfeit&#160;fraud)&#160;and&#160;does&#160;not&#160;support&#160;PIN&#160;validation&#160;for&#160;purchase&#160;<br/>(to&#160;prevent&#160;Lost&#160;and Stolen&#160;fraud).&#160;</p>
+<p style="position:absolute;top:892px;left:135px;white-space:nowrap" class="ft45">The&#160;fraud&#160;liability&#160;shift&#160;principles are&#160;translated&#160;into the&#160;chargeback&#160;rules&#160;of&#160;each&#160;card&#160;<br/>scheme,&#160;&#160;which&#160;&#160;define&#160;&#160;the&#160;&#160;exact&#160;&#160;measure&#160;&#160;of&#160;&#160;protection,&#160;&#160;or&#160;&#160;left&#160;&#160;over&#160;&#160;risk&#160;&#160;that&#160;&#160;the&#160;<br/>merchant&#160;bears.&#160;</p>
+<p style="position:absolute;top:967px;left:135px;white-space:nowrap" class="ft42"><i>PCI&#160;DSS&#160;compliance&#160;</i></p>
+<p style="position:absolute;top:1004px;left:135px;white-space:nowrap" class="ft46">The&#160;&#160;Payment&#160;&#160;Card&#160;&#160;Industry&#160;&#160;Data&#160;&#160;Security&#160;&#160;Standard&#160;&#160;(PCI&#160;&#160;DSS)&#160;&#160;is&#160;&#160;composed&#160;&#160;of&#160;&#160;the&#160;<br/>joint&#160;set&#160;of&#160;technical&#160;requirements&#160;of&#160;American&#160;Express,&#160;Discover&#160;Financial&#160;Services,&#160;<br/>JCB&#160;International,&#160;MasterCard,&#160;and&#160;Visa&#160;Inc.&#160;data&#160;security&#160;compliance&#160;programs.&#160;The&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/CUWG/Business-requirements-at-Common-Use-positions-June-2016-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft50{font-size:14px;font-family:ArialMT;color:#00427b;}
+	.ft51{font-size:10px;font-family:ArialMT;color:#00427b;}
+	.ft52{font-size:14px;font-family:ArialMT;color:#0075bc;}
+	.ft53{font-size:14px;font-family:Arial;color:#00427b;}
+	.ft54{font-size:8px;font-family:ArialMT;color:#00427b;}
+	.ft55{font-size:14px;font-family:ABCDEE+Calibri;color:#1f487c;}
+	.ft56{font-size:14px;font-family:ArialMT;color:#1f487c;}
+	.ft57{font-size:7px;font-family:ArialMT;color:#001f5f;}
+	.ft58{font-size:12px;font-family:ArialMT;color:#001f5f;}
+	.ft59{font-size:14px;line-height:18px;font-family:ArialMT;color:#00427b;}
+	.ft510{font-size:14px;line-height:21px;font-family:ArialMT;color:#00427b;}
+	.ft511{font-size:14px;line-height:19px;font-family:ArialMT;color:#00427b;}
+	.ft512{font-size:14px;line-height:21px;font-family:ArialMT;color:#1f487c;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page5-div" style="position:relative;width:893px;height:1262px;">
+<img width="893" height="1262" src="Business-requirements-at-Common-Use-positions-June-2016005.png" alt="background image"/>
+<p style="position:absolute;top:188px;left:893px;white-space:nowrap" class="ft50">&#160;</p>
+<p style="position:absolute;top:1198px;left:443px;white-space:nowrap" class="ft51">5&#160;</p>
+<p style="position:absolute;top:1213px;left:135px;white-space:nowrap" class="ft51">&#160;</p>
+<p style="position:absolute;top:222px;left:135px;white-space:nowrap" class="ft59">international&#160;&#160;card&#160;&#160;schemes&#160;&#160;each&#160;&#160;enforce&#160;&#160;compliance&#160;&#160;with&#160;&#160;the&#160;&#160;standards&#160;&#160;in&#160;&#160;their&#160;<br/>respective network.&#160;</p>
+<p style="position:absolute;top:278px;left:135px;white-space:nowrap" class="ft50">Card&#160;payment&#160;sales&#160;conducted&#160;at&#160;CU&#160;positions&#160;fall&#160;in&#160;the&#160;</p>
+<p style="position:absolute;top:274px;left:559px;white-space:nowrap" class="ft50">scope&#160;of&#160;each&#160;airline’s&#160;own&#160;</p>
+<p style="position:absolute;top:294px;left:135px;white-space:nowrap" class="ft510">PCI&#160;DSS&#160;obligations,&#160;though they&#160;are&#160;conducted&#160;at&#160;‘shared&#160;airport&#160;infrastructure’&#160;(CU&#160;<br/>position,&#160;airport&#160;network)&#160;which are not&#160;under&#160;the&#160;direct&#160;control&#160;of&#160;a&#160;single&#160;airline.&#160;</p>
+<p style="position:absolute;top:353px;left:135px;white-space:nowrap" class="ft59">There&#160;&#160;is&#160;&#160;no&#160;&#160;PCI&#160;&#160;DSS&#160;&#160;certification&#160;&#160;for&#160;&#160;a&#160;&#160;payment&#160;&#160;acceptance&#160;&#160;terminal,&#160;&#160;as&#160;&#160;PCI&#160;&#160;DSS&#160;<br/>compliance&#160;&#160;is&#160;&#160;evaluated&#160;&#160;for&#160;&#160;the&#160;&#160;complete&#160;&#160;end-to-end&#160;&#160;transaction&#160;&#160;environment,&#160;&#160;from&#160;<br/>the&#160;customer-facing&#160;device to&#160;the&#160;card&#160;remittance&#160;file delivered&#160;to&#160;the&#160;acquirer.&#160;</p>
+<p style="position:absolute;top:428px;left:135px;white-space:nowrap" class="ft511">However,&#160;&#160;a&#160;&#160;Payment&#160;&#160;Application&#160;&#160;certification&#160;&#160;process&#160;&#160;called&#160;&#160;PA-DSS&#160;&#160;helps&#160;&#160;the&#160;<br/>software&#160;&#160;vendor&#160;&#160;to&#160;&#160;develop&#160;&#160;payment&#160;&#160;applications&#160;&#160;that&#160;&#160;will&#160;&#160;help&#160;&#160;the&#160;&#160;merchant&#160;&#160;in&#160;<br/>obtaining&#160;a&#160;PCI-DSS&#160;certification&#160;for&#160;its&#160;end-to-end card&#160;transaction&#160;environment.&#160;</p>
+<p style="position:absolute;top:502px;left:135px;white-space:nowrap" class="ft59">At&#160;the&#160;time&#160;the&#160;present&#160;document&#160;is&#160;written,&#160;the&#160;current&#160;PCI&#160;DSS&#160;specification&#160;is&#160;PCI&#160;<br/>DSS&#160;v3.2&#160;from&#160;April&#160;2016.&#160;More&#160;information&#160;can&#160;be&#160;found&#160;at:&#160;</p>
+<p style="position:absolute;top:540px;left:135px;white-space:nowrap" class="ft52"><a href="https://www.pcisecuritystandards.org/document_library">https://www.pcisecuritystandards.org/document_library</a></p>
+<p style="position:absolute;top:540px;left:535px;white-space:nowrap" class="ft50"><a href="https://www.pcisecuritystandards.org/document_library">&#160;</a></p>
+<p style="position:absolute;top:559px;left:135px;white-space:nowrap" class="ft53"><i>&#160;</i></p>
+<p style="position:absolute;top:596px;left:135px;white-space:nowrap" class="ft53"><i>Self-service&#160;terminals&#160;</i></p>
+<p style="position:absolute;top:633px;left:135px;white-space:nowrap" class="ft50">Self-Service&#160;&#160;unattended&#160;&#160;acceptance&#160;&#160;terminals</p>
+<p style="position:absolute;top:632px;left:488px;white-space:nowrap" class="ft54">2</p>
+<p style="position:absolute;top:633px;left:494px;white-space:nowrap" class="ft50">&#160;&#160;exist&#160;&#160;in&#160;&#160;many&#160;&#160;retail&#160;&#160;sectors&#160;&#160;and&#160;</p>
+<p style="position:absolute;top:652px;left:135px;white-space:nowrap" class="ft59">designate&#160;an&#160;unattended&#160;Point&#160;Of&#160;Sale&#160;(POS)&#160;System&#160;(e.g.&#160;vending&#160;machine,&#160;check-<br/>out&#160;kiosk)&#160;where&#160;the&#160;cardholder&#160;conducts&#160;the&#160;transaction&#160;at&#160;the&#160;Point&#160;Of&#160;Interaction&#160;<br/>without&#160;the&#160;participation&#160;of&#160;an&#160;attendant,&#160;and&#160;where&#160;some&#160;security&#160;verifications&#160;cannot&#160;<br/>be&#160;performed&#160;(such&#160;as&#160;if&#160;the&#160;card&#160;appears&#160;to&#160;be&#160;genuine,&#160;or&#160;if&#160;the&#160;signature&#160;matches&#160;<br/>the&#160;one&#160;on&#160;the&#160;panel&#160;on&#160;the&#160;back&#160;of&#160;the&#160;card).&#160;</p>
+<p style="position:absolute;top:765px;left:135px;white-space:nowrap" class="ft53"><i>Terminal&#160;Type&#160;Approval&#160;</i></p>
+<p style="position:absolute;top:802px;left:135px;white-space:nowrap" class="ft511">Type&#160;Approval&#160;is&#160;a&#160;process&#160;that&#160;a&#160;product&#160;or&#160;solution&#160;must&#160;undergo&#160;in&#160;order&#160;to&#160;obtain&#160;<br/>the&#160;authorization&#160;for&#160;deployment&#160;from&#160;a&#160;given&#160;card&#160;payment&#160;scheme&#160;or&#160;Approval&#160;Body.&#160;<br/>EMV&#160;Co Type&#160;Approval&#160;testing is divided into&#160;two levels:&#160;</p>
+<p style="position:absolute;top:877px;left:162px;white-space:nowrap" class="ft55">-</p>
+<p style="position:absolute;top:877px;left:167px;white-space:nowrap" class="ft56">&#160;</p>
+<p style="position:absolute;top:877px;left:189px;white-space:nowrap" class="ft512">The&#160;&#160;Level&#160;&#160;1&#160;&#160;Type&#160;&#160;Approval&#160;&#160;process&#160;&#160;tests&#160;&#160;compliance&#160;&#160;with&#160;&#160;the&#160;<br/>electromechanical&#160;&#160;characteristics&#160;&#160;(contact)&#160;&#160;or&#160;&#160;the&#160;&#160;analog&#160;&#160;characteristics&#160;<br/>(contactless)&#160;&#160;and&#160;&#160;logical&#160;&#160;protocol&#160;&#160;requirements&#160;&#160;defined&#160;&#160;in&#160;&#160;the&#160;&#160;EMV&#160;<br/>Specifications.&#160;</p>
+<p style="position:absolute;top:964px;left:162px;white-space:nowrap" class="ft55">-</p>
+<p style="position:absolute;top:965px;left:167px;white-space:nowrap" class="ft56">&#160;</p>
+<p style="position:absolute;top:965px;left:189px;white-space:nowrap" class="ft512">The&#160;&#160;Level&#160;&#160;2&#160;&#160;Type&#160;&#160;Approval&#160;&#160;process&#160;&#160;tests&#160;&#160;compliance&#160;&#160;with&#160;&#160;the&#160;&#160;application&#160;<br/>requirements&#160;as defined&#160;in the&#160;EMV&#160;Specifications.&#160;</p>
+<p style="position:absolute;top:1024px;left:135px;white-space:nowrap" class="ft50">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160; &#160; &#160; &#160;&#160;</p>
+<p style="position:absolute;top:1042px;left:135px;white-space:nowrap" class="ft57">2</p>
+<p style="position:absolute;top:1042px;left:140px;white-space:nowrap" class="ft58">&#160;Depending&#160;on&#160;the&#160;card&#160;schemes, self-service/unattended&#160;acceptance terminals&#160;could&#160;be&#160;</p>
+<p style="position:absolute;top:1060px;left:135px;white-space:nowrap" class="ft58">referred&#160;to&#160;as&#160;Customer Activated Terminals&#160;(CAT)&#160;or Self-Service Terminals&#160;(SST).&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/CUWG/Business-requirements-at-Common-Use-positions-June-2016-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft60{font-size:14px;font-family:ArialMT;color:#00427b;}
+	.ft61{font-size:10px;font-family:ArialMT;color:#00427b;}
+	.ft62{font-size:14px;font-family:Arial;color:#1f487c;}
+	.ft63{font-size:8px;font-family:ArialMT;color:#00427b;}
+	.ft64{font-size:14px;font-family:Arial;color:#00427b;}
+	.ft65{font-size:8px;font-family:Arial;color:#00427b;}
+	.ft66{font-size:7px;font-family:ArialMT;color:#001f5f;}
+	.ft67{font-size:12px;font-family:ArialMT;color:#001f5f;}
+	.ft68{font-size:14px;line-height:19px;font-family:ArialMT;color:#00427b;}
+	.ft69{font-size:14px;line-height:18px;font-family:ArialMT;color:#00427b;}
+	.ft610{font-size:14px;line-height:18px;font-family:Arial;color:#00427b;}
+	.ft611{font-size:14px;line-height:19px;font-family:Arial;color:#00427b;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page6-div" style="position:relative;width:893px;height:1262px;">
+<img width="893" height="1262" src="Business-requirements-at-Common-Use-positions-June-2016006.png" alt="background image"/>
+<p style="position:absolute;top:188px;left:893px;white-space:nowrap" class="ft60">&#160;</p>
+<p style="position:absolute;top:1198px;left:443px;white-space:nowrap" class="ft61">6&#160;</p>
+<p style="position:absolute;top:1213px;left:135px;white-space:nowrap" class="ft61">&#160;</p>
+<p style="position:absolute;top:222px;left:162px;white-space:nowrap" class="ft62"><b>2.&#160;&#160;Scope&#160;of&#160;the&#160;business&#160;requirements&#160;for&#160;CU&#160;positions&#160;</b></p>
+<p style="position:absolute;top:258px;left:135px;white-space:nowrap" class="ft60">Both&#160;self-service and&#160;agent&#160;positions&#160;are&#160;in scope.&#160;</p>
+<p style="position:absolute;top:295px;left:135px;white-space:nowrap" class="ft68">During&#160;&#160;the&#160;&#160;meeting&#160;&#160;in&#160;&#160;September&#160;&#160;2015&#160;&#160;of&#160;&#160;the&#160;&#160;Passenger&#160;&#160;Experience&#160;&#160;Management&#160;<br/>Group&#160;(PEMG)&#160;13,&#160;it&#160;was agreed&#160;that&#160;there&#160;was no&#160;immediate&#160;need&#160;to&#160;take payments&#160;<br/>at&#160;&#160;a&#160;&#160;CU&#160;&#160;self-service&#160;&#160;bag&#160;&#160;drop&#160;&#160;because&#160;&#160;of&#160;&#160;the&#160;&#160;long&#160;&#160;processing&#160;&#160;time&#160;&#160;and&#160;&#160;resulting&#160;<br/>queues</p>
+<p style="position:absolute;top:351px;left:189px;white-space:nowrap" class="ft63">3</p>
+<p style="position:absolute;top:352px;left:195px;white-space:nowrap" class="ft60">.&#160;</p>
+<p style="position:absolute;top:389px;left:162px;white-space:nowrap" class="ft62"><b>3.&#160;&#160;Business&#160;requirements&#160;for&#160;CU&#160;positions&#160;</b></p>
+<p style="position:absolute;top:426px;left:135px;white-space:nowrap" class="ft68">The&#160;airlines&#160;have&#160;defined&#160;the&#160;following&#160;business&#160;requirements&#160;for&#160;self-service&#160;and&#160;for&#160;<br/>agent&#160;positions,&#160;in&#160;order&#160;to&#160;assist&#160;both&#160;airlines&#160;and&#160;airports&#160;in&#160;searching&#160;for&#160;alignment&#160;<br/>on&#160;solutions&#160;that&#160;can&#160;be&#160;implemented&#160;globally,&#160;thus&#160;easing&#160;the&#160;investment&#160;and&#160;roll&#160;out&#160;<br/>burden on&#160;all&#160;stakeholders.&#160;</p>
+<p style="position:absolute;top:521px;left:143px;white-space:nowrap" class="ft60">&#160;</p>
+<p style="position:absolute;top:523px;left:460px;white-space:nowrap" class="ft610"><b>Self-service&#160;<br/>position&#160;</b></p>
+<p style="position:absolute;top:533px;left:617px;white-space:nowrap" class="ft64"><b>Agent&#160;position&#160;</b></p>
+<p style="position:absolute;top:565px;left:143px;white-space:nowrap" class="ft610"><b>The&#160;solution&#160;must&#160;enable&#160;the&#160;<br/>merchant&#160;to&#160;achieve and maintain PCI&#160;<br/>DSS&#160;Compliance&#160;</b></p>
+<p style="position:absolute;top:575px;left:460px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:575px;left:617px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:639px;left:143px;white-space:nowrap" class="ft64"><b>Transaction&#160;type&#160;</b></p>
+<p style="position:absolute;top:631px;left:304px;white-space:nowrap" class="ft64"><b>Ticket&#160;sale&#160;</b></p>
+<p style="position:absolute;top:631px;left:460px;white-space:nowrap" class="ft60">Nice to have&#160;</p>
+<p style="position:absolute;top:631px;left:617px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:666px;left:304px;white-space:nowrap" class="ft64"><b>Ancillary&#160;sale&#160;</b></p>
+<p style="position:absolute;top:667px;left:460px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:667px;left:617px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:769px;left:143px;white-space:nowrap" class="ft610"><b>Card payment&#160;<br/>brand&#160;</b></p>
+<p style="position:absolute;top:700px;left:304px;white-space:nowrap" class="ft64"><b>Visa&#160;&#160;</b></p>
+<p style="position:absolute;top:700px;left:460px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:700px;left:617px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:734px;left:304px;white-space:nowrap" class="ft64"><b>MasterCard&#160;</b></p>
+<p style="position:absolute;top:734px;left:460px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:734px;left:617px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:761px;left:304px;white-space:nowrap" class="ft611"><b>American&#160;<br/>Express&#160;</b></p>
+<p style="position:absolute;top:770px;left:460px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:770px;left:617px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:831px;left:304px;white-space:nowrap" class="ft610"><b>Other&#160;card&#160;<br/>brands&#160;</b></p>
+<p style="position:absolute;top:803px;left:460px;white-space:nowrap" class="ft69">As&#160;per&#160;the&#160;<br/>appreciation of&#160;the&#160;<br/>group of&#160;airline&#160;<br/>users&#160;of&#160;the&#160;CU&#160;<br/>position&#160;</p>
+<p style="position:absolute;top:803px;left:617px;white-space:nowrap" class="ft69">As&#160;per&#160;the&#160;<br/>appreciation of&#160;the&#160;<br/>group of&#160;airline&#160;<br/>users&#160;of&#160;the&#160;CU&#160;<br/>position&#160;</p>
+<p style="position:absolute;top:907px;left:143px;white-space:nowrap" class="ft610"><b>Card&#160;<br/>Authentication&#160;<br/>Method&#160;(CAM)&#160;</b></p>
+<p style="position:absolute;top:909px;left:304px;white-space:nowrap" class="ft64"><b>Magnetic stripe</b></p>
+<p style="position:absolute;top:907px;left:425px;white-space:nowrap" class="ft65"><b>4</b></p>
+<p style="position:absolute;top:909px;left:430px;white-space:nowrap" class="ft64"><b>&#160;</b></p>
+<p style="position:absolute;top:909px;left:460px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:909px;left:616px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:943px;left:304px;white-space:nowrap" class="ft64"><b>EMV&#160;chip&#160;</b></p>
+<p style="position:absolute;top:943px;left:460px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:943px;left:616px;white-space:nowrap" class="ft60">Must&#160;have&#160;</p>
+<p style="position:absolute;top:1006px;left:135px;white-space:nowrap" class="ft60">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160; &#160; &#160; &#160;&#160;</p>
+<p style="position:absolute;top:1024px;left:135px;white-space:nowrap" class="ft66">3</p>
+<p style="position:absolute;top:1025px;left:140px;white-space:nowrap" class="ft67">&#160;This&#160;can&#160;be&#160;reviewed at&#160;a later&#160;date.&#160;</p>
+<p style="position:absolute;top:1042px;left:135px;white-space:nowrap" class="ft66">4</p>
+<p style="position:absolute;top:1042px;left:140px;white-space:nowrap" class="ft67">&#160;</p>
+<p style="position:absolute;top:1040px;left:145px;white-space:nowrap" class="ft67">The&#160;categorization is&#160;‘Must have’&#160;for both&#160;self-service&#160;and&#160;agent&#160;positions&#160;in order&#160;to&#160;</p>
+<p style="position:absolute;top:1060px;left:135px;white-space:nowrap" class="ft67">support the&#160;current environment.&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/CUWG/Business-requirements-at-Common-Use-positions-June-2016-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft70{font-size:14px;font-family:ArialMT;color:#00427b;}
+	.ft71{font-size:10px;font-family:ArialMT;color:#00427b;}
+	.ft72{font-size:14px;font-family:Arial;color:#00427b;}
+	.ft73{font-size:8px;font-family:Arial;color:#00427b;}
+	.ft74{font-size:14px;font-family:Arial;color:#000000;}
+	.ft75{font-size:14px;font-family:ArialMT;color:#0075bc;}
+	.ft76{font-size:14px;font-family:ArialMT;color:#001f5f;}
+	.ft77{font-size:7px;font-family:ArialMT;color:#001f5f;}
+	.ft78{font-size:12px;font-family:ArialMT;color:#001f5f;}
+	.ft79{font-size:14px;line-height:18px;font-family:Arial;color:#00427b;}
+	.ft710{font-size:14px;line-height:19px;font-family:Arial;color:#00427b;}
+	.ft711{font-size:14px;line-height:18px;font-family:ArialMT;color:#00427b;}
+	.ft712{font-size:14px;line-height:19px;font-family:ArialMT;color:#00427b;}
+	.ft713{font-size:12px;line-height:14px;font-family:ArialMT;color:#001f5f;}
+	.ft714{font-size:12px;line-height:20px;font-family:ArialMT;color:#001f5f;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page7-div" style="position:relative;width:893px;height:1262px;">
+<img width="893" height="1262" src="Business-requirements-at-Common-Use-positions-June-2016007.png" alt="background image"/>
+<p style="position:absolute;top:188px;left:893px;white-space:nowrap" class="ft70">&#160;</p>
+<p style="position:absolute;top:1198px;left:443px;white-space:nowrap" class="ft71">7&#160;</p>
+<p style="position:absolute;top:1213px;left:135px;white-space:nowrap" class="ft71">&#160;</p>
+<p style="position:absolute;top:235px;left:143px;white-space:nowrap" class="ft72"><b>&#160;</b></p>
+<p style="position:absolute;top:226px;left:460px;white-space:nowrap" class="ft79"><b>Self-service&#160;<br/>position&#160;</b></p>
+<p style="position:absolute;top:235px;left:616px;white-space:nowrap" class="ft72"><b>Agent&#160;position&#160;</b></p>
+<p style="position:absolute;top:272px;left:143px;white-space:nowrap" class="ft79"><b>100%&#160;on&#160;line&#160;authorization&#160;for&#160;<br/>magstripe&#160;transactions&#160;</b></p>
+<p style="position:absolute;top:281px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:281px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:365px;left:143px;white-space:nowrap" class="ft72"><b>Certification&#160;</b></p>
+<p style="position:absolute;top:318px;left:304px;white-space:nowrap" class="ft710"><b>EMV&#160;Co Level&#160;1&#160;<br/>type&#160;approval&#160;</b></p>
+<p style="position:absolute;top:328px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:328px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:361px;left:304px;white-space:nowrap" class="ft710"><b>EMV&#160;Co Level&#160;2&#160;<br/>type&#160;approval&#160;</b></p>
+<p style="position:absolute;top:371px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:371px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:408px;left:304px;white-space:nowrap" class="ft72"><b>PA&#160;DSS&#160;v3.1&#160;</b></p>
+<p style="position:absolute;top:408px;left:460px;white-space:nowrap" class="ft70">Nice to&#160;have&#160;</p>
+<p style="position:absolute;top:408px;left:616px;white-space:nowrap" class="ft70">Nice to have&#160;</p>
+<p style="position:absolute;top:444px;left:143px;white-space:nowrap" class="ft72"><b>Contactless</b></p>
+<p style="position:absolute;top:442px;left:237px;white-space:nowrap" class="ft73"><b>5</b></p>
+<p style="position:absolute;top:444px;left:243px;white-space:nowrap" class="ft72"><b>&#160;</b></p>
+<p style="position:absolute;top:436px;left:304px;white-space:nowrap" class="ft72"><b>Capable&#160;</b></p>
+<p style="position:absolute;top:440px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:440px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:463px;left:304px;white-space:nowrap" class="ft72"><b>Enabled&#160;</b></p>
+<p style="position:absolute;top:467px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:467px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:506px;left:143px;white-space:nowrap" class="ft710"><b>Cardholder&#160;<br/>Validation&#160;Method&#160;<br/>(CVM)&#160;</b></p>
+<p style="position:absolute;top:490px;left:304px;white-space:nowrap" class="ft72"><b>No CVM&#160;</b></p>
+<p style="position:absolute;top:494px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:494px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:517px;left:304px;white-space:nowrap" class="ft72"><b>Signature&#160;</b></p>
+<p style="position:absolute;top:521px;left:460px;white-space:nowrap" class="ft70">&#160;</p>
+<p style="position:absolute;top:521px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:544px;left:304px;white-space:nowrap" class="ft72"><b>On&#160;line&#160;PIN&#160;</b></p>
+<p style="position:absolute;top:548px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:548px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:571px;left:304px;white-space:nowrap" class="ft72"><b>Off&#160;line&#160;PIN&#160;</b></p>
+<p style="position:absolute;top:575px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:575px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:603px;left:143px;white-space:nowrap" class="ft710"><b>No airline&#160;merchant&#160;dependency&#160;on&#160;a&#160;<br/>single&#160;payment&#160;provider&#160;(processor&#160;<br/>or&#160;acquirer)&#160;</b></p>
+<p style="position:absolute;top:623px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:623px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:688px;left:143px;white-space:nowrap" class="ft79"><b>Number&#160;of&#160;supported&#160;merchant&#160;<br/>airlines&#160;</b></p>
+<p style="position:absolute;top:669px;left:460px;white-space:nowrap" class="ft712">Must&#160;fit&#160;the&#160;<br/>number&#160;of&#160;airlines&#160;<br/>sharing&#160;a CU&#160;<br/>position&#160;</p>
+<p style="position:absolute;top:669px;left:616px;white-space:nowrap" class="ft712">Must&#160;fit&#160;the&#160;<br/>number&#160;of&#160;airlines&#160;<br/>sharing&#160;a CU&#160;<br/>position&#160;</p>
+<p style="position:absolute;top:755px;left:143px;white-space:nowrap" class="ft79"><b>Must&#160;be&#160;capable of&#160;supporting&#160;<br/>multiple&#160;merchants&#160;of&#160;record&#160;</b></p>
+<p style="position:absolute;top:765px;left:460px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:765px;left:616px;white-space:nowrap" class="ft70">Must&#160;have&#160;</p>
+<p style="position:absolute;top:815px;left:143px;white-space:nowrap" class="ft72"><b>Card retention&#160;capability</b></p>
+<p style="position:absolute;top:815px;left:337px;white-space:nowrap" class="ft74"><b>&#160;</b></p>
+<p style="position:absolute;top:816px;left:460px;white-space:nowrap" class="ft70">Not&#160;required&#160;</p>
+<p style="position:absolute;top:807px;left:616px;white-space:nowrap" class="ft70">&#160;</p>
+<p style="position:absolute;top:859px;left:143px;white-space:nowrap" class="ft72"><b>Provision of&#160;a&#160;receipt</b></p>
+<p style="position:absolute;top:857px;left:311px;white-space:nowrap" class="ft73"><b>6</b></p>
+<p style="position:absolute;top:859px;left:317px;white-space:nowrap" class="ft74"><b>&#160;</b></p>
+<p style="position:absolute;top:849px;left:460px;white-space:nowrap" class="ft711">Highly&#160;<br/>recommended&#160;</p>
+<p style="position:absolute;top:849px;left:616px;white-space:nowrap" class="ft711">Highly&#160;<br/>recommended&#160;</p>
+<p style="position:absolute;top:888px;left:135px;white-space:nowrap" class="ft70">&#160;</p>
+<p style="position:absolute;top:925px;left:135px;white-space:nowrap" class="ft70">For&#160;any&#160;comments&#160;or&#160;questions,&#160;please contact:<a href="mailto:pci@iata.org">&#160;</a></p>
+<p style="position:absolute;top:925px;left:491px;white-space:nowrap" class="ft75"><a href="mailto:pci@iata.org">pci@iata.org</a></p>
+<p style="position:absolute;top:925px;left:584px;white-space:nowrap" class="ft76"><a href="mailto:pci@iata.org">.</a></p>
+<p style="position:absolute;top:925px;left:589px;white-space:nowrap" class="ft70">&#160;&#160;</p>
+<p style="position:absolute;top:972px;left:135px;white-space:nowrap" class="ft70">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160; &#160; &#160; &#160;&#160;</p>
+<p style="position:absolute;top:990px;left:135px;white-space:nowrap" class="ft77">5</p>
+<p style="position:absolute;top:991px;left:140px;white-space:nowrap" class="ft78">&#160;MasterCard&#160;Global&#160;Operations&#160;Bulletin 11,&#160;3</p>
+<p style="position:absolute;top:990px;left:439px;white-space:nowrap" class="ft77">rd</p>
+<p style="position:absolute;top:991px;left:448px;white-space:nowrap" class="ft78">&#160;Nov&#160;2014,&#160;demands&#160;that&#160;as&#160;of&#160;Jan&#160;1</p>
+<p style="position:absolute;top:990px;left:693px;white-space:nowrap" class="ft77">st</p>
+<p style="position:absolute;top:991px;left:700px;white-space:nowrap" class="ft78">&#160;2016,&#160;</p>
+<p style="position:absolute;top:1008px;left:135px;white-space:nowrap" class="ft714">all&#160;newly&#160;installed terminals&#160;with&#160;contactless&#160;capability&#160;be&#160;contactless-enabled.&#160;Visa Europe&#160;<br/>has&#160;the&#160;same&#160;mandate&#160;as&#160;MasterCard&#160;Europe,&#160;according to&#160;‘Payment&#160;Cards&#160;and Mobile’&#160;(10&#160;<br/>12&#160;2015).&#160;</p>
+<p style="position:absolute;top:1059px;left:135px;white-space:nowrap" class="ft77">6</p>
+<p style="position:absolute;top:1060px;left:140px;white-space:nowrap" class="ft78">&#160;Subject to eventual&#160;local&#160;requirements&#160;that&#160;a&#160;paper receipt&#160;be&#160;provided.&#160;</p>
+</div>
+</body>
+</html>

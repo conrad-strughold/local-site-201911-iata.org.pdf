@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft11{font-size:34px;font-family:Arial;color:#000000;}
+	.ft12{font-size:27px;font-family:Arial;color:#000000;}
+	.ft13{font-size:22px;font-family:Arial;color:#000000;}
+	.ft14{font-size:18px;font-family:Arial;color:#000000;}
+	.ft15{font-size:14px;font-family:Arial;color:#000000;}
+	.ft16{font-size:11px;font-family:Arial;color:#000000;}
+	.ft17{font-size:13px;font-family:ArialMT;color:#000000;}
+	.ft18{font-size:9px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page1-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0001.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:170px;left:114px;white-space:nowrap" class="ft11"><b>IATA Postal Air Waybill (PAWB) Number &#160;</b></p>
+<p style="position:absolute;top:219px;left:276px;white-space:nowrap" class="ft12"><b>Functional Specifications&#160;</b></p>
+<p style="position:absolute;top:262px;left:358px;white-space:nowrap" class="ft12"><b>&lt;IATA Cargo&gt;</b></p>
+<p style="position:absolute;top:267px;left:558px;white-space:nowrap" class="ft13"><b>&#160;</b></p>
+<p style="position:absolute;top:305px;left:417px;white-space:nowrap" class="ft13"><b>&lt;IDFS&gt;&#160;</b></p>
+<p style="position:absolute;top:341px;left:384px;white-space:nowrap" class="ft13"><b>&lt;16/04/2010&gt;&#160;</b></p>
+<p style="position:absolute;top:376px;left:106px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:404px;left:106px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:432px;left:106px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:460px;left:106px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:489px;left:106px;white-space:nowrap" class="ft14"><b>DOCUMENT CONTROL &amp; DISTRIBUTION&#160;</b></p>
+<p style="position:absolute;top:522px;left:106px;white-space:nowrap" class="ft14"><b>&#160;</b></p>
+<p style="position:absolute;top:554px;left:106px;white-space:nowrap" class="ft15"><b>Version History&#160;</b></p>
+<p style="position:absolute;top:584px;left:100px;white-space:nowrap" class="ft13"><b>&#160;</b></p>
+<p style="position:absolute;top:620px;left:129px;white-space:nowrap" class="ft16"><b>Version&#160;Amendment&#160;</b></p>
+<p style="position:absolute;top:620px;left:301px;white-space:nowrap" class="ft16"><b>Description&#160;</b></p>
+<p style="position:absolute;top:620px;left:459px;white-space:nowrap" class="ft16"><b>Date&#160;</b></p>
+<p style="position:absolute;top:620px;left:587px;white-space:nowrap" class="ft16"><b>By&#160;</b></p>
+<p style="position:absolute;top:647px;left:129px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:647px;left:228px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:647px;left:459px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:647px;left:587px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:675px;left:129px;white-space:nowrap" class="ft10">1.0&#160;Final&#160;</p>
+<p style="position:absolute;top:675px;left:459px;white-space:nowrap" class="ft10">16/4/2010&#160;</p>
+<p style="position:absolute;top:675px;left:587px;white-space:nowrap" class="ft10">IATA&#160;</p>
+<p style="position:absolute;top:703px;left:129px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:703px;left:228px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:703px;left:459px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:703px;left:587px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:731px;left:129px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:731px;left:226px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:731px;left:459px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:731px;left:587px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:759px;left:129px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:759px;left:228px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:759px;left:459px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:759px;left:587px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:787px;left:136px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:787px;left:228px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:787px;left:459px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:787px;left:587px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:815px;left:129px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:815px;left:228px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:815px;left:459px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:815px;left:587px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:843px;left:129px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:843px;left:219px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:843px;left:459px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:843px;left:587px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:873px;left:100px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:901px;left:106px;white-space:nowrap" class="ft15"><b>Distribution List&#160;</b></p>
+<p style="position:absolute;top:929px;left:106px;white-space:nowrap" class="ft10">Approved copies of this&#160;document will be issued&#160;to:&#160;</p>
+<p style="position:absolute;top:956px;left:100px;white-space:nowrap" class="ft17">&#160;</p>
+<p style="position:absolute;top:975px;left:129px;white-space:nowrap" class="ft16"><b>Name&#160;Business&#160;</b></p>
+<p style="position:absolute;top:975px;left:363px;white-space:nowrap" class="ft16"><b>Area&#160;</b></p>
+<p style="position:absolute;top:1002px;left:129px;white-space:nowrap" class="ft10">Frederic Leger&#160;</p>
+<p style="position:absolute;top:1002px;left:299px;white-space:nowrap" class="ft10">Head of Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1031px;left:129px;white-space:nowrap" class="ft10">Airmail Panel&#160;</p>
+<p style="position:absolute;top:1031px;left:299px;white-space:nowrap" class="ft10">Cargo Services Conference&#160;</p>
+<p style="position:absolute;top:1071px;left:106px;white-space:nowrap" class="ft14"><b>&#160;</b></p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft18">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft18">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft18">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft18">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft18">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft18">&#160;</p>
+<p style="position:absolute;top:1188px;left:720px;white-space:nowrap" class="ft18">Page 1 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft20{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft21{font-size:22px;font-family:Arial;color:#000000;}
+	.ft22{font-size:13px;font-family:Arial;color:#000000;}
+	.ft23{font-size:11px;font-family:ArialMT;color:#292526;}
+	.ft24{font-size:13px;font-family:ArialMT;color:#000000;}
+	.ft25{font-size:7px;font-family:ArialMT;color:#000000;}
+	.ft26{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft27{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+	.ft28{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page2-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0002.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft20">&#160;</p>
+<p style="position:absolute;top:167px;left:106px;white-space:nowrap" class="ft21"><b>1 Introduction&#160;</b></p>
+<p style="position:absolute;top:217px;left:106px;white-space:nowrap" class="ft21"><b>1.1 Objective&#160;</b></p>
+<p style="position:absolute;top:248px;left:106px;white-space:nowrap" class="ft27">The purpose of this specification is to provide&#160;guidelines for the implementation and use of an&#160;<br/>IATA Postal Air Waybill number that will be associated&#160;with UPU mail delivery bills and the&#160;<br/>movement of&#160;the mail.&#160;</p>
+<p style="position:absolute;top:314px;left:106px;white-space:nowrap" class="ft27">This will be in&#160;accordance with the spirit of the Memorandum&#160;Of Understanding that&#160;was signed&#160;<br/>by IATA and&#160;the Universal Postal Union in Mexico 2007 that is included&#160;as&#160;Attachment A.&#160;</p>
+<p style="position:absolute;top:361px;left:106px;white-space:nowrap" class="ft27">This document gives an&#160;overview of&#160;the business processes and electronic messages that could&#160;<br/>be implemented to support the use of&#160;the Postal&#160;Air Waybill number between Posts and Airlines.&#160;</p>
+<p style="position:absolute;top:423px;left:106px;white-space:nowrap" class="ft21"><a href="iata-pawb-functionalspecs-v1.0-2.html"><b>1.2 Definitions</b></a></p>
+<p style="position:absolute;top:417px;left:274px;white-space:nowrap" class="ft22"><b>1</b></p>
+<p style="position:absolute;top:423px;left:282px;white-space:nowrap" class="ft21"><a href="iata-pawb-functionalspecs-v1.0-2.html"><b>&#160;&#160;</b></a></p>
+<p style="position:absolute;top:453px;left:106px;white-space:nowrap" class="ft20">POSTAL AIR WAYBILL&#160;NUMBER</p>
+<p style="position:absolute;top:455px;left:357px;white-space:nowrap" class="ft23">:&#160;</p>
+<p style="position:absolute;top:453px;left:365px;white-space:nowrap" class="ft20">A number in&#160;an airline&#160;cargo system that&#160;is associated to&#160;the&#160;</p>
+<p style="position:absolute;top:472px;left:106px;white-space:nowrap" class="ft27">movement of&#160;mail on behalf of a Post.&#160;<br/>&#160;<br/>CONSIGNEE: The person whose name appears on the&#160;air&#160;waybill or in&#160;the shipment record as&#160;<br/>the party to whom the cargo is to be&#160;delivered by the airline&#160;or its agent.&#160;<br/>&#160;<br/>CONSIGNMENT: Is equivalent to the term “shipment”, means one or&#160;more pieces of goods&#160;<br/>accepted by&#160;the airline from one shipper at one&#160;time and at one address,&#160;receipted for&#160;in one&#160;lot,&#160;<br/>and moving&#160;on one air waybill or&#160;one shipment record to&#160;one consignee at one&#160;destination&#160;<br/>address.&#160;<br/>&#160;<br/>POSTAL&#160;AIR WAYBILL&#160;CONSIGNMENT:&#160;means one or more receptacles of mail&#160;accepted by&#160;<br/>the airline&#160;from one postal operator&#160;at one time&#160;and at one&#160;address, potentially handed over in&#160;<br/>multiple part lots but finally receipted for the whole lot, and moving on&#160;one postal air waybill&#160;<br/>number to one consignee at one destination address.&#160;<br/>&#160;<br/>CARDIT:&#160;Carrier/Documents International Transport – a message containing information about&#160;<br/>a consignment of mail that is handed over to a carrier.&#160;<br/>&#160;<br/>RESDIT: Carrier/Confirmation of Receipt or&#160;Current Exception –&#160;a message&#160;containing&#160;<br/>information about a consignment of mail that is&#160;processed by&#160;a carrier.&#160;<br/>&#160;<br/>SHIPPER. Equivalent to the term “consignor”&#160;means the person whose name appears on the&#160;air&#160;<br/>waybill or in the shipment record as the or in the shipment record as the party contracting with&#160;<br/>the airline(s)&#160;for carriage&#160;of goods.</p>
+<p style="position:absolute;top:909px;left:358px;white-space:nowrap" class="ft24">&#160;</p>
+<p style="position:absolute;top:952px;left:106px;white-space:nowrap" class="ft21"><b>1.3 Background&#160;</b></p>
+<p style="position:absolute;top:982px;left:106px;white-space:nowrap" class="ft27">As a result of the ongoing cooperation between the IATA Airlines and the UPU Posts the UPU&#160;<br/>has approved Resolution&#160;62 officially recognizing&#160;Postal Air Waybill Numbers.&#160;</p>
+<p style="position:absolute;top:1055px;left:106px;white-space:nowrap" class="ft20">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;</p>
+<p style="position:absolute;top:1079px;left:108px;white-space:nowrap" class="ft25">1</p>
+<p style="position:absolute;top:1082px;left:114px;white-space:nowrap" class="ft24">&#160;Other than&#160;the definitions&#160;for Broker,&#160;Forwarder, House&#160;Waybill, House Manifest, Cargo Manifest,&#160;</p>
+<p style="position:absolute;top:1100px;left:106px;white-space:nowrap" class="ft28">Invoice, Packing List and&#160;Certificate of Origin the rest of the definitions are as&#160;per CSC Resolution 660&#160;<br/>Attachment A&#160;Interline Traffic Agreement – Cargo; Article 1 - Definitions&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft26">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft26">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft26">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft26">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft26">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft26">&#160;</p>
+<p style="position:absolute;top:1188px;left:720px;white-space:nowrap" class="ft26">Page 2 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft30{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft31{font-size:22px;font-family:Arial;color:#000000;}
+	.ft32{font-size:14px;font-family:PDMGDK+SymbolMT;color:#000000;}
+	.ft33{font-size:14px;font-family:CourierNewPSMT;color:#000000;}
+	.ft34{font-size:14px;font-family:TimesNewRomanPSMT;color:#000000;}
+	.ft35{font-size:14px;font-family:PDMGDK+SymbolMT;color:#0000ff;}
+	.ft36{font-size:14px;font-family:ArialMT;color:#0000ff;}
+	.ft37{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft38{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page3-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0003.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft30">&#160;</p>
+<p style="position:absolute;top:165px;left:106px;white-space:nowrap" class="ft38">IATA has also approved a Special Handling Code&#160;“MAL” for mail to ensure that any&#160;mail being&#160;<br/>moved under a Postal&#160;Air Waybill number is&#160;recognised as being&#160;subject&#160;to&#160;the UPU&#160;<br/>Regulations&#160;and handled&#160;accordingly.&#160;</p>
+<p style="position:absolute;top:231px;left:106px;white-space:nowrap" class="ft38">It is necessary to understand how the mail business&#160;is&#160;currently transacted, and&#160;whether it&#160;is&#160;<br/>necessary,&#160;or beneficial, for IATA to&#160;define standards and&#160;procedures&#160;by which mail business&#160;<br/>should be transacted on&#160;an electronic basis.&#160;</p>
+<p style="position:absolute;top:313px;left:106px;white-space:nowrap" class="ft31"><b>1.4 Pre-Conditions&#160;</b></p>
+<p style="position:absolute;top:343px;left:106px;white-space:nowrap" class="ft30">The following&#160;conditions are understood when using the PAWB number:&#160;</p>
+<p style="position:absolute;top:367px;left:106px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:372px;left:133px;white-space:nowrap" class="ft30">There will be&#160;an EDI connection between the airline and post&#160;</p>
+<p style="position:absolute;top:396px;left:106px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:401px;left:133px;white-space:nowrap" class="ft30">The UPU&#160;M39 CARDIT&#160;&amp; RESDIT standards will be supported&#160;</p>
+<p style="position:absolute;top:444px;left:106px;white-space:nowrap" class="ft31"><b>1.5 Assumptions&#160;</b></p>
+<p style="position:absolute;top:475px;left:106px;white-space:nowrap" class="ft30">The following&#160;assumptions are understood:&#160;</p>
+<p style="position:absolute;top:499px;left:106px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:504px;left:133px;white-space:nowrap" class="ft38">The Postal&#160;Air Waybill number will be associated to the mail delivery bills by inclusion in the&#160;<br/>CARDIT and/or RESDIT&#160;messages&#160;</p>
+<p style="position:absolute;top:547px;left:106px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:552px;left:133px;white-space:nowrap" class="ft30">Postal consignments:&#160;</p>
+<p style="position:absolute;top:581px;left:187px;white-space:nowrap" class="ft33">o&#160;</p>
+<p style="position:absolute;top:580px;left:214px;white-space:nowrap" class="ft38">Will not contain mail requiring different levels of service, e.g. high priority mail will&#160;<br/>not be mixed with low priority mail&#160;</p>
+<p style="position:absolute;top:628px;left:187px;white-space:nowrap" class="ft33">o&#160;</p>
+<p style="position:absolute;top:627px;left:214px;white-space:nowrap" class="ft38">Must be finalised, agreed and closed, e.g.&#160;origin and&#160;destination&#160;must be&#160;<br/>consistent,&#160;different and/or changing&#160;pairs are not acceptable&#160;</p>
+<p style="position:absolute;top:670px;left:106px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:675px;left:133px;white-space:nowrap" class="ft30">Exception procedures:&#160;</p>
+<p style="position:absolute;top:704px;left:187px;white-space:nowrap" class="ft33">o&#160;</p>
+<p style="position:absolute;top:703px;left:214px;white-space:nowrap" class="ft38">Will be previously agreed between the parties and will be undertaken in&#160;situations&#160;<br/>Where there is a&#160;discrepancy between postal operator consignment details and&#160;<br/>the consignment details as recorded&#160;by the airline&#160;</p>
+<p style="position:absolute;top:765px;left:106px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:770px;left:133px;white-space:nowrap" class="ft30">Customs reporting:&#160;</p>
+<p style="position:absolute;top:798px;left:133px;white-space:nowrap" class="ft38">When required, the airlines will be responsible&#160;to&#160;report the mail at “manifest level”,&#160;not the&#160;<br/>item level. This may differ by country but typically would include:&#160;<br/>&#160;</p>
+<p style="position:absolute;top:851px;left:187px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:856px;left:214px;white-space:nowrap" class="ft30">Air waybill number&#160;</p>
+<p style="position:absolute;top:880px;left:187px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:885px;left:214px;white-space:nowrap" class="ft30">Description&#160;as &#160;“UPU mail”&#160;</p>
+<p style="position:absolute;top:909px;left:187px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:914px;left:214px;white-space:nowrap" class="ft30">Number of receptacles</p>
+<p style="position:absolute;top:915px;left:380px;white-space:nowrap" class="ft34">&#160;</p>
+<p style="position:absolute;top:938px;left:187px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:943px;left:214px;white-space:nowrap" class="ft30">Weight &amp; weight code</p>
+<p style="position:absolute;top:944px;left:374px;white-space:nowrap" class="ft34">&#160;</p>
+<p style="position:absolute;top:967px;left:187px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:972px;left:214px;white-space:nowrap" class="ft30">Origin Postal Operator</p>
+<p style="position:absolute;top:973px;left:379px;white-space:nowrap" class="ft34">&#160;</p>
+<p style="position:absolute;top:997px;left:187px;white-space:nowrap" class="ft32">•&#160;</p>
+<p style="position:absolute;top:1001px;left:214px;white-space:nowrap" class="ft30">Destination Postal&#160;Operator&#160;</p>
+<p style="position:absolute;top:1026px;left:187px;white-space:nowrap" class="ft35">•&#160;</p>
+<p style="position:absolute;top:1030px;left:214px;white-space:nowrap" class="ft30">Routing (if needed)</p>
+<p style="position:absolute;top:1030px;left:355px;white-space:nowrap" class="ft36">&#160;</p>
+<p style="position:absolute;top:1058px;left:133px;white-space:nowrap" class="ft38">&#160;<br/>When required, the postal operators&#160;will be responsible to report the dutiable mail items, not&#160;<br/>the manifest level. This&#160;would include information as documented on CN22 and/or CN23&#160;<br/>forms.&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft37">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft37">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft37">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft37">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft37">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft37">&#160;</p>
+<p style="position:absolute;top:1188px;left:720px;white-space:nowrap" class="ft37">Page 3 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft40{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft41{font-size:22px;font-family:Arial;color:#000000;}
+	.ft42{font-size:14px;font-family:PDMGDK+SymbolMT;color:#000000;}
+	.ft43{font-size:14px;font-family:CourierNewPSMT;color:#000000;}
+	.ft44{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft45{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page4-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0004.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft40">&#160;</p>
+<p style="position:absolute;top:167px;left:106px;white-space:nowrap" class="ft41"><b>1.6&#160;&#160;Potential Simplified Procedures&#160;</b></p>
+<p style="position:absolute;top:198px;left:106px;white-space:nowrap" class="ft45">The following&#160;procedures&#160;are envisioned, identified as attainable and would potentially simplify&#160;<br/>the airmail business:&#160;</p>
+<p style="position:absolute;top:241px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:246px;left:133px;white-space:nowrap" class="ft45">There will be consolidation of the mail as much as possible&#160;to avoid the&#160;over assignment of&#160;<br/>PAWB numbers&#160;</p>
+<p style="position:absolute;top:289px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:294px;left:133px;white-space:nowrap" class="ft45">The Post presenting the mail, covered by a PAWB number, to the&#160;Airline assumes the&#160;<br/>responsibility for payment to that Airline for all the transportation costs for the mail&#160;handed&#160;<br/>over. &#160;</p>
+<p style="position:absolute;top:356px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:361px;left:133px;white-space:nowrap" class="ft45">On those lanes and with those specific other Posts which the presenting Posts have both&#160;<br/>pre-agreed to cooperative mail delivery, the presenting Post will seek reimbursement from&#160;<br/>the other Posts if the PAWB mail handed over included mail&#160;for other Posts &#160;</p>
+<p style="position:absolute;top:423px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:428px;left:133px;white-space:nowrap" class="ft45">The airline&#160;accepting the mail, covered by a&#160;PAWB number, from the Post assumes the&#160;<br/>responsibility for the logistics of the&#160;transportation&#160;of all the&#160;mail handed over between the&#160;<br/>origin and destination&#160;covered by the PAWB number. &#160;</p>
+<p style="position:absolute;top:490px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:495px;left:133px;white-space:nowrap" class="ft45">On those lanes and with those specific other air carriers which the first&#160;and second carriers&#160;<br/>have both pre-agreed to cooperative mail transport, the airline accepting&#160;the mail covered by&#160;<br/>a PAWB number will&#160;be responsible for any payments&#160;to other airlines involved in the&#160;<br/>transportation&#160;of that mail &#160;</p>
+<p style="position:absolute;top:595px;left:106px;white-space:nowrap" class="ft41"><b>1.7 Options&#160;</b></p>
+<p style="position:absolute;top:625px;left:106px;white-space:nowrap" class="ft45">The following options&#160;may be exercised and&#160;would potentially further simplify the airmail&#160;<br/>business:&#160;</p>
+<p style="position:absolute;top:669px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:673px;left:133px;white-space:nowrap" class="ft45">Interline settlement calculations&#160;can&#160;use the distances specified in&#160;the IATA Cargo Prorate&#160;<br/>Manual unless other bilateral agreement&#160;exists between the carriers involved&#160;</p>
+<p style="position:absolute;top:717px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:721px;left:133px;white-space:nowrap" class="ft45">Settlement can be accomplished through the IATA Settlement Systems, e.g. Clearing House&#160;<br/>wherever possible&#160;</p>
+<p style="position:absolute;top:784px;left:106px;white-space:nowrap" class="ft41"><b>1.8 Benefits&#160;</b></p>
+<p style="position:absolute;top:810px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:815px;left:133px;white-space:nowrap" class="ft45">Booking – space allocation can be requested/confirmed through the cargo system however,&#160;<br/>this is not covered in the scope of this document so this would be a potential future benefit&#160;</p>
+<p style="position:absolute;top:858px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:863px;left:133px;white-space:nowrap" class="ft45">System integration - Airlines can exercise the option to fully integrate&#160;mail and cargo into&#160;<br/>one system and avoid the need to maintain two separate systems&#160;</p>
+<p style="position:absolute;top:906px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:911px;left:133px;white-space:nowrap" class="ft40">Customs reporting requirements can be&#160;facilitated for the airlines &#160;</p>
+<p style="position:absolute;top:936px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:940px;left:133px;white-space:nowrap" class="ft40">More efficient settlement&#160;</p>
+<p style="position:absolute;top:970px;left:187px;white-space:nowrap" class="ft43">o&#160;</p>
+<p style="position:absolute;top:968px;left:214px;white-space:nowrap" class="ft40">Airlines will&#160;not have to pursue payment from&#160;multiple Posts&#160;</p>
+<p style="position:absolute;top:998px;left:187px;white-space:nowrap" class="ft43">o&#160;</p>
+<p style="position:absolute;top:996px;left:214px;white-space:nowrap" class="ft40">Posts will not be pursued&#160;by multiple airlines for payment&#160;</p>
+<p style="position:absolute;top:1021px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:1025px;left:133px;white-space:nowrap" class="ft40">Posts will be&#160;able to track their mail&#160;movement&#160;within the Cargo environment&#160;</p>
+<p style="position:absolute;top:1050px;left:106px;white-space:nowrap" class="ft42">•&#160;</p>
+<p style="position:absolute;top:1054px;left:133px;white-space:nowrap" class="ft40">Airlines will&#160;be able to interline the mail which should alleviate transit problems&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft44">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft44">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft44">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft44">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft44">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft44">&#160;</p>
+<p style="position:absolute;top:1188px;left:720px;white-space:nowrap" class="ft44">Page 4 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft50{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft51{font-size:22px;font-family:Arial;color:#000000;}
+	.ft52{font-size:16px;font-family:Arial;color:#000000;}
+	.ft53{font-size:14px;font-family:PDMGDK+SymbolMT;color:#000000;}
+	.ft54{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft55{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page5-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0005.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft50">&#160;</p>
+<p style="position:absolute;top:167px;left:106px;white-space:nowrap" class="ft51"><b>1.9 Scope&#160;</b></p>
+<p style="position:absolute;top:211px;left:106px;white-space:nowrap" class="ft52"><i>1.9.1&#160;&#160;Which stakeholders are in scope?&#160;</i></p>
+<p style="position:absolute;top:242px;left:133px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:246px;left:160px;white-space:nowrap" class="ft50">Posts that are recognised by the UPU Member&#160;States&#160;</p>
+<p style="position:absolute;top:271px;left:133px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:276px;left:160px;white-space:nowrap" class="ft50">Airlines that&#160;are Members of IATA&#160;</p>
+<p style="position:absolute;top:300px;left:133px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:305px;left:160px;white-space:nowrap" class="ft50">Ground Handling Agents working at&#160;airports on behalf of the IATA airlines&#160;</p>
+<p style="position:absolute;top:329px;left:133px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:334px;left:160px;white-space:nowrap" class="ft50">Air Mail Centres at airports &#160;</p>
+<p style="position:absolute;top:371px;left:106px;white-space:nowrap" class="ft52"><i>1.9.2&#160;&#160;Which documents are in scope?&#160;</i></p>
+<p style="position:absolute;top:405px;left:106px;white-space:nowrap" class="ft55">Most of the required information to be exchanged between the Posts and the Airlines&#160;is included&#160;<br/>in the following documents:&#160;</p>
+<p style="position:absolute;top:448px;left:160px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:453px;left:187px;white-space:nowrap" class="ft50">Mail delivery bills&#160;</p>
+<p style="position:absolute;top:472px;left:106px;white-space:nowrap" class="ft55">&#160;<br/>Although this document may be removed and&#160;replaced by its equivalent message (CARDIT)&#160;<br/>eventually, this functional specification does not&#160;address its removal at this stage. &#160;&#160;</p>
+<p style="position:absolute;top:547px;left:106px;white-space:nowrap" class="ft52"><i>1.9.3&#160;&#160;Which messages are in scope?&#160;</i></p>
+<p style="position:absolute;top:581px;left:106px;white-space:nowrap" class="ft55">Most of the required information to be exchanged between the Posts and the Airlines&#160;is included&#160;<br/>in the following messages:&#160;</p>
+<p style="position:absolute;top:624px;left:160px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:629px;left:187px;white-space:nowrap" class="ft50">CARDIT&#160;</p>
+<p style="position:absolute;top:644px;left:160px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:649px;left:187px;white-space:nowrap" class="ft50">RESDIT&#160;</p>
+<p style="position:absolute;top:668px;left:106px;white-space:nowrap" class="ft55">&#160;<br/>The postal&#160;operators could also exchange some typical cargo messages with the airlines but&#160;<br/>this would be&#160;at their option:&#160;<br/>&#160;</p>
+<p style="position:absolute;top:740px;left:160px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:745px;left:187px;white-space:nowrap" class="ft50">FFR/FFA (Space Allocation Request/Answer)&#160;</p>
+<p style="position:absolute;top:761px;left:160px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:765px;left:187px;white-space:nowrap" class="ft50">FWB (Air Waybill Data)&#160;</p>
+<p style="position:absolute;top:781px;left:160px;white-space:nowrap" class="ft53">•&#160;</p>
+<p style="position:absolute;top:785px;left:187px;white-space:nowrap" class="ft50">FSR/FSA &amp;&#160;FSU (Status Request/Answer &amp; Status Update)&#160;</p>
+<p style="position:absolute;top:823px;left:106px;white-space:nowrap" class="ft52"><i>1.9.4&#160;&#160;Which documents are out of scope?&#160;</i></p>
+<p style="position:absolute;top:856px;left:106px;white-space:nowrap" class="ft55">The paper air waybill is&#160;out of scope&#160;since there&#160;is no paper&#160;air waybill issued for the&#160;movement&#160;<br/>of mail but only a postal&#160;air waybill number.&#160;</p>
+<p style="position:absolute;top:913px;left:106px;white-space:nowrap" class="ft52"><i>1.9.5&#160;&#160;Which scenarios &#160;are in scope?&#160;</i></p>
+<p style="position:absolute;top:947px;left:106px;white-space:nowrap" class="ft55">Scenarios involving the&#160;movement&#160;of international mail from one country to another and the&#160;<br/>interaction between the posts, airlines and the authorities are within the&#160;scope of this document.&#160;</p>
+<p style="position:absolute;top:1003px;left:106px;white-space:nowrap" class="ft52"><i>1.9.6&#160;&#160;Which scenarios &#160;are out of scope?&#160;</i></p>
+<p style="position:absolute;top:1037px;left:106px;white-space:nowrap" class="ft55">Scenarios involving the&#160;movement of&#160;domestic mail only&#160;within one country and the interaction&#160;<br/>between the postal operators themselves are out&#160;of scope for the purpose of this document.&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft54">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft54">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft54">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft54">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft54">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft54">&#160;</p>
+<p style="position:absolute;top:1188px;left:720px;white-space:nowrap" class="ft54">Page 5 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft60{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft61{font-size:22px;font-family:Arial;color:#000000;}
+	.ft62{font-size:16px;font-family:Arial;color:#000000;}
+	.ft63{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft64{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page6-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0006.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft60">&#160;</p>
+<p style="position:absolute;top:176px;left:106px;white-space:nowrap" class="ft61"><b>2&#160;&#160;As-Is Business Process&#160;</b></p>
+<p style="position:absolute;top:220px;left:106px;white-space:nowrap" class="ft62"><i>2.1.1&#160;&#160;As-Is business process overview&#160;</i></p>
+<p style="position:absolute;top:254px;left:106px;white-space:nowrap" class="ft64">The following&#160;high&#160;level&#160;As-Is business process is currently&#160;in place&#160;in most of&#160;the mail handling&#160;<br/>locations:&#160;</p>
+<p style="position:absolute;top:674px;left:805px;white-space:nowrap" class="ft60">&#160;</p>
+<p style="position:absolute;top:698px;left:106px;white-space:nowrap" class="ft60">&#160;</p>
+<p style="position:absolute;top:726px;left:106px;white-space:nowrap" class="ft60">&#160;</p>
+<p style="position:absolute;top:764px;left:106px;white-space:nowrap" class="ft62"><i>2.1.2&#160;&#160;As-Is business process description&#160;</i></p>
+<p style="position:absolute;top:797px;left:133px;white-space:nowrap" class="ft60">1.&#160;&#160;Origin Post sends instructions (CARDIT message) to the transporting carrier&#160;</p>
+<p style="position:absolute;top:825px;left:133px;white-space:nowrap" class="ft60">2.&#160;&#160;Origin Post may have to&#160;declare dutiable items to&#160;the Customs office of&#160;export &#160;&#160;</p>
+<p style="position:absolute;top:853px;left:133px;white-space:nowrap" class="ft60">3.&#160;&#160;Origin Post delivers mail, and/or empty&#160;mail bags to&#160;be returned, to the carrier&#160;</p>
+<p style="position:absolute;top:872px;left:160px;white-space:nowrap" class="ft60">(sometimes directly at airside) with&#160;mail delivery bills &#160;</p>
+<p style="position:absolute;top:900px;left:133px;white-space:nowrap" class="ft60">4.&#160;&#160;Carrier or his GHA takes possession the mail,&#160;scans the&#160;receptacle&#160;labels when possible&#160;</p>
+<p style="position:absolute;top:919px;left:160px;white-space:nowrap" class="ft64">and signs the mail delivery bills giving one copy to the delivering Post and retaining&#160;four&#160;<br/>copies &#160;</p>
+<p style="position:absolute;top:966px;left:133px;white-space:nowrap" class="ft60">5.&#160;&#160;Carrier acknowledges reception of the mail to the origin post (RESDIT&#160;message)*&#160;</p>
+<p style="position:absolute;top:994px;left:133px;white-space:nowrap" class="ft60">6.&#160;&#160;Carrier may&#160;have to declare mail at a manifest level to the Customs office of export&#160;</p>
+<p style="position:absolute;top:1022px;left:133px;white-space:nowrap" class="ft60">7.&#160;&#160;The mail and two copies of the delivery bill are loaded and flown to destination&#160;</p>
+<p style="position:absolute;top:1050px;left:133px;white-space:nowrap" class="ft60">8.&#160;&#160;Carrier or his GHA unloads the mail, scans the receptacle labels when possible and&#160;</p>
+<p style="position:absolute;top:1069px;left:160px;white-space:nowrap" class="ft64">delivers it to&#160;the destination Post (sometimes&#160;directly at airside) with&#160;the delivery bill,&#160;<br/>retaining one signed copy of the delivery bill as proof of delivery&#160;</p>
+<p style="position:absolute;top:1116px;left:133px;white-space:nowrap" class="ft60">9.&#160;&#160;Carrier may&#160;have to declare mail at a manifest level to the Customs office of import&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft63">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft63">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft63">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft63">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft63">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft63">&#160;</p>
+<p style="position:absolute;top:1188px;left:720px;white-space:nowrap" class="ft63">Page 6 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft70{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft71{font-size:16px;font-family:Arial;color:#000000;}
+	.ft72{font-size:14px;font-family:PDMGDK+SymbolMT;color:#000000;}
+	.ft73{font-size:14px;font-family:CourierNewPSMT;color:#000000;}
+	.ft74{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft75{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page7-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0007.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft70">&#160;</p>
+<p style="position:absolute;top:165px;left:133px;white-space:nowrap" class="ft70">10.&#160;Carrier advises origin&#160;post of delivery (RESDIT&#160;message)* &#160;</p>
+<p style="position:absolute;top:193px;left:133px;white-space:nowrap" class="ft70">11.&#160;Destination&#160;Post may have to declare dutiable items to the Customs office of import &#160;&#160;</p>
+<p style="position:absolute;top:221px;left:106px;white-space:nowrap" class="ft75">* RESDIT&#160;status events are subject to bilateral agreement, for the purpose of this “As Is”&#160;<br/>process only the received and delivered events are included&#160;</p>
+<p style="position:absolute;top:278px;left:106px;white-space:nowrap" class="ft71"><i>2.1.3&#160;&#160;As-Is business process concerns&#160;</i></p>
+<p style="position:absolute;top:312px;left:133px;white-space:nowrap" class="ft70">The issues&#160;identified with&#160;the As-Is scenario are:&#160;</p>
+<p style="position:absolute;top:336px;left:160px;white-space:nowrap" class="ft72">•&#160;</p>
+<p style="position:absolute;top:341px;left:187px;white-space:nowrap" class="ft70">Too much paper handling &#160;</p>
+<p style="position:absolute;top:370px;left:214px;white-space:nowrap" class="ft73">o&#160;</p>
+<p style="position:absolute;top:369px;left:241px;white-space:nowrap" class="ft70">Printing&#160;</p>
+<p style="position:absolute;top:398px;left:214px;white-space:nowrap" class="ft73">o&#160;</p>
+<p style="position:absolute;top:397px;left:241px;white-space:nowrap" class="ft70">Sending&#160;</p>
+<p style="position:absolute;top:426px;left:214px;white-space:nowrap" class="ft73">o&#160;</p>
+<p style="position:absolute;top:425px;left:241px;white-space:nowrap" class="ft70">Signing&#160;</p>
+<p style="position:absolute;top:454px;left:214px;white-space:nowrap" class="ft73">o&#160;</p>
+<p style="position:absolute;top:453px;left:241px;white-space:nowrap" class="ft70">Scanning&#160;</p>
+<p style="position:absolute;top:477px;left:160px;white-space:nowrap" class="ft72">•&#160;</p>
+<p style="position:absolute;top:482px;left:187px;white-space:nowrap" class="ft70">Too many ways of communicating the same information&#160;</p>
+<p style="position:absolute;top:511px;left:214px;white-space:nowrap" class="ft73">o&#160;</p>
+<p style="position:absolute;top:510px;left:241px;white-space:nowrap" class="ft70">Paper&#160;</p>
+<p style="position:absolute;top:539px;left:214px;white-space:nowrap" class="ft73">o&#160;</p>
+<p style="position:absolute;top:538px;left:241px;white-space:nowrap" class="ft70">EDI&#160;</p>
+<p style="position:absolute;top:562px;left:160px;white-space:nowrap" class="ft72">•&#160;</p>
+<p style="position:absolute;top:567px;left:187px;white-space:nowrap" class="ft70">Too few EDI capabilities&#160;&amp; options available&#160;</p>
+<p style="position:absolute;top:596px;left:214px;white-space:nowrap" class="ft73">o&#160;</p>
+<p style="position:absolute;top:595px;left:241px;white-space:nowrap" class="ft75">No visibility for the Posts once&#160;the mail has&#160;moved into the airline&#160;cargo&#160;<br/>environment&#160;</p>
+<p style="position:absolute;top:643px;left:214px;white-space:nowrap" class="ft73">o&#160;</p>
+<p style="position:absolute;top:642px;left:241px;white-space:nowrap" class="ft75">Hard copy proof of delivery may have to be provided for payment and&#160;some&#160;<br/>Posts don’t&#160;sign the delivery bills&#160;</p>
+<p style="position:absolute;top:690px;left:214px;white-space:nowrap" class="ft73">o&#160;</p>
+<p style="position:absolute;top:689px;left:241px;white-space:nowrap" class="ft75">Hard copy&#160;proof of acceptance may&#160;have&#160;to be&#160;provided for payment&#160;and&#160;<br/>some airlines&#160;don’t sign&#160;the delivery bills&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft74">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft74">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft74">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft74">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft74">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft74">&#160;</p>
+<p style="position:absolute;top:1188px;left:720px;white-space:nowrap" class="ft74">Page 7 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft80{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft81{font-size:22px;font-family:Arial;color:#000000;}
+	.ft82{font-size:16px;font-family:Arial;color:#000000;}
+	.ft83{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft84{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page8-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0008.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft80">&#160;</p>
+<p style="position:absolute;top:176px;left:106px;white-space:nowrap" class="ft81"><b>3 PAWB&#160;</b></p>
+<p style="position:absolute;top:176px;left:216px;white-space:nowrap" class="ft81"><b>Business&#160;</b></p>
+<p style="position:absolute;top:176px;left:329px;white-space:nowrap" class="ft81"><b>Process&#160;</b></p>
+<p style="position:absolute;top:220px;left:106px;white-space:nowrap" class="ft82"><i>3.1.1&#160;&#160;PAWB business process overview&#160;</i></p>
+<p style="position:absolute;top:254px;left:106px;white-space:nowrap" class="ft84">In the initial&#160;stages, the&#160;use of the&#160;PAWB number will accompany the existing paper process.&#160;&#160;A&#160;<br/>more ambitious “To Be”&#160;Process will be&#160;developed and&#160;covered in another Section 4 but&#160;still&#160;<br/>requires further investigation. &#160;</p>
+<p style="position:absolute;top:320px;left:106px;white-space:nowrap" class="ft84">The following&#160;high-level business process for&#160;using the PAWB number is envisioned for mail&#160;<br/>handling locations:&#160;</p>
+<p style="position:absolute;top:761px;left:106px;white-space:nowrap" class="ft80">&#160;</p>
+<p style="position:absolute;top:789px;left:106px;white-space:nowrap" class="ft80">&#160;</p>
+<p style="position:absolute;top:817px;left:106px;white-space:nowrap" class="ft80">&#160;</p>
+<p style="position:absolute;top:854px;left:106px;white-space:nowrap" class="ft82"><i>3.1.2&#160;&#160;PAWB business process description&#160;</i></p>
+<p style="position:absolute;top:888px;left:160px;white-space:nowrap" class="ft80">1.&#160;&#160;Origin Post sends instructions (CARDIT message) to the transporting carrier mail unit&#160;</p>
+<p style="position:absolute;top:916px;left:160px;white-space:nowrap" class="ft80">2.&#160;&#160;Origin Post may have to&#160;declare dutiable items to&#160;the Customs office of&#160;export &#160;&#160;</p>
+<p style="position:absolute;top:944px;left:160px;white-space:nowrap" class="ft80">3.&#160;&#160;Origin Post delivers mail, and/or empty mail bags to be returned, to the&#160;carrier mail&#160;</p>
+<p style="position:absolute;top:963px;left:187px;white-space:nowrap" class="ft80">unit (sometimes but very rarely directly at airside) &#160;</p>
+<p style="position:absolute;top:991px;left:160px;white-space:nowrap" class="ft80">4.&#160;&#160;Carrier mail unit takes possession of&#160;the mail, scans the receptacle labels or nested&#160;</p>
+<p style="position:absolute;top:1010px;left:187px;white-space:nowrap" class="ft80">unit &#160;</p>
+<p style="position:absolute;top:1038px;left:160px;white-space:nowrap" class="ft80">5.&#160;&#160;Carrier mail unit acknowledges reception of the mail, and&#160;the CARDIT if one was&#160;</p>
+<p style="position:absolute;top:1057px;left:187px;white-space:nowrap" class="ft80">received, to the origin post (RESDIT&#160;message) &#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft83">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft83">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft83">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft83">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1085px;left:160px;white-space:nowrap" class="ft80">6.&#160;&#160;Carrier mail unit activates a live&#160;postal air&#160;waybill consignment in&#160;the cargo&#160;</p>
+<p style="position:absolute;top:1104px;left:187px;white-space:nowrap" class="ft84">environment, e.g. sends a CIMP FWB message with the Postal Air Waybill number&#160;<br/>and the MAL special handling code&#160;to the cargo&#160;system&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft83">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft83">&#160;</p>
+<p style="position:absolute;top:1188px;left:720px;white-space:nowrap" class="ft83">Page 8 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft90{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft91{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft92{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page9-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0009.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft90">&#160;</p>
+<p style="position:absolute;top:165px;left:160px;white-space:nowrap" class="ft90">7.&#160;&#160;Carrier may&#160;have to declare mail at a manifest level to the Customs office of export &#160;</p>
+<p style="position:absolute;top:193px;left:160px;white-space:nowrap" class="ft90">8.&#160;&#160;The mail is loaded and departs for destination&#160;</p>
+<p style="position:absolute;top:221px;left:160px;white-space:nowrap" class="ft90">9.&#160;&#160;Carrier mail unit acknowledges uplift&#160;of the mail to the origin&#160;post (RESDIT&#160;message) &#160;</p>
+<p style="position:absolute;top:249px;left:160px;white-space:nowrap" class="ft90">10.&#160;Carrier or his GHA unloads the mail, scans&#160;the&#160;receptacle&#160;labels or nested unit&#160;and&#160;</p>
+<p style="position:absolute;top:268px;left:187px;white-space:nowrap" class="ft92">delivers it to&#160;the destination Post (sometimes&#160;but very rarely directly at&#160;airside)&#160;with&#160;<br/>the delivery bill, retaining one signed copy of the delivery bill as proof of&#160;delivery&#160;</p>
+<p style="position:absolute;top:315px;left:160px;white-space:nowrap" class="ft90">11.&#160;Carrier may&#160;have to declare mail at a manifest level to the Customs office of import&#160;</p>
+<p style="position:absolute;top:343px;left:160px;white-space:nowrap" class="ft90">12.&#160;Carrier advises origin&#160;post of delivery (RESDIT&#160;message)* &#160;</p>
+<p style="position:absolute;top:371px;left:160px;white-space:nowrap" class="ft90">13.&#160;Destination&#160;Post may have to declare dutiable items to the Customs office of import &#160;&#160;</p>
+<p style="position:absolute;top:399px;left:133px;white-space:nowrap" class="ft92">* RESDIT status events are subject to&#160;bilateral agreement but the CIMP messages that are&#160;<br/>supported in&#160;the cargo environment&#160;can facilitate&#160;the provision of status event information to&#160;<br/>the Post, e.g. departed, received,&#160;transferred&#160;to another&#160;carrier,&#160;booked and&#160;even not&#160;<br/>loaded.&#160;</p>
+<p style="position:absolute;top:484px;left:133px;white-space:nowrap" class="ft92">The Post can also take advantage&#160;of checking&#160;the status of the PAWB consignment in the&#160;<br/>cargo environment, e.g. through a web portal and&#160;entering the&#160;PAWB number. &#160; &#160;</p>
+<p style="position:absolute;top:531px;left:133px;white-space:nowrap" class="ft90">&#160;</p>
+<p style="position:absolute;top:559px;left:106px;white-space:nowrap" class="ft90">&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft91">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft91">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft91">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft91">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft91">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft91">&#160;</p>
+<p style="position:absolute;top:1188px;left:720px;white-space:nowrap" class="ft91">Page 9 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft100{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft101{font-size:22px;font-family:Arial;color:#000000;}
+	.ft102{font-size:16px;font-family:Arial;color:#000000;}
+	.ft103{font-size:14px;font-family:PDMGDK+SymbolMT;color:#000000;}
+	.ft104{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft105{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page10-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0010.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft100">&#160;</p>
+<p style="position:absolute;top:176px;left:106px;white-space:nowrap" class="ft101"><b>4&#160;&#160;To-Be Business Process&#160;</b></p>
+<p style="position:absolute;top:220px;left:106px;white-space:nowrap" class="ft102"><i>4.1.1&#160;&#160;To- Be business process overview&#160;</i></p>
+<p style="position:absolute;top:254px;left:160px;white-space:nowrap" class="ft100">In the “To Be” stage it is envisioned&#160;that:&#160;</p>
+<p style="position:absolute;top:279px;left:160px;white-space:nowrap" class="ft103">•&#160;</p>
+<p style="position:absolute;top:283px;left:187px;white-space:nowrap" class="ft105">Consolidation of the&#160;mail will take&#160;place,&#160;it may be a carrier mail unit&#160;function,&#160;a&#160;<br/>postal operator function&#160;or a service&#160;provided by&#160;a third party &#160;</p>
+<p style="position:absolute;top:327px;left:160px;white-space:nowrap" class="ft103">•&#160;</p>
+<p style="position:absolute;top:331px;left:187px;white-space:nowrap" class="ft105">Mail consolidation will support both Postal Operator messages and carrier messages&#160;<br/>allowing enhanced visibility for all parties at origin, destination&#160;and transfer points &#160;&#160;</p>
+<p style="position:absolute;top:375px;left:160px;white-space:nowrap" class="ft103">•&#160;</p>
+<p style="position:absolute;top:379px;left:187px;white-space:nowrap" class="ft100">There should be no need for paper documentation&#160;</p>
+<p style="position:absolute;top:404px;left:160px;white-space:nowrap" class="ft103">•&#160;</p>
+<p style="position:absolute;top:409px;left:187px;white-space:nowrap" class="ft105">The carrier&#160;may be able&#160;to continue&#160;the support&#160;of two systems, one for mail and the&#160;<br/>other for cargo, or the cargo system may be able&#160;to support&#160;mail as well&#160;</p>
+<p style="position:absolute;top:452px;left:160px;white-space:nowrap" class="ft103">•&#160;</p>
+<p style="position:absolute;top:457px;left:187px;white-space:nowrap" class="ft100">Postal Operators may be&#160;able to interface with the carrier cargo system.&#160;</p>
+<p style="position:absolute;top:485px;left:106px;white-space:nowrap" class="ft100">&#160;</p>
+<p style="position:absolute;top:887px;left:806px;white-space:nowrap" class="ft100">&#160;</p>
+<p style="position:absolute;top:911px;left:106px;white-space:nowrap" class="ft100">&#160;</p>
+<p style="position:absolute;top:948px;left:106px;white-space:nowrap" class="ft102"><i>4.1.2&#160;&#160;“To Be” business process description&#160;</i></p>
+<p style="position:absolute;top:982px;left:160px;white-space:nowrap" class="ft100">1.&#160;&#160;Origin Post sends&#160;instructions (CARDIT or FWB message with Special Handling&#160;</p>
+<p style="position:absolute;top:1001px;left:187px;white-space:nowrap" class="ft100">Code MAL)&#160;to the Mail Consolidation Unit. &#160;</p>
+<p style="position:absolute;top:1029px;left:160px;white-space:nowrap" class="ft100">2.&#160;&#160;Origin Post may have to&#160;declare dutiable items to&#160;the Customs office of&#160;export with a&#160;</p>
+<p style="position:absolute;top:1048px;left:187px;white-space:nowrap" class="ft100">GOVCBR message or equivalent. &#160;&#160;</p>
+<p style="position:absolute;top:1076px;left:160px;white-space:nowrap" class="ft100">3.&#160;&#160;Origin Post delivers mail, and/or empty&#160;mailbags to be returned, to the Mail&#160;</p>
+<p style="position:absolute;top:1095px;left:187px;white-space:nowrap" class="ft100">Consolidation Unit (sometimes but very rarely directly at airside).&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft104">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft104">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft104">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft104">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft104">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft104">&#160;</p>
+<p style="position:absolute;top:1188px;left:714px;white-space:nowrap" class="ft104">Page 10 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft110{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft111{font-size:16px;font-family:Arial;color:#000000;}
+	.ft112{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft113{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page11-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0011.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft110">&#160;</p>
+<p style="position:absolute;top:165px;left:160px;white-space:nowrap" class="ft110">4.&#160;&#160;Mail Consolidation Unit&#160;takes possession&#160;of the&#160;mail, scans the receptacle labels or&#160;</p>
+<p style="position:absolute;top:184px;left:187px;white-space:nowrap" class="ft113">nested unit and acknowledges reception of the mail to the origin post with a RESDIT&#160;<br/>that includes a Postal&#160;Air Waybill number or sends a FSU message acknowledging&#160;<br/>the FWB as a postal consignment. &#160;</p>
+<p style="position:absolute;top:250px;left:160px;white-space:nowrap" class="ft110">5.&#160;&#160;Mail Consolidation Unit&#160;activates a&#160;live postal&#160;air waybill consignment in&#160;the&#160;cargo&#160;</p>
+<p style="position:absolute;top:269px;left:187px;white-space:nowrap" class="ft113">environment, e.g. sends or relays&#160;the FWB message with&#160;the Postal Air Waybill&#160;<br/>number and the MAL special handling code to the cargo system&#160;</p>
+<p style="position:absolute;top:316px;left:160px;white-space:nowrap" class="ft110">6.&#160;&#160;Carrier or Mail Consolidation Unit may have to declare mail&#160;at a manifest level to the&#160;</p>
+<p style="position:absolute;top:335px;left:187px;white-space:nowrap" class="ft110">Customs office of export with a GOVCBR&#160;message or equivalent. &#160;</p>
+<p style="position:absolute;top:363px;left:160px;white-space:nowrap" class="ft110">7.&#160;The mail is&#160;manifested and loaded by the&#160;carrier or GHA and&#160;departs for&#160;</p>
+<p style="position:absolute;top:382px;left:187px;white-space:nowrap" class="ft113">destination(s). This may involve&#160;online and/or interline&#160;transfers in the airport&#160;<br/>environment. Interline&#160;carriers exchange FSU&#160;messages identifying FWB postal&#160;<br/>consignments transferred (FSU with TFD status) and received (FSU with RCT&#160;<br/>status). The&#160;carrier(s) sends FFM with list of FWB information to destination(s). &#160;</p>
+<p style="position:absolute;top:467px;left:160px;white-space:nowrap" class="ft110">8.&#160;&#160;Mail Consolidation Unit&#160;acknowledges uplift of&#160;the mail to the origin post&#160;(RESDIT or&#160;</p>
+<p style="position:absolute;top:486px;left:187px;white-space:nowrap" class="ft110">FSU message) &#160;</p>
+<p style="position:absolute;top:514px;left:160px;white-space:nowrap" class="ft110">9.&#160;&#160;Carrier or GHA unloads the mail,&#160;scans the&#160;receptacle&#160;labels or nested unit&#160;and&#160;</p>
+<p style="position:absolute;top:533px;left:187px;white-space:nowrap" class="ft113">hands it over to the destination Postal&#160;Operator&#160;(sometimes but very rarely directly at&#160;<br/>airside). &#160;</p>
+<p style="position:absolute;top:580px;left:160px;white-space:nowrap" class="ft110">10.&#160;Carrier, GHA or Mail Consolidation&#160;Unit may have to declare mail at a&#160;manifest level&#160;</p>
+<p style="position:absolute;top:599px;left:187px;white-space:nowrap" class="ft110">to the Customs office of&#160;import with a GOVCBR&#160;message or equivalent.&#160;</p>
+<p style="position:absolute;top:627px;left:160px;white-space:nowrap" class="ft110">11.&#160;Carrier or Mail Consolidation Unit&#160;advises origin post of&#160;delivery (RESDIT or FSU&#160;</p>
+<p style="position:absolute;top:646px;left:187px;white-space:nowrap" class="ft110">message)* &#160;</p>
+<p style="position:absolute;top:674px;left:160px;white-space:nowrap" class="ft110">12.&#160;Destination Post may have to declare dutiable items to the&#160;Customs office of import&#160;</p>
+<p style="position:absolute;top:693px;left:187px;white-space:nowrap" class="ft110">with a GOVCBR&#160;message or equivalent. &#160;&#160;</p>
+<p style="position:absolute;top:721px;left:133px;white-space:nowrap" class="ft113">* RESDIT status events are subject to&#160;bilateral agreement but the CIMP messages that are&#160;<br/>supported in&#160;the cargo environment&#160;can facilitate&#160;the provision of status event information to&#160;<br/>the Postal Operator, e.g.&#160;departed, received, transferred to&#160;another carrier, booked&#160;and even&#160;<br/>not loaded.&#160;</p>
+<p style="position:absolute;top:806px;left:133px;white-space:nowrap" class="ft113">The Postal Operator may also take advantage of checking&#160;the status of&#160;the PAWB&#160;<br/>consignment in the cargo environment, e.g. through a web portal and entering the PAWB&#160;<br/>number. &#160;</p>
+<p style="position:absolute;top:872px;left:133px;white-space:nowrap" class="ft113">A Postal Operator that supports CIMP messages may also solicit&#160;status information at either&#160;<br/>origin or destination with&#160;Status Request (FSR) message and receive information for one or&#160;<br/>more status events in a Status Answer (FSA) message. &#160; &#160;&#160;</p>
+<p style="position:absolute;top:938px;left:106px;white-space:nowrap" class="ft110">&#160;</p>
+<p style="position:absolute;top:975px;left:106px;white-space:nowrap" class="ft111"><i>4.1.3&#160;&#160;To-Be Standard Electronic Messages&#160;</i></p>
+<p style="position:absolute;top:1009px;left:133px;white-space:nowrap" class="ft113">As part of operating with the use of the Postal Air Waybill number some standards are&#160;<br/>recommended. For the&#160;sake of&#160;consistency at&#160;this time the&#160;following available&#160;standards are&#160;<br/>recommended for use in&#160;such an environment between the Posts and the Airlines.&#160;</p>
+<p style="position:absolute;top:1075px;left:133px;white-space:nowrap" class="ft110">&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft112">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft112">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft112">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft112">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft112">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft112">&#160;</p>
+<p style="position:absolute;top:1188px;left:714px;white-space:nowrap" class="ft112">Page 11 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft120{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft121{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft122{font-size:14px;font-family:Arial;color:#000000;}
+	.ft123{font-size:14px;font-family:Arial;color:#ffffff;}
+	.ft124{font-size:13px;font-family:ArialMT;color:#000000;}
+	.ft125{font-size:13px;line-height:17px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page12-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0012.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft120">&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft121">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft121">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft121">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft121">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:177px;left:96px;white-space:nowrap" class="ft122"><b>Document Type</b></p>
+<p style="position:absolute;top:177px;left:220px;white-space:nowrap" class="ft123"><b>&#160;</b></p>
+<p style="position:absolute;top:177px;left:386px;white-space:nowrap" class="ft122"><b>Organisation&#160;</b></p>
+<p style="position:absolute;top:177px;left:540px;white-space:nowrap" class="ft122"><b>Standard&#160;</b></p>
+<p style="position:absolute;top:177px;left:691px;white-space:nowrap" class="ft122"><b>Message &#160;</b></p>
+<p style="position:absolute;top:216px;left:96px;white-space:nowrap" class="ft124">Mail Delivery Bill&#160;</p>
+<p style="position:absolute;top:216px;left:422px;white-space:nowrap" class="ft124">UPU&#160;</p>
+<p style="position:absolute;top:216px;left:544px;white-space:nowrap" class="ft124">EDIFACT&#160;</p>
+<p style="position:absolute;top:216px;left:698px;white-space:nowrap" class="ft124">CARDIT&#160;</p>
+<p style="position:absolute;top:253px;left:96px;white-space:nowrap" class="ft124">Goods Declaration&#160;</p>
+<p style="position:absolute;top:253px;left:419px;white-space:nowrap" class="ft124">WCO&#160;</p>
+<p style="position:absolute;top:253px;left:544px;white-space:nowrap" class="ft124">EDIFACT&#160;</p>
+<p style="position:absolute;top:253px;left:694px;white-space:nowrap" class="ft124">GOVCBR&#160;</p>
+<p style="position:absolute;top:291px;left:96px;white-space:nowrap" class="ft124">Cargo Declaration&#160;</p>
+<p style="position:absolute;top:291px;left:419px;white-space:nowrap" class="ft124">WCO&#160;</p>
+<p style="position:absolute;top:291px;left:544px;white-space:nowrap" class="ft124">EDIFACT&#160;</p>
+<p style="position:absolute;top:291px;left:694px;white-space:nowrap" class="ft124">GOVCBR&#160;</p>
+<p style="position:absolute;top:327px;left:96px;white-space:nowrap" class="ft124">Airline Flight&#160;Manifest&#160;</p>
+<p style="position:absolute;top:327px;left:421px;white-space:nowrap" class="ft124">IATA&#160;</p>
+<p style="position:absolute;top:327px;left:557px;white-space:nowrap" class="ft124">CIMP&#160;</p>
+<p style="position:absolute;top:327px;left:711px;white-space:nowrap" class="ft124">FFM&#160;</p>
+<p style="position:absolute;top:354px;left:133px;white-space:nowrap" class="ft120">&#160;</p>
+<p style="position:absolute;top:382px;left:133px;white-space:nowrap" class="ft120">&#160;</p>
+<p style="position:absolute;top:421px;left:96px;white-space:nowrap" class="ft122"><b>Track &amp; Trace</b></p>
+<p style="position:absolute;top:421px;left:206px;white-space:nowrap" class="ft123"><b>&#160;</b></p>
+<p style="position:absolute;top:421px;left:386px;white-space:nowrap" class="ft122"><b>Organisation&#160;</b></p>
+<p style="position:absolute;top:421px;left:540px;white-space:nowrap" class="ft122"><b>Standard&#160;</b></p>
+<p style="position:absolute;top:421px;left:691px;white-space:nowrap" class="ft122"><b>Message &#160;</b></p>
+<p style="position:absolute;top:460px;left:96px;white-space:nowrap" class="ft125">Carrier/confirmation of receipt or&#160;<br/>current exception&#160;</p>
+<p style="position:absolute;top:460px;left:421px;white-space:nowrap" class="ft124">UPU&#160;EDIFACT&#160;</p>
+<p style="position:absolute;top:460px;left:612px;white-space:nowrap" class="ft124">&#160;RESDIT&#160;</p>
+<p style="position:absolute;top:513px;left:96px;white-space:nowrap" class="ft124">Postal Air Waybill number&#160;</p>
+<p style="position:absolute;top:513px;left:421px;white-space:nowrap" class="ft124">IATA&#160;</p>
+<p style="position:absolute;top:513px;left:557px;white-space:nowrap" class="ft124">CIMP&#160;</p>
+<p style="position:absolute;top:513px;left:709px;white-space:nowrap" class="ft124">FWB&#160;</p>
+<p style="position:absolute;top:549px;left:96px;white-space:nowrap" class="ft124">Status Request&#160;</p>
+<p style="position:absolute;top:549px;left:421px;white-space:nowrap" class="ft124">IATA&#160;</p>
+<p style="position:absolute;top:549px;left:557px;white-space:nowrap" class="ft124">CIMP&#160;</p>
+<p style="position:absolute;top:549px;left:711px;white-space:nowrap" class="ft124">FSR&#160;</p>
+<p style="position:absolute;top:585px;left:96px;white-space:nowrap" class="ft124">Status&#160;Answer&#160;</p>
+<p style="position:absolute;top:585px;left:421px;white-space:nowrap" class="ft124">IATA&#160;</p>
+<p style="position:absolute;top:585px;left:557px;white-space:nowrap" class="ft124">CIMP&#160;</p>
+<p style="position:absolute;top:585px;left:711px;white-space:nowrap" class="ft124">FSA&#160;</p>
+<p style="position:absolute;top:621px;left:96px;white-space:nowrap" class="ft124">Status Update&#160;</p>
+<p style="position:absolute;top:621px;left:421px;white-space:nowrap" class="ft124">IATA&#160;</p>
+<p style="position:absolute;top:621px;left:557px;white-space:nowrap" class="ft124">CIMP&#160;</p>
+<p style="position:absolute;top:621px;left:711px;white-space:nowrap" class="ft124">FSU&#160;</p>
+<p style="position:absolute;top:649px;left:133px;white-space:nowrap" class="ft120">&#160;</p>
+<p style="position:absolute;top:677px;left:133px;white-space:nowrap" class="ft120">&#160;</p>
+<p style="position:absolute;top:705px;left:133px;white-space:nowrap" class="ft120">&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft121">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft121">&#160;</p>
+<p style="position:absolute;top:1188px;left:714px;white-space:nowrap" class="ft121">Page 12 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft130{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft131{font-size:25px;font-family:Arial;color:#000000;}
+	.ft132{font-size:13px;font-family:PDMOBC+BookmanOldStyle;color:#000000;}
+	.ft133{font-size:13px;font-family:PDMOBE+BookmanOldStyle;color:#000000;}
+	.ft134{font-size:22px;font-family:PDMOBC+BookmanOldStyle;color:#000000;}
+	.ft135{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft136{font-size:13px;line-height:17px;font-family:PDMOBE+BookmanOldStyle;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page13-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0013.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft130">&#160;</p>
+<p style="position:absolute;top:168px;left:406px;white-space:nowrap" class="ft131"><b>Annex 1&#160;</b></p>
+<p style="position:absolute;top:208px;left:394px;white-space:nowrap" class="ft131"><b>IATA-UPU&#160;</b></p>
+<p style="position:absolute;top:248px;left:254px;white-space:nowrap" class="ft131"><b>Memorandum of Understanding&#160;</b></p>
+<p style="position:absolute;top:288px;left:458px;white-space:nowrap" class="ft131"><b>&#160;</b></p>
+<p style="position:absolute;top:322px;left:106px;white-space:nowrap" class="ft132"><b>Made&#160;by and between the&#160;</b></p>
+<p style="position:absolute;top:349px;left:106px;white-space:nowrap" class="ft133">&#160;</p>
+<p style="position:absolute;top:375px;left:106px;white-space:nowrap" class="ft132"><b>UNIVERSAL POSTAL UNION</b></p>
+<p style="position:absolute;top:375px;left:326px;white-space:nowrap" class="ft133">, a&#160;specialised agency of the&#160;United Nations&#160;duly represented&#160;by&#160;</p>
+<p style="position:absolute;top:393px;left:106px;white-space:nowrap" class="ft133">the&#160;Director&#160;General of its International Bureau,&#160;having its&#160;headquarters&#160;at Weltpoststrasse&#160;4,&#160;</p>
+<p style="position:absolute;top:410px;left:106px;white-space:nowrap" class="ft133">3000&#160;Berne&#160;15,&#160;Switzerland (hereinafter&#160;the “</p>
+<p style="position:absolute;top:410px;left:439px;white-space:nowrap" class="ft132"><b>UPU</b></p>
+<p style="position:absolute;top:410px;left:471px;white-space:nowrap" class="ft133">”);&#160;</p>
+<p style="position:absolute;top:437px;left:106px;white-space:nowrap" class="ft132"><b>and&#160;the&#160;</b></p>
+<p style="position:absolute;top:464px;left:106px;white-space:nowrap" class="ft132"><b>&#160;</b></p>
+<p style="position:absolute;top:490px;left:106px;white-space:nowrap" class="ft132"><b>INTERNATIONAL AIR&#160;TRANSPORT ASSOCIATION,&#160;</b></p>
+<p style="position:absolute;top:490px;left:501px;white-space:nowrap" class="ft133">an association incorporated by special&#160;Act&#160;</p>
+<p style="position:absolute;top:508px;left:106px;white-space:nowrap" class="ft136">of&#160;the Canadian Parliament,&#160;having its registered office&#160;at&#160;800 Place&#160;Victoria,&#160;P.O.&#160;Box 113,&#160;<br/>Montreal, Quebec, Canada, H4Z 1M1&#160;(hereinafter “</p>
+<p style="position:absolute;top:526px;left:480px;white-space:nowrap" class="ft132"><b>IATA</b></p>
+<p style="position:absolute;top:526px;left:518px;white-space:nowrap" class="ft133">”).&#160;</p>
+<p style="position:absolute;top:552px;left:106px;white-space:nowrap" class="ft133">&#160;</p>
+<p style="position:absolute;top:579px;left:106px;white-space:nowrap" class="ft133">The UPU and&#160;IATA&#160;may&#160;also&#160;be&#160;individually referred&#160;to as “Party”, or collectively as “Parties”.&#160;</p>
+<p style="position:absolute;top:614px;left:106px;white-space:nowrap" class="ft134"><b>5 PREAMBLE&#160;</b></p>
+<p style="position:absolute;top:647px;left:106px;white-space:nowrap" class="ft133">&#160;</p>
+<p style="position:absolute;top:674px;left:106px;white-space:nowrap" class="ft132"><b>WHEREAS</b></p>
+<p style="position:absolute;top:674px;left:187px;white-space:nowrap" class="ft133">&#160;the&#160;Mission, Scope&#160;and Objectives of the&#160;UPU are&#160;specified&#160;in&#160;the&#160;UPU&#160;Constitution;&#160;</p>
+<p style="position:absolute;top:700px;left:106px;white-space:nowrap" class="ft132"><b>WHEREAS</b></p>
+<p style="position:absolute;top:700px;left:187px;white-space:nowrap" class="ft133">&#160;the&#160;aim of&#160;the&#160;UPU&#160;shall be,&#160;among&#160;others, to&#160;secure&#160;the&#160;organisation&#160;and&#160;</p>
+<p style="position:absolute;top:718px;left:106px;white-space:nowrap" class="ft136">improvement&#160;of&#160;postal services and promote in&#160;this sphere&#160;the&#160;development of&#160;international&#160;<br/>collaboration and technical cooperation;&#160;</p>
+<p style="position:absolute;top:762px;left:106px;white-space:nowrap" class="ft132"><b>WHEREAS</b></p>
+<p style="position:absolute;top:762px;left:187px;white-space:nowrap" class="ft133">&#160;the UPU&#160;provides&#160;the framework for&#160;global&#160;postal&#160;policy&#160;and the guidelines&#160;for&#160;</p>
+<p style="position:absolute;top:780px;left:106px;white-space:nowrap" class="ft133">postal development to&#160;all its members, in conformity with its&#160;Acts and&#160;Regulations;&#160;</p>
+<p style="position:absolute;top:806px;left:106px;white-space:nowrap" class="ft132"><b>WHEREAS</b></p>
+<p style="position:absolute;top:806px;left:187px;white-space:nowrap" class="ft133">&#160;the aim of&#160;IATA&#160;shall be,&#160;among others,&#160;to&#160;provide means for&#160;collaboration among&#160;</p>
+<p style="position:absolute;top:824px;left:106px;white-space:nowrap" class="ft133">the&#160;air transport enterprises&#160;engaged in international air transport service,&#160;and to co-operate&#160;</p>
+<p style="position:absolute;top:841px;left:106px;white-space:nowrap" class="ft133">with other international organisations;&#160;</p>
+<p style="position:absolute;top:868px;left:106px;white-space:nowrap" class="ft132"><b>WHEREAS</b></p>
+<p style="position:absolute;top:868px;left:187px;white-space:nowrap" class="ft133">&#160;the&#160;Parties recognise&#160;their common&#160;interest in the&#160;rapid&#160;and&#160;reliable&#160;movement of&#160;</p>
+<p style="position:absolute;top:886px;left:106px;white-space:nowrap" class="ft133">mail, as well&#160;as in the&#160;consistent and accurate&#160;reporting of mail movement status;&#160;</p>
+<p style="position:absolute;top:912px;left:106px;white-space:nowrap" class="ft132"><b>WHEREAS</b></p>
+<p style="position:absolute;top:912px;left:187px;white-space:nowrap" class="ft133">&#160;the&#160;Parties&#160;recognise their common&#160;interest in&#160;developing&#160;standard&#160;handling and&#160;</p>
+<p style="position:absolute;top:930px;left:106px;white-space:nowrap" class="ft133">reporting procedures&#160;for&#160;the&#160;movement of&#160;mail;&#160;</p>
+<p style="position:absolute;top:957px;left:106px;white-space:nowrap" class="ft132"><b>WHEREAS</b></p>
+<p style="position:absolute;top:957px;left:187px;white-space:nowrap" class="ft133">&#160;the Parties&#160;recognise&#160;their&#160;mutual&#160;interest&#160;in&#160;efficient,&#160;reliable and accurate&#160;</p>
+<p style="position:absolute;top:974px;left:106px;white-space:nowrap" class="ft133">settlement procedures related&#160;to&#160;mail transport;&#160;</p>
+<p style="position:absolute;top:1001px;left:106px;white-space:nowrap" class="ft132"><b>WHEREAS</b></p>
+<p style="position:absolute;top:1001px;left:187px;white-space:nowrap" class="ft133">&#160;the&#160;Parties recognise&#160;that there&#160;is a growing level of automation within the&#160;airline&#160;</p>
+<p style="position:absolute;top:1018px;left:106px;white-space:nowrap" class="ft133">and postal communities;&#160;</p>
+<p style="position:absolute;top:1045px;left:106px;white-space:nowrap" class="ft132"><b>WHEREAS</b></p>
+<p style="position:absolute;top:1045px;left:187px;white-space:nowrap" class="ft133">&#160;the&#160;Parties&#160;recognise&#160;that the&#160;automated&#160;processing of&#160;electronic&#160;data&#160;relating to&#160;</p>
+<p style="position:absolute;top:1063px;left:106px;white-space:nowrap" class="ft133">mail transport may represent significant cost savings and&#160;efficiencies;&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft135">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft135">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft135">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft135">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft135">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft135">&#160;</p>
+<p style="position:absolute;top:1188px;left:714px;white-space:nowrap" class="ft135">Page 13 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft140{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft141{font-size:13px;font-family:PDMOBC+BookmanOldStyle;color:#000000;}
+	.ft142{font-size:13px;font-family:PDMOBE+BookmanOldStyle;color:#000000;}
+	.ft143{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft144{font-size:13px;line-height:17px;font-family:PDMOBE+BookmanOldStyle;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page14-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0014.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft140">&#160;</p>
+<p style="position:absolute;top:162px;left:106px;white-space:nowrap" class="ft141"><b>WHEREAS</b></p>
+<p style="position:absolute;top:162px;left:187px;white-space:nowrap" class="ft142">&#160;the&#160;Parties recognise&#160;that, through the&#160;use&#160;of Electronic&#160;Data Interchange&#160;(EDI) in&#160;</p>
+<p style="position:absolute;top:180px;left:106px;white-space:nowrap" class="ft142">mail transport, a paperless trading environment might be&#160;achieved, with potentially significant&#160;</p>
+<p style="position:absolute;top:197px;left:106px;white-space:nowrap" class="ft142">benefits for both UPU members and&#160;airlines;&#160;</p>
+<p style="position:absolute;top:224px;left:106px;white-space:nowrap" class="ft141"><b>WHEREAS</b></p>
+<p style="position:absolute;top:224px;left:187px;white-space:nowrap" class="ft142">&#160;the&#160;Parties&#160;recognise that mutual simplification and harmonisation of&#160;interface&#160;</p>
+<p style="position:absolute;top:241px;left:106px;white-space:nowrap" class="ft142">arrangements, particularly regarding standardised procedures and&#160;data&#160;exchange,&#160;might make&#160;</p>
+<p style="position:absolute;top:259px;left:106px;white-space:nowrap" class="ft142">such goals attainable.&#160;</p>
+<p style="position:absolute;top:286px;left:106px;white-space:nowrap" class="ft141"><b>WHEREAS</b></p>
+<p style="position:absolute;top:286px;left:187px;white-space:nowrap" class="ft142">&#160;the Parties&#160;acknowledge&#160;the development&#160;of&#160;guidelines&#160;and&#160;interface standards&#160;to&#160;</p>
+<p style="position:absolute;top:303px;left:106px;white-space:nowrap" class="ft144">facilitate the interconnection of automated systems, and&#160;express their desire to further improve&#160;<br/>the&#160;development and implementation of such guidelines&#160;and standards;&#160;</p>
+<p style="position:absolute;top:347px;left:106px;white-space:nowrap" class="ft141"><b>WHEREAS</b></p>
+<p style="position:absolute;top:347px;left:187px;white-space:nowrap" class="ft142">&#160;said guidelines and interface standards may&#160;be&#160;published in a manner&#160;to be later&#160;</p>
+<p style="position:absolute;top:365px;left:106px;white-space:nowrap" class="ft142">agreed&#160;upon&#160;and formalised&#160;between&#160;the&#160;Parties.&#160;</p>
+<p style="position:absolute;top:392px;left:106px;white-space:nowrap" class="ft141"><b>&#160;</b></p>
+<p style="position:absolute;top:418px;left:106px;white-space:nowrap" class="ft142">Considering&#160;that close&#160;cooperation is desirable&#160;for achieving&#160;efficient automated solutions, the&#160;</p>
+<p style="position:absolute;top:436px;left:106px;white-space:nowrap" class="ft142">Parties agree</p>
+<p style="position:absolute;top:436px;left:202px;white-space:nowrap" class="ft141"><b>&#160;</b></p>
+<p style="position:absolute;top:436px;left:209px;white-space:nowrap" class="ft142">that such&#160;objectives will be&#160;pursued through the&#160;following cooperation activities&#160;</p>
+<p style="position:absolute;top:453px;left:106px;white-space:nowrap" class="ft142">indicated in this Memorandum of Understanding&#160;(hereinafter&#160;the &#34;MOU&#34;),&#160;as&#160;follows:</p>
+<p style="position:absolute;top:453px;left:727px;white-space:nowrap" class="ft141"><b>&#160;</b></p>
+<p style="position:absolute;top:480px;left:106px;white-space:nowrap" class="ft141"><b>&#160;</b></p>
+<p style="position:absolute;top:507px;left:106px;white-space:nowrap" class="ft141"><b>ARTICLE I - COOPERATION</b></p>
+<p style="position:absolute;top:507px;left:322px;white-space:nowrap" class="ft142">&#160;</p>
+<p style="position:absolute;top:533px;left:106px;white-space:nowrap" class="ft141"><b>1.1</b></p>
+<p style="position:absolute;top:533px;left:131px;white-space:nowrap" class="ft142">&#160;The&#160;UPU and IATA&#160;agree&#160;to</p>
+<p style="position:absolute;top:533px;left:364px;white-space:nowrap" class="ft141"><b>&#160;</b></p>
+<p style="position:absolute;top:533px;left:374px;white-space:nowrap" class="ft142">strengthen&#160;mutual cooperation and endeavour to adopt&#160;</p>
+<p style="position:absolute;top:551px;left:106px;white-space:nowrap" class="ft144">mutually relevant guidelines on&#160;the&#160;development and operation&#160;of technical interface&#160;<br/>arrangements.&#160;</p>
+<p style="position:absolute;top:595px;left:106px;white-space:nowrap" class="ft141"><b>1.2</b></p>
+<p style="position:absolute;top:595px;left:131px;white-space:nowrap" class="ft142">&#160;The&#160;Parties shall strive&#160;to&#160;endorse&#160;agreed&#160;upon standardised procedures&#160;on&#160;automated&#160;</p>
+<p style="position:absolute;top:613px;left:106px;white-space:nowrap" class="ft142">processing&#160;of electronic&#160;data related to mail transport, in a&#160;manner&#160;to be&#160;defined by&#160;the&#160;Parties.&#160;</p>
+<p style="position:absolute;top:639px;left:106px;white-space:nowrap" class="ft141"><b>1.3</b></p>
+<p style="position:absolute;top:639px;left:131px;white-space:nowrap" class="ft142">&#160;The&#160;Parties shall endeavour to formalise,&#160;maintain and update&#160;such&#160;agreed upon standards&#160;</p>
+<p style="position:absolute;top:657px;left:106px;white-space:nowrap" class="ft142">in line&#160;with current or&#160;future&#160;procedures to&#160;be&#160;defined&#160;by&#160;the&#160;Parties.&#160;</p>
+<p style="position:absolute;top:683px;left:106px;white-space:nowrap" class="ft141"><b>1.4</b></p>
+<p style="position:absolute;top:683px;left:131px;white-space:nowrap" class="ft142">&#160;The&#160;Parties shall also strive&#160;to promote,&#160;to&#160;the&#160;extent possible, the&#160;implementation and&#160;</p>
+<p style="position:absolute;top:701px;left:106px;white-space:nowrap" class="ft142">widespread&#160;use&#160;of the&#160;agreed upon standards and procedures.&#160;</p>
+<p style="position:absolute;top:728px;left:106px;white-space:nowrap" class="ft141"><b>&#160;</b></p>
+<p style="position:absolute;top:754px;left:106px;white-space:nowrap" class="ft141"><b>ARTICLE II –&#160;MUTUAL&#160;CONSULTATION AND&#160;ADMINISTRATIVE MATTERS&#160;</b></p>
+<p style="position:absolute;top:781px;left:106px;white-space:nowrap" class="ft141"><b>2.1</b></p>
+<p style="position:absolute;top:781px;left:131px;white-space:nowrap" class="ft142">&#160;The&#160;Parties&#160;may&#160;consult&#160;each&#160;other, as needed,&#160;on&#160;matters&#160;of&#160;common interest for the&#160;</p>
+<p style="position:absolute;top:799px;left:106px;white-space:nowrap" class="ft142">purpose&#160;of&#160;achieving the aims set forth in this MOU.&#160;</p>
+<p style="position:absolute;top:825px;left:106px;white-space:nowrap" class="ft141"><b>2.2</b></p>
+<p style="position:absolute;top:825px;left:131px;white-space:nowrap" class="ft142">&#160;In&#160;particular, the&#160;Parties may decide&#160;to&#160;exchange&#160;information in&#160;fields and&#160;projects of&#160;</p>
+<p style="position:absolute;top:843px;left:106px;white-space:nowrap" class="ft142">mutual interest, in accordance&#160;with the&#160;aims&#160;and provisions&#160;of this MOU.&#160;</p>
+<p style="position:absolute;top:869px;left:106px;white-space:nowrap" class="ft141"><b>2.3</b></p>
+<p style="position:absolute;top:869px;left:131px;white-space:nowrap" class="ft142">&#160;The&#160;Parties agree&#160;that, in order to safeguard confidentiality of&#160;any information to be&#160;</p>
+<p style="position:absolute;top:887px;left:106px;white-space:nowrap" class="ft142">mutually disclosed, the&#160;signature&#160;of&#160;a preliminary confidentiality agreement may&#160;be&#160;required.</p>
+<p style="position:absolute;top:887px;left:791px;white-space:nowrap" class="ft141"><b>&#160;</b></p>
+<p style="position:absolute;top:914px;left:106px;white-space:nowrap" class="ft141"><b>2.4</b></p>
+<p style="position:absolute;top:914px;left:131px;white-space:nowrap" class="ft142">&#160;The&#160;Parties further agree&#160;that all administrative&#160;matters linked to&#160;the&#160;execution&#160;or&#160;</p>
+<p style="position:absolute;top:931px;left:106px;white-space:nowrap" class="ft144">operational&#160;feasibility&#160;of this MOU shall be&#160;decided and formalised in&#160;documents&#160;to be&#160;agreed&#160;<br/>upon&#160;later by the&#160;Parties, as the&#160;case may be.&#160;</p>
+<p style="position:absolute;top:949px;left:446px;white-space:nowrap" class="ft141"><b>&#160;</b></p>
+<p style="position:absolute;top:975px;left:106px;white-space:nowrap" class="ft141"><b>&#160;</b></p>
+<p style="position:absolute;top:1002px;left:106px;white-space:nowrap" class="ft141"><b>ARTICLE III&#160;– DATE&#160;OF ENTRY&#160;INTO EFFECT&#160;AND&#160;TERMINATION</b></p>
+<p style="position:absolute;top:1002px;left:620px;white-space:nowrap" class="ft142">&#160;</p>
+<p style="position:absolute;top:1029px;left:106px;white-space:nowrap" class="ft141"><b>3.1</b></p>
+<p style="position:absolute;top:1029px;left:131px;white-space:nowrap" class="ft142">&#160;This MOU shall come&#160;into effect upon the last&#160;date&#160;of&#160;signature as&#160;indicated below by the&#160;</p>
+<p style="position:absolute;top:1046px;left:106px;white-space:nowrap" class="ft142">Parties and&#160;shall remain&#160;valid for a&#160;period&#160;of&#160;3 (three) years, and then&#160;automatically renewed&#160;</p>
+<p style="position:absolute;top:1064px;left:106px;white-space:nowrap" class="ft142">for consecutive&#160;periods of 1 (year).&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft143">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft143">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft143">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft143">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft143">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft143">&#160;</p>
+<p style="position:absolute;top:1188px;left:714px;white-space:nowrap" class="ft143">Page 14 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft150{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft151{font-size:13px;font-family:PDMOBC+BookmanOldStyle;color:#000000;}
+	.ft152{font-size:13px;font-family:PDMOBE+BookmanOldStyle;color:#000000;}
+	.ft153{font-size:18px;font-family:ArialMT;color:#000000;}
+	.ft154{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft155{font-size:13px;line-height:17px;font-family:PDMOBE+BookmanOldStyle;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page15-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0015.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft150">&#160;</p>
+<p style="position:absolute;top:162px;left:106px;white-space:nowrap" class="ft151"><b>3.2</b></p>
+<p style="position:absolute;top:162px;left:131px;white-space:nowrap" class="ft152">&#160;This MOU may be&#160;terminated&#160;by&#160;either&#160;Party,&#160;provided&#160;that a written termination notice&#160;</p>
+<p style="position:absolute;top:180px;left:106px;white-space:nowrap" class="ft152">with confirmation&#160;of&#160;receipt is given to&#160;the&#160;other Party at least 60&#160;(sixty) days&#160;before&#160;such&#160;</p>
+<p style="position:absolute;top:197px;left:106px;white-space:nowrap" class="ft152">termination takes&#160;effect.&#160;</p>
+<p style="position:absolute;top:224px;left:106px;white-space:nowrap" class="ft151"><b>3.3</b></p>
+<p style="position:absolute;top:224px;left:131px;white-space:nowrap" class="ft152">&#160;This&#160;MOU&#160;may&#160;only&#160;be&#160;amended&#160;if&#160;such&#160;amendments&#160;are&#160;made&#160;in&#160;writing&#160;and&#160;signed&#160;by&#160;</p>
+<p style="position:absolute;top:241px;left:106px;white-space:nowrap" class="ft152">both&#160;Parties.&#160;</p>
+<p style="position:absolute;top:268px;left:106px;white-space:nowrap" class="ft151"><b>3.4</b></p>
+<p style="position:absolute;top:268px;left:131px;white-space:nowrap" class="ft152">&#160;The Parties&#160;hereby&#160;agree that&#160;this&#160;MOU&#160;shall&#160;fully&#160;replace and supersede the Memorandum&#160;</p>
+<p style="position:absolute;top:286px;left:106px;white-space:nowrap" class="ft152">of&#160;Understanding previously signed by the Parties on 22&#160;June&#160;1999,&#160;as&#160;well as any&#160;extensions&#160;</p>
+<p style="position:absolute;top:303px;left:106px;white-space:nowrap" class="ft152">or&#160;amendments&#160;thereof.&#160;</p>
+<p style="position:absolute;top:330px;left:106px;white-space:nowrap" class="ft152">&#160;</p>
+<p style="position:absolute;top:356px;left:106px;white-space:nowrap" class="ft152">&#160;</p>
+<p style="position:absolute;top:383px;left:106px;white-space:nowrap" class="ft155">In&#160;witness&#160;whereof, the&#160;Parties have&#160;concluded the&#160;present&#160;MOU&#160;in&#160;2 (two)&#160;originals and&#160;<br/>appended their signatures thereto.&#160;</p>
+<p style="position:absolute;top:427px;left:106px;white-space:nowrap" class="ft152">&#160;</p>
+<p style="position:absolute;top:454px;left:106px;white-space:nowrap" class="ft152">&#160;</p>
+<p style="position:absolute;top:480px;left:137px;white-space:nowrap" class="ft151"><b>FOR&#160;THE&#160;UNIVERSAL&#160;POSTAL UNION&#160;&#160;FOR&#160;THE INTERNATIONAL AIR&#160;</b></p>
+<p style="position:absolute;top:498px;left:466px;white-space:nowrap" class="ft151"><b>TRANSPORT ASSOCIATION&#160;</b></p>
+<p style="position:absolute;top:525px;left:137px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:551px;left:137px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:578px;left:137px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:604px;left:137px;white-space:nowrap" class="ft151"><b>Mexico&#160;City, 7&#160;March&#160;2007&#160;</b></p>
+<p style="position:absolute;top:631px;left:137px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:658px;left:137px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:684px;left:137px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:711px;left:137px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:737px;left:137px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:525px;left:466px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:551px;left:466px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:578px;left:466px;white-space:nowrap" class="ft151"><b>&#160;</b></p>
+<p style="position:absolute;top:604px;left:466px;white-space:nowrap" class="ft151"><b>Mexico&#160;City, 7&#160;March&#160;2007&#160;</b></p>
+<p style="position:absolute;top:764px;left:137px;white-space:nowrap" class="ft151"><b>Edouard Dayan&#160;</b></p>
+<p style="position:absolute;top:764px;left:466px;white-space:nowrap" class="ft151"><b>Giovanni&#160;Bisignani&#160;</b></p>
+<p style="position:absolute;top:791px;left:137px;white-space:nowrap" class="ft151"><b>Director General&#160;</b></p>
+<p style="position:absolute;top:791px;left:466px;white-space:nowrap" class="ft151"><b>Director General&#160;</b></p>
+<p style="position:absolute;top:817px;left:106px;white-space:nowrap" class="ft152">&#160;</p>
+<p style="position:absolute;top:849px;left:458px;white-space:nowrap" class="ft153">&#160;</p>
+<p style="position:absolute;top:881px;left:106px;white-space:nowrap" class="ft150">&#160;</p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft154">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft154">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft154">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft154">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft154">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft154">&#160;</p>
+<p style="position:absolute;top:1188px;left:714px;white-space:nowrap" class="ft154">Page 15 of 16&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/workgroups/Documents/iata-pawb-functionalspecs-v1.0-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft160{font-size:14px;font-family:ArialMT;color:#000000;}
+	.ft161{font-size:25px;font-family:Arial;color:#000000;}
+	.ft162{font-size:18px;font-family:ArialMT;color:#000000;}
+	.ft163{font-size:9px;font-family:ArialMT;color:#000000;}
+	.ft164{font-size:14px;line-height:18px;font-family:ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page16-div" style="position:relative;width:892px;height:1263px;">
+<img width="892" height="1263" src="iata-pawb-functionalspecs-v1.0016.png" alt="background image"/>
+<p style="position:absolute;top:57px;left:106px;white-space:nowrap" class="ft160">&#160;</p>
+<p style="position:absolute;top:168px;left:406px;white-space:nowrap" class="ft161"><b>Annex 2&#160;</b></p>
+<p style="position:absolute;top:207px;left:316px;white-space:nowrap" class="ft162">MESSAGE SPECIFICATIONS&#160;</p>
+<p style="position:absolute;top:240px;left:458px;white-space:nowrap" class="ft162">&#160;</p>
+<p style="position:absolute;top:272px;left:133px;white-space:nowrap" class="ft160">The CARDIT &amp; RESDIT&#160;specifications can be obtained from the UPU (www.upu.int).&#160;</p>
+<p style="position:absolute;top:300px;left:133px;white-space:nowrap" class="ft160">The GOVCBR specifications can be&#160;obtained from&#160;UN/CEFACT (www.unece.org/cefact).&#160;</p>
+<p style="position:absolute;top:328px;left:133px;white-space:nowrap" class="ft164">The specifications of the IATA standard electronic messages are described in the&#160;Cargo&#160;<br/>Interchange&#160;Manual Procedures (CIMP) that&#160;can&#160;be accessed&#160;and purchased&#160;at the&#160;<br/><a href="http://www.iata.org/ps/publications/cimp.htm">following URL:&#160;http://www.iata.org/ps/publications/cimp.htm</a></p>
+<p style="position:absolute;top:1143px;left:106px;white-space:nowrap" class="ft163">&#160;</p>
+<p style="position:absolute;top:1165px;left:106px;white-space:nowrap" class="ft163">IATA Cargo Business Process &amp;&#160;Standards&#160;</p>
+<p style="position:absolute;top:1165px;left:430px;white-space:nowrap" class="ft163">&#160;</p>
+<p style="position:absolute;top:1165px;left:721px;white-space:nowrap" class="ft163">16-Apr-2010&#160;</p>
+<p style="position:absolute;top:1188px;left:106px;white-space:nowrap" class="ft163">&#160;</p>
+<p style="position:absolute;top:1188px;left:430px;white-space:nowrap" class="ft163">&#160;</p>
+<p style="position:absolute;top:1188px;left:714px;white-space:nowrap" class="ft163">Page 16 of 16&#160;</p>
+</div>
+</body>
+</html>
