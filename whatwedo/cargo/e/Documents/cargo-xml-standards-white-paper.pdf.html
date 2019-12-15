@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:70px;font-family:YJTXDR+AkzidenzGroteskPro;color:#113d76;}
+	.ft11{font-size:29px;font-family:UDQUZZ+AkzidenzGroteskPro-MdCn;color:#a5d7f4;}
+	.ft12{font-size:40px;font-family:YJTXDR+AkzidenzGroteskPro;color:#113d76;}
+	.ft13{font-size:40px;font-family:UDQUZZ+AkzidenzGroteskPro-MdCn;color:#113d76;}
+	.ft14{font-size:31px;font-family:YJTXDR+AkzidenzGroteskPro;color:#113d76;}
+	.ft15{font-size:34px;font-family:YJTXDR+AkzidenzGroteskPro;color:#113d76;}
+	.ft16{font-size:34px;font-family:UDQUZZ+AkzidenzGroteskPro-MdCn;color:#113d76;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page1-div" style="position:relative;width:891px;height:1188px;">
+<img width="891" height="1188" src="cargo-xml-standards-white-paper001.png" alt="background image"/>
+<p style="position:absolute;top:435px;left:446px;white-space:nowrap" class="ft10"><b>IATA Cargo XML</b></p>
+<p style="position:absolute;top:746px;left:723px;white-space:nowrap" class="ft11">15 June 2015</p>
+<p style="position:absolute;top:527px;left:242px;white-space:nowrap" class="ft12"><b>The&#160;new&#160;messaging&#160;standard&#160;modernizing&#160;&#160;</b></p>
+<p style="position:absolute;top:588px;left:320px;white-space:nowrap" class="ft12"><b>air&#160;cargo&#160;electronic&#160;communications</b></p>
+<p style="position:absolute;top:650px;left:707px;white-space:nowrap" class="ft13">White&#160;paper</p>
+<p style="position:absolute;top:1033px;left:625px;white-space:nowrap" class="ft14"><b>Syed&#160;Tahir&#160;Hasnain</b></p>
+<p style="position:absolute;top:1030px;left:837px;white-space:nowrap" class="ft15"><b>&#160;</b></p>
+<p style="position:absolute;top:1091px;left:622px;white-space:nowrap" class="ft16">email:&#160;syedt@iata.org</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft20{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft21{font-size:16px;font-family:XAACND+Arial;color:#ffffff;}
+	.ft22{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft23{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page2-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper002.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft20"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:195px;left:150px;white-space:nowrap" class="ft21"><b>Version&#160;Amendment&#160;Description</b></p>
+<p style="position:absolute;top:195px;left:489px;white-space:nowrap" class="ft21"><b>Date</b></p>
+<p style="position:absolute;top:195px;left:614px;white-space:nowrap" class="ft21"><b>By</b></p>
+<p style="position:absolute;top:221px;left:150px;white-space:nowrap" class="ft22">01</p>
+<p style="position:absolute;top:221px;left:231px;white-space:nowrap" class="ft22">Initial&#160;Draft</p>
+<p style="position:absolute;top:221px;left:489px;white-space:nowrap" class="ft22">2-APR-2015</p>
+<p style="position:absolute;top:221px;left:614px;white-space:nowrap" class="ft22">S.&#160;Tahir&#160;Hasnain&#160;(IATA)</p>
+<p style="position:absolute;top:246px;left:150px;white-space:nowrap" class="ft22">02</p>
+<p style="position:absolute;top:246px;left:231px;white-space:nowrap" class="ft22">Feedback&#160;from&#160;IATA&#160;Team</p>
+<p style="position:absolute;top:246px;left:489px;white-space:nowrap" class="ft22">12-APR-2015&#160;IATA&#160;Cargo&#160;and&#160;Product&#160;Team&#160;-</p>
+<p style="position:absolute;top:266px;left:614px;white-space:nowrap" class="ft22">APCS</p>
+<p style="position:absolute;top:291px;left:150px;white-space:nowrap" class="ft22">03</p>
+<p style="position:absolute;top:291px;left:231px;white-space:nowrap" class="ft22">Feedback&#160;from&#160;Cargo-XML</p>
+<p style="position:absolute;top:291px;left:489px;white-space:nowrap" class="ft22">16-APR-2015&#160;IATA&#160;CXMLTF&#160;Members&#160;and</p>
+<p style="position:absolute;top:311px;left:231px;white-space:nowrap" class="ft22">Task&#160;Force&#160;(CXMLTF)&#160;and</p>
+<p style="position:absolute;top:311px;left:614px;white-space:nowrap" class="ft22">Strategic&#160;Partners</p>
+<p style="position:absolute;top:330px;left:231px;white-space:nowrap" class="ft22">Strategic&#160;Partners</p>
+<p style="position:absolute;top:356px;left:150px;white-space:nowrap" class="ft22">04</p>
+<p style="position:absolute;top:356px;left:231px;white-space:nowrap" class="ft22">Feedback&#160;from&#160;IATA</p>
+<p style="position:absolute;top:356px;left:489px;white-space:nowrap" class="ft22">29-APR-2015&#160;IATA&#160;Publication&#160;and&#160;Marketing</p>
+<p style="position:absolute;top:375px;left:231px;white-space:nowrap" class="ft22">Publication&#160;and&#160;Marketing</p>
+<p style="position:absolute;top:375px;left:614px;white-space:nowrap" class="ft22">Team</p>
+<p style="position:absolute;top:395px;left:231px;white-space:nowrap" class="ft22">Team</p>
+<p style="position:absolute;top:420px;left:150px;white-space:nowrap" class="ft22">05</p>
+<p style="position:absolute;top:420px;left:231px;white-space:nowrap" class="ft22">Feedback&#160;from&#160;CBPP</p>
+<p style="position:absolute;top:420px;left:489px;white-space:nowrap" class="ft22">22-MAY-2015&#160;CBPP</p>
+<p style="position:absolute;top:446px;left:150px;white-space:nowrap" class="ft22">06</p>
+<p style="position:absolute;top:446px;left:231px;white-space:nowrap" class="ft22">Added&#160;Summary&#160;Section</p>
+<p style="position:absolute;top:446px;left:489px;white-space:nowrap" class="ft22">27-MAY-2015&#160;S.&#160;Tahir&#160;Hasnain&#160;(IATA)</p>
+<p style="position:absolute;top:471px;left:150px;white-space:nowrap" class="ft22">07</p>
+<p style="position:absolute;top:471px;left:231px;white-space:nowrap" class="ft22">Feedback&#160;from&#160;CBPP&#160;(dates</p>
+<p style="position:absolute;top:471px;left:489px;white-space:nowrap" class="ft22">10-JUN-2015</p>
+<p style="position:absolute;top:471px;left:614px;white-space:nowrap" class="ft22">S.&#160;Tahir&#160;Hasnain&#160;(IATA)</p>
+<p style="position:absolute;top:491px;left:231px;white-space:nowrap" class="ft22">with&#160;the&#160;adoption&#160;status)</p>
+<p style="position:absolute;top:516px;left:150px;white-space:nowrap" class="ft22">08</p>
+<p style="position:absolute;top:516px;left:231px;white-space:nowrap" class="ft22">Endorsement&#160;from&#160;CBPP</p>
+<p style="position:absolute;top:516px;left:489px;white-space:nowrap" class="ft22">15-JUN-2015</p>
+<p style="position:absolute;top:516px;left:614px;white-space:nowrap" class="ft22">S.&#160;Tahir&#160;Hasnain&#160;(IATA)</p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft23">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft22">2</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft30{font-size:20px;font-family:XAACND+Arial;color:#000000;}
+	.ft31{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft32{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft33{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page3-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper003.png" alt="background image"/>
+<p style="position:absolute;top:179px;left:425px;white-space:nowrap" class="ft30"><b>Table&#160;of&#160;Content</b></p>
+<p style="position:absolute;top:222px;left:147px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-5.html"><b>1.</b></a></p>
+<p style="position:absolute;top:222px;left:180px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-5.html"><b>Purpose</b></a></p>
+<p style="position:absolute;top:222px;left:258px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">.......................................................................................................................</a></p>
+<p style="position:absolute;top:222px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">5</a></p>
+<p style="position:absolute;top:249px;left:147px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-5.html"><b>2.</b></a></p>
+<p style="position:absolute;top:249px;left:180px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-5.html"><b>Target&#160;Audience</b></a></p>
+<p style="position:absolute;top:249px;left:328px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">.........................................................................................................</a></p>
+<p style="position:absolute;top:249px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">5</a></p>
+<p style="position:absolute;top:276px;left:147px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-5.html"><b>3.</b></a></p>
+<p style="position:absolute;top:276px;left:180px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-5.html"><b>Industry&#160;Situation</b></a></p>
+<p style="position:absolute;top:276px;left:343px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">......................................................................................................</a></p>
+<p style="position:absolute;top:276px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">5</a></p>
+<p style="position:absolute;top:303px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">a.&#160;Cargo-IMP&#160;Challenges&#160;...........................................................................................</a></p>
+<p style="position:absolute;top:303px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">5</a></p>
+<p style="position:absolute;top:330px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">b.&#160;Cargo-IMP&#160;Freeze&#160;..................................................................................................</a></p>
+<p style="position:absolute;top:330px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-5.html">5</a></p>
+<p style="position:absolute;top:357px;left:147px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-6.html"><b>4.</b></a></p>
+<p style="position:absolute;top:357px;left:180px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-6.html"><b>The&#160;Cargo-XML&#160;Progress</b></a></p>
+<p style="position:absolute;top:357px;left:403px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-6.html">..........................................................................................</a></p>
+<p style="position:absolute;top:357px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-6.html">6</a></p>
+<p style="position:absolute;top:384px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-6.html">a.&#160;Cargo-XML&#160;Status&#160;..................................................................................................</a></p>
+<p style="position:absolute;top:384px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-6.html">6</a></p>
+<p style="position:absolute;top:411px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-7.html">b.&#160;Cargo-XML&#160;Benefits&#160;...............................................................................................</a></p>
+<p style="position:absolute;top:411px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-7.html">7</a></p>
+<p style="position:absolute;top:438px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-7.html">c.&#160;Cargo-XML&#160;Adoption&#160;..............................................................................................</a></p>
+<p style="position:absolute;top:438px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-7.html">7</a></p>
+<p style="position:absolute;top:465px;left:147px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-8.html"><b>5.</b></a></p>
+<p style="position:absolute;top:465px;left:180px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-8.html"><b>Implementation&#160;Strategies</b></a></p>
+<p style="position:absolute;top:465px;left:413px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-8.html">........................................................................................</a></p>
+<p style="position:absolute;top:465px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-8.html">8</a></p>
+<p style="position:absolute;top:492px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-8.html">a.&#160;Direct&#160;Cargo-XML&#160;adoption&#160;....................................................................................</a></p>
+<p style="position:absolute;top:492px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-8.html">8</a></p>
+<p style="position:absolute;top:519px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-9.html">b.&#160;Migration&#160;from&#160;Cargo-IMP&#160;to&#160;Cargo-XML&#160;...............................................................</a></p>
+<p style="position:absolute;top:519px;left:872px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-9.html">9</a></p>
+<p style="position:absolute;top:546px;left:207px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-9.html">i.</a></p>
+<p style="position:absolute;top:546px;left:234px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-9.html">Category&#160;1:&#160;Exchanging&#160;message&#160;(Send)&#160;with&#160;Cargo-IMP&#160;Partner&#160;.................</a></p>
+<p style="position:absolute;top:546px;left:871px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-9.html">9</a></p>
+<p style="position:absolute;top:573px;left:207px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-9.html">ii.&#160;Category&#160;2:&#160;Exchanging&#160;message&#160;(Send)&#160;with&#160;Cargo-XML&#160;Partner&#160;................</a></p>
+<p style="position:absolute;top:573px;left:871px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-9.html">9</a></p>
+<p style="position:absolute;top:600px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-10.html">c.&#160;Migration&#160;Plan&#160;.......................................................................................................</a></p>
+<p style="position:absolute;top:600px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-10.html">10</a></p>
+<p style="position:absolute;top:627px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-10.html">d.&#160;Migration&#160;Approach&#160;..............................................................................................</a></p>
+<p style="position:absolute;top:627px;left:861px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-10.html">10</a></p>
+<p style="position:absolute;top:654px;left:207px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-11.html">i.</a></p>
+<p style="position:absolute;top:654px;left:234px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-11.html">Case&#160;Study–DGF&#160;............................................................................................</a></p>
+<p style="position:absolute;top:654px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-11.html">11</a></p>
+<p style="position:absolute;top:681px;left:207px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-11.html">ii.&#160;Message&#160;Conversion&#160;Guidelines&#160;....................................................................</a></p>
+<p style="position:absolute;top:681px;left:861px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-11.html">11</a></p>
+<p style="position:absolute;top:708px;left:147px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-13.html"><b>6.</b></a></p>
+<p style="position:absolute;top:708px;left:180px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-13.html"><b>Role&#160;of&#160;stakeholders</b></a></p>
+<p style="position:absolute;top:708px;left:363px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-13.html">................................................................................................</a></p>
+<p style="position:absolute;top:708px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-13.html">13</a></p>
+<p style="position:absolute;top:735px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-13.html">a.&#160;Airlines,&#160;Freight&#160;Forwarders&#160;and&#160;Ground&#160;Handlers&#160;..............................................</a></p>
+<p style="position:absolute;top:735px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-13.html">13</a></p>
+<p style="position:absolute;top:762px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-13.html">b.&#160;Customs&#160;and&#160;Advance&#160;Cargo&#160;Information&#160;Initiative&#160;.............................................</a></p>
+<p style="position:absolute;top:762px;left:861px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-13.html">13</a></p>
+<p style="position:absolute;top:789px;left:207px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-14.html">i.</a></p>
+<p style="position:absolute;top:789px;left:234px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-14.html">ACAS&#160;Pilot–K+N&#160;Example&#160;..............................................................................</a></p>
+<p style="position:absolute;top:789px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-14.html">14</a></p>
+<p style="position:absolute;top:816px;left:207px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-14.html">ii.&#160;Argentine&#160;Customs&#160;Example&#160;...........................................................................</a></p>
+<p style="position:absolute;top:816px;left:861px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-14.html">14</a></p>
+<p style="position:absolute;top:843px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-14.html">c.&#160;IT&#160;System&#160;and&#160;Messaging&#160;Service&#160;Providers&#160;.......................................................</a></p>
+<p style="position:absolute;top:843px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-14.html">14</a></p>
+<p style="position:absolute;top:870px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-16.html">d.&#160;International&#160;Organizations&#160;...................................................................................</a></p>
+<p style="position:absolute;top:870px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-16.html">16</a></p>
+<p style="position:absolute;top:897px;left:207px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-16.html">i.</a></p>
+<p style="position:absolute;top:897px;left:234px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-16.html">World&#160;Customs&#160;Organizations&#160;(WCO)&#160;............................................................</a></p>
+<p style="position:absolute;top:897px;left:861px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-16.html">16</a></p>
+<p style="position:absolute;top:924px;left:207px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-16.html">ii.&#160;United&#160;Nation&#160;(UN)&#160;..........................................................................................</a></p>
+<p style="position:absolute;top:924px;left:861px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-16.html">16</a></p>
+<p style="position:absolute;top:951px;left:147px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-17.html"><b>7.</b></a></p>
+<p style="position:absolute;top:951px;left:180px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-17.html"><b>Tools&#160;and&#160;Resources&#160;from&#160;IATA</b></a></p>
+<p style="position:absolute;top:951px;left:463px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-17.html">............................................................................</a></p>
+<p style="position:absolute;top:951px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-17.html">17</a></p>
+<p style="position:absolute;top:978px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-17.html">a.&#160;The&#160;Cargo-XML&#160;Manual&#160;and&#160;Toolkit&#160;....................................................................</a></p>
+<p style="position:absolute;top:978px;left:861px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-17.html">17</a></p>
+<p style="position:absolute;top:1005px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-17.html">b.&#160;The&#160;Cargo-XML&#160;Message&#160;Autocheck&#160;...................................................................</a></p>
+<p style="position:absolute;top:1005px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-17.html">17</a></p>
+<p style="position:absolute;top:1032px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-18.html">c.&#160;The&#160;Cargo-XML&#160;Workshops&#160;.................................................................................</a></p>
+<p style="position:absolute;top:1032px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-18.html">18</a></p>
+<p style="position:absolute;top:1059px;left:180px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-18.html">d.&#160;The&#160;Cargo-XML&#160;Training&#160;......................................................................................</a></p>
+<p style="position:absolute;top:1059px;left:861px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-18.html">18</a></p>
+<p style="position:absolute;top:1086px;left:147px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-19.html"><b>8.</b></a></p>
+<p style="position:absolute;top:1086px;left:180px;white-space:nowrap" class="ft31"><a href="cargo-xml-standards-white-paper-19.html"><b>Summary</b></a></p>
+<p style="position:absolute;top:1086px;left:268px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-19.html">...................................................................................................................</a></p>
+<p style="position:absolute;top:1086px;left:862px;white-space:nowrap" class="ft32"><a href="cargo-xml-standards-white-paper-19.html">19</a></p>
+<p style="position:absolute;top:1189px;left:144px;white-space:nowrap" class="ft33">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:872px;white-space:nowrap" class="ft32">3</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft40{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft41{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft42{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page4-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper004.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft40"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft41">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft42">4</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft50{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft51{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft52{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft53{font-size:16px;font-family:GGPDNR+Verdana;color:#000000;}
+	.ft54{font-size:10px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft55{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft56{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page5-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper005.png" alt="background image"/>
+<p style="position:absolute;top:177px;left:147px;white-space:nowrap" class="ft50"><b>1.&#160;Purpose</b></p>
+<p style="position:absolute;top:218px;left:147px;white-space:nowrap" class="ft56">The&#160;air&#160;cargo&#160;industry&#160;is&#160;in&#160;its&#160;early&#160;stage&#160;of&#160;implementing&#160;the&#160;Cargo-XML&#160;standards.&#160;This<br/>paper&#160;is&#160;aimed&#160;at&#160;facilitating&#160;industry&#160;adoption&#160;of&#160;the&#160;Cargo-XML&#160;standards&#160;by&#160;providing<br/>different&#160;implementation&#160;strategies,&#160;migration&#160;approaches&#160;and&#160;the&#160;necessary&#160;guidelines&#160;that<br/>can&#160;be&#160;applied&#160;by&#160;the&#160;stakeholders.&#160;This&#160;paper&#160;also&#160;discusses&#160;the&#160;role&#160;of&#160;different<br/>stakeholders&#160;in&#160;adopting&#160;the&#160;standards&#160;and&#160;contains&#160;information&#160;about&#160;different&#160;tools&#160;and<br/>resources&#160;provided&#160;by&#160;IATA&#160;for&#160;Cargo-XML&#160;adoption.</p>
+<p style="position:absolute;top:357px;left:147px;white-space:nowrap" class="ft50"><b>2.&#160;Target&#160;Audience</b></p>
+<p style="position:absolute;top:398px;left:147px;white-space:nowrap" class="ft56">This&#160;document&#160;is&#160;intended&#160;for&#160;air&#160;cargo&#160;stakeholders&#160;who&#160;are&#160;directly&#160;or&#160;indirectly&#160;involved<br/>with&#160;the&#160;electronic&#160;messaging.&#160;These&#160;include&#160;carriers,&#160;freight&#160;forwarders,&#160;ground&#160;handlers,<br/>shippers,&#160;customs&#160;and&#160;IT/messaging&#160;service&#160;providers.</p>
+<p style="position:absolute;top:479px;left:147px;white-space:nowrap" class="ft50"><b>3.&#160;Industry&#160;Situation</b></p>
+<p style="position:absolute;top:519px;left:147px;white-space:nowrap" class="ft56">Embracing&#160;the&#160;e-vision&#160;in&#160;the&#160;air&#160;cargo&#160;supply&#160;chain&#160;communication,&#160;the&#160;air&#160;cargo&#160;industry<br/>is&#160;facing&#160;a&#160;number&#160;of&#160;challenges.&#160;One&#160;of&#160;the&#160;major&#160;challenges&#160;is&#160;the&#160;limitations&#160;of&#160;electronic<br/>messaging.&#160;Air&#160;cargo&#160;electronic&#160;messages&#160;“Cargo-IMP”&#160;were&#160;initially&#160;developed&#160;for&#160;interline<br/>purposes.&#160;Then&#160;later&#160;on,&#160;the&#160;use&#160;of&#160;these&#160;messages&#160;was&#160;extended&#160;to&#160;large&#160;freight<br/>forwarders&#160;and&#160;ground&#160;handlers&#160;for&#160;booking&#160;and&#160;operational&#160;purposes.&#160;IATA&#160;is&#160;maintaining<br/>and&#160;publishing&#160;these&#160;messages&#160;in&#160;the</p>
+<p style="position:absolute;top:617px;left:455px;white-space:nowrap" class="ft52"><a href="http://www.iata.org/publications/Pages/cargo-imp.aspx">Cargo-IMP&#160;Manual</a></p>
+<p style="position:absolute;top:617px;left:606px;white-space:nowrap" class="ft51"><a href="http://www.iata.org/publications/Pages/cargo-imp.aspx">.</a></p>
+<p style="position:absolute;top:659px;left:147px;white-space:nowrap" class="ft50"><b>a.</b></p>
+<p style="position:absolute;top:659px;left:183px;white-space:nowrap" class="ft50"><b>Cargo-IMP&#160;Challenges</b></p>
+<p style="position:absolute;top:701px;left:150px;white-space:nowrap" class="ft51">Cargo-IMP&#160;Messages&#160;are&#160;widely&#160;used&#160;in&#160;the</p>
+<p style="position:absolute;top:709px;left:518px;white-space:nowrap" class="ft53">•</p>
+<p style="position:absolute;top:710px;left:545px;white-space:nowrap" class="ft51">Airport&#160;to&#160;airport&#160;focus</p>
+<p style="position:absolute;top:720px;left:150px;white-space:nowrap" class="ft51">air&#160;cargo&#160;industry.&#160;Some&#160;of&#160;the&#160;common</p>
+<p style="position:absolute;top:733px;left:518px;white-space:nowrap" class="ft53">•</p>
+<p style="position:absolute;top:734px;left:545px;white-space:nowrap" class="ft51">Airline&#160;centric</p>
+<p style="position:absolute;top:740px;left:150px;white-space:nowrap" class="ft51">challenges&#160;associated&#160;with&#160;the&#160;Cargo-IMP</p>
+<p style="position:absolute;top:757px;left:518px;white-space:nowrap" class="ft53">•</p>
+<p style="position:absolute;top:758px;left:545px;white-space:nowrap" class="ft51">For&#160;large&#160;players&#160;only</p>
+<p style="position:absolute;top:759px;left:150px;white-space:nowrap" class="ft51">Messages&#160;are&#160;listed&#160;in</p>
+<p style="position:absolute;top:759px;left:336px;white-space:nowrap" class="ft52"><a href="cargo-xml-standards-white-paper-5.html">Figure&#160;1a</a></p>
+<p style="position:absolute;top:759px;left:412px;white-space:nowrap" class="ft51"><a href="cargo-xml-standards-white-paper-5.html">:</a></p>
+<p style="position:absolute;top:781px;left:518px;white-space:nowrap" class="ft53">•</p>
+<p style="position:absolute;top:782px;left:545px;white-space:nowrap" class="ft51">Limited&#160;internet&#160;connectivity</p>
+<p style="position:absolute;top:805px;left:518px;white-space:nowrap" class="ft53">•</p>
+<p style="position:absolute;top:806px;left:545px;white-space:nowrap" class="ft51">Costly&#160;to&#160;develop&#160;and&#160;maintain</p>
+<p style="position:absolute;top:829px;left:518px;white-space:nowrap" class="ft53">•</p>
+<p style="position:absolute;top:830px;left:545px;white-space:nowrap" class="ft51">High&#160;transaction&#160;cost</p>
+<p style="position:absolute;top:853px;left:518px;white-space:nowrap" class="ft53">•</p>
+<p style="position:absolute;top:854px;left:545px;white-space:nowrap" class="ft51">Poor&#160;data&#160;quality</p>
+<p style="position:absolute;top:877px;left:518px;white-space:nowrap" class="ft53">•</p>
+<p style="position:absolute;top:878px;left:545px;white-space:nowrap" class="ft51">Length&#160;and&#160;character&#160;limitations</p>
+<p style="position:absolute;top:918px;left:147px;white-space:nowrap" class="ft50"><b>Figure&#160;1a:&#160;Cargo-IMP&#160;Challenges</b></p>
+<p style="position:absolute;top:960px;left:147px;white-space:nowrap" class="ft50"><b>b.</b></p>
+<p style="position:absolute;top:960px;left:184px;white-space:nowrap" class="ft50"><b>Cargo-IMP&#160;Freeze</b></p>
+<p style="position:absolute;top:1001px;left:147px;white-space:nowrap" class="ft56">As&#160;per&#160;industry&#160;demand,&#160;the&#160;IATA&#160;Cargo&#160;Services&#160;Conference&#160;(CSC)&#160;decided&#160;the&#160;freeze&#160;of<br/>Cargo-IMP&#160;Messages&#160;and&#160;discontinuation&#160;of&#160;the&#160;IATA&#160;Cargo-IMP&#160;Manual.&#160;Effective&#160;1</p>
+<p style="position:absolute;top:1018px;left:872px;white-space:nowrap" class="ft54">st</p>
+<p style="position:absolute;top:1040px;left:147px;white-space:nowrap" class="ft51">January&#160;2015,&#160;the&#160;Cargo-IMP&#160;Manual&#160;34</p>
+<p style="position:absolute;top:1038px;left:492px;white-space:nowrap" class="ft54">th</p>
+<p style="position:absolute;top:1040px;left:511px;white-space:nowrap" class="ft51">Edition&#160;is&#160;the&#160;final&#160;edition&#160;and&#160;there&#160;will&#160;no</p>
+<p style="position:absolute;top:1059px;left:147px;white-space:nowrap" class="ft56">longer&#160;be&#160;any&#160;changes&#160;to&#160;the&#160;Cargo-IMP&#160;Messages.&#160;The&#160;Cargo-IMP&#160;standard&#160;can&#160;continue<br/>to&#160;be&#160;used,&#160;however,&#160;future&#160;developments&#160;of&#160;messaging&#160;standards&#160;will&#160;occur&#160;in&#160;the&#160;Cargo-<br/>XML&#160;standards&#160;only.</p>
+<p style="position:absolute;top:1189px;left:144px;white-space:nowrap" class="ft55">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:872px;white-space:nowrap" class="ft51">5</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft60{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft61{font-size:16px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft62{font-size:10px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft63{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft64{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft65{font-size:16px;font-family:GGPDNR+Verdana;color:#000000;}
+	.ft66{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft67{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft68{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page6-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper006.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft60"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:150px;white-space:nowrap" class="ft61">Maintenance&#160;of&#160;the&#160;Cargo-IMP&#160;standard&#160;is&#160;stopped&#160;as&#160;of&#160;1</p>
+<p style="position:absolute;top:175px;left:642px;white-space:nowrap" class="ft62">st</p>
+<p style="position:absolute;top:177px;left:659px;white-space:nowrap" class="ft61">January&#160;2015.&#160;The&#160;Cargo-</p>
+<p style="position:absolute;top:197px;left:150px;white-space:nowrap" class="ft61">IMP&#160;Manual&#160;34</p>
+<p style="position:absolute;top:195px;left:272px;white-space:nowrap" class="ft62">th</p>
+<p style="position:absolute;top:197px;left:288px;white-space:nowrap" class="ft61">Edition&#160;is&#160;the&#160;last&#160;and&#160;final&#160;publication&#160;for&#160;Cargo-IMP&#160;Messages.</p>
+<p style="position:absolute;top:245px;left:147px;white-space:nowrap" class="ft60"><b>4.&#160;The&#160;Cargo-XML&#160;Progress</b></p>
+<p style="position:absolute;top:285px;left:147px;white-space:nowrap" class="ft67">As&#160;per&#160;the&#160;mandate&#160;given&#160;by&#160;IATA&#160;Cargo&#160;Committee&#160;(CC),&#160;IATA,&#160;with&#160;its&#160;members,&#160;is<br/>actively&#160;working&#160;on&#160;the&#160;development&#160;of&#160;new&#160;Cargo-XML&#160;Messaging&#160;standards&#160;as&#160;the<br/>successor&#160;to&#160;the&#160;existing&#160;Cargo-IMP&#160;Standard.</p>
+<p style="position:absolute;top:324px;left:536px;white-space:nowrap" class="ft64"><a href="http://www.iata.org/cxmltf">The&#160;Cargo-XML&#160;Task&#160;Force&#160;(CXMLTF)</a></p>
+<p style="position:absolute;top:324px;left:856px;white-space:nowrap" class="ft63">,&#160;is</p>
+<p style="position:absolute;top:344px;left:147px;white-space:nowrap" class="ft67">responsible&#160;for&#160;the&#160;development&#160;of&#160;the&#160;standard&#160;and&#160;has&#160;already&#160;developed&#160;the&#160;Cargo-XML<br/>Messages&#160;for&#160;core&#160;air&#160;cargo&#160;documents&#160;including:</p>
+<p style="position:absolute;top:391px;left:147px;white-space:nowrap" class="ft65">•</p>
+<p style="position:absolute;top:392px;left:174px;white-space:nowrap" class="ft63">Air&#160;Waybill,</p>
+<p style="position:absolute;top:415px;left:147px;white-space:nowrap" class="ft65">•</p>
+<p style="position:absolute;top:416px;left:174px;white-space:nowrap" class="ft63">Flight&#160;Manifest&#160;and</p>
+<p style="position:absolute;top:439px;left:147px;white-space:nowrap" class="ft65">•</p>
+<p style="position:absolute;top:440px;left:174px;white-space:nowrap" class="ft63">House&#160;Air&#160;Waybill</p>
+<p style="position:absolute;top:480px;left:147px;white-space:nowrap" class="ft67">These&#160;messages&#160;have&#160;been&#160;endorsed&#160;by&#160;IATA&#160;Cargo&#160;Businesses&#160;Processes&#160;Panel<br/>(CBPP)&#160;and&#160;adopted&#160;by&#160;the&#160;CSC.</p>
+<p style="position:absolute;top:542px;left:147px;white-space:nowrap" class="ft60"><b>a.</b></p>
+<p style="position:absolute;top:542px;left:183px;white-space:nowrap" class="ft60"><b>Cargo-XML&#160;Status</b></p>
+<p style="position:absolute;top:584px;left:150px;white-space:nowrap" class="ft67">As&#160;of&#160;June&#160;2015,&#160;the&#160;CXMLTF<br/>has&#160;developed&#160;15&#160;Cargo-XML<br/>messages.&#160;The&#160;specifications<br/>and</p>
+<p style="position:absolute;top:642px;left:210px;white-space:nowrap" class="ft63">schemas</p>
+<p style="position:absolute;top:642px;left:312px;white-space:nowrap" class="ft63">of</p>
+<p style="position:absolute;top:642px;left:356px;white-space:nowrap" class="ft63">these</p>
+<p style="position:absolute;top:662px;left:150px;white-space:nowrap" class="ft63">messages&#160;are&#160;published&#160;in</p>
+<p style="position:absolute;top:662px;left:375px;white-space:nowrap" class="ft64"><a href="http://www.iata.org/publications/Pages/cargo-xml-messaging-toolkit.aspx">the</a></p>
+<p style="position:absolute;top:681px;left:150px;white-space:nowrap" class="ft68"><a href="http://www.iata.org/publications/Pages/cargo-xml-messaging-toolkit.aspx">IATA&#160;Cargo-XML&#160;Manual&#160;and<br/>Toolkit</a></p>
+<p style="position:absolute;top:701px;left:203px;white-space:nowrap" class="ft63">.</p>
+<p style="position:absolute;top:752px;left:150px;white-space:nowrap" class="ft63">The</p>
+<p style="position:absolute;top:752px;left:225px;white-space:nowrap" class="ft63">IATA</p>
+<p style="position:absolute;top:752px;left:308px;white-space:nowrap" class="ft63">Cargo-XML</p>
+<p style="position:absolute;top:771px;left:150px;white-space:nowrap" class="ft63">messages</p>
+<p style="position:absolute;top:771px;left:261px;white-space:nowrap" class="ft63">are</p>
+<p style="position:absolute;top:771px;left:315px;white-space:nowrap" class="ft63">listed</p>
+<p style="position:absolute;top:771px;left:386px;white-space:nowrap" class="ft63">in</p>
+<p style="position:absolute;top:791px;left:150px;white-space:nowrap" class="ft64"><a href="cargo-xml-standards-white-paper-6.html">Figure&#160;1b</a></p>
+<p style="position:absolute;top:791px;left:227px;white-space:nowrap" class="ft63"><a href="cargo-xml-standards-white-paper-6.html">.</a></p>
+<p style="position:absolute;top:831px;left:147px;white-space:nowrap" class="ft60"><b>Figure&#160;1b:&#160;Cargo-XML&#160;Messages</b></p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft66">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft63">6</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft70{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft71{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft72{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft73{font-size:16px;font-family:GGPDNR+Verdana;color:#000000;}
+	.ft74{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft75{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page7-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper007.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:535px;white-space:nowrap" class="ft70"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:147px;white-space:nowrap" class="ft70"><b>b.</b></p>
+<p style="position:absolute;top:177px;left:184px;white-space:nowrap" class="ft70"><b>Cargo-XML&#160;Benefits</b></p>
+<p style="position:absolute;top:218px;left:147px;white-space:nowrap" class="ft75">The&#160;Cargo-XML&#160;standards&#160;offer&#160;a&#160;wide&#160;variety&#160;of&#160;benefits.&#160;Some&#160;of&#160;the&#160;common&#160;benefits<br/>are&#160;listed&#160;in&#160;the</p>
+<p style="position:absolute;top:237px;left:275px;white-space:nowrap" class="ft72"><a href="cargo-xml-standards-white-paper-7.html">Figure&#160;2a</a></p>
+<p style="position:absolute;top:237px;left:352px;white-space:nowrap" class="ft71"><a href="cargo-xml-standards-white-paper-7.html">.</a></p>
+<p style="position:absolute;top:288px;left:150px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:288px;left:177px;white-space:nowrap" class="ft71">Reduction&#160;in&#160;cost&#160;of&#160;development,</p>
+<p style="position:absolute;top:288px;left:533px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:288px;left:560px;white-space:nowrap" class="ft71">Quicker&#160;to&#160;respond&#160;to&#160;evolving&#160;EDI</p>
+<p style="position:absolute;top:308px;left:177px;white-space:nowrap" class="ft71">maintenance&#160;and&#160;support</p>
+<p style="position:absolute;top:308px;left:560px;white-space:nowrap" class="ft71">requirements</p>
+<p style="position:absolute;top:331px;left:150px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:332px;left:177px;white-space:nowrap" class="ft71">Reduction&#160;in&#160;cost&#160;per&#160;transaction</p>
+<p style="position:absolute;top:331px;left:533px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:332px;left:560px;white-space:nowrap" class="ft71">Universally</p>
+<p style="position:absolute;top:332px;left:677px;white-space:nowrap" class="ft71">used</p>
+<p style="position:absolute;top:332px;left:745px;white-space:nowrap" class="ft71">and</p>
+<p style="position:absolute;top:332px;left:805px;white-space:nowrap" class="ft71">accepted</p>
+<p style="position:absolute;top:351px;left:560px;white-space:nowrap" class="ft71">standard</p>
+<p style="position:absolute;top:355px;left:150px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:356px;left:177px;white-space:nowrap" class="ft75">Extended&#160;facilitation&#160;in&#160;implementing<br/>e-AWB,</p>
+<p style="position:absolute;top:375px;left:267px;white-space:nowrap" class="ft71">e-Freight</p>
+<p style="position:absolute;top:375px;left:367px;white-space:nowrap" class="ft71">and</p>
+<p style="position:absolute;top:375px;left:426px;white-space:nowrap" class="ft71">Advance</p>
+<p style="position:absolute;top:375px;left:533px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:375px;left:560px;white-space:nowrap" class="ft71">Compatibility</p>
+<p style="position:absolute;top:375px;left:689px;white-space:nowrap" class="ft71">with</p>
+<p style="position:absolute;top:375px;left:747px;white-space:nowrap" class="ft71">other</p>
+<p style="position:absolute;top:375px;left:815px;white-space:nowrap" class="ft71">industry</p>
+<p style="position:absolute;top:395px;left:177px;white-space:nowrap" class="ft71">Electronic&#160;Information</p>
+<p style="position:absolute;top:395px;left:560px;white-space:nowrap" class="ft71">standards</p>
+<p style="position:absolute;top:395px;left:669px;white-space:nowrap" class="ft71">e.g.</p>
+<p style="position:absolute;top:395px;left:729px;white-space:nowrap" class="ft71">World</p>
+<p style="position:absolute;top:395px;left:807px;white-space:nowrap" class="ft71">Customs</p>
+<p style="position:absolute;top:414px;left:560px;white-space:nowrap" class="ft71">Organization</p>
+<p style="position:absolute;top:414px;left:690px;white-space:nowrap" class="ft71">(WCO),</p>
+<p style="position:absolute;top:414px;left:779px;white-space:nowrap" class="ft71">International</p>
+<p style="position:absolute;top:418px;left:150px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:419px;left:177px;white-space:nowrap" class="ft71">Broader&#160;participation&#160;in&#160;e-commerce&#160;by</p>
+<p style="position:absolute;top:434px;left:560px;white-space:nowrap" class="ft71">Standards&#160;Organization&#160;(ISO)&#160;etc.</p>
+<p style="position:absolute;top:438px;left:177px;white-space:nowrap" class="ft71">small&#160;and&#160;medium&#160;size&#160;businesses</p>
+<p style="position:absolute;top:462px;left:150px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:462px;left:177px;white-space:nowrap" class="ft71">Extend&#160;scope&#160;to&#160;the&#160;shipper&#160;community</p>
+<p style="position:absolute;top:486px;left:150px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:486px;left:177px;white-space:nowrap" class="ft75">Improved&#160;availability&#160;and&#160;quality&#160;of<br/>required&#160;business&#160;information</p>
+<p style="position:absolute;top:529px;left:150px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:530px;left:177px;white-space:nowrap" class="ft71">Facilitates&#160;the&#160;direct&#160;exchange&#160;of&#160;data</p>
+<p style="position:absolute;top:553px;left:150px;white-space:nowrap" class="ft73">•</p>
+<p style="position:absolute;top:554px;left:177px;white-space:nowrap" class="ft71">Ease&#160;of&#160;implementation</p>
+<p style="position:absolute;top:594px;left:147px;white-space:nowrap" class="ft70"><b>Figure&#160;2a:&#160;Cargo-XML&#160;Benefits</b></p>
+<p style="position:absolute;top:635px;left:147px;white-space:nowrap" class="ft75">As&#160;XML&#160;is&#160;considered&#160;the&#160;favorite&#160;language&#160;for&#160;developing&#160;the&#160;messaging&#160;standards,&#160;the<br/>IATA&#160;Cargo-XML&#160;messages&#160;are&#160;interoperable&#160;with&#160;standards&#160;used&#160;by&#160;other&#160;modes&#160;of<br/>transport&#160;(maritime,&#160;road&#160;and&#160;rail).</p>
+<p style="position:absolute;top:716px;left:147px;white-space:nowrap" class="ft70"><b>c.</b></p>
+<p style="position:absolute;top:716px;left:183px;white-space:nowrap" class="ft70"><b>Cargo-XML&#160;Adoption</b></p>
+<p style="position:absolute;top:756px;left:147px;white-space:nowrap" class="ft75">A&#160;number&#160;of&#160;airlines,&#160;freight&#160;forwarders&#160;and&#160;ground&#160;handlers&#160;(mainly&#160;the&#160;CXMLTF<br/>members)&#160;have&#160;already&#160;taken&#160;the&#160;lead&#160;in&#160;implementing&#160;certain&#160;Cargo-XML&#160;messages.&#160;Most<br/>of&#160;these&#160;stakeholders&#160;were&#160;involved&#160;in&#160;developing&#160;the&#160;standard&#160;and/or&#160;part&#160;of&#160;Proof&#160;of<br/>Concepts&#160;(PoC).</p>
+<p style="position:absolute;top:1189px;left:144px;white-space:nowrap" class="ft74">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:872px;white-space:nowrap" class="ft71">7</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft80{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft81{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft82{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft83{font-size:16px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft84{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft85{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft86{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft87{font-size:16px;line-height:24px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page8-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper008.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft80"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:150px;white-space:nowrap" class="ft85">IT&#160;Service&#160;Providers,&#160;mainly<br/>the&#160;IATA&#160;Strategic&#160;Partner,&#160;are<br/>also&#160;involved&#160;in&#160;Cargo-XML<br/>initiative.</p>
+<p style="position:absolute;top:261px;left:150px;white-space:nowrap" class="ft85">As&#160;of&#160;June&#160;2015,&#160;the&#160;Cargo-<br/>XML&#160;adoption&#160;status&#160;of&#160;the<br/>CXMLTF&#160;members&#160;is&#160;shown&#160;in<br/>the</p>
+<p style="position:absolute;top:320px;left:181px;white-space:nowrap" class="ft82"><a href="cargo-xml-standards-white-paper-8.html">Figure&#160;2b</a></p>
+<p style="position:absolute;top:320px;left:257px;white-space:nowrap" class="ft81">.</p>
+<p style="position:absolute;top:499px;left:147px;white-space:nowrap" class="ft80"><b>Figure&#160;2b:&#160;Cargo-XML&#160;adoption&#160;by&#160;CXMLF&#160;Members</b></p>
+<p style="position:absolute;top:541px;left:147px;white-space:nowrap" class="ft80"><b>5.&#160;Implementation&#160;Strategies</b></p>
+<p style="position:absolute;top:582px;left:147px;white-space:nowrap" class="ft85">The&#160;wider&#160;air&#160;cargo&#160;community&#160;has&#160;yet&#160;to&#160;embrace&#160;the&#160;Cargo-XML&#160;standard.&#160;Industry<br/>members&#160;are&#160;highly&#160;dependent&#160;on&#160;the&#160;IT&#160;companies&#160;providing&#160;solutions&#160;in&#160;air&#160;cargo<br/>domain.&#160;One&#160;of&#160;the&#160;impediments&#160;to&#160;the&#160;adoption&#160;of&#160;the&#160;Cargo-XML&#160;standard&#160;is&#160;the<br/>dependency&#160;on&#160;Cargo-IMP.&#160;One&#160;common&#160;concern&#160;of&#160;air&#160;cargo&#160;stakeholders&#160;is&#160;how&#160;to<br/>support&#160;its&#160;partners&#160;who&#160;continue&#160;to&#160;use&#160;Cargo-IMP&#160;once&#160;they&#160;have&#160;transitioned&#160;to&#160;Cargo-<br/>XML.&#160;Though&#160;it&#160;is&#160;possible&#160;to&#160;support&#160;users&#160;of&#160;Cargo-IMP&#160;within&#160;a&#160;Cargo-XML&#160;solution,&#160;this<br/>may&#160;result&#160;in&#160;compromising&#160;certain&#160;benefits&#160;of&#160;adopting&#160;Cargo-XML.&#160;On&#160;the&#160;other&#160;hand,&#160;to<br/>take</p>
+<p style="position:absolute;top:718px;left:199px;white-space:nowrap" class="ft81">the</p>
+<p style="position:absolute;top:718px;left:241px;white-space:nowrap" class="ft81">full</p>
+<p style="position:absolute;top:718px;left:282px;white-space:nowrap" class="ft81">advantage</p>
+<p style="position:absolute;top:718px;left:384px;white-space:nowrap" class="ft81">of</p>
+<p style="position:absolute;top:718px;left:417px;white-space:nowrap" class="ft81">the</p>
+<p style="position:absolute;top:718px;left:460px;white-space:nowrap" class="ft81">Cargo-XML</p>
+<p style="position:absolute;top:718px;left:570px;white-space:nowrap" class="ft81">standard,</p>
+<p style="position:absolute;top:718px;left:663px;white-space:nowrap" class="ft81">updates</p>
+<p style="position:absolute;top:718px;left:744px;white-space:nowrap" class="ft81">to</p>
+<p style="position:absolute;top:718px;left:777px;white-space:nowrap" class="ft81">the</p>
+<p style="position:absolute;top:718px;left:820px;white-space:nowrap" class="ft81">existing</p>
+<p style="position:absolute;top:738px;left:147px;white-space:nowrap" class="ft81">cargo/messaging&#160;systems&#160;as&#160;well&#160;as&#160;backend&#160;databases&#160;is&#160;required.</p>
+<p style="position:absolute;top:775px;left:150px;white-space:nowrap" class="ft86">Although&#160;it&#160;is&#160;possible&#160;to&#160;support&#160;the&#160;Cargo-IMP&#160;partners&#160;in&#160;a&#160;Cargo-XML&#160;implementation<br/>however,&#160;it&#160;may&#160;result&#160;in&#160;compromising&#160;certain&#160;benefits&#160;of&#160;the&#160;Cargo-XML&#160;messages.</p>
+<p style="position:absolute;top:841px;left:147px;white-space:nowrap" class="ft85">On&#160;the&#160;other&#160;hand,&#160;it&#160;is&#160;required&#160;to&#160;update&#160;the&#160;existing&#160;cargo/messaging&#160;systems&#160;as&#160;well&#160;as<br/>backend&#160;databases&#160;to&#160;take&#160;full&#160;advantage&#160;of&#160;the&#160;Cargo-XML&#160;Messages.</p>
+<p style="position:absolute;top:901px;left:147px;white-space:nowrap" class="ft81">Broadly&#160;speaking,&#160;Cargo-XML&#160;adoption&#160;can&#160;be&#160;categorized&#160;into&#160;two&#160;different&#160;types:</p>
+<p style="position:absolute;top:930px;left:147px;white-space:nowrap" class="ft87">(a)&#160;Direct&#160;Cargo-XML&#160;adoption<br/>(b)&#160;Migration&#160;from&#160;Cargo-IMP&#160;to&#160;Cargo-XML</p>
+<p style="position:absolute;top:996px;left:147px;white-space:nowrap" class="ft80"><b>a.</b></p>
+<p style="position:absolute;top:996px;left:183px;white-space:nowrap" class="ft80"><b>Direct&#160;Cargo-XML&#160;adoption</b></p>
+<p style="position:absolute;top:1036px;left:147px;white-space:nowrap" class="ft85">The&#160;industry&#160;members&#160;implementing&#160;any&#160;IATA&#160;cargo&#160;messaging&#160;standard&#160;for&#160;the&#160;first&#160;time<br/>falls&#160;under&#160;category</p>
+<p style="position:absolute;top:1056px;left:322px;white-space:nowrap" class="ft80"><b>“Direct&#160;Cargo-XML&#160;adoption”</b></p>
+<p style="position:absolute;top:1056px;left:581px;white-space:nowrap" class="ft81">.&#160;Generally,&#160;this&#160;includes&#160;small&#160;and</p>
+<p style="position:absolute;top:1075px;left:147px;white-space:nowrap" class="ft85">medium&#160;size&#160;companies&#160;who&#160;in&#160;the&#160;past,&#160;could&#160;not&#160;afford&#160;costly&#160;Cargo-IMP&#160;messaging<br/>infrastructure&#160;nor&#160;the&#160;operational&#160;(message&#160;transaction)&#160;cost.&#160;The&#160;lower&#160;cost&#160;of<br/>development,&#160;maintenance&#160;and&#160;transport&#160;of&#160;the&#160;Cargo-XML&#160;standard&#160;is&#160;an&#160;appealing<br/>aspect&#160;for&#160;these&#160;small&#160;and&#160;medium&#160;size&#160;companies&#160;to&#160;adopt&#160;the&#160;Cargo-XML.</p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft84">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft81">8</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft90{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft91{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft92{font-size:16px;font-family:GGPDNR+Verdana;color:#000000;}
+	.ft93{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft94{font-size:16px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft95{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft96{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft97{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft98{font-size:16px;line-height:24px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page9-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper009.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:535px;white-space:nowrap" class="ft90"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:150px;white-space:nowrap" class="ft91">The&#160;maximum&#160;benefits&#160;of&#160;the</p>
+<p style="position:absolute;top:186px;left:408px;white-space:nowrap" class="ft92">•</p>
+<p style="position:absolute;top:186px;left:435px;white-space:nowrap" class="ft91">Availability&#160;of&#160;additional&#160;Information&#160;(additional&#160;fields&#160;in</p>
+<p style="position:absolute;top:197px;left:150px;white-space:nowrap" class="ft91">Cargo-XML</p>
+<p style="position:absolute;top:197px;left:265px;white-space:nowrap" class="ft91">messaging</p>
+<p style="position:absolute;top:197px;left:374px;white-space:nowrap" class="ft91">are</p>
+<p style="position:absolute;top:206px;left:435px;white-space:nowrap" class="ft91">Cargo-XML)</p>
+<p style="position:absolute;top:216px;left:150px;white-space:nowrap" class="ft91">achieved&#160;by&#160;Direct&#160;Cargo-XML</p>
+<p style="position:absolute;top:229px;left:408px;white-space:nowrap" class="ft92">•</p>
+<p style="position:absolute;top:230px;left:435px;white-space:nowrap" class="ft91">Extended&#160;length&#160;of&#160;existing&#160;Information</p>
+<p style="position:absolute;top:236px;left:150px;white-space:nowrap" class="ft91">adoption.&#160;Some&#160;of&#160;the&#160;key</p>
+<p style="position:absolute;top:253px;left:408px;white-space:nowrap" class="ft92">•</p>
+<p style="position:absolute;top:254px;left:435px;white-space:nowrap" class="ft91">Compatibility&#160;with&#160;other&#160;modes&#160;of&#160;transport&#160;such&#160;as</p>
+<p style="position:absolute;top:255px;left:150px;white-space:nowrap" class="ft91">benefits&#160;of&#160;direct&#160;Cargo-XML</p>
+<p style="position:absolute;top:273px;left:435px;white-space:nowrap" class="ft91">Maritime,&#160;Rail&#160;and&#160;Road.</p>
+<p style="position:absolute;top:275px;left:150px;white-space:nowrap" class="ft91">adoption</p>
+<p style="position:absolute;top:275px;left:252px;white-space:nowrap" class="ft91">are</p>
+<p style="position:absolute;top:275px;left:311px;white-space:nowrap" class="ft91">listed</p>
+<p style="position:absolute;top:275px;left:386px;white-space:nowrap" class="ft91">in</p>
+<p style="position:absolute;top:294px;left:150px;white-space:nowrap" class="ft93"><a href="cargo-xml-standards-white-paper-9.html">Figure&#160;2c</a></p>
+<p style="position:absolute;top:294px;left:226px;white-space:nowrap" class="ft91"><a href="cargo-xml-standards-white-paper-9.html">.</a></p>
+<p style="position:absolute;top:297px;left:408px;white-space:nowrap" class="ft92">•</p>
+<p style="position:absolute;top:297px;left:435px;white-space:nowrap" class="ft91">Improved&#160;functionality&#160;of&#160;each&#160;single&#160;message.</p>
+<p style="position:absolute;top:338px;left:147px;white-space:nowrap" class="ft90"><b>Figure&#160;2c:&#160;Additional&#160;Benefits&#160;of&#160;Cargo-XML</b></p>
+<p style="position:absolute;top:380px;left:147px;white-space:nowrap" class="ft90"><b>b.</b></p>
+<p style="position:absolute;top:380px;left:184px;white-space:nowrap" class="ft90"><b>Migration&#160;from&#160;Cargo-IMP&#160;to&#160;Cargo-XML</b></p>
+<p style="position:absolute;top:420px;left:147px;white-space:nowrap" class="ft96">The&#160;industry&#160;members&#160;currently&#160;using&#160;Cargo-IMP&#160;messages&#160;and&#160;migrating&#160;to&#160;the&#160;Cargo-<br/>XML&#160;standard,&#160;falls&#160;under&#160;the</p>
+<p style="position:absolute;top:440px;left:414px;white-space:nowrap" class="ft90"><b>“Migration&#160;from&#160;Cargo-IMP&#160;to&#160;Cargo-XML”</b></p>
+<p style="position:absolute;top:440px;left:807px;white-space:nowrap" class="ft91">category.</p>
+<p style="position:absolute;top:459px;left:147px;white-space:nowrap" class="ft96">These&#160;are&#160;generally&#160;large&#160;airlines,&#160;ground&#160;handlers,&#160;freight&#160;forwarders&#160;and&#160;some&#160;customs<br/>administrations.&#160;Adoption&#160;of&#160;the&#160;Cargo-XML&#160;standards&#160;is&#160;highly&#160;dependent&#160;on&#160;business<br/>partners&#160;(with&#160;whom&#160;you&#160;they&#160;are&#160;exchanging&#160;messages).&#160;Since,&#160;the&#160;entire&#160;industry&#160;is&#160;not<br/>yet&#160;prepared&#160;to&#160;exchange&#160;information&#160;using&#160;Cargo-XML,&#160;even&#160;companies&#160;already&#160;using<br/>Cargo-XML&#160;are&#160;still&#160;obliged&#160;to&#160;exchange&#160;Cargo-IMP&#160;messages&#160;with&#160;the&#160;partners&#160;who&#160;have<br/>not&#160;yet&#160;migrated&#160;to&#160;Cargo-XML.</p>
+<p style="position:absolute;top:594px;left:150px;white-space:nowrap" class="ft97">Companies&#160;migrating&#160;to&#160;Cargo-XML&#160;Messages&#160;need&#160;to&#160;have&#160;a&#160;solution&#160;in&#160;place&#160;to&#160;support<br/>their&#160;Cargo-IMP&#160;Partners.</p>
+<p style="position:absolute;top:660px;left:147px;white-space:nowrap" class="ft96">Considering&#160;the&#160;industry&#160;is&#160;now&#160;using&#160;both&#160;the&#160;Cargo-IMP&#160;and&#160;Cargo-XML&#160;standards&#160;to<br/>exchange&#160;information,&#160;different&#160;combinations&#160;are&#160;possible:</p>
+<p style="position:absolute;top:722px;left:147px;white-space:nowrap" class="ft90"><b>i.</b></p>
+<p style="position:absolute;top:722px;left:178px;white-space:nowrap" class="ft90"><b>Category&#160;1:&#160;Exchanging&#160;message&#160;(Send)&#160;with&#160;Cargo-IMP&#160;Partner</b></p>
+<p style="position:absolute;top:750px;left:147px;white-space:nowrap" class="ft98">(i)&#160;Generate&#160;Cargo-XML&#160;Message&#160;-&gt;&#160;Convert&#160;to&#160;Cargo-IMP-&gt;&#160;Send&#160;Cargo-IMP&#160;Message<br/>(ii)&#160;Generate&#160;Cargo-IMP&#160;Message&#160;-&gt;&#160;Send&#160;Cargo-IMP&#160;Message</p>
+<p style="position:absolute;top:816px;left:147px;white-space:nowrap" class="ft90"><b>ii.</b></p>
+<p style="position:absolute;top:816px;left:183px;white-space:nowrap" class="ft90"><b>Category&#160;2:&#160;Exchanging&#160;message&#160;(Send)&#160;with&#160;Cargo-XML&#160;Partner</b></p>
+<p style="position:absolute;top:845px;left:147px;white-space:nowrap" class="ft98">(i)&#160;Generate&#160;Cargo-IMP&#160;Message&#160;-&gt;&#160;Convert&#160;to&#160;Cargo-XML-&gt;&#160;Send&#160;Cargo-XML&#160;Message<br/>(ii)&#160;Generate&#160;Cargo-XML&#160;Message&#160;-&gt;&#160;Send&#160;Cargo-XML&#160;Message&#160;(Somewhat&#160;similar&#160;to</p>
+<p style="position:absolute;top:888px;left:174px;white-space:nowrap" class="ft91">Direct&#160;Adoption)</p>
+<p style="position:absolute;top:929px;left:147px;white-space:nowrap" class="ft96">In&#160;the&#160;above&#160;scenarios&#160;Category&#160;1(i)&#160;and&#160;Category&#160;2(ii),&#160;a&#160;core&#160;Cargo&#160;System&#160;supports<br/>Cargo-XML&#160;Messages&#160;while&#160;Category&#160;1(ii)&#160;and&#160;Category&#160;2(i)&#160;refer&#160;to&#160;the&#160;core&#160;Cargo<br/>System&#160;supporting&#160;Cargo-IMP&#160;Messages&#160;only.</p>
+<p style="position:absolute;top:1008px;left:147px;white-space:nowrap" class="ft96">The&#160;above&#160;scenarios&#160;also&#160;imply&#160;that&#160;users&#160;of&#160;Cargo-IMP&#160;can&#160;also&#160;communicate&#160;with&#160;their<br/>partners&#160;who&#160;are&#160;using&#160;Cargo-XML&#160;by&#160;using&#160;message&#160;conversion&#160;solution.&#160;In&#160;Cargo-IMP<br/>messages&#160;exchange,&#160;“Messaging&#160;Conversion”&#160;from&#160;one&#160;version&#160;to&#160;another&#160;is&#160;quite<br/>common.</p>
+<p style="position:absolute;top:1104px;left:150px;white-space:nowrap" class="ft97">“Messaging&#160;Conversion”&#160;from&#160;one&#160;version&#160;to&#160;another&#160;is&#160;quite&#160;common&#160;in&#160;the&#160;Cargo-IMP<br/>messaging&#160;exchange.</p>
+<p style="position:absolute;top:1189px;left:144px;white-space:nowrap" class="ft95">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:872px;white-space:nowrap" class="ft91">9</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft100{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft101{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft102{font-size:16px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft103{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft104{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft105{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft106{font-size:16px;line-height:24px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page10-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper010.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft100"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:147px;white-space:nowrap" class="ft104">CARGO-IMP&#160;to&#160;Cargo-XML&#160;conversion&#160;is&#160;simple&#160;and&#160;straight&#160;forward&#160;as&#160;all&#160;commonly&#160;used<br/>information&#160;in&#160;the&#160;CARGO-IMP&#160;messages&#160;is&#160;also&#160;available&#160;in&#160;the&#160;equivalent&#160;Cargo-XML<br/>messages.&#160;Cargo-XML&#160;messages,&#160;however,&#160;contain&#160;additional&#160;information&#160;that&#160;is&#160;not&#160;part<br/>of&#160;the&#160;CARGO-IMP&#160;messages.&#160;This&#160;additional&#160;information&#160;in&#160;the&#160;Cargo-XML&#160;messages&#160;is<br/>either&#160;optional&#160;or&#160;mandatory&#160;however&#160;all&#160;mandatory&#160;elements&#160;have&#160;default&#160;values&#160;so&#160;it<br/>provides&#160;the&#160;flexibility&#160;for&#160;converting&#160;a&#160;CARGO-IMP&#160;to&#160;Cargo-XML&#160;message.</p>
+<p style="position:absolute;top:315px;left:147px;white-space:nowrap" class="ft104">It&#160;is&#160;recommended&#160;that&#160;parties&#160;involved&#160;in&#160;Cargo-XML&#160;messages&#160;exchange,&#160;upgrade&#160;their<br/>Cargo&#160;Management&#160;and/or&#160;Messaging&#160;Systems&#160;to&#160;include&#160;these&#160;additional&#160;fields&#160;of&#160;the<br/>Cargo-XML&#160;messages&#160;otherwise;&#160;there&#160;is&#160;a&#160;risk&#160;of&#160;data/information&#160;loss.</p>
+<p style="position:absolute;top:392px;left:150px;white-space:nowrap" class="ft105">It&#160;is&#160;recommended&#160;that&#160;parties&#160;involved&#160;in&#160;Cargo-XML&#160;messages&#160;exchange,&#160;upgrade&#160;their<br/>Cargo&#160;Management&#160;and/or&#160;Messaging&#160;Systems&#160;to&#160;include&#160;these&#160;additional&#160;fields&#160;of&#160;the<br/>Cargo-XML&#160;messages&#160;otherwise;&#160;there&#160;is&#160;a&#160;risk&#160;of&#160;data/information&#160;loss.</p>
+<p style="position:absolute;top:477px;left:147px;white-space:nowrap" class="ft104">Though&#160;air&#160;cargo&#160;messaging&#160;partners&#160;can&#160;still&#160;successfully&#160;communicate&#160;with&#160;each&#160;other<br/>using&#160;different&#160;messaging&#160;standards,&#160;it&#160;is&#160;very&#160;important&#160;to&#160;identify&#160;the&#160;Cargo-IMP<br/>Messages&#160;and&#160;their&#160;versions&#160;that&#160;will&#160;be&#160;supported&#160;by&#160;the&#160;conversion&#160;solution.</p>
+<p style="position:absolute;top:558px;left:147px;white-space:nowrap" class="ft100"><b>c.</b></p>
+<p style="position:absolute;top:558px;left:183px;white-space:nowrap" class="ft100"><b>Migration&#160;Plan</b></p>
+<p style="position:absolute;top:599px;left:147px;white-space:nowrap" class="ft104">To&#160;successfully&#160;migrate&#160;from&#160;Cargo-IMP&#160;to&#160;Cargo-XML,&#160;a&#160;robust&#160;migration&#160;plan&#160;plays&#160;a&#160;key<br/>role.&#160;The&#160;migration&#160;plan&#160;must&#160;include:</p>
+<p style="position:absolute;top:647px;left:147px;white-space:nowrap" class="ft106">1.&#160;Identifying&#160;the&#160;core&#160;business&#160;processes&#160;to&#160;be&#160;covered&#160;by&#160;the&#160;Cargo-XML&#160;Message<br/>2.&#160;Identifying&#160;your&#160;partners<br/>3.&#160;Selecting&#160;the&#160;Cargo-XML&#160;messages&#160;to&#160;be&#160;supported<br/>4.&#160;Developing&#160;a&#160;Cargo-XML&#160;system<br/>5.&#160;Engaging&#160;your&#160;partners<br/>6.&#160;Preparing&#160;a&#160;pilot<br/>7.&#160;Defining&#160;a&#160;success&#160;criteria<br/>8.&#160;Executing&#160;a&#160;deployment&#160;plan<br/>9.&#160;Going&#160;live</p>
+<p style="position:absolute;top:881px;left:147px;white-space:nowrap" class="ft100"><b>d.</b></p>
+<p style="position:absolute;top:881px;left:184px;white-space:nowrap" class="ft100"><b>Migration&#160;Approach</b></p>
+<p style="position:absolute;top:921px;left:147px;white-space:nowrap" class="ft104">The&#160;migration&#160;to&#160;Cargo-XML&#160;could&#160;be&#160;accomplished&#160;though&#160;a&#160;phased&#160;or&#160;an&#160;all-inclusive<br/>approach.&#160;In&#160;the&#160;phased&#160;approach,&#160;Cargo-XML&#160;messages&#160;are&#160;implemented&#160;in&#160;phases&#160;while<br/>the&#160;all-inclusive&#160;approach&#160;implements&#160;all&#160;Cargo-XML&#160;messages&#160;at&#160;once.&#160;The&#160;phased<br/>approached&#160;is&#160;the&#160;preferred&#160;over&#160;all-inclusive&#160;approach&#160;and&#160;all&#160;current&#160;Cargo-XML<br/>implementations&#160;have&#160;adopted&#160;this&#160;phased&#160;approach.</p>
+<p style="position:absolute;top:1040px;left:147px;white-space:nowrap" class="ft104">In&#160;the&#160;phased&#160;migration&#160;approach,&#160;The&#160;XML&#160;Waybill&#160;message&#160;(XFWB)&#160;and&#160;the&#160;XML<br/>Response&#160;(XFNM)&#160;are&#160;the&#160;preferred&#160;messages&#160;to&#160;be&#160;implemented&#160;and&#160;the&#160;subsequent<br/>messages&#160;are&#160;the&#160;XML&#160;House&#160;Waybill&#160;(XFZB),&#160;XML&#160;Status&#160;Message&#160;(XFSU),&#160;XML&#160;Flight<br/>Manifest&#160;(XFFM),&#160;XML&#160;Booking&#160;Message&#160;and&#160;then&#160;the&#160;rest&#160;of&#160;the&#160;Cargo-XML&#160;messages.</p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft103">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft101">10</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft110{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft111{font-size:16px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft112{font-size:16px;font-family:LOHLEC+Arial;color:#000000;}
+	.ft113{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft114{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft115{font-size:10px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft116{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft117{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft118{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page11-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper011.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:535px;white-space:nowrap" class="ft110"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:150px;white-space:nowrap" class="ft117">In&#160;the&#160;phased&#160;migration&#160;approach,&#160;The&#160;XML&#160;Waybill&#160;message&#160;(XFWB)&#160;and&#160;the&#160;XML<br/>Response&#160;(XFNM)&#160;are&#160;the&#160;preferred&#160;messages&#160;to&#160;be&#160;implemented.</p>
+<p style="position:absolute;top:245px;left:147px;white-space:nowrap" class="ft110"><b>i.</b></p>
+<p style="position:absolute;top:245px;left:178px;white-space:nowrap" class="ft110"><b>Case&#160;Study–DGF</b></p>
+<p style="position:absolute;top:285px;left:147px;white-space:nowrap" class="ft112"><i><b>DHL&#160;Global&#160;Forwarding&#160;(DGF)</b></i></p>
+<p style="position:absolute;top:285px;left:431px;white-space:nowrap" class="ft113">implementation&#160;of&#160;Cargo-XML&#160;is&#160;a&#160;good&#160;example&#160;of</p>
+<p style="position:absolute;top:305px;left:147px;white-space:nowrap" class="ft118">migration&#160;from&#160;Cargo-IMP&#160;to&#160;Cargo-XML&#160;while&#160;supporting&#160;the&#160;Cargo-IMP&#160;partners.&#160;DGF's<br/>core&#160;cargo&#160;system&#160;only&#160;supports&#160;Cargo-XML&#160;messages&#160;however,&#160;DGF's&#160;partners&#160;who<br/>continue&#160;to&#160;support&#160;Cargo-IMP&#160;receive&#160;messages&#160;for&#160;DGF&#160;in&#160;Cargo-IMP&#160;format.&#160;In&#160;order&#160;to<br/>communicate&#160;with&#160;their&#160;Cargo-IMP&#160;messaging&#160;partners,&#160;DGF&#160;is&#160;using&#160;message&#160;conversion<br/>services&#160;from&#160;an&#160;IT&#160;partner.&#160;Any&#160;communication&#160;between&#160;the&#160;DGF&#160;core&#160;system&#160;and&#160;the<br/>messaging&#160;conversion&#160;partner&#160;is&#160;in&#160;Cargo-XML&#160;format.&#160;The&#160;messaging&#160;service&#160;provider<br/>partner&#160;ensures&#160;the&#160;message&#160;conversion&#160;to&#160;(when&#160;Sending)&#160;and&#160;from&#160;(when&#160;receiving)&#160;with<br/>the&#160;DGF&#160;partners.&#160;For&#160;the&#160;sake&#160;of&#160;conversion,&#160;DGF&#160;is&#160;supporting&#160;FWB&#160;versions&#160;between&#160;9<br/>and&#160;16.</p>
+<p style="position:absolute;top:503px;left:147px;white-space:nowrap" class="ft110"><b>ii.</b></p>
+<p style="position:absolute;top:503px;left:183px;white-space:nowrap" class="ft110"><b>Message&#160;Conversion&#160;Guidelines</b></p>
+<p style="position:absolute;top:543px;left:147px;white-space:nowrap" class="ft118">During&#160;the&#160;transition&#160;phase,&#160;when&#160;both&#160;Cargo-IMP&#160;and&#160;Cargo-XML&#160;exist&#160;in&#160;the&#160;industry,<br/>there&#160;is&#160;an&#160;increased&#160;demand&#160;to&#160;convert&#160;from&#160;one&#160;format&#160;to&#160;other.&#160;Considering&#160;the&#160;industry<br/>need,&#160;IATA&#160;has&#160;developed&#160;the&#160;Conversion&#160;Guidelines&#160;between&#160;Cargo-IMP&#160;and&#160;Cargo-XML<br/>Messages.&#160;These&#160;are&#160;published&#160;in&#160;the</p>
+<p style="position:absolute;top:602px;left:458px;white-space:nowrap" class="ft114"><a href="http://www.iata.org/publications/Pages/cargo-xml-messaging-toolkit.aspx">IATA&#160;Cargo-XML&#160;Manual&#160;and&#160;Toolkit&#160;3</a></p>
+<p style="position:absolute;top:600px;left:769px;white-space:nowrap" class="ft115"><a href="http://www.iata.org/publications/Pages/cargo-xml-messaging-toolkit.aspx">rd</a></p>
+<p style="position:absolute;top:602px;left:785px;white-space:nowrap" class="ft114"><a href="http://www.iata.org/publications/Pages/cargo-xml-messaging-toolkit.aspx">Edition</a></p>
+<p style="position:absolute;top:602px;left:840px;white-space:nowrap" class="ft113">.</p>
+<p style="position:absolute;top:642px;left:147px;white-space:nowrap" class="ft118">Message&#160;conversion&#160;from&#160;one&#160;standard&#160;to&#160;another&#160;is&#160;highly&#160;dependent&#160;on&#160;character&#160;set,<br/>data&#160;field&#160;length&#160;and&#160;occurrence,&#160;message&#160;semantics&#160;and&#160;structure&#160;and&#160;data&#160;types.</p>
+<p style="position:absolute;top:681px;left:147px;white-space:nowrap" class="ft114"><a href="cargo-xml-standards-white-paper-12.html">Figure&#160;3</a></p>
+<p style="position:absolute;top:681px;left:232px;white-space:nowrap" class="ft113">below,&#160;depicts&#160;the&#160;high&#160;level&#160;view&#160;of&#160;conversion&#160;between&#160;Cargo-IMP&#160;and</p>
+<p style="position:absolute;top:701px;left:147px;white-space:nowrap" class="ft113">Cargo-XML&#160;Messages.</p>
+<p style="position:absolute;top:1189px;left:144px;white-space:nowrap" class="ft116">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:862px;white-space:nowrap" class="ft113">11</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft120{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft121{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft122{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page12-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper012.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft120"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:272px;white-space:nowrap" class="ft120"><b>High&#160;Level&#160;View&#160;of&#160;Cargo-IMP&#160;to&#160;Cargo-XML&#160;Conversion</b></p>
+<p style="position:absolute;top:564px;left:147px;white-space:nowrap" class="ft120"><b>Figure&#160;3:</b></p>
+<p style="position:absolute;top:613px;left:272px;white-space:nowrap" class="ft120"><b>High&#160;Level&#160;View&#160;of&#160;Cargo-XML&#160;to&#160;Cargo-IMP&#160;Conversion</b></p>
+<p style="position:absolute;top:1128px;left:147px;white-space:nowrap" class="ft120"><b>Figure&#160;4:&#160;Cargo-XML&#160;to&#160;Cargo-IMP&#160;Conversion</b></p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft121">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft122">12</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft130{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft131{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft132{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft133{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft134{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page13-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper013.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:535px;white-space:nowrap" class="ft130"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:147px;white-space:nowrap" class="ft134">To&#160;facilitate&#160;the&#160;conversion,&#160;each&#160;Cargo-XML&#160;message&#160;contains&#160;references&#160;to&#160;its&#160;equivalent<br/>Cargo-IMP&#160;Message(s)&#160;and&#160;each&#160;data&#160;element&#160;in&#160;the&#160;Cargo-XML&#160;message&#160;is&#160;mapped&#160;to&#160;its<br/>equivalent&#160;data&#160;element&#160;in&#160;the&#160;corresponding&#160;Cargo-IMP&#160;message.&#160;Where&#160;necessary,<br/>business&#160;rules&#160;are&#160;defined&#160;to&#160;support&#160;the&#160;conversion&#160;between&#160;the&#160;two&#160;standards.&#160;A<br/>harmonized&#160;character&#160;set&#160;is&#160;the&#160;key&#160;to&#160;converting&#160;from&#160;one&#160;format&#160;to&#160;another.&#160;In&#160;order&#160;to<br/>harmonize&#160;the&#160;characters&#160;sets&#160;of&#160;Cargo-IMP&#160;and&#160;Cargo-XML,&#160;the&#160;IATA&#160;CSC&#160;has&#160;agreed&#160;to<br/>upgrade&#160;the&#160;Cargo-IMP&#160;character&#160;to&#160;ASCII&#160;7&#160;bit&#160;and&#160;simultaneously&#160;the&#160;Cargo-XML<br/>character&#160;set&#160;has&#160;been&#160;downgraded&#160;to&#160;ASCII&#160;7&#160;bit&#160;from&#160;UTF-8.&#160;Air&#160;Cargo&#160;stakeholders,&#160;at<br/>present&#160;doesn’t&#160;see&#160;the&#160;need&#160;to&#160;for&#160;extended&#160;character&#160;set&#160;for&#160;Cargo-XML&#160;Message.</p>
+<p style="position:absolute;top:375px;left:147px;white-space:nowrap" class="ft130"><b>6.&#160;Role&#160;of&#160;stakeholders</b></p>
+<p style="position:absolute;top:417px;left:147px;white-space:nowrap" class="ft130"><b>a.</b></p>
+<p style="position:absolute;top:417px;left:183px;white-space:nowrap" class="ft130"><b>Airlines,&#160;Freight&#160;Forwarders&#160;and&#160;Ground&#160;Handlers</b></p>
+<p style="position:absolute;top:458px;left:147px;white-space:nowrap" class="ft134">As&#160;of&#160;June&#160;2015,&#160;large&#160;airlines&#160;including&#160;Delta,&#160;Air&#160;Canada,&#160;Cathay&#160;Pacific,&#160;and&#160;IAG&#160;Cargo<br/>have&#160;already&#160;implemented&#160;Cargo-XML,&#160;however,&#160;the&#160;scope&#160;of&#160;their&#160;Cargo-XML&#160;exchanges<br/>is&#160;limited&#160;due&#160;to&#160;the&#160;small&#160;number&#160;of&#160;freight&#160;forwarders&#160;capable&#160;of&#160;sending&#160;and&#160;receiving<br/>Cargo-XML&#160;messages.&#160;The&#160;two&#160;large&#160;freight&#160;forwarders&#160;who&#160;have&#160;implemented&#160;Cargo-XML<br/>are&#160;DHL&#160;Global&#160;Forwarding&#160;(DGF)&#160;and&#160;Kuehne&#160;Nagel&#160;(K+N).&#160;Adoption&#160;of&#160;Cargo-XML&#160;is<br/>increasing&#160;with&#160;airlines&#160;such&#160;as&#160;Emirates,&#160;and&#160;LAN&#160;Cargo&#160;currently&#160;in&#160;the&#160;process&#160;of<br/>implementing&#160;Cargo-XML&#160;as&#160;are&#160;freight&#160;forwarders&#160;such&#160;as&#160;Panalpina.</p>
+<p style="position:absolute;top:615px;left:147px;white-space:nowrap" class="ft134">Ground&#160;handlers&#160;are&#160;the&#160;key&#160;component&#160;of&#160;air&#160;cargo&#160;supply&#160;chain&#160;but&#160;the&#160;large&#160;GHAs&#160;have<br/>yet&#160;to&#160;embrace&#160;Cargo-XML.&#160;The&#160;only&#160;example&#160;available&#160;to&#160;date&#160;is&#160;ALHA&#160;Airport&#160;Services,&#160;a<br/>GHA&#160;based&#160;in&#160;Italy,&#160;who&#160;have&#160;developed&#160;the&#160;Cargo-XML&#160;solution.</p>
+<p style="position:absolute;top:696px;left:147px;white-space:nowrap" class="ft130"><b>b.</b></p>
+<p style="position:absolute;top:696px;left:184px;white-space:nowrap" class="ft130"><b>Customs&#160;and&#160;Advance&#160;Cargo&#160;Information&#160;Initiative</b></p>
+<p style="position:absolute;top:737px;left:147px;white-space:nowrap" class="ft134">Customs&#160;administrations&#160;and&#160;the&#160;IT&#160;Solution&#160;Providers&#160;are&#160;playing&#160;a&#160;pivotal&#160;role&#160;in&#160;the<br/>electronic&#160;air&#160;cargo&#160;supply&#160;chain.&#160;In&#160;June&#160;2005&#160;the</p>
+<p style="position:absolute;top:756px;left:581px;white-space:nowrap" class="ft132"><a href="http://www.wcoomd.org/">World&#160;Customs&#160;Organization&#160;(WCO)</a></p>
+<p style="position:absolute;top:776px;left:147px;white-space:nowrap" class="ft134">Council&#160;adopted&#160;the&#160;Standards&#160;to&#160;Secure&#160;and&#160;Facilitate&#160;Global&#160;Trade&#160;(SAFE&#160;Framework)<br/>that&#160;would&#160;act&#160;as&#160;a&#160;deterrent&#160;to&#160;international&#160;terrorism,&#160;secure&#160;revenue&#160;collections&#160;and<br/>promote&#160;trade&#160;facilitation&#160;worldwide.&#160;In&#160;order&#160;to&#160;meet&#160;the&#160;WCO&#160;Safe&#160;Framework&#160;of<br/>standards,&#160;Customs&#160;Administrations&#160;around&#160;the&#160;world&#160;have&#160;devised&#160;Advance&#160;Cargo<br/>Information&#160;(ACI)&#160;initiatives&#160;such&#160;as&#160;US-AMS&#160;and&#160;EU-ICS.&#160;These&#160;ACI&#160;initiatives&#160;were<br/>historically&#160;based&#160;on&#160;the&#160;Cargo-IMP&#160;standards&#160;or&#160;customs&#160;administrations&#160;were&#160;using&#160;their<br/>own&#160;messaging&#160;standards.&#160;Since&#160;the&#160;customs&#160;administrations&#160;are&#160;unable&#160;to&#160;support&#160;the<br/>Cargo-IMP&#160;messages&#160;directly&#160;from&#160;the&#160;industry&#160;members&#160;who&#160;were&#160;mandated&#160;to&#160;provide<br/>advanced&#160;information,&#160;IT&#160;service&#160;providers&#160;were&#160;acting&#160;as&#160;a&#160;bridge&#160;between&#160;the&#160;air&#160;cargo<br/>stakeholders&#160;filing&#160;ACI&#160;and&#160;the&#160;customs&#160;administrations.</p>
+<p style="position:absolute;top:992px;left:147px;white-space:nowrap" class="ft134">As&#160;air&#160;cargo&#160;industry&#160;is&#160;moving&#160;away&#160;from&#160;Cargo-IMP&#160;in&#160;favor&#160;of&#160;Cargo-XML,&#160;customs<br/>administrations&#160;are&#160;also&#160;looking&#160;forward&#160;to&#160;tighten&#160;the&#160;security&#160;measures.&#160;Customs<br/>administrations&#160;are&#160;moving&#160;from&#160;pre-departure&#160;information&#160;to&#160;pre-loading&#160;information&#160;and<br/>new&#160;programs&#160;such&#160;as&#160;US-ACAS&#160;and&#160;EU-PRECISE&#160;are&#160;coming&#160;into&#160;existence.</p>
+<p style="position:absolute;top:1189px;left:144px;white-space:nowrap" class="ft133">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:862px;white-space:nowrap" class="ft131">13</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft140{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft141{font-size:16px;font-family:LOHLEC+Arial;color:#000000;}
+	.ft142{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft143{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft144{font-size:16px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft145{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft146{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft147{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page14-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper014.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft140"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:147px;white-space:nowrap" class="ft140"><b>i.</b></p>
+<p style="position:absolute;top:177px;left:178px;white-space:nowrap" class="ft140"><b>ACAS&#160;Pilot–K+N&#160;Example</b></p>
+<p style="position:absolute;top:218px;left:147px;white-space:nowrap" class="ft141"><i><b>Kuehne&#160;+&#160;Nagel&#160;(K+N)</b></i></p>
+<p style="position:absolute;top:218px;left:358px;white-space:nowrap" class="ft142">implemented&#160;Cargo-XML&#160;for&#160;exchanging&#160;of&#160;the&#160;House&#160;Waybill</p>
+<p style="position:absolute;top:237px;left:147px;white-space:nowrap" class="ft146">information&#160;for&#160;US&#160;bound&#160;shipments&#160;with&#160;the&#160;US&#160;CBP.&#160;K+N's&#160;solution&#160;transmits&#160;IATA&#160;XML<br/>House&#160;Waybill&#160;messages&#160;(XFZB)&#160;directly&#160;from&#160;K+N's&#160;enterprise&#160;system&#160;to&#160;US&#160;CBP&#160;without<br/>manual&#160;intervention&#160;thereby&#160;optimizing&#160;data&#160;quality.&#160;It&#160;also&#160;transmits&#160;the&#160;CBP&#160;response<br/>messages&#160;back&#160;to&#160;K+N.&#160;K+N&#160;participates&#160;in&#160;the&#160;ACAS&#160;dual&#160;filing&#160;project&#160;to&#160;detect&#160;high&#160;risk<br/>Shipments&#160;and&#160;customs&#160;clearance&#160;problems&#160;as&#160;early&#160;as&#160;possible&#160;in&#160;the&#160;supply&#160;chain<br/>process.</p>
+<p style="position:absolute;top:375px;left:147px;white-space:nowrap" class="ft146">Customs&#160;administrations&#160;are&#160;much&#160;keener&#160;in&#160;implementing&#160;their&#160;ACI&#160;based&#160;on&#160;the&#160;IATA<br/>Cargo-XML&#160;Messages&#160;than&#160;any&#160;other&#160;air&#160;cargo&#160;stakeholder.&#160;Some&#160;customs&#160;administrations<br/>have&#160;even&#160;implemented&#160;the&#160;IATA&#160;Cargo-XML&#160;Messages.</p>
+<p style="position:absolute;top:456px;left:147px;white-space:nowrap" class="ft140"><b>ii.</b></p>
+<p style="position:absolute;top:456px;left:183px;white-space:nowrap" class="ft140"><b>Argentine&#160;Customs&#160;Example</b></p>
+<p style="position:absolute;top:497px;left:147px;white-space:nowrap" class="ft143"><a href="http://www.afip.gob.ar/home/index.html">Argentine&#160;Customs</a></p>
+<p style="position:absolute;top:497px;left:312px;white-space:nowrap" class="ft142">(known&#160;as</p>
+<p style="position:absolute;top:497px;left:405px;white-space:nowrap" class="ft143"><a href="http://www.afip.gov.ar/glosario/index.aspx?letra=A">Administración&#160;Federal&#160;de&#160;Ingresos&#160;Públicos</a></p>
+<p style="position:absolute;top:497px;left:783px;white-space:nowrap" class="ft142">-&#160;AFIP)&#160;has</p>
+<p style="position:absolute;top:516px;left:147px;white-space:nowrap" class="ft146">recently&#160;implemented&#160;an&#160;ACI&#160;initiative&#160;based&#160;around&#160;the&#160;Cargo-XML&#160;messages&#160;XML&#160;Air<br/>Waybill&#160;Message&#160;(XFWB),&#160;XML&#160;House&#160;Waybill&#160;Message&#160;(XFZB),&#160;XML&#160;House&#160;Checklist<br/>(XFHL)&#160;and&#160;XML&#160;Flight&#160;Manifest&#160;(XFFM).&#160;In&#160;addition&#160;to&#160;Argentina,&#160;US-Customs&#160;and&#160;Border<br/>Protection&#160;(CBP)&#160;have&#160;announced&#160;plans&#160;for&#160;implementing&#160;IATA&#160;Cargo-XML&#160;in&#160;their&#160;new<br/>ACE&#160;system&#160;that&#160;will&#160;be&#160;used&#160;for&#160;ACI.&#160;Some&#160;other&#160;customs&#160;administrations&#160;are&#160;in&#160;process<br/>of&#160;implementing&#160;IATA&#160;Cargo-XML&#160;as&#160;the&#160;preferred&#160;format&#160;to&#160;provide&#160;them&#160;with&#160;ACI.</p>
+<p style="position:absolute;top:654px;left:147px;white-space:nowrap" class="ft146">The&#160;customs&#160;administrations&#160;moving&#160;towards&#160;Cargo-XML&#160;messages&#160;are&#160;bringing&#160;a&#160;new<br/>opportunity&#160;for&#160;IT&#160;service&#160;providers.&#160;Some&#160;IT&#160;service&#160;providers&#160;have&#160;pro-actively&#160;developed<br/>a&#160;Cargo-IMP&#160;to&#160;Cargo-XML&#160;converter&#160;in&#160;order&#160;for&#160;industry&#160;to&#160;fulfill&#160;its&#160;customs&#160;obligations.<br/>Since&#160;customs&#160;administrations&#160;are&#160;taking&#160;a&#160;lead&#160;in&#160;implementing&#160;IATA&#160;Cargo-XML&#160;for&#160;their<br/>own&#160;ACI&#160;initiatives,&#160;a&#160;vast&#160;majority&#160;of&#160;air&#160;cargo&#160;stakeholders&#160;are&#160;using&#160;the&#160;Cargo-IMP&#160;to<br/>Cargo-XML&#160;conversion&#160;solutions&#160;from&#160;IT&#160;service&#160;providers.&#160;This&#160;conversion&#160;practice&#160;will<br/>continue&#160;unless,&#160;the&#160;air&#160;cargo&#160;stakeholders&#160;develop&#160;direct&#160;Cargo-XML&#160;messaging<br/>capabilities&#160;within&#160;their&#160;core&#160;systems.</p>
+<p style="position:absolute;top:833px;left:147px;white-space:nowrap" class="ft140"><b>c.</b></p>
+<p style="position:absolute;top:833px;left:183px;white-space:nowrap" class="ft140"><b>IT&#160;System&#160;and&#160;Messaging&#160;Service&#160;Providers</b></p>
+<p style="position:absolute;top:873px;left:147px;white-space:nowrap" class="ft146">IATA&#160;has&#160;introduced&#160;a&#160;new&#160;business&#160;model&#160;for&#160;how&#160;it&#160;offers&#160;the&#160;Cargo-XML&#160;standard&#160;to&#160;IT<br/>system,&#160;software&#160;and&#160;service&#160;providers.&#160;Any&#160;IT&#160;service/system/solution&#160;provider&#160;interested<br/>in&#160;developing&#160;solution&#160;or&#160;offering&#160;products&#160;using&#160;the&#160;IATA&#160;Cargo-XML&#160;Messages&#160;must&#160;first<br/>license&#160;the&#160;standard&#160;from&#160;IATA.&#160;Other&#160;industry&#160;members&#160;such&#160;as&#160;airlines,&#160;freight<br/>forwarders,&#160;ground&#160;handlers&#160;etc.&#160;can&#160;directly&#160;buy&#160;the&#160;toolkit&#160;from&#160;IATA&#160;to&#160;implement&#160;the<br/>Cargo-XML&#160;Messages.</p>
+<p style="position:absolute;top:1008px;left:150px;white-space:nowrap" class="ft147">Air&#160;cargo&#160;industry&#160;is&#160;largely&#160;dependent&#160;on&#160;the&#160;Cargo&#160;System&#160;Providers&#160;and&#160;the&#160;Messaging<br/>Service&#160;Providers&#160;for&#160;the&#160;adoption&#160;of&#160;Cargo-XML&#160;standards.</p>
+<p style="position:absolute;top:1074px;left:147px;white-space:nowrap" class="ft146">The&#160;air&#160;cargo&#160;industry&#160;is&#160;largely&#160;dependent&#160;on&#160;the&#160;IT&#160;system&#160;providers&#160;and&#160;the&#160;messaging<br/>service&#160;providers&#160;for&#160;the&#160;adoption&#160;of&#160;Cargo-XML&#160;standard.&#160;Currently,&#160;30&#160;of&#160;the&#160;top&#160;industry<br/>IT&#160;system&#160;providers&#160;and&#160;the&#160;messaging&#160;service&#160;providers&#160;have&#160;licensed&#160;the&#160;Cargo-XML<br/>standard&#160;from&#160;IATA.&#160;Some&#160;of&#160;these&#160;companies&#160;have&#160;already&#160;implemented&#160;Cargo-XML</p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft145">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft142">14</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft150{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft151{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft152{font-size:16px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft153{font-size:16px;font-family:GGPDNR+Verdana;color:#000000;}
+	.ft154{font-size:16px;font-family:TRLHAZ+ArialMT;color:#000000;}
+	.ft155{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft156{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft157{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page15-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper015.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:535px;white-space:nowrap" class="ft150"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:147px;white-space:nowrap" class="ft156">messages&#160;in&#160;their&#160;core&#160;cargo&#160;systems&#160;while&#160;others&#160;are&#160;in&#160;process&#160;of&#160;development.<br/>Messaging&#160;service&#160;providers&#160;are&#160;now&#160;offering&#160;additional&#160;services&#160;such&#160;as&#160;conversion<br/>between&#160;Cargo-IMP&#160;to&#160;Cargo-XML&#160;messages,&#160;conversion&#160;between&#160;different&#160;Cargo-XML<br/>versions&#160;etc.</p>
+<p style="position:absolute;top:276px;left:147px;white-space:nowrap" class="ft156">Other&#160;companies&#160;have&#160;also&#160;licensed&#160;Cargo-XML.&#160;Most&#160;of&#160;these&#160;companies&#160;are&#160;providing<br/>solutions&#160;for&#160;Customs&#160;ACI&#160;filing&#160;or&#160;core&#160;customs&#160;systems.</p>
+<p style="position:absolute;top:336px;left:147px;white-space:nowrap" class="ft156">One&#160;of&#160;the&#160;underlying&#160;features&#160;of&#160;Cargo-XML&#160;is&#160;that&#160;it&#160;allows&#160;direct&#160;connectivity&#160;with&#160;your<br/>messaging&#160;partner,&#160;however,&#160;it&#160;is&#160;up&#160;to&#160;the&#160;air&#160;cargo&#160;industry&#160;how&#160;much&#160;they&#160;want&#160;to<br/>benefit&#160;from&#160;this&#160;feature.&#160;Over&#160;the&#160;years,&#160;messaging&#160;service&#160;providers&#160;have&#160;extended&#160;their<br/>solutions&#160;and&#160;services&#160;beyond&#160;the&#160;connectivity&#160;and&#160;infrastructure.</p>
+<p style="position:absolute;top:432px;left:150px;white-space:nowrap" class="ft157">Air&#160;Cargo&#160;Messaging&#160;Service&#160;Providers&#160;are&#160;offering&#160;a&#160;number&#160;of&#160;value&#160;added&#160;services&#160;on<br/>top&#160;of&#160;messaging&#160;communication.</p>
+<p style="position:absolute;top:498px;left:147px;white-space:nowrap" class="ft151">Some&#160;of&#160;the&#160;value&#160;added&#160;services&#160;offered&#160;by&#160;the&#160;messaging&#160;service&#160;providers&#160;are:</p>
+<p style="position:absolute;top:526px;left:147px;white-space:nowrap" class="ft153">•</p>
+<p style="position:absolute;top:527px;left:174px;white-space:nowrap" class="ft150"><b>Connectivity&#160;between&#160;the&#160;parties&#160;using&#160;heterogeneous/homogenous&#160;protocols:</b></p>
+<p style="position:absolute;top:555px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:555px;left:201px;white-space:nowrap" class="ft151">Route&#160;the&#160;Message&#160;from&#160;one&#160;stakeholder&#160;to&#160;another</p>
+<p style="position:absolute;top:579px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:579px;left:201px;white-space:nowrap" class="ft151">Ensure&#160;Guaranteed&#160;delivery</p>
+<p style="position:absolute;top:603px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:603px;left:201px;white-space:nowrap" class="ft151">Track&#160;and&#160;Trace</p>
+<p style="position:absolute;top:627px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:627px;left:201px;white-space:nowrap" class="ft151">Reporting</p>
+<p style="position:absolute;top:651px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:651px;left:201px;white-space:nowrap" class="ft151">Audit&#160;Trail</p>
+<p style="position:absolute;top:675px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:675px;left:201px;white-space:nowrap" class="ft151">Archiving</p>
+<p style="position:absolute;top:699px;left:147px;white-space:nowrap" class="ft153">•</p>
+<p style="position:absolute;top:699px;left:174px;white-space:nowrap" class="ft150"><b>Message&#160;conversion/Translation:</b></p>
+<p style="position:absolute;top:728px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:728px;left:201px;white-space:nowrap" class="ft151">One&#160;message&#160;to&#160;other</p>
+<p style="position:absolute;top:752px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:752px;left:201px;white-space:nowrap" class="ft151">One&#160;version&#160;to&#160;other</p>
+<p style="position:absolute;top:776px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:776px;left:201px;white-space:nowrap" class="ft151">One&#160;format&#160;to&#160;other</p>
+<p style="position:absolute;top:799px;left:147px;white-space:nowrap" class="ft153">•</p>
+<p style="position:absolute;top:800px;left:174px;white-space:nowrap" class="ft150"><b>Maintain&#160;Repositories:</b></p>
+<p style="position:absolute;top:828px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:828px;left:201px;white-space:nowrap" class="ft151">Participants&#160;Information/Profiles</p>
+<p style="position:absolute;top:852px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:852px;left:201px;white-space:nowrap" class="ft151">Participants&#160;Identification/Addresses</p>
+<p style="position:absolute;top:876px;left:174px;white-space:nowrap" class="ft154">○</p>
+<p style="position:absolute;top:876px;left:201px;white-space:nowrap" class="ft151">Participants&#160;messages,&#160;versions&#160;and&#160;connectivity&#160;details</p>
+<p style="position:absolute;top:900px;left:147px;white-space:nowrap" class="ft153">•</p>
+<p style="position:absolute;top:900px;left:174px;white-space:nowrap" class="ft150"><b>Technology&#160;Availability</b></p>
+<p style="position:absolute;top:924px;left:147px;white-space:nowrap" class="ft153">•</p>
+<p style="position:absolute;top:924px;left:174px;white-space:nowrap" class="ft150"><b>Manage&#160;Security,&#160;Authentication,&#160;and&#160;Compressions&#160;etc.</b></p>
+<p style="position:absolute;top:965px;left:147px;white-space:nowrap" class="ft156">Many&#160;large&#160;stakeholders&#160;(who&#160;have&#160;their&#160;own&#160;messaging&#160;infrastructure)&#160;route&#160;their<br/>messages&#160;through&#160;the&#160;IT/messaging&#160;service&#160;providers&#160;because&#160;of&#160;the&#160;value&#160;added&#160;services<br/>offered&#160;by&#160;these&#160;entities.</p>
+<p style="position:absolute;top:1189px;left:144px;white-space:nowrap" class="ft155">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:862px;white-space:nowrap" class="ft151">15</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft160{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft161{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft162{font-size:16px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft163{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft164{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft165{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft166{font-size:16px;line-height:19px;font-family:XAACND+Arial;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page16-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper016.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft160"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:147px;white-space:nowrap" class="ft160"><b>d.</b></p>
+<p style="position:absolute;top:177px;left:184px;white-space:nowrap" class="ft160"><b>International&#160;Organizations</b></p>
+<p style="position:absolute;top:219px;left:147px;white-space:nowrap" class="ft160"><b>i.</b></p>
+<p style="position:absolute;top:219px;left:178px;white-space:nowrap" class="ft160"><b>World&#160;Customs&#160;Organizations&#160;(WCO)</b></p>
+<p style="position:absolute;top:260px;left:147px;white-space:nowrap" class="ft164">IATA&#160;and&#160;WCO&#160;are&#160;cooperating&#160;closely&#160;on&#160;the&#160;development&#160;of&#160;messaging&#160;standards<br/>ensuring&#160;that&#160;the&#160;IATA&#160;Cargo-XML&#160;standards&#160;compatible&#160;with&#160;WCO&#160;data&#160;model.</p>
+<p style="position:absolute;top:320px;left:147px;white-space:nowrap" class="ft164">The&#160;Cargo-XML&#160;standard&#160;is&#160;based&#160;on&#160;the&#160;UN/CEFACT&#160;Core&#160;Component&#160;Library,&#160;which<br/>makes&#160;it&#160;multi-modal&#160;and&#160;cross-border&#160;compatible.&#160;Cargo-XML&#160;is&#160;also&#160;compatible&#160;with&#160;the<br/>WCO&#160;Data&#160;Model&#160;and&#160;the&#160;definition&#160;of&#160;each&#160;data&#160;element&#160;in&#160;the&#160;Cargo-XML&#160;Messages<br/>contains&#160;a&#160;reference&#160;to&#160;its&#160;equivalent&#160;Data&#160;Element&#160;in&#160;WCO&#160;Data&#160;Model.</p>
+<p style="position:absolute;top:416px;left:150px;white-space:nowrap" class="ft165">IATA&#160;Cargo-XML&#160;standards&#160;are&#160;based&#160;on&#160;the&#160;UN/CEFACT&#160;core&#160;components&#160;and&#160;are<br/>compatible&#160;with&#160;the&#160;WCO&#160;Data&#160;Model.</p>
+<p style="position:absolute;top:483px;left:147px;white-space:nowrap" class="ft160"><b>ii.</b></p>
+<p style="position:absolute;top:483px;left:183px;white-space:nowrap" class="ft160"><b>United&#160;Nation&#160;(UN)</b></p>
+<p style="position:absolute;top:525px;left:150px;white-space:nowrap" class="ft166"><b>UNITED&#160;NATIONS&#160;CONFERENCE<br/>ON&#160;TRADE&#160;AND&#160;DEVELOPMENT<br/>(UNCTAD),</b></p>
+<p style="position:absolute;top:564px;left:250px;white-space:nowrap" class="ft161">a&#160;part&#160;of&#160;United&#160;Nation</p>
+<p style="position:absolute;top:584px;left:150px;white-space:nowrap" class="ft164">(UN)&#160;organization&#160;and&#160;IATA&#160;has<br/>signed</p>
+<p style="position:absolute;top:603px;left:236px;white-space:nowrap" class="ft161">a</p>
+<p style="position:absolute;top:603px;left:278px;white-space:nowrap" class="ft161">Memorandum</p>
+<p style="position:absolute;top:603px;left:422px;white-space:nowrap" class="ft161">of</p>
+<p style="position:absolute;top:623px;left:150px;white-space:nowrap" class="ft161">Understanding</p>
+<p style="position:absolute;top:623px;left:292px;white-space:nowrap" class="ft161">(MoU)</p>
+<p style="position:absolute;top:623px;left:367px;white-space:nowrap" class="ft161">on</p>
+<p style="position:absolute;top:623px;left:412px;white-space:nowrap" class="ft161">the</p>
+<p style="position:absolute;top:642px;left:150px;white-space:nowrap" class="ft161">adoption</p>
+<p style="position:absolute;top:642px;left:248px;white-space:nowrap" class="ft161">of</p>
+<p style="position:absolute;top:642px;left:291px;white-space:nowrap" class="ft161">the</p>
+<p style="position:absolute;top:642px;left:345px;white-space:nowrap" class="ft161">Cargo-XML</p>
+<p style="position:absolute;top:662px;left:150px;white-space:nowrap" class="ft164">messages&#160;in&#160;the&#160;UNCTAD&#160;system<br/>called&#160;“ASYCUDA&#160;World”.</p>
+<p style="position:absolute;top:707px;left:150px;white-space:nowrap" class="ft164">UNCTAD&#160;offers&#160;this&#160;system&#160;to<br/>customs</p>
+<p style="position:absolute;top:726px;left:237px;white-space:nowrap" class="ft161">administrations</p>
+<p style="position:absolute;top:726px;left:378px;white-space:nowrap" class="ft161">in</p>
+<p style="position:absolute;top:726px;left:412px;white-space:nowrap" class="ft161">the</p>
+<p style="position:absolute;top:746px;left:150px;white-space:nowrap" class="ft161">developing&#160;countries.</p>
+<p style="position:absolute;top:786px;left:147px;white-space:nowrap" class="ft160"><b>Figure&#160;5:&#160;IATA&#160;and&#160;UNCTAD&#160;MoU</b></p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft163">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft161">16</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft170{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft171{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft172{font-size:10px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft173{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft174{font-size:16px;font-family:GGPDNR+Verdana;color:#000000;}
+	.ft175{font-size:16px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+	.ft176{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft177{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft178{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#ffffff;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page17-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper017.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:535px;white-space:nowrap" class="ft170"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:147px;white-space:nowrap" class="ft170"><b>7.&#160;Tools&#160;and&#160;Resources&#160;from&#160;IATA</b></p>
+<p style="position:absolute;top:219px;left:147px;white-space:nowrap" class="ft170"><b>a.</b></p>
+<p style="position:absolute;top:219px;left:183px;white-space:nowrap" class="ft170"><b>The&#160;Cargo-XML&#160;Manual&#160;and&#160;Toolkit</b></p>
+<p style="position:absolute;top:261px;left:150px;white-space:nowrap" class="ft171">IATA&#160;Cargo-XML&#160;Manual&#160;and&#160;Toolkit&#160;3</p>
+<p style="position:absolute;top:259px;left:500px;white-space:nowrap" class="ft172">rd</p>
+<p style="position:absolute;top:281px;left:150px;white-space:nowrap" class="ft171">Edition</p>
+<p style="position:absolute;top:281px;left:224px;white-space:nowrap" class="ft171">(</p>
+<p style="position:absolute;top:281px;left:230px;white-space:nowrap" class="ft173"><a href="cargo-xml-standards-white-paper-17.html">Figure</a></p>
+<p style="position:absolute;top:281px;left:299px;white-space:nowrap" class="ft173"><a href="cargo-xml-standards-white-paper-17.html">6</a></p>
+<p style="position:absolute;top:281px;left:309px;white-space:nowrap" class="ft171"><a href="cargo-xml-standards-white-paper-17.html">)</a></p>
+<p style="position:absolute;top:281px;left:333px;white-space:nowrap" class="ft171">in</p>
+<p style="position:absolute;top:281px;left:365px;white-space:nowrap" class="ft171">2015,</p>
+<p style="position:absolute;top:281px;left:428px;white-space:nowrap" class="ft171">containing</p>
+<p style="position:absolute;top:300px;left:150px;white-space:nowrap" class="ft171">following&#160;features:</p>
+<p style="position:absolute;top:328px;left:150px;white-space:nowrap" class="ft174">•</p>
+<p style="position:absolute;top:329px;left:177px;white-space:nowrap" class="ft171">Cargo-XML</p>
+<p style="position:absolute;top:329px;left:292px;white-space:nowrap" class="ft171">Messages</p>
+<p style="position:absolute;top:329px;left:396px;white-space:nowrap" class="ft171">(specifications</p>
+<p style="position:absolute;top:348px;left:177px;white-space:nowrap" class="ft171">and&#160;Schema)&#160;with&#160;example&#160;and&#160;layout.</p>
+<p style="position:absolute;top:372px;left:150px;white-space:nowrap" class="ft174">•</p>
+<p style="position:absolute;top:372px;left:177px;white-space:nowrap" class="ft171">Business&#160;and&#160;Implementation&#160;Rules</p>
+<p style="position:absolute;top:396px;left:150px;white-space:nowrap" class="ft174">•</p>
+<p style="position:absolute;top:396px;left:177px;white-space:nowrap" class="ft171">Mapping&#160;between&#160;specs&#160;and&#160;schemas</p>
+<p style="position:absolute;top:420px;left:150px;white-space:nowrap" class="ft174">•</p>
+<p style="position:absolute;top:420px;left:177px;white-space:nowrap" class="ft177">Conversion&#160;Guidelines&#160;(Cargo-IMP&#160;and<br/>Cargo-XML)</p>
+<p style="position:absolute;top:463px;left:150px;white-space:nowrap" class="ft174">•</p>
+<p style="position:absolute;top:464px;left:177px;white-space:nowrap" class="ft171">Cargo-IMP&#160;33</p>
+<p style="position:absolute;top:462px;left:300px;white-space:nowrap" class="ft172">rd</p>
+<p style="position:absolute;top:464px;left:326px;white-space:nowrap" class="ft171">Edition&#160;and&#160;Mapping</p>
+<p style="position:absolute;top:483px;left:177px;white-space:nowrap" class="ft171">between</p>
+<p style="position:absolute;top:483px;left:264px;white-space:nowrap" class="ft171">Cargo-IMP</p>
+<p style="position:absolute;top:483px;left:370px;white-space:nowrap" class="ft171">and</p>
+<p style="position:absolute;top:483px;left:418px;white-space:nowrap" class="ft171">Cargo-XML</p>
+<p style="position:absolute;top:503px;left:177px;white-space:nowrap" class="ft171">Messages.</p>
+<p style="position:absolute;top:526px;left:150px;white-space:nowrap" class="ft174">•</p>
+<p style="position:absolute;top:527px;left:177px;white-space:nowrap" class="ft171">Data&#160;Length&#160;Recommendation</p>
+<p style="position:absolute;top:550px;left:150px;white-space:nowrap" class="ft174">•</p>
+<p style="position:absolute;top:551px;left:177px;white-space:nowrap" class="ft171">Sample&#160;Messages&#160;and&#160;Layouts</p>
+<p style="position:absolute;top:574px;left:150px;white-space:nowrap" class="ft174">•</p>
+<p style="position:absolute;top:575px;left:177px;white-space:nowrap" class="ft171">Cargo-XML&#160;Scorecard&#160;for&#160;CXMLTF</p>
+<p style="position:absolute;top:598px;left:150px;white-space:nowrap" class="ft174">•</p>
+<p style="position:absolute;top:599px;left:177px;white-space:nowrap" class="ft171">Auto&#160;update&#160;feature</p>
+<p style="position:absolute;top:639px;left:147px;white-space:nowrap" class="ft170"><b>Figure&#160;6:&#160;Cargo-XML&#160;Manual&#160;and&#160;Toolkit</b></p>
+<p style="position:absolute;top:680px;left:147px;white-space:nowrap" class="ft177">Cargo-IMP&#160;Messages&#160;(pdf&#160;format)&#160;are&#160;included&#160;in&#160;the&#160;Cargo-XML&#160;Manual&#160;and&#160;Toolkit.&#160;Both<br/>Cargo-IMP&#160;and&#160;Cargo-XML&#160;Manual&#160;share&#160;the&#160;common&#160;code&#160;list.&#160;Since&#160;Cargo-IMP&#160;Manual<br/>is&#160;now&#160;discontinued,&#160;therefore,&#160;Code&#160;Lists&#160;will&#160;only&#160;be&#160;updated&#160;(as&#160;and&#160;when&#160;required)&#160;and<br/>published&#160;in&#160;the&#160;Cargo-XML&#160;Manual&#160;and&#160;Toolkit.&#160;At&#160;any&#160;time,&#160;the&#160;latest&#160;Code&#160;List&#160;(as<br/>published&#160;in&#160;Cargo-XML&#160;Manual&#160;and&#160;Toolkit)&#160;will&#160;be&#160;applicable&#160;to&#160;both&#160;Cargo-IMP&#160;and<br/>Cargo-XML&#160;Messages&#160;unless&#160;explicitly&#160;specified.</p>
+<p style="position:absolute;top:815px;left:150px;white-space:nowrap" class="ft178">Code&#160;lists&#160;are&#160;common&#160;and&#160;applicable&#160;to&#160;both&#160;Cargo-IMP&#160;and&#160;Cargo-XML&#160;messages<br/>however,&#160;the&#160;updated&#160;code&#160;list&#160;is&#160;only&#160;published&#160;in&#160;the&#160;Cargo-XML&#160;Manual&#160;and&#160;Toolkit.</p>
+<p style="position:absolute;top:882px;left:147px;white-space:nowrap" class="ft170"><b>b.</b></p>
+<p style="position:absolute;top:882px;left:184px;white-space:nowrap" class="ft170"><b>The&#160;Cargo-XML&#160;Message&#160;Autocheck</b></p>
+<p style="position:absolute;top:923px;left:147px;white-space:nowrap" class="ft177">IATA&#160;is&#160;aware&#160;that&#160;the&#160;development&#160;and&#160;publishing&#160;of&#160;the&#160;Cargo-XML&#160;standard&#160;is<br/>insufficient&#160;to&#160;facilitate&#160;and&#160;lead&#160;industry&#160;adoption.&#160;To&#160;assist&#160;the&#160;industry&#160;in&#160;its&#160;efforts&#160;to<br/>migrate&#160;to&#160;Cargo-XML,&#160;IATA&#160;is&#160;offering&#160;solutions&#160;to&#160;assist&#160;in&#160;the&#160;facilitation&#160;of&#160;Cargo-XML<br/>implementation.&#160;One&#160;of&#160;the&#160;solutions&#160;is&#160;the&#160;Cargo-XML&#160;message&#160;validator</p>
+<p style="position:absolute;top:981px;left:789px;white-space:nowrap" class="ft173"><a href="https://cargo-xml-autocheck.iata.org/">Cargo-XML</a></p>
+<p style="position:absolute;top:1001px;left:147px;white-space:nowrap" class="ft173"><a href="https://cargo-xml-autocheck.iata.org/">Autocheck</a></p>
+<p style="position:absolute;top:1001px;left:231px;white-space:nowrap" class="ft171"><a href="https://cargo-xml-autocheck.iata.org/">,&#160;</a>which&#160;is&#160;a&#160;portal-based&#160;automated&#160;solution&#160;that&#160;will&#160;allow&#160;the&#160;technical&#160;experts</p>
+<p style="position:absolute;top:1020px;left:147px;white-space:nowrap" class="ft177">and/or&#160;programmers&#160;to&#160;validate&#160;their&#160;Cargo-XML&#160;Message&#160;with&#160;the&#160;IATA&#160;Standards&#160;without<br/>a&#160;partner.</p>
+<p style="position:absolute;top:1189px;left:144px;white-space:nowrap" class="ft176">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:862px;white-space:nowrap" class="ft171">17</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft180{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft181{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft182{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft183{font-size:16px;font-family:GGPDNR+Verdana;color:#000000;}
+	.ft184{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft185{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page18-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper018.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft180"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:150px;white-space:nowrap" class="ft185">Cargo-XML&#160;Autocheck&#160;portal<br/>is&#160;based&#160;on&#160;a&#160;simple&#160;4&#160;steps<br/>procedure&#160;to&#160;validate&#160;a&#160;Cargo-<br/>XML&#160;Message.&#160;The&#160;procedure<br/>is&#160;depicted&#160;in</p>
+<p style="position:absolute;top:255px;left:262px;white-space:nowrap" class="ft182"><a href="cargo-xml-standards-white-paper-18.html">Figure&#160;7</a></p>
+<p style="position:absolute;top:255px;left:328px;white-space:nowrap" class="ft181"><a href="cargo-xml-standards-white-paper-18.html">.</a></p>
+<p style="position:absolute;top:469px;left:147px;white-space:nowrap" class="ft180"><b>Figure&#160;7:&#160;Cargo-XML&#160;Autocheck&#160;Portal</b></p>
+<p style="position:absolute;top:509px;left:147px;white-space:nowrap" class="ft185">Cargo-XML&#160;Autocheck&#160;portal&#160;is&#160;intended&#160;to&#160;be&#160;used&#160;widely&#160;at&#160;the&#160;time&#160;of&#160;message<br/>implementation&#160;and&#160;testing.&#160;The&#160;end&#160;user&#160;can&#160;improve&#160;the&#160;Cargo-XML&#160;message<br/>solution/refine&#160;the&#160;system&#160;based&#160;on&#160;the&#160;error&#160;report&#160;generated&#160;by&#160;the&#160;Message&#160;Validator.&#160;It<br/>will&#160;ultimately&#160;help&#160;in&#160;improving&#160;the&#160;message&#160;data&#160;quality.</p>
+<p style="position:absolute;top:610px;left:150px;white-space:nowrap" class="ft181">Cargo-XML&#160;Autocheck&#160;portal</p>
+<p style="position:absolute;top:618px;left:408px;white-space:nowrap" class="ft183">•</p>
+<p style="position:absolute;top:619px;left:435px;white-space:nowrap" class="ft181">Powerful&#160;online&#160;service</p>
+<p style="position:absolute;top:629px;left:150px;white-space:nowrap" class="ft181">benefits&#160;are&#160;listed&#160;in</p>
+<p style="position:absolute;top:629px;left:317px;white-space:nowrap" class="ft182"><a href="cargo-xml-standards-white-paper-18.html">Figure&#160;8</a></p>
+<p style="position:absolute;top:629px;left:383px;white-space:nowrap" class="ft181">.</p>
+<p style="position:absolute;top:642px;left:408px;white-space:nowrap" class="ft183">•</p>
+<p style="position:absolute;top:643px;left:435px;white-space:nowrap" class="ft181">Syntax&#160;check&#160;validation&#160;with&#160;business&#160;logic&#160;checks</p>
+<p style="position:absolute;top:666px;left:408px;white-space:nowrap" class="ft183">•</p>
+<p style="position:absolute;top:667px;left:435px;white-space:nowrap" class="ft181">Self-test&#160;without&#160;partner</p>
+<p style="position:absolute;top:690px;left:408px;white-space:nowrap" class="ft183">•</p>
+<p style="position:absolute;top:691px;left:435px;white-space:nowrap" class="ft185">Support&#160;during&#160;rollout&#160;and&#160;when&#160;connecting&#160;additional<br/>partners</p>
+<p style="position:absolute;top:734px;left:408px;white-space:nowrap" class="ft183">•</p>
+<p style="position:absolute;top:734px;left:435px;white-space:nowrap" class="ft181">Permanent&#160;availability&#160;(24/7)</p>
+<p style="position:absolute;top:758px;left:408px;white-space:nowrap" class="ft183">•</p>
+<p style="position:absolute;top:758px;left:435px;white-space:nowrap" class="ft181">High&#160;data&#160;quality&#160;and&#160;integrity</p>
+<p style="position:absolute;top:782px;left:408px;white-space:nowrap" class="ft183">•</p>
+<p style="position:absolute;top:782px;left:435px;white-space:nowrap" class="ft181">Test&#160;results&#160;immediately&#160;available</p>
+<p style="position:absolute;top:806px;left:408px;white-space:nowrap" class="ft183">•</p>
+<p style="position:absolute;top:806px;left:435px;white-space:nowrap" class="ft181">Fast&#160;overview&#160;of&#160;the&#160;error&#160;situation</p>
+<p style="position:absolute;top:847px;left:147px;white-space:nowrap" class="ft180"><b>Figure&#160;8:&#160;Cargo-XML&#160;Autocheck&#160;Benefits</b></p>
+<p style="position:absolute;top:889px;left:147px;white-space:nowrap" class="ft180"><b>c.</b></p>
+<p style="position:absolute;top:889px;left:183px;white-space:nowrap" class="ft180"><b>The&#160;Cargo-XML&#160;Workshops</b></p>
+<p style="position:absolute;top:929px;left:147px;white-space:nowrap" class="ft185">In&#160;order&#160;to&#160;raise&#160;industry&#160;awareness&#160;about&#160;the&#160;Cargo-XML&#160;standards,&#160;IATA&#160;is&#160;conducting<br/>Cargo-XML&#160;Workshops&#160;regularly.&#160;IATA&#160;Cargo-XML&#160;Workshops&#160;detail&#160;could&#160;be&#160;found&#160;on&#160;the</p>
+<p style="position:absolute;top:968px;left:147px;white-space:nowrap" class="ft182"><a href="http://www.iata.org/events/Pages/cargo-xml-workshop.aspx">IATA&#160;website</a></p>
+<p style="position:absolute;top:968px;left:253px;white-space:nowrap" class="ft181">.</p>
+<p style="position:absolute;top:1010px;left:147px;white-space:nowrap" class="ft180"><b>d.</b></p>
+<p style="position:absolute;top:1010px;left:184px;white-space:nowrap" class="ft180"><b>The&#160;Cargo-XML&#160;Training</b></p>
+<p style="position:absolute;top:1051px;left:147px;white-space:nowrap" class="ft185">IATA&#160;has&#160;launched&#160;a&#160;Cargo-XML&#160;Training&#160;Course.&#160;The&#160;Training&#160;course&#160;is&#160;offered&#160;as&#160;in<br/>class&#160;training&#160;(3&#160;days)&#160;as&#160;well&#160;company&#160;based&#160;training&#160;tailored&#160;as&#160;per&#160;individual&#160;company<br/>requirement.&#160;This&#160;training&#160;is&#160;delivered&#160;by&#160;IATA's&#160;instructor&#160;and&#160;course&#160;materials.&#160;Further<br/>details&#160;about&#160;the&#160;training&#160;course&#160;are&#160;available&#160;on&#160;the</p>
+<p style="position:absolute;top:1109px;left:572px;white-space:nowrap" class="ft182"><a href="http://www.iata.org/training/courses/Pages/Cargo-XML-tcgg06.aspx">IATA&#160;website</a></p>
+<p style="position:absolute;top:1109px;left:679px;white-space:nowrap" class="ft181"><a href="http://www.iata.org/training/courses/Pages/Cargo-XML-tcgg06.aspx">.</a></p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft184">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft181">18</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft190{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft191{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft192{font-size:16px;font-family:JNYSNO+ArialMT;color:#3737ff;}
+	.ft193{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft194{font-size:16px;line-height:19px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page19-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper019.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:535px;white-space:nowrap" class="ft190"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:177px;left:147px;white-space:nowrap" class="ft190"><b>8.&#160;Summary</b></p>
+<p style="position:absolute;top:218px;left:147px;white-space:nowrap" class="ft194">Implementation&#160;strategy&#160;plays&#160;a&#160;key&#160;role&#160;in&#160;a&#160;successful&#160;Cargo-XML&#160;implementation.&#160;To<br/>obtain&#160;maximum&#160;benefits&#160;of&#160;the&#160;Cargo-XML&#160;standards&#160;it&#160;is&#160;vital&#160;to&#160;have&#160;a&#160;well-defined,<br/>thorough,&#160;and&#160;robust&#160;implementation&#160;strategy&#160;for&#160;Cargo-XML&#160;solutions.</p>
+<p style="position:absolute;top:297px;left:147px;white-space:nowrap" class="ft194">During&#160;the&#160;transition&#160;period&#160;when&#160;both&#160;Cargo-IMP&#160;and&#160;Cargo-XML&#160;standards&#160;co-exist&#160;in&#160;the<br/>industry,&#160;message&#160;conversion&#160;solutions&#160;(between&#160;Cargo-IMP&#160;and&#160;Cargo-XML)&#160;serve&#160;the<br/>purpose&#160;to&#160;exchange&#160;the&#160;information&#160;between&#160;these&#160;heterogeneous&#160;standards.&#160;Conversion<br/>solutions,&#160;however,&#160;may&#160;result&#160;in&#160;the&#160;loss&#160;of&#160;data&#160;when&#160;downgrading&#160;a&#160;Cargo-XML<br/>message&#160;to&#160;its&#160;equivalent&#160;Cargo-IMP&#160;message.</p>
+<p style="position:absolute;top:416px;left:147px;white-space:nowrap" class="ft194">Cargo&#160;IT&#160;Service&#160;and&#160;Messaging&#160;Providers&#160;are&#160;enablers&#160;for&#160;the&#160;widespread&#160;adoption&#160;of&#160;the<br/>Cargo-XML&#160;standards.</p>
+<p style="position:absolute;top:476px;left:147px;white-space:nowrap" class="ft194">Due&#160;to&#160;multimodal&#160;and&#160;cross-border&#160;features&#160;of&#160;the&#160;IATA&#160;Cargo-XML&#160;standards,&#160;Customs<br/>authorities&#160;are&#160;moving&#160;towards&#160;the&#160;new&#160;standards.</p>
+<p style="position:absolute;top:536px;left:147px;white-space:nowrap" class="ft194">IATA&#160;Cargo-XML&#160;standards&#160;are&#160;published&#160;in&#160;a&#160;user-friendly&#160;and&#160;interactive&#160;way,&#160;and&#160;tools<br/>like&#160;“Cargo-XML&#160;Autocheck”&#160;facilitates&#160;the&#160;testing&#160;of&#160;the&#160;Cargo-XML&#160;solutions.&#160;However,<br/>additional&#160;research&#160;needs&#160;to&#160;be&#160;done&#160;by&#160;IATA&#160;to&#160;develop&#160;new&#160;tools&#160;for&#160;facilitating&#160;Cargo-<br/>XML&#160;implementation.</p>
+<p style="position:absolute;top:635px;left:147px;white-space:nowrap" class="ft191">For&#160;any&#160;further&#160;information&#160;please&#160;visit</p>
+<p style="position:absolute;top:635px;left:522px;white-space:nowrap" class="ft192"><a href="http://www.iata.org/cargo-xml">www.iata.org/cargo-xml</a></p>
+<p style="position:absolute;top:635px;left:726px;white-space:nowrap" class="ft191">or&#160;contact&#160;us&#160;at</p>
+<p style="position:absolute;top:654px;left:147px;white-space:nowrap" class="ft192"><a href="mailto:Cargoxml@iata.org">Cargoxml@iata.org</a></p>
+<p style="position:absolute;top:654px;left:302px;white-space:nowrap" class="ft191"><a href="mailto:Cargoxml@iata.org">.</a></p>
+<p style="position:absolute;top:1189px;left:144px;white-space:nowrap" class="ft193">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:862px;white-space:nowrap" class="ft191">19</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/cargo/e/Documents/cargo-xml-standards-white-paper-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft200{font-size:16px;font-family:XAACND+Arial;color:#000000;}
+	.ft201{font-size:8px;font-family:JNYSNO+ArialMT;color:#000000;}
+	.ft202{font-size:16px;font-family:JNYSNO+ArialMT;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page20-div" style="position:relative;width:1026px;height:1296px;">
+<img width="1026" height="1296" src="cargo-xml-standards-white-paper020.png" alt="background image"/>
+<p style="position:absolute;top:113px;left:222px;white-space:nowrap" class="ft200"><b>IATA&#160;Cargo-XML&#160;Standards&#160;White&#160;Paper</b></p>
+<p style="position:absolute;top:1189px;left:750px;white-space:nowrap" class="ft201">IATA&#160;Cargo-XML&#160;Standards</p>
+<p style="position:absolute;top:1184px;left:144px;white-space:nowrap" class="ft202">20</p>
+</div>
+</body>
+</html>
