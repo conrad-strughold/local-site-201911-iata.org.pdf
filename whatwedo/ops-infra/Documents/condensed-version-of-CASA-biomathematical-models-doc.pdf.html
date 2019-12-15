@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft11{font-size:19px;font-family:WYXBDZ+TT160t00;color:#000000;}
+	.ft12{font-size:21px;font-family:WYXBDZ+TT160t00;color:#000000;}
+	.ft13{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft14{font-size:14px;font-family:GOCSXU+TT15At00;color:#000000;}
+	.ft15{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft16{font-size:14px;font-family:VRYKAP+TT15Bt00;color:#000000;}
+	.ft17{font-size:21px;line-height:32px;font-family:WYXBDZ+TT160t00;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page1-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc001.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft10">&#160;</p>
+<p style="position:absolute;top:1120px;left:762px;white-space:nowrap" class="ft10">Page&#160;1&#160;</p>
+<p style="position:absolute;top:149px;left:108px;white-space:nowrap" class="ft11">&#160;</p>
+<p style="position:absolute;top:213px;left:108px;white-space:nowrap" class="ft11">&#160;</p>
+<p style="position:absolute;top:261px;left:108px;white-space:nowrap" class="ft17">CASA&#160;&#160;Biomathematical&#160;&#160;Fatigue&#160;&#160;Models&#160;&#160;Guidance&#160;&#160;Document&#160;<br/>Summary&#160;</p>
+<p style="position:absolute;top:323px;left:108px;white-space:nowrap" class="ft13">&#160;</p>
+<p style="position:absolute;top:361px;left:108px;white-space:nowrap" class="ft13">In&#160;2010&#160;the&#160;Australian&#160;Civil&#160;Aviation&#160;Safety&#160;Authority&#160;(CASA)&#160;published&#160;a&#160;paper&#160;titled&#160;‘</p>
+<p style="position:absolute;top:362px;left:696px;white-space:nowrap" class="ft14">Biomathematical&#160;</p>
+<p style="position:absolute;top:385px;left:108px;white-space:nowrap" class="ft14">Fatigue&#160;Modelling&#160;in&#160;Civil&#160;Aviation&#160;Fatigue&#160;Risk&#160;Management:&#160;Application&#160;Guidance’</p>
+<p style="position:absolute;top:384px;left:680px;white-space:nowrap" class="ft13">.&#160;In&#160;March&#160;2014&#160;an&#160;</p>
+<p style="position:absolute;top:407px;left:108px;white-space:nowrap" class="ft13">updated&#160;&#160;version&#160;&#160;of&#160;&#160;this&#160;&#160;document&#160;&#160;titled&#160;</p>
+<p style="position:absolute;top:408px;left:396px;white-space:nowrap" class="ft14">‘Biomathematical&#160;&#160;Fatigue&#160;&#160;Models&#160;&#160;Guidance&#160;&#160;Document’</p>
+<p style="position:absolute;top:407px;left:777px;white-space:nowrap" class="ft13">&#160;&#160;was&#160;</p>
+<p style="position:absolute;top:431px;left:108px;white-space:nowrap" class="ft13">released.&#160;The&#160;intent&#160;of&#160;the&#160;documents&#160;is&#160;to&#160;provide&#160;the&#160;aviation&#160;industry&#160;with&#160;updated&#160;guidance&#160;on&#160;the&#160;</p>
+<p style="position:absolute;top:454px;left:108px;white-space:nowrap" class="ft13">application&#160;&#160;of&#160;&#160;biomathematical&#160;&#160;fatigue&#160;&#160;models&#160;&#160;(BFMs)&#160;&#160;for&#160;&#160;use&#160;&#160;as&#160;&#160;optional&#160;&#160;components&#160;&#160;of&#160;&#160;Fatigue&#160;&#160;Risk&#160;</p>
+<p style="position:absolute;top:477px;left:108px;white-space:nowrap" class="ft13">Management&#160;&#160;Systems&#160;&#160;(FRMS).&#160;&#160;The&#160;&#160;document&#160;&#160;was&#160;&#160;specifically&#160;&#160;developed&#160;&#160;to&#160;&#160;help&#160;&#160;operators&#160;&#160;decide&#160;</p>
+<p style="position:absolute;top:500px;left:108px;white-space:nowrap" class="ft13">whether&#160;to&#160;use&#160;a&#160;biomathematical&#160;fatigue&#160;model&#160;in&#160;their&#160;FRMS;&#160;and&#160;if&#160;so&#160;which&#160;model.&#160;&#160;</p>
+<p style="position:absolute;top:538px;left:108px;white-space:nowrap" class="ft13">This&#160;&#160;paper&#160;&#160;seeks&#160;&#160;to&#160;&#160;summarise&#160;&#160;the&#160;&#160;73&#160;&#160;page&#160;</p>
+<p style="position:absolute;top:539px;left:433px;white-space:nowrap" class="ft14">Biomathematical&#160;&#160;Fatigue&#160;&#160;Models&#160;&#160;Guidance&#160;&#160;Document&#160;</p>
+<p style="position:absolute;top:561px;left:108px;white-space:nowrap" class="ft13">focusing&#160;&#160;on&#160;&#160;the&#160;&#160;applications,&#160;&#160;limitations&#160;&#160;and&#160;&#160;cautions&#160;&#160;on&#160;&#160;the&#160;&#160;use&#160;&#160;of&#160;&#160;BFMs&#160;&#160;(Sections&#160;&#160;5,&#160;&#160;2.1&#160;&#160;and&#160;&#160;2.2&#160;</p>
+<p style="position:absolute;top:585px;left:108px;white-space:nowrap" class="ft13">respectively).&#160;&#160;</p>
+<p style="position:absolute;top:623px;left:108px;white-space:nowrap" class="ft13">The&#160;&#160;CASA&#160;</p>
+<p style="position:absolute;top:623px;left:180px;white-space:nowrap" class="ft14">Biomathematical&#160;&#160;Fatigue&#160;&#160;Models&#160;&#160;Guidance&#160;&#160;Document</p>
+<p style="position:absolute;top:623px;left:549px;white-space:nowrap" class="ft13">&#160;&#160;also&#160;&#160;contains&#160;&#160;sections&#160;&#160;on&#160;&#160;the&#160;&#160;science&#160;</p>
+<p style="position:absolute;top:646px;left:108px;white-space:nowrap" class="ft13">behind&#160;&#160;fatigue&#160;&#160;modelling&#160;&#160;(Section&#160;&#160;3),&#160;&#160;model&#160;&#160;characteristics&#160;&#160;and&#160;&#160;structure&#160;&#160;(Section&#160;&#160;6),&#160;&#160;a&#160;&#160;summary&#160;&#160;of&#160;</p>
+<p style="position:absolute;top:669px;left:108px;white-space:nowrap" class="ft13">seven&#160;&#160;biomathematical&#160;&#160;fatigue&#160;&#160;models&#160;&#160;(Section&#160;&#160;7)&#160;&#160;and&#160;&#160;model&#160;&#160;comparison,&#160;&#160;analysis&#160;&#160;and&#160;&#160;conclusion&#160;</p>
+<p style="position:absolute;top:692px;left:108px;white-space:nowrap" class="ft13">(Sections&#160;&#160;8&#160;&#160;&amp;&#160;&#160;9).&#160;&#160;This&#160;&#160;information&#160;&#160;has&#160;&#160;not&#160;&#160;been&#160;&#160;summarised&#160;&#160;here.&#160;&#160;The&#160;&#160;CASA&#160;&#160;document&#160;&#160;contains&#160;</p>
+<p style="position:absolute;top:715px;left:108px;white-space:nowrap" class="ft13">references&#160;&#160;which&#160;&#160;have&#160;&#160;not&#160;&#160;been&#160;&#160;reproduced&#160;&#160;in&#160;&#160;this&#160;&#160;document.&#160;&#160;As&#160;&#160;CASA&#160;&#160;are&#160;&#160;an&#160;&#160;Australian&#160;&#160;regulator,&#160;</p>
+<p style="position:absolute;top:739px;left:108px;white-space:nowrap" class="ft13">Australian&#160;&#160;terminology&#160;&#160;and&#160;&#160;spelling&#160;&#160;has&#160;&#160;been&#160;&#160;used&#160;&#160;in&#160;&#160;the&#160;&#160;document&#160;&#160;and&#160;&#160;this&#160;summary.&#160;Please&#160;&#160;refer&#160;&#160;to&#160;</p>
+<p style="position:absolute;top:762px;left:108px;white-space:nowrap" class="ft13">the&#160;CASA&#160;</p>
+<p style="position:absolute;top:762px;left:174px;white-space:nowrap" class="ft14">Biomathematical&#160;Fatigue&#160;Models&#160;Guidance&#160;Document&#160;</p>
+<p style="position:absolute;top:762px;left:538px;white-space:nowrap" class="ft13">for&#160;further&#160;information&#160;and&#160;references.&#160;</p>
+<p style="position:absolute;top:804px;left:108px;white-space:nowrap" class="ft15">Acronyms&#160;</p>
+<p style="position:absolute;top:841px;left:108px;white-space:nowrap" class="ft16">BFM&#160;</p>
+<p style="position:absolute;top:840px;left:224px;white-space:nowrap" class="ft13">Biomathematical&#160;Fatigue&#160;Model&#160;</p>
+<p style="position:absolute;top:872px;left:108px;white-space:nowrap" class="ft16">CASA&#160;</p>
+<p style="position:absolute;top:870px;left:224px;white-space:nowrap" class="ft13">Australian&#160;Civil&#160;Aviation&#160;Safety&#160;Authority&#160;</p>
+<p style="position:absolute;top:902px;left:108px;white-space:nowrap" class="ft16">FRMS&#160;</p>
+<p style="position:absolute;top:901px;left:224px;white-space:nowrap" class="ft13">Fatigue&#160;Risk&#160;Management&#160;System&#160;</p>
+<p style="position:absolute;top:933px;left:108px;white-space:nowrap" class="ft16">FTL&#160;</p>
+<p style="position:absolute;top:932px;left:224px;white-space:nowrap" class="ft13">Flight&#160;and&#160;Duty&#160;Time&#160;Limitation&#160;</p>
+<p style="position:absolute;top:964px;left:108px;white-space:nowrap" class="ft16">ICAO&#160;</p>
+<p style="position:absolute;top:962px;left:224px;white-space:nowrap" class="ft13">International&#160;Civil&#160;Aviation&#160;Authority&#160;</p>
+<p style="position:absolute;top:993px;left:108px;white-space:nowrap" class="ft13">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft20{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft21{font-size:21px;font-family:LKMKFD+TT15Dt00;color:#16355c;}
+	.ft22{font-size:21px;font-family:RIEUWF+Helvetica;color:#16355c;}
+	.ft23{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft24{font-size:8px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft25{font-size:14px;font-family:GOCSXU+TT15At00;color:#000000;}
+	.ft26{font-size:14px;font-family:MWUNIP+Symbol;color:#000000;}
+	.ft27{font-size:14px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft28{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft29{font-size:17px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+	.ft210{font-size:7px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft211{font-size:12px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft212{font-size:12px;font-family:GOCSXU+TT15At00;color:#000000;}
+	.ft213{font-size:12px;line-height:18px;font-family:GOCSXU+TT15At00;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page2-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc002.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft20">&#160;</p>
+<p style="position:absolute;top:1120px;left:762px;white-space:nowrap" class="ft20">Page&#160;2&#160;</p>
+<p style="position:absolute;top:114px;left:108px;white-space:nowrap" class="ft21">1.</p>
+<p style="position:absolute;top:113px;left:127px;white-space:nowrap" class="ft22">&#160;</p>
+<p style="position:absolute;top:114px;left:135px;white-space:nowrap" class="ft21">Biomathematical&#160;Fatigue&#160;Models&#160;(BFMs):&#160;Definition&#160;</p>
+<p style="position:absolute;top:165px;left:108px;white-space:nowrap" class="ft23">A&#160;tool&#160;designed&#160;to&#160;predict&#160;crewmember&#160;fatigue&#160;levels,&#160;based&#160;on&#160;scientific&#160;understanding&#160;of&#160;the&#160;factors&#160;</p>
+<p style="position:absolute;top:188px;left:108px;white-space:nowrap" class="ft23">contributing&#160;to&#160;fatigue.&#160;Biomathematical&#160;models&#160;are&#160;an&#160;optional&#160;tool&#160;(not&#160;a&#160;requirement)&#160;for&#160;predictive&#160;</p>
+<p style="position:absolute;top:212px;left:108px;white-space:nowrap" class="ft23">fatigue&#160;hazard&#160;identification,&#160;as&#160;within&#160;an&#160;FRMS.&#160;All&#160;biomathematical&#160;models&#160;have&#160;limitations&#160;that&#160;need&#160;</p>
+<p style="position:absolute;top:235px;left:108px;white-space:nowrap" class="ft23">to&#160;be&#160;understood&#160;for&#160;their&#160;appropriate&#160;use&#160;in&#160;an&#160;FRMS.</p>
+<p style="position:absolute;top:232px;left:476px;white-space:nowrap" class="ft24">&#160;1</p>
+<p style="position:absolute;top:235px;left:484px;white-space:nowrap" class="ft23">&#160;</p>
+<p style="position:absolute;top:296px;left:108px;white-space:nowrap" class="ft21">2.</p>
+<p style="position:absolute;top:296px;left:127px;white-space:nowrap" class="ft22">&#160;</p>
+<p style="position:absolute;top:296px;left:135px;white-space:nowrap" class="ft21">Applications&#160;of&#160;Biomathematical&#160;Fatigue&#160;Models&#160;</p>
+<p style="position:absolute;top:348px;left:108px;white-space:nowrap" class="ft25">(Refer&#160;CASA,&#160;2014,&#160;Biomathematical&#160;Fatigue&#160;Models&#160;Guidance&#160;Document,&#160;Section&#160;5:&#160;Model&#160;Applications&#160;</p>
+<p style="position:absolute;top:371px;left:108px;white-space:nowrap" class="ft25">pp.&#160;23-27)&#160;</p>
+<p style="position:absolute;top:412px;left:108px;white-space:nowrap" class="ft23">Potential&#160;applications&#160;of&#160;BFMs&#160;include:&#160;</p>
+<p style="position:absolute;top:436px;left:135px;white-space:nowrap" class="ft26">•</p>
+<p style="position:absolute;top:433px;left:143px;white-space:nowrap" class="ft27">&#160;</p>
+<p style="position:absolute;top:433px;left:162px;white-space:nowrap" class="ft23">Forward&#160;Scheduling&#160;</p>
+<p style="position:absolute;top:460px;left:135px;white-space:nowrap" class="ft26">•</p>
+<p style="position:absolute;top:457px;left:143px;white-space:nowrap" class="ft27">&#160;</p>
+<p style="position:absolute;top:457px;left:162px;white-space:nowrap" class="ft23">Non-scheduled&#160;/&#160;Irregular&#160;Operations&#160;&#160;</p>
+<p style="position:absolute;top:484px;left:135px;white-space:nowrap" class="ft26">•</p>
+<p style="position:absolute;top:481px;left:143px;white-space:nowrap" class="ft27">&#160;</p>
+<p style="position:absolute;top:481px;left:162px;white-space:nowrap" class="ft23">Work&#160;/&#160;Rest&#160;Cycles&#160;in&#160;Augmented&#160;Crew&#160;&#160;</p>
+<p style="position:absolute;top:508px;left:135px;white-space:nowrap" class="ft26">•</p>
+<p style="position:absolute;top:505px;left:143px;white-space:nowrap" class="ft27">&#160;</p>
+<p style="position:absolute;top:505px;left:162px;white-space:nowrap" class="ft23">Light&#160;Exposure&#160;and&#160;Napping&#160;Countermeasures&#160;&#160;</p>
+<p style="position:absolute;top:532px;left:135px;white-space:nowrap" class="ft26">•</p>
+<p style="position:absolute;top:529px;left:143px;white-space:nowrap" class="ft27">&#160;</p>
+<p style="position:absolute;top:529px;left:162px;white-space:nowrap" class="ft23">Individual&#160;Fatigue&#160;Prediction&#160;</p>
+<p style="position:absolute;top:556px;left:135px;white-space:nowrap" class="ft26">•</p>
+<p style="position:absolute;top:553px;left:143px;white-space:nowrap" class="ft27">&#160;</p>
+<p style="position:absolute;top:553px;left:162px;white-space:nowrap" class="ft23">Training&#160;</p>
+<p style="position:absolute;top:580px;left:135px;white-space:nowrap" class="ft26">•</p>
+<p style="position:absolute;top:577px;left:143px;white-space:nowrap" class="ft27">&#160;</p>
+<p style="position:absolute;top:577px;left:162px;white-space:nowrap" class="ft23">Safety&#160;Investigation&#160;</p>
+<p style="position:absolute;top:619px;left:109px;white-space:nowrap" class="ft28">2.1.</p>
+<p style="position:absolute;top:615px;left:141px;white-space:nowrap" class="ft29"><b>&#160;</b></p>
+<p style="position:absolute;top:619px;left:142px;white-space:nowrap" class="ft28">Forward&#160;Scheduling&#160;&#160;</p>
+<p style="position:absolute;top:645px;left:108px;white-space:nowrap" class="ft23">A&#160;&#160;primary&#160;&#160;application&#160;&#160;of&#160;&#160;BFMs&#160;&#160;is&#160;&#160;to&#160;&#160;assist&#160;&#160;in&#160;&#160;crew&#160;&#160;scheduling&#160;&#160;and&#160;&#160;crew&#160;&#160;rostering&#160;&#160;practices.&#160;</p>
+<p style="position:absolute;top:668px;left:108px;white-space:nowrap" class="ft23">Biomathematical&#160;models&#160;of&#160;human&#160;fatigue&#160;provide&#160;a&#160;means&#160;of&#160;incorporating&#160;aspects&#160;of&#160;fatigue&#160;science&#160;</p>
+<p style="position:absolute;top:691px;left:108px;white-space:nowrap" class="ft23">into&#160;scheduling&#160;to&#160;reduce&#160;fatigue-related&#160;safety&#160;risk.&#160;&#160;</p>
+<p style="position:absolute;top:729px;left:108px;white-space:nowrap" class="ft23">An&#160;&#160;important&#160;&#160;application&#160;&#160;of&#160;&#160;BFMs&#160;&#160;is&#160;&#160;to&#160;&#160;assist&#160;&#160;with&#160;&#160;developing&#160;&#160;optimal&#160;&#160;crew&#160;&#160;schedules.&#160;&#160;By&#160;&#160;predicting&#160;</p>
+<p style="position:absolute;top:752px;left:108px;white-space:nowrap" class="ft23">times&#160;&#160;at&#160;&#160;which&#160;&#160;performance&#160;&#160;should&#160;&#160;be&#160;optimal,&#160;&#160;identifying&#160;&#160;timeframes&#160;&#160;where&#160;&#160;restorative&#160;&#160;sleep&#160;will&#160;&#160;be&#160;</p>
+<p style="position:absolute;top:775px;left:108px;white-space:nowrap" class="ft23">maximised,&#160;&#160;and&#160;&#160;determining&#160;&#160;the&#160;&#160;impact&#160;&#160;of&#160;&#160;proposed&#160;&#160;work/rest&#160;&#160;schedules&#160;&#160;on&#160;&#160;overall&#160;&#160;fatigue&#160;&#160;and&#160;</p>
+<p style="position:absolute;top:798px;left:108px;white-space:nowrap" class="ft23">performance,&#160;&#160;BFMs&#160;&#160;can&#160;&#160;be&#160;&#160;used&#160;&#160;to&#160;&#160;assist&#160;&#160;in&#160;&#160;the&#160;&#160;development&#160;&#160;of&#160;&#160;work&#160;&#160;schedules&#160;&#160;that&#160;&#160;reduce&#160;&#160;fatigue-</p>
+<p style="position:absolute;top:822px;left:108px;white-space:nowrap" class="ft23">related&#160;safety&#160;risk.&#160;&#160;</p>
+<p style="position:absolute;top:860px;left:108px;white-space:nowrap" class="ft23">When&#160;applying&#160;BFMs&#160;for&#160;scheduling&#160;purposes,&#160;it&#160;is&#160;important&#160;to&#160;recognise&#160;the&#160;limitations&#160;of&#160;their&#160;use,&#160;as&#160;</p>
+<p style="position:absolute;top:883px;left:108px;white-space:nowrap" class="ft23">discussed&#160;&#160;later&#160;&#160;in&#160;&#160;this&#160;&#160;document&#160;&#160;(refer&#160;&#160;Sections&#160;&#160;3&#160;&#160;&amp;&#160;&#160;4&#160;&#160;pp.&#160;&#160;7-11).&#160;&#160;In&#160;&#160;particular,&#160;&#160;it&#160;&#160;is&#160;&#160;essential&#160;&#160;to&#160;&#160;avoid&#160;</p>
+<p style="position:absolute;top:906px;left:108px;white-space:nowrap" class="ft23">overly&#160;&#160;simplistic&#160;&#160;interpretations&#160;&#160;of&#160;&#160;fatigue&#160;&#160;scores,&#160;&#160;and&#160;&#160;to&#160;&#160;recognise&#160;&#160;that&#160;&#160;any&#160;&#160;specified&#160;&#160;upper&#160;&#160;limits&#160;&#160;for&#160;</p>
+<p style="position:absolute;top:930px;left:108px;white-space:nowrap" class="ft23">fatigue&#160;scores&#160;must&#160;be&#160;validated&#160;within&#160;the&#160;operational&#160;environment&#160;in&#160;which&#160;they&#160;will&#160;be&#160;used.&#160;&#160;</p>
+<p style="position:absolute;top:972px;left:108px;white-space:nowrap" class="ft23">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;</p>
+<p style="position:absolute;top:988px;left:108px;white-space:nowrap" class="ft210">1</p>
+<p style="position:absolute;top:992px;left:113px;white-space:nowrap" class="ft211">&#160;The&#160;CASA&#160;definition&#160;varies&#160;slightly&#160;from&#160;the&#160;ICAO&#160;definition:&#160;</p>
+<p style="position:absolute;top:992px;left:483px;white-space:nowrap" class="ft212">A&#160;computer&#160;programme&#160;designed&#160;to&#160;predict&#160;</p>
+<p style="position:absolute;top:1011px;left:108px;white-space:nowrap" class="ft213">crewmember&#160;fatigue&#160;levels,&#160;based&#160;on&#160;scientific&#160;understanding&#160;of&#160;the&#160;factors&#160;contributing&#160;to&#160;fatigue.&#160;All&#160;bio-<br/>mathematical&#160;models&#160;have&#160;limitations&#160;that&#160;need&#160;to&#160;be&#160;understood&#160;for&#160;their&#160;appropriate&#160;use&#160;in&#160;an&#160;FRMS.&#160;An&#160;<br/>optional&#160;tool&#160;(not&#160;a&#160;requirement)&#160;for&#160;predictive&#160;fatigue&#160;hazard&#160;identification&#160;(ICAO&#160;Annex&#160;6,&#160;Part&#160;1,&#160;Appendix&#160;8,&#160;<br/>Section&#160;2.1.)</p>
+<p style="position:absolute;top:1065px;left:183px;white-space:nowrap" class="ft211">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft30{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft31{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft32{font-size:14px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft33{font-size:14px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page3-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc003.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft30">&#160;</p>
+<p style="position:absolute;top:1120px;left:762px;white-space:nowrap" class="ft30">Page&#160;3&#160;</p>
+<p style="position:absolute;top:112px;left:108px;white-space:nowrap" class="ft31">Within&#160;the&#160;context&#160;of&#160;scheduling,&#160;BFMs&#160;can&#160;be&#160;put&#160;to&#160;various&#160;uses,&#160;as&#160;described&#160;below.&#160;&#160;</p>
+<p style="position:absolute;top:150px;left:165px;white-space:nowrap" class="ft32">2.1.1.</p>
+<p style="position:absolute;top:146px;left:206px;white-space:nowrap" class="ft33"><b>&#160;</b></p>
+<p style="position:absolute;top:150px;left:216px;white-space:nowrap" class="ft32">Comparisons&#160;of&#160;work&#160;schedules&#160;&#160;</p>
+<p style="position:absolute;top:172px;left:162px;white-space:nowrap" class="ft31">BFMs&#160;&#160;are&#160;&#160;particularly&#160;&#160;well&#160;&#160;suited&#160;&#160;for&#160;&#160;performing&#160;&#160;comparisons&#160;&#160;of&#160;&#160;alternative&#160;&#160;work&#160;&#160;schedules&#160;</p>
+<p style="position:absolute;top:195px;left:162px;white-space:nowrap" class="ft31">because&#160;&#160;the&#160;&#160;strongest&#160;&#160;scientific&#160;&#160;basis&#160;&#160;of&#160;&#160;fatigue&#160;&#160;models&#160;&#160;is&#160;&#160;that&#160;&#160;they&#160;&#160;capture&#160;&#160;important&#160;&#160;fatigue&#160;</p>
+<p style="position:absolute;top:218px;left:162px;white-space:nowrap" class="ft31">trends,&#160;&#160;rather&#160;&#160;than&#160;&#160;predicting&#160;&#160;absolute&#160;&#160;values&#160;&#160;of&#160;&#160;error&#160;&#160;or&#160;&#160;accident&#160;&#160;probabilities.&#160;&#160;The&#160;&#160;models&#160;</p>
+<p style="position:absolute;top:242px;left:162px;white-space:nowrap" class="ft31">typically&#160;&#160;provide&#160;&#160;an&#160;&#160;estimate&#160;&#160;of&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;over&#160;&#160;time,&#160;&#160;which&#160;&#160;may&#160;&#160;be&#160;&#160;examined&#160;&#160;to&#160;&#160;identify&#160;</p>
+<p style="position:absolute;top:265px;left:162px;white-space:nowrap" class="ft31">periods&#160;&#160;of&#160;&#160;high&#160;&#160;risk&#160;&#160;and&#160;&#160;to&#160;&#160;compare&#160;&#160;and&#160;&#160;evaluate&#160;&#160;different&#160;&#160;scheduling&#160;&#160;options.&#160;&#160;Schedules&#160;&#160;can&#160;</p>
+<p style="position:absolute;top:288px;left:162px;white-space:nowrap" class="ft31">then&#160;&#160;be&#160;&#160;varied&#160;&#160;to&#160;&#160;optimise&#160;&#160;different&#160;&#160;criteria&#160;&#160;to&#160;&#160;maximise&#160;&#160;overall&#160;&#160;efficiency&#160;&#160;while&#160;&#160;reducing&#160;&#160;risk&#160;</p>
+<p style="position:absolute;top:311px;left:162px;white-space:nowrap" class="ft31">exposure&#160;&#160;due&#160;&#160;to&#160;&#160;fatigue.&#160;&#160;In&#160;&#160;aviation,&#160;the&#160;&#160;determination&#160;&#160;of&#160;optimal&#160;&#160;departure&#160;&#160;time&#160;&#160;and&#160;&#160;layover&#160;</p>
+<p style="position:absolute;top:334px;left:162px;white-space:nowrap" class="ft31">length&#160;for&#160;the&#160;scheduling&#160;of&#160;Ultra&#160;Long&#160;Range&#160;flight&#160;operations&#160;has&#160;demonstrated&#160;the&#160;usefulness&#160;</p>
+<p style="position:absolute;top:357px;left:162px;white-space:nowrap" class="ft31">of&#160;biomathematical&#160;models&#160;for&#160;this&#160;purpose.&#160;&#160;</p>
+<p style="position:absolute;top:395px;left:162px;white-space:nowrap" class="ft31">Schedule&#160;&#160;comparisons&#160;&#160;can&#160;&#160;be&#160;&#160;performed&#160;&#160;for&#160;&#160;both&#160;&#160;future&#160;&#160;planned&#160;&#160;schedules&#160;&#160;(forward&#160;</p>
+<p style="position:absolute;top:419px;left:162px;white-space:nowrap" class="ft31">scheduling)&#160;&#160;and&#160;&#160;to&#160;&#160;assess&#160;&#160;the&#160;&#160;changes&#160;&#160;in&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;relating&#160;&#160;to&#160;&#160;non-scheduled&#160;&#160;or&#160;&#160;irregular&#160;</p>
+<p style="position:absolute;top:442px;left:162px;white-space:nowrap" class="ft31">operations,&#160;&#160;such&#160;&#160;as&#160;&#160;those&#160;&#160;resulting&#160;&#160;from&#160;&#160;unforeseen&#160;&#160;operational&#160;&#160;requirements&#160;&#160;and/or&#160;</p>
+<p style="position:absolute;top:465px;left:162px;white-space:nowrap" class="ft31">unplanned&#160;shift&#160;changes.&#160;This&#160;may&#160;involve&#160;dynamic&#160;monitoring&#160;of&#160;rosters&#160;to&#160;alert&#160;schedulers&#160;to&#160;</p>
+<p style="position:absolute;top:488px;left:162px;white-space:nowrap" class="ft31">elevated&#160;fatigue&#160;risks&#160;associated&#160;with&#160;proposed&#160;or&#160;enforced&#160;changes.&#160;&#160;</p>
+<p style="position:absolute;top:527px;left:165px;white-space:nowrap" class="ft32">2.1.2.</p>
+<p style="position:absolute;top:523px;left:206px;white-space:nowrap" class="ft33"><b>&#160;</b></p>
+<p style="position:absolute;top:527px;left:216px;white-space:nowrap" class="ft32">Identification&#160;of&#160;vulnerabilities&#160;within&#160;schedules&#160;&#160;</p>
+<p style="position:absolute;top:548px;left:162px;white-space:nowrap" class="ft31">BFMs&#160;&#160;can&#160;&#160;also&#160;&#160;be&#160;&#160;used&#160;&#160;to&#160;&#160;identify&#160;&#160;high-risk&#160;&#160;fatigue&#160;&#160;vulnerabilities&#160;&#160;within&#160;&#160;existing&#160;&#160;flight&#160;&#160;crew&#160;</p>
+<p style="position:absolute;top:572px;left:162px;white-space:nowrap" class="ft31">schedules&#160;&#160;to&#160;&#160;provide&#160;&#160;a&#160;&#160;focus&#160;&#160;for&#160;&#160;mitigation&#160;&#160;strategies.&#160;&#160;Given&#160;&#160;a&#160;&#160;roster&#160;&#160;with&#160;&#160;fixed&#160;&#160;flight&#160;&#160;times,&#160;</p>
+<p style="position:absolute;top:595px;left:162px;white-space:nowrap" class="ft31">predictions&#160;&#160;of&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;can&#160;&#160;highlight&#160;&#160;operational&#160;&#160;periods&#160;&#160;where&#160;&#160;elevated&#160;&#160;fatigue&#160;&#160;levels&#160;&#160;may&#160;</p>
+<p style="position:absolute;top:618px;left:162px;white-space:nowrap" class="ft31">coincide&#160;with&#160;critical&#160;tasks.&#160;Mitigation&#160;strategies&#160;for&#160;crew&#160;members&#160;may&#160;then&#160;be&#160;encouraged&#160;to&#160;</p>
+<p style="position:absolute;top:641px;left:162px;white-space:nowrap" class="ft31">assist&#160;with&#160;the&#160;management&#160;of&#160;these&#160;high&#160;risk&#160;periods,&#160;including,&#160;crew&#160;augmentation,&#160;extra&#160;rest&#160;</p>
+<p style="position:absolute;top:665px;left:162px;white-space:nowrap" class="ft31">time,&#160;strategic&#160;caffeine&#160;consumption&#160;or&#160;other&#160;fatigue-risk&#160;management&#160;actions.&#160;&#160;</p>
+<p style="position:absolute;top:703px;left:165px;white-space:nowrap" class="ft32">2.1.3.</p>
+<p style="position:absolute;top:699px;left:206px;white-space:nowrap" class="ft33"><b>&#160;</b></p>
+<p style="position:absolute;top:703px;left:216px;white-space:nowrap" class="ft32">Evaluation&#160;of&#160;rosters&#160;that&#160;extend&#160;beyond&#160;prescriptive&#160;limits&#160;&#160;</p>
+<p style="position:absolute;top:725px;left:162px;white-space:nowrap" class="ft31">BFMs,&#160;&#160;as&#160;&#160;part&#160;&#160;of&#160;&#160;a&#160;&#160;holistic&#160;&#160;FRMS,&#160;&#160;can&#160;&#160;also&#160;&#160;contribute&#160;&#160;to&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;assessments&#160;&#160;during&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:748px;left:162px;white-space:nowrap" class="ft31">design&#160;of&#160;schedules&#160;and&#160;fatigue&#160;mitigation&#160;strategies&#160;for&#160;crew&#160;rosters&#160;that&#160;extend&#160;working&#160;hours&#160;</p>
+<p style="position:absolute;top:771px;left:162px;white-space:nowrap" class="ft31">beyond&#160;prescriptive&#160;Flight&#160;and&#160;Duty&#160;Time&#160;Limitations&#160;(FTL),&#160;or&#160;to&#160;evaluate&#160;the&#160;impact&#160;of&#160;reducing&#160;</p>
+<p style="position:absolute;top:794px;left:162px;white-space:nowrap" class="ft31">crew&#160;&#160;rest&#160;&#160;periods.&#160;&#160;Specifically,&#160;&#160;BFMs&#160;&#160;can&#160;&#160;help&#160;&#160;evaluate&#160;&#160;the&#160;&#160;safety&#160;&#160;risk&#160;&#160;of&#160;&#160;a&#160;&#160;flight&#160;&#160;schedule&#160;&#160;or&#160;</p>
+<p style="position:absolute;top:817px;left:162px;white-space:nowrap" class="ft31">crew&#160;roster&#160;that&#160;falls&#160;outside&#160;of&#160;prescriptive&#160;FTL&#160;against&#160;a&#160;scientifically&#160;based&#160;standard.&#160;In&#160;such&#160;</p>
+<p style="position:absolute;top:841px;left:162px;white-space:nowrap" class="ft31">cases,&#160;the&#160;data&#160;from&#160;models&#160;should&#160;be&#160;supplemented&#160;with&#160;operational&#160;validation&#160;data&#160;to&#160;further&#160;</p>
+<p style="position:absolute;top:864px;left:162px;white-space:nowrap" class="ft31">support&#160;and&#160;justify&#160;this&#160;evaluation.&#160;One&#160;approach&#160;may&#160;include&#160;comparing&#160;predicted&#160;risk&#160;scores&#160;</p>
+<p style="position:absolute;top:887px;left:162px;white-space:nowrap" class="ft31">of&#160;&#160;newly&#160;&#160;considered&#160;&#160;rosters&#160;&#160;against&#160;&#160;benchmark&#160;&#160;risk&#160;&#160;scores&#160;&#160;of&#160;&#160;rosters&#160;&#160;with&#160;&#160;good&#160;&#160;safety&#160;&#160;records&#160;</p>
+<p style="position:absolute;top:910px;left:162px;white-space:nowrap" class="ft31">(e.g.,&#160;&#160;certain&#160;&#160;long&#160;&#160;range&#160;&#160;flights),&#160;&#160;provided&#160;&#160;suitable&#160;&#160;benchmark&#160;&#160;rosters&#160;&#160;can&#160;&#160;be&#160;&#160;identified,&#160;&#160;using&#160;</p>
+<p style="position:absolute;top:933px;left:162px;white-space:nowrap" class="ft31">the&#160;same&#160;relative&#160;comparison&#160;strategy&#160;described&#160;in&#160;the&#160;previous&#160;point.&#160;This&#160;determination&#160;may&#160;</p>
+<p style="position:absolute;top:956px;left:162px;white-space:nowrap" class="ft31">be&#160;&#160;used,&#160;&#160;in&#160;&#160;conjunction&#160;&#160;with&#160;&#160;other&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;management&#160;&#160;strategies,&#160;&#160;to&#160;&#160;inform&#160;&#160;fatigue&#160;&#160;risk&#160;</p>
+<p style="position:absolute;top:980px;left:162px;white-space:nowrap" class="ft31">assessments&#160;&#160;of&#160;&#160;alternative&#160;&#160;work&#160;&#160;schedules.&#160;&#160;This&#160;&#160;particular&#160;&#160;application&#160;&#160;may&#160;&#160;be&#160;&#160;of&#160;&#160;use&#160;&#160;to&#160;&#160;both&#160;</p>
+<p style="position:absolute;top:1003px;left:162px;white-space:nowrap" class="ft31">aviation&#160;&#160;schedulers,&#160;&#160;and&#160;&#160;to&#160;&#160;regulators&#160;&#160;in&#160;&#160;assessing&#160;&#160;the&#160;&#160;suitability&#160;&#160;of&#160;&#160;newly&#160;&#160;proposed&#160;&#160;roster&#160;</p>
+<p style="position:absolute;top:1026px;left:162px;white-space:nowrap" class="ft31">patterns.&#160;&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft40{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft41{font-size:14px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft42{font-size:14px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+	.ft43{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft44{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft45{font-size:17px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+	.ft46{font-size:8px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft47{font-size:7px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft48{font-size:12px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft49{font-size:12px;font-family:GOCSXU+TT15At00;color:#000000;}
+	.ft410{font-size:12px;line-height:18px;font-family:DXGYRQ+TT159t00;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page4-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc004.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft40">&#160;</p>
+<p style="position:absolute;top:1120px;left:762px;white-space:nowrap" class="ft40">Page&#160;4&#160;</p>
+<p style="position:absolute;top:112px;left:165px;white-space:nowrap" class="ft41">2.1.4.</p>
+<p style="position:absolute;top:108px;left:206px;white-space:nowrap" class="ft42"><b>&#160;</b></p>
+<p style="position:absolute;top:112px;left:216px;white-space:nowrap" class="ft41">Optimising&#160;crew&#160;pairings&#160;and&#160;bid&#160;lines&#160;</p>
+<p style="position:absolute;top:134px;left:162px;white-space:nowrap" class="ft43">Some&#160;biomathematical&#160;models&#160;have&#160;the&#160;capacity&#160;to&#160;incorporate&#160;instant&#160;fatigue&#160;risk&#160;assessments&#160;</p>
+<p style="position:absolute;top:157px;left:162px;white-space:nowrap" class="ft43">during&#160;schedule&#160;building&#160;to&#160;evaluate&#160;different&#160;crew&#160;pairing&#160;options.&#160;Pairing&#160;options&#160;can&#160;then&#160;be&#160;</p>
+<p style="position:absolute;top:180px;left:162px;white-space:nowrap" class="ft43">evaluated&#160;and&#160;compared&#160;to&#160;select&#160;those&#160;that&#160;avoid&#160;excessive&#160;fatigue&#160;risk.&#160;Similarly,&#160;some&#160;models&#160;</p>
+<p style="position:absolute;top:203px;left:162px;white-space:nowrap" class="ft43">can&#160;&#160;assist&#160;&#160;with&#160;&#160;decisions&#160;&#160;regarding&#160;&#160;bid&#160;&#160;lines&#160;&#160;by&#160;&#160;comparing&#160;&#160;and&#160;&#160;evaluating&#160;&#160;different&#160;&#160;scheduling&#160;</p>
+<p style="position:absolute;top:227px;left:162px;white-space:nowrap" class="ft43">options.&#160;&#160;</p>
+<p style="position:absolute;top:269px;left:109px;white-space:nowrap" class="ft44">2.2.</p>
+<p style="position:absolute;top:264px;left:141px;white-space:nowrap" class="ft45"><b>&#160;</b></p>
+<p style="position:absolute;top:269px;left:142px;white-space:nowrap" class="ft44">Non-scheduled&#160;/&#160;Irregular&#160;Operations&#160;&#160;</p>
+<p style="position:absolute;top:294px;left:108px;white-space:nowrap" class="ft43">In&#160;addition&#160;to&#160;assisting&#160;with&#160;various&#160;aspects&#160;of&#160;forward&#160;scheduling,&#160;BFMs&#160;can&#160;also&#160;be&#160;applied&#160;to&#160;evaluate&#160;</p>
+<p style="position:absolute;top:317px;left:108px;white-space:nowrap" class="ft43">fatigue&#160;risks&#160;associated&#160;with&#160;unplanned&#160;changes&#160;to&#160;operating&#160;requirements&#160;and/or&#160;original&#160;crew&#160;rosters.&#160;&#160;</p>
+<p style="position:absolute;top:360px;left:109px;white-space:nowrap" class="ft44">2.3.</p>
+<p style="position:absolute;top:355px;left:141px;white-space:nowrap" class="ft45"><b>&#160;</b></p>
+<p style="position:absolute;top:360px;left:142px;white-space:nowrap" class="ft44">Work&#160;/&#160;Rest&#160;Cycles&#160;in&#160;Augmented&#160;Crew&#160;&#160;</p>
+<p style="position:absolute;top:384px;left:108px;white-space:nowrap" class="ft43">BFMs&#160;may&#160;&#160;be&#160;&#160;used&#160;to&#160;&#160;determine&#160;&#160;the&#160;optimal&#160;&#160;work&#160;&#160;/&#160;&#160;rest&#160;&#160;cycles&#160;&#160;for&#160;&#160;augmented&#160;&#160;flight&#160;&#160;crew&#160;&#160;operations,&#160;</p>
+<p style="position:absolute;top:408px;left:108px;white-space:nowrap" class="ft43">where&#160;&#160;the&#160;&#160;scheduled&#160;&#160;flight&#160;&#160;duty&#160;&#160;period&#160;&#160;can&#160;&#160;be&#160;&#160;extended&#160;&#160;through&#160;&#160;the&#160;&#160;deployment&#160;&#160;of&#160;&#160;additional&#160;&#160;crew&#160;</p>
+<p style="position:absolute;top:431px;left:108px;white-space:nowrap" class="ft43">members,&#160;allowing&#160;all&#160;crew&#160;the&#160;opportunity&#160;to&#160;obtain&#160;scheduled&#160;in-flight&#160;rest.&#160;&#160;</p>
+<p style="position:absolute;top:473px;left:109px;white-space:nowrap" class="ft44">2.4.</p>
+<p style="position:absolute;top:468px;left:141px;white-space:nowrap" class="ft45"><b>&#160;</b></p>
+<p style="position:absolute;top:473px;left:142px;white-space:nowrap" class="ft44">Light&#160;Exposure&#160;and&#160;Napping&#160;Countermeasures&#160;&#160;</p>
+<p style="position:absolute;top:498px;left:108px;white-space:nowrap" class="ft43">Another&#160;potential&#160;application&#160;of&#160;BFMs&#160;is&#160;to&#160;evaluate&#160;the&#160;opportunity&#160;for&#160;countermeasures&#160;such&#160;as&#160;light&#160;</p>
+<p style="position:absolute;top:521px;left:108px;white-space:nowrap" class="ft43">exposure</p>
+<p style="position:absolute;top:518px;left:170px;white-space:nowrap" class="ft46">2</p>
+<p style="position:absolute;top:521px;left:175px;white-space:nowrap" class="ft43">,&#160;at-home&#160;sleep&#160;timing&#160;or&#160;napping&#160;to&#160;reduce&#160;the&#160;effects&#160;of&#160;fatigue.&#160;Exploratory&#160;scenarios&#160;may&#160;</p>
+<p style="position:absolute;top:545px;left:108px;white-space:nowrap" class="ft43">be&#160;evaluated&#160;through&#160;BFMs&#160;to&#160;test&#160;the&#160;potential&#160;impact&#160;of&#160;various&#160;countermeasures&#160;on&#160;fatigue&#160;risk&#160;and&#160;</p>
+<p style="position:absolute;top:568px;left:108px;white-space:nowrap" class="ft43">provide&#160;guidance&#160;on&#160;which&#160;countermeasures&#160;to&#160;implement,&#160;and&#160;when&#160;to&#160;use&#160;them.&#160;</p>
+<p style="position:absolute;top:606px;left:108px;white-space:nowrap" class="ft43">Decisions&#160;&#160;regarding&#160;&#160;the&#160;&#160;appropriateness&#160;&#160;of&#160;&#160;various&#160;&#160;countermeasures&#160;&#160;must&#160;&#160;take&#160;&#160;into&#160;&#160;account&#160;&#160;their&#160;</p>
+<p style="position:absolute;top:629px;left:108px;white-space:nowrap" class="ft43">operational&#160;objectives.&#160;For&#160;instance,&#160;in&#160;applications&#160;requiring&#160;a&#160;high&#160;level&#160;performance&#160;at&#160;certain&#160;critical&#160;</p>
+<p style="position:absolute;top:652px;left:108px;white-space:nowrap" class="ft43">times,&#160;countermeasures&#160;will&#160;be&#160;aimed&#160;at&#160;maximising&#160;performance&#160;at&#160;those&#160;times,&#160;whereas&#160;applications&#160;</p>
+<p style="position:absolute;top:676px;left:108px;white-space:nowrap" class="ft43">designed&#160;&#160;to&#160;&#160;reduce&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;through&#160;&#160;napping&#160;&#160;may&#160;&#160;be&#160;&#160;aimed&#160;&#160;at&#160;&#160;optimising&#160;&#160;the&#160;&#160;timing&#160;&#160;of&#160;&#160;napping&#160;</p>
+<p style="position:absolute;top:699px;left:108px;white-space:nowrap" class="ft43">opportunities.&#160;&#160;The&#160;&#160;intended&#160;&#160;operational&#160;&#160;objectives&#160;&#160;of&#160;&#160;fatigue&#160;&#160;countermeasures&#160;&#160;may&#160;&#160;therefore&#160;&#160;vary&#160;</p>
+<p style="position:absolute;top:722px;left:108px;white-space:nowrap" class="ft43">depending&#160;on&#160;the&#160;type&#160;of&#160;schedule&#160;involved.&#160;</p>
+<p style="position:absolute;top:760px;left:108px;white-space:nowrap" class="ft43">The&#160;&#160;evaluation&#160;&#160;of&#160;&#160;countermeasures&#160;&#160;using&#160;&#160;biomathematical&#160;&#160;models&#160;&#160;may&#160;&#160;be&#160;&#160;performed&#160;&#160;for&#160;&#160;several&#160;</p>
+<p style="position:absolute;top:783px;left:108px;white-space:nowrap" class="ft43">purposes.&#160;&#160;One&#160;&#160;is&#160;&#160;to&#160;&#160;improve&#160;&#160;work&#160;&#160;schedules&#160;&#160;that,&#160;&#160;without&#160;&#160;countermeasures,&#160;&#160;may&#160;&#160;result&#160;&#160;in&#160;&#160;degraded&#160;</p>
+<p style="position:absolute;top:806px;left:108px;white-space:nowrap" class="ft43">alertness&#160;&#160;or&#160;&#160;performance&#160;&#160;during&#160;&#160;scheduled&#160;&#160;work&#160;&#160;times.&#160;&#160;The&#160;&#160;capacity&#160;&#160;of&#160;&#160;such&#160;&#160;models&#160;&#160;to&#160;&#160;predict&#160;</p>
+<p style="position:absolute;top:829px;left:108px;white-space:nowrap" class="ft43">fluctuations&#160;&#160;in&#160;&#160;worker&#160;&#160;alertness&#160;&#160;and&#160;&#160;performance&#160;&#160;is&#160;&#160;key&#160;&#160;to&#160;&#160;determining&#160;&#160;the&#160;&#160;optimal&#160;&#160;times&#160;&#160;to&#160;&#160;apply&#160;</p>
+<p style="position:absolute;top:853px;left:108px;white-space:nowrap" class="ft43">countermeasures&#160;to&#160;prevent&#160;performance-impairing&#160;fatigue.&#160;&#160;</p>
+<p style="position:absolute;top:891px;left:108px;white-space:nowrap" class="ft43">Another&#160;&#160;purpose&#160;&#160;is&#160;&#160;to&#160;enable&#160;&#160;appropriate&#160;&#160;countermeasures,&#160;&#160;such&#160;as&#160;those&#160;&#160;relating&#160;&#160;to&#160;&#160;in-flight&#160;&#160;napping&#160;</p>
+<p style="position:absolute;top:914px;left:108px;white-space:nowrap" class="ft43">(Controlled&#160;&#160;Rest&#160;on&#160;the&#160;&#160;Flight&#160;&#160;Deck)&#160;or&#160;&#160;light&#160;&#160;exposure,&#160;&#160;to&#160;&#160;be&#160;&#160;integrated&#160;&#160;into&#160;operational&#160;&#160;procedures&#160;or&#160;</p>
+<p style="position:absolute;top:937px;left:108px;white-space:nowrap" class="ft43">guidance&#160;material.&#160;Organisations&#160;can&#160;use&#160;the&#160;results&#160;of&#160;evaluations&#160;of&#160;countermeasure&#160;effectiveness&#160;to&#160;</p>
+<p style="position:absolute;top:960px;left:108px;white-space:nowrap" class="ft43">guide&#160;&#160;organisational&#160;&#160;decisions&#160;&#160;about&#160;&#160;countermeasure&#160;&#160;implementation.&#160;&#160;For&#160;&#160;instance,&#160;&#160;the&#160;&#160;use&#160;&#160;of&#160;&#160;a&#160;</p>
+<p style="position:absolute;top:990px;left:108px;white-space:nowrap" class="ft43">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;</p>
+<p style="position:absolute;top:1006px;left:108px;white-space:nowrap" class="ft47">2</p>
+<p style="position:absolute;top:1010px;left:113px;white-space:nowrap" class="ft48">&#160;Please&#160;note&#160;that&#160;the&#160;only&#160;model&#160;sophisticated&#160;enough&#160;to&#160;evaluate&#160;the&#160;effects&#160;of&#160;light&#160;is&#160;the&#160;Kronauer-Jewett&#160;</p>
+<p style="position:absolute;top:1029px;left:108px;white-space:nowrap" class="ft410">Interactive&#160;Neurobehavioral&#160;Model&#160;(INN).&#160;The&#160;INN&#160;was&#160;evaluated&#160;in&#160;the&#160;2010&#160;CASA&#160;paper,&#160;but&#160;excluded&#160;from&#160;the&#160;<br/>2014&#160;CASA&#160;paper&#160;</p>
+<p style="position:absolute;top:1047px;left:216px;white-space:nowrap" class="ft49">‘as&#160;it&#160;is&#160;more&#160;applicable&#160;for&#160;research&#160;purposes&#160;and&#160;is&#160;not&#160;currently&#160;available&#160;for&#160;operational&#160;use&#160;</p>
+<p style="position:absolute;top:1065px;left:108px;white-space:nowrap" class="ft48">(in&#160;aviation&#160;environments)</p>
+<p style="position:absolute;top:1066px;left:269px;white-space:nowrap" class="ft49">.’</p>
+<p style="position:absolute;top:1065px;left:276px;white-space:nowrap" class="ft48">&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft50{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft51{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft52{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft53{font-size:17px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+	.ft54{font-size:14px;font-family:GOCSXU+TT15At00;color:#000000;}
+	.ft55{font-size:8px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft56{font-size:7px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft57{font-size:12px;font-family:DXGYRQ+TT159t00;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page5-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc005.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft50">&#160;</p>
+<p style="position:absolute;top:1120px;left:762px;white-space:nowrap" class="ft50">Page&#160;5&#160;</p>
+<p style="position:absolute;top:112px;left:108px;white-space:nowrap" class="ft51">biomathematical&#160;&#160;model&#160;&#160;was&#160;&#160;seen&#160;&#160;as&#160;&#160;very&#160;&#160;useful&#160;&#160;to&#160;&#160;determine&#160;&#160;the&#160;&#160;optimal&#160;&#160;rest&#160;&#160;distribution&#160;&#160;and&#160;&#160;timing&#160;</p>
+<p style="position:absolute;top:135px;left:108px;white-space:nowrap" class="ft51">among&#160;crews&#160;in&#160;Ultra&#160;Long&#160;Range&#160;(ULR)&#160;flights.&#160;</p>
+<p style="position:absolute;top:173px;left:108px;white-space:nowrap" class="ft51">Evaluations&#160;of&#160;countermeasure&#160;effectiveness&#160;can&#160;also&#160;be&#160;used&#160;to&#160;complement&#160;educational&#160;material&#160;for&#160;</p>
+<p style="position:absolute;top:196px;left:108px;white-space:nowrap" class="ft51">crew,&#160;&#160;by&#160;&#160;providing&#160;&#160;insight&#160;&#160;into&#160;&#160;how&#160;&#160;the&#160;&#160;implementation&#160;&#160;of&#160;&#160;fatigue&#160;&#160;countermeasures&#160;&#160;of&#160;&#160;different&#160;&#160;types&#160;</p>
+<p style="position:absolute;top:219px;left:108px;white-space:nowrap" class="ft51">and&#160;&#160;at&#160;&#160;different&#160;&#160;times&#160;&#160;affects&#160;&#160;overall&#160;&#160;fatigue&#160;&#160;risk.&#160;&#160;The&#160;&#160;results&#160;&#160;of&#160;&#160;such&#160;&#160;analyses&#160;&#160;can&#160;&#160;be&#160;&#160;used&#160;&#160;to&#160;&#160;educate&#160;</p>
+<p style="position:absolute;top:243px;left:108px;white-space:nowrap" class="ft51">crew&#160;on&#160;how&#160;to&#160;optimise&#160;and&#160;manage&#160;fatigue&#160;risk&#160;mitigation&#160;strategies.&#160;&#160;</p>
+<p style="position:absolute;top:285px;left:109px;white-space:nowrap" class="ft52">2.5.</p>
+<p style="position:absolute;top:280px;left:141px;white-space:nowrap" class="ft53"><b>&#160;</b></p>
+<p style="position:absolute;top:285px;left:142px;white-space:nowrap" class="ft52">Individual&#160;Fatigue&#160;Prediction&#160;&#160;</p>
+<p style="position:absolute;top:310px;left:108px;white-space:nowrap" class="ft51">The&#160;effects&#160;of&#160;sleep&#160;loss&#160;vary&#160;considerably&#160;among&#160;individuals.&#160;A&#160;potential&#160;application&#160;of&#160;fatigue&#160;models&#160;</p>
+<p style="position:absolute;top:333px;left:108px;white-space:nowrap" class="ft51">would&#160;be&#160;to&#160;provide&#160;guidance&#160;to&#160;individual&#160;crew&#160;members&#160;on&#160;their&#160;expected&#160;level&#160;of&#160;fatigue&#160;at&#160;a&#160;given&#160;</p>
+<p style="position:absolute;top:356px;left:108px;white-space:nowrap" class="ft51">time.&#160;This&#160;information&#160;could&#160;be&#160;used&#160;to&#160;improve&#160;sleep&#160;management&#160;strategies&#160;and&#160;to&#160;apply&#160;personalised&#160;</p>
+<p style="position:absolute;top:379px;left:108px;white-space:nowrap" class="ft51">fatigue&#160;&#160;countermeasures.&#160;&#160;Unfortunately&#160;&#160;however,&#160;&#160;currently&#160;&#160;available&#160;&#160;BFMs&#160;&#160;tend&#160;&#160;to&#160;&#160;be&#160;&#160;based&#160;&#160;on&#160;</p>
+<p style="position:absolute;top:402px;left:108px;white-space:nowrap" class="ft51">averaged&#160;&#160;fatigue&#160;&#160;ratings&#160;&#160;and&#160;&#160;are&#160;&#160;restricted&#160;&#160;therefore&#160;&#160;to&#160;&#160;predicting&#160;&#160;risk&#160;&#160;probabilities&#160;&#160;for&#160;&#160;a&#160;&#160;target&#160;</p>
+<p style="position:absolute;top:426px;left:108px;white-space:nowrap" class="ft51">population&#160;&#160;average&#160;&#160;rather&#160;&#160;than&#160;&#160;the&#160;&#160;instantaneous&#160;&#160;fatigue&#160;&#160;levels&#160;&#160;of&#160;&#160;a&#160;&#160;specific&#160;&#160;individual.&#160;&#160;However,&#160;</p>
+<p style="position:absolute;top:449px;left:108px;white-space:nowrap" class="ft51">related&#160;&#160;research&#160;&#160;has&#160;&#160;demonstrated&#160;&#160;that&#160;&#160;the&#160;&#160;3-process&#160;&#160;model&#160;&#160;has&#160;&#160;quite&#160;&#160;high&#160;&#160;accuracy&#160;&#160;in&#160;&#160;predicting&#160;</p>
+<p style="position:absolute;top:472px;left:108px;white-space:nowrap" class="ft51">individual&#160;sleepiness&#160;and&#160;sleep&#160;timing.&#160;&#160;</p>
+<p style="position:absolute;top:510px;left:108px;white-space:nowrap" class="ft51">Recent&#160;technological&#160;developments&#160;have&#160;also&#160;seen&#160;the&#160;emergence&#160;of&#160;a&#160;range&#160;of&#160;applications&#160;(apps)&#160;for&#160;</p>
+<p style="position:absolute;top:533px;left:108px;white-space:nowrap" class="ft51">use&#160;with&#160;rapidly&#160;evolving&#160;‘smartphone’&#160;technology.&#160;Broader&#160;research&#160;has&#160;included&#160;the&#160;development&#160;of&#160;</p>
+<p style="position:absolute;top:557px;left:108px;white-space:nowrap" class="ft51">smartphone&#160;&#160;apps&#160;&#160;for&#160;&#160;monitoring&#160;&#160;motor&#160;&#160;vehicle&#160;&#160;driver&#160;&#160;alertness&#160;&#160;and&#160;&#160;distraction&#160;&#160;that&#160;&#160;issue&#160;&#160;warnings&#160;&#160;to&#160;</p>
+<p style="position:absolute;top:580px;left:108px;white-space:nowrap" class="ft51">drivers&#160;if&#160;their&#160;safety&#160;is&#160;compromised,&#160;and&#160;for&#160;both&#160;predicting&#160;sleep&#160;quality&#160;and&#160;monitoring&#160;sleep&#160;quality&#160;</p>
+<p style="position:absolute;top:603px;left:108px;white-space:nowrap" class="ft51">via&#160;the&#160;use&#160;of&#160;embedded&#160;mobile&#160;phone&#160;technology.&#160;Similar&#160;developments&#160;are&#160;underway&#160;for&#160;the&#160;aviation&#160;</p>
+<p style="position:absolute;top:626px;left:108px;white-space:nowrap" class="ft51">domain,&#160;&#160;with&#160;one&#160;&#160;of&#160;&#160;the&#160;&#160;selected&#160;models&#160;&#160;having&#160;already&#160;&#160;developed&#160;&#160;and&#160;&#160;released&#160;&#160;quite&#160;a&#160;&#160;sophisticated&#160;</p>
+<p style="position:absolute;top:649px;left:108px;white-space:nowrap" class="ft51">alertness&#160;and&#160;fatigue&#160;management&#160;app&#160;for&#160;use&#160;across&#160;</p>
+<p style="position:absolute;top:650px;left:471px;white-space:nowrap" class="ft54">iOS&#160;</p>
+<p style="position:absolute;top:649px;left:496px;white-space:nowrap" class="ft51">platforms&#160;by&#160;professional&#160;flight&#160;crew.</p>
+<p style="position:absolute;top:646px;left:746px;white-space:nowrap" class="ft55">3</p>
+<p style="position:absolute;top:649px;left:751px;white-space:nowrap" class="ft51">&#160;</p>
+<p style="position:absolute;top:687px;left:108px;white-space:nowrap" class="ft51">While&#160;&#160;the&#160;&#160;currently&#160;&#160;available&#160;&#160;app&#160;&#160;is&#160;&#160;able&#160;&#160;to&#160;&#160;take&#160;&#160;account&#160;&#160;of&#160;&#160;a&#160;&#160;range&#160;of&#160;&#160;individual&#160;&#160;and&#160;&#160;contextual&#160;&#160;input&#160;</p>
+<p style="position:absolute;top:710px;left:108px;white-space:nowrap" class="ft51">variables,&#160;&#160;and&#160;&#160;this&#160;&#160;technology&#160;&#160;and&#160;&#160;similar&#160;&#160;applications&#160;&#160;will&#160;&#160;continue&#160;&#160;to&#160;&#160;evolve&#160;&#160;and&#160;&#160;be&#160;&#160;developed,&#160;&#160;it&#160;</p>
+<p style="position:absolute;top:734px;left:108px;white-space:nowrap" class="ft51">should&#160;be&#160;noted&#160;that&#160;such&#160;tools&#160;are&#160;intended&#160;as&#160;an&#160;aid&#160;to&#160;predict&#160;alertness&#160;for&#160;an&#160;“average”&#160;individual,&#160;</p>
+<p style="position:absolute;top:757px;left:108px;white-space:nowrap" class="ft51">under&#160;“typical”&#160;conditions.&#160;&#160;</p>
+<p style="position:absolute;top:795px;left:108px;white-space:nowrap" class="ft51">As&#160;noted&#160;above,&#160;none&#160;of&#160;the&#160;available&#160;biomathematical&#160;models&#160;are&#160;equipped&#160;to&#160;take&#160;into&#160;account&#160;all&#160;the&#160;</p>
+<p style="position:absolute;top:818px;left:108px;white-space:nowrap" class="ft51">numerous&#160;individual&#160;factors&#160;that&#160;may&#160;impact&#160;on&#160;fatigue,&#160;such&#160;as&#160;age,&#160;gender,&#160;lifestyle,&#160;health&#160;status&#160;and&#160;</p>
+<p style="position:absolute;top:841px;left:108px;white-space:nowrap" class="ft51">personality&#160;traits.&#160;Some&#160;of&#160;the&#160;models&#160;do,&#160;nevertheless,&#160;have&#160;the&#160;capacity&#160;to&#160;allow&#160;their&#160;outputs&#160;to&#160;be&#160;</p>
+<p style="position:absolute;top:864px;left:108px;white-space:nowrap" class="ft51">tailored&#160;to&#160;some&#160;degree&#160;to&#160;the&#160;specific&#160;characteristics&#160;of&#160;the&#160;individual&#160;by&#160;incorporating&#160;individual&#160;traits&#160;</p>
+<p style="position:absolute;top:888px;left:108px;white-space:nowrap" class="ft51">or&#160;&#160;characteristics&#160;&#160;as&#160;&#160;optional&#160;&#160;inputs.&#160;&#160;One&#160;&#160;such&#160;&#160;input&#160;&#160;is&#160;&#160;the&#160;&#160;inclusion&#160;&#160;of&#160;&#160;circadian&#160;&#160;chronotype&#160;&#160;in&#160;&#160;some&#160;</p>
+<p style="position:absolute;top:911px;left:108px;white-space:nowrap" class="ft51">models.&#160;Other&#160;inputs&#160;such&#160;as&#160;individual&#160;sleep&#160;need,&#160;habitual&#160;sleep&#160;timing,&#160;and&#160;commuting&#160;time&#160;can&#160;also&#160;</p>
+<p style="position:absolute;top:934px;left:108px;white-space:nowrap" class="ft51">be&#160;incorporated&#160;into&#160;some&#160;models,&#160;with&#160;the&#160;aim&#160;of&#160;providing&#160;fatigue&#160;predictions&#160;with&#160;greater&#160;accuracy&#160;</p>
+<p style="position:absolute;top:957px;left:108px;white-space:nowrap" class="ft51">than&#160;generic&#160;population&#160;average&#160;predictions.&#160;&#160;</p>
+<p style="position:absolute;top:995px;left:108px;white-space:nowrap" class="ft51">Where&#160;knowledge&#160;of&#160;a&#160;specific&#160;individual's&#160;fatigue&#160;state&#160;is&#160;desired,&#160;other&#160;tools&#160;for&#160;direct&#160;assessment&#160;of&#160;</p>
+<p style="position:absolute;top:1018px;left:108px;white-space:nowrap" class="ft51">fatigue&#160;&#160;state,&#160;&#160;such&#160;&#160;as&#160;&#160;neurobehavioral&#160;&#160;tests,&#160;&#160;may&#160;&#160;eventually&#160;&#160;be&#160;&#160;a&#160;&#160;solution.&#160;&#160;Continued&#160;&#160;development&#160;&#160;of&#160;</p>
+<p style="position:absolute;top:1045px;left:108px;white-space:nowrap" class="ft51">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;</p>
+<p style="position:absolute;top:1061px;left:108px;white-space:nowrap" class="ft56">3</p>
+<p style="position:absolute;top:1065px;left:113px;white-space:nowrap" class="ft57">&#160;Please&#160;note&#160;that&#160;there&#160;are&#160;potential&#160;challenges&#160;to&#160;putting&#160;additional&#160;technology&#160;in&#160;the&#160;cockpit.&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft60{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft61{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft62{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft63{font-size:17px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+	.ft64{font-size:8px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft65{font-size:7px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft66{font-size:12px;font-family:DXGYRQ+TT159t00;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page6-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc006.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft60">&#160;</p>
+<p style="position:absolute;top:1120px;left:762px;white-space:nowrap" class="ft60">Page&#160;6&#160;</p>
+<p style="position:absolute;top:112px;left:108px;white-space:nowrap" class="ft61">fatigue&#160;model&#160;individualisation&#160;approaches&#160;may&#160;contribute&#160;to&#160;enhanced&#160;individual&#160;fatigue&#160;prediction&#160;in&#160;</p>
+<p style="position:absolute;top:135px;left:108px;white-space:nowrap" class="ft61">the&#160;future.&#160;For&#160;example,&#160;if&#160;fatigue&#160;or&#160;task&#160;error&#160;measurements&#160;and&#160;sleep&#160;monitoring&#160;data&#160;were&#160;available&#160;</p>
+<p style="position:absolute;top:158px;left:108px;white-space:nowrap" class="ft61">for&#160;specific&#160;individuals,&#160;then&#160;programs&#160;for&#160;providing&#160;individualised&#160;fatigue&#160;predictions&#160;could&#160;be&#160;used&#160;for&#160;</p>
+<p style="position:absolute;top:181px;left:108px;white-space:nowrap" class="ft61">a&#160;&#160;variety&#160;&#160;of&#160;&#160;applications,&#160;&#160;including&#160;&#160;on-line&#160;&#160;fatigue&#160;&#160;monitoring&#160;&#160;and&#160;&#160;as&#160;&#160;an&#160;&#160;educational&#160;&#160;tool&#160;&#160;to&#160;&#160;help&#160;</p>
+<p style="position:absolute;top:204px;left:108px;white-space:nowrap" class="ft61">individuals&#160;&#160;develop&#160;&#160;mitigation&#160;&#160;strategies&#160;&#160;that&#160;&#160;work&#160;&#160;uniquely&#160;&#160;for&#160;&#160;them.&#160;&#160;These&#160;&#160;types&#160;&#160;of&#160;&#160;'individualised'&#160;</p>
+<p style="position:absolute;top:227px;left:108px;white-space:nowrap" class="ft61">programs&#160;may&#160;improve&#160;predictions&#160;for&#160;individuals,&#160;but&#160;the&#160;same&#160;caveat&#160;applies,&#160;that&#160;they&#160;are&#160;only&#160;one&#160;</p>
+<p style="position:absolute;top:251px;left:108px;white-space:nowrap" class="ft61">estimate&#160;of&#160;the&#160;probability&#160;of&#160;fatigue,&#160;not&#160;an&#160;absolute&#160;measure&#160;of&#160;fatigue&#160;risk.&#160;&#160;</p>
+<p style="position:absolute;top:293px;left:109px;white-space:nowrap" class="ft62">2.6.</p>
+<p style="position:absolute;top:288px;left:141px;white-space:nowrap" class="ft63"><b>&#160;</b></p>
+<p style="position:absolute;top:293px;left:142px;white-space:nowrap" class="ft62">Training&#160;&#160;</p>
+<p style="position:absolute;top:318px;left:108px;white-space:nowrap" class="ft61">A&#160;&#160;key&#160;&#160;focus&#160;&#160;in&#160;&#160;managing&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;in&#160;operational&#160;&#160;contexts&#160;&#160;is&#160;education,&#160;&#160;specifically,&#160;&#160;education&#160;&#160;about&#160;</p>
+<p style="position:absolute;top:341px;left:108px;white-space:nowrap" class="ft61">the&#160;&#160;effects&#160;&#160;of&#160;&#160;fatigue</p>
+<p style="position:absolute;top:338px;left:253px;white-space:nowrap" class="ft64">4</p>
+<p style="position:absolute;top:341px;left:258px;white-space:nowrap" class="ft61">,&#160;&#160;the&#160;&#160;causes&#160;&#160;of&#160;&#160;fatigue,&#160;&#160;the&#160;&#160;importance&#160;&#160;of&#160;&#160;effective&#160;&#160;sleep&#160;&#160;and&#160;&#160;good&#160;&#160;sleep&#160;&#160;habits,&#160;</p>
+<p style="position:absolute;top:364px;left:108px;white-space:nowrap" class="ft61">and&#160;the&#160;appropriate&#160;use&#160;of&#160;fatigue&#160;countermeasures.&#160;One&#160;school&#160;of&#160;thought&#160;is&#160;that&#160;all&#160;aviation&#160;industry&#160;</p>
+<p style="position:absolute;top:388px;left:108px;white-space:nowrap" class="ft61">personnel,&#160;including&#160;supervisors,&#160;crewmembers&#160;and&#160;scheduling&#160;staff,&#160;should&#160;be&#160;provided&#160;with&#160;education&#160;</p>
+<p style="position:absolute;top:411px;left:108px;white-space:nowrap" class="ft61">on&#160;&#160;these&#160;&#160;topics&#160;&#160;under&#160;&#160;an&#160;&#160;effective&#160;&#160;FRMS.&#160;&#160;A&#160;&#160;detailed&#160;&#160;understanding&#160;&#160;on&#160;&#160;the&#160;&#160;importance&#160;&#160;of&#160;&#160;quality&#160;&#160;pre-</p>
+<p style="position:absolute;top:434px;left:108px;white-space:nowrap" class="ft61">duty&#160;&#160;sleep,&#160;&#160;on&#160;&#160;the&#160;&#160;effective&#160;&#160;utilisation&#160;&#160;of&#160;&#160;available&#160;&#160;sleep&#160;&#160;opportunities,&#160;&#160;on&#160;&#160;the&#160;&#160;use&#160;&#160;of&#160;&#160;napping&#160;&#160;for&#160;</p>
+<p style="position:absolute;top:457px;left:108px;white-space:nowrap" class="ft61">“bridging&#160;the&#160;gap&#160;between&#160;consolidated&#160;sleep&#160;episodes”,&#160;on&#160;appropriate&#160;nap&#160;timings,&#160;and&#160;on&#160;the&#160;effects&#160;</p>
+<p style="position:absolute;top:480px;left:108px;white-space:nowrap" class="ft61">of&#160;time&#160;zone&#160;changes,&#160;for&#160;instance,&#160;can&#160;be&#160;valuable&#160;in&#160;assisting&#160;crew&#160;to&#160;manage&#160;fatigue.&#160;&#160;</p>
+<p style="position:absolute;top:518px;left:108px;white-space:nowrap" class="ft61">BFMs&#160;can&#160;be&#160;used&#160;to&#160;provide&#160;fatigue&#160;risk&#160;management&#160;education&#160;of&#160;this&#160;sort,&#160;both&#160;for&#160;decision&#160;makers&#160;</p>
+<p style="position:absolute;top:541px;left:108px;white-space:nowrap" class="ft61">and&#160;for&#160;front-line&#160;workers.&#160;Understanding&#160;the&#160;latest&#160;scientific&#160;knowledge&#160;about&#160;the&#160;effects&#160;of&#160;sleep&#160;and&#160;</p>
+<p style="position:absolute;top:565px;left:108px;white-space:nowrap" class="ft61">circadian&#160;&#160;factors&#160;&#160;on&#160;&#160;fatigue&#160;&#160;can&#160;&#160;be&#160;&#160;difficult&#160;&#160;for&#160;&#160;operational&#160;&#160;personnel&#160;&#160;to&#160;&#160;absorb&#160;&#160;from&#160;&#160;scientific&#160;</p>
+<p style="position:absolute;top:588px;left:108px;white-space:nowrap" class="ft61">documents.&#160;Computerised&#160;implementations&#160;of&#160;BFMs&#160;that&#160;allow&#160;users&#160;to&#160;interactively&#160;observe&#160;changes&#160;in&#160;</p>
+<p style="position:absolute;top:611px;left:108px;white-space:nowrap" class="ft61">fatigue&#160;&#160;predictions&#160;&#160;through&#160;&#160;a&#160;&#160;dynamic&#160;&#160;user&#160;&#160;interface&#160;&#160;can&#160;&#160;form&#160;&#160;a&#160;&#160;useful&#160;&#160;component&#160;&#160;in&#160;&#160;a&#160;&#160;fatigue&#160;&#160;risk&#160;</p>
+<p style="position:absolute;top:634px;left:108px;white-space:nowrap" class="ft61">management&#160;educational&#160;program.&#160;&#160;</p>
+<p style="position:absolute;top:672px;left:108px;white-space:nowrap" class="ft61">By&#160;&#160;demonstrating&#160;&#160;how&#160;&#160;variations&#160;&#160;in&#160;&#160;sleep&#160;&#160;duration,&#160;&#160;sleep&#160;&#160;times,&#160;&#160;nap&#160;&#160;timing&#160;&#160;and&#160;&#160;duration&#160;&#160;and&#160;&#160;other&#160;</p>
+<p style="position:absolute;top:696px;left:108px;white-space:nowrap" class="ft61">fatigue&#160;countermeasures&#160;alter&#160;fatigue&#160;risk,&#160;BFMs&#160;can&#160;be&#160;used&#160;to&#160;educate&#160;people&#160;on&#160;the&#160;dynamics&#160;of&#160;the&#160;</p>
+<p style="position:absolute;top:719px;left:108px;white-space:nowrap" class="ft61">sleep&#160;regulatory&#160;system&#160;and&#160;its&#160;effects&#160;on&#160;fatigue.&#160;The&#160;changes&#160;in&#160;fatigue&#160;risk&#160;over&#160;time&#160;may&#160;be&#160;counter-</p>
+<p style="position:absolute;top:742px;left:108px;white-space:nowrap" class="ft61">intuitive&#160;and&#160;developing&#160;a&#160;better&#160;understanding&#160;of&#160;the&#160;“dynamics&#160;of&#160;the&#160;sleep-wake&#160;system”&#160;and&#160;how&#160;it&#160;</p>
+<p style="position:absolute;top:765px;left:108px;white-space:nowrap" class="ft61">affects&#160;&#160;fatigue&#160;&#160;can&#160;&#160;assist&#160;&#160;in&#160;&#160;the&#160;&#160;identification&#160;&#160;of&#160;&#160;periods&#160;&#160;of&#160;&#160;elevated&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;and&#160;&#160;in&#160;&#160;planning&#160;&#160;and&#160;</p>
+<p style="position:absolute;top:788px;left:108px;white-space:nowrap" class="ft61">managing&#160;&#160;strategies&#160;&#160;to&#160;&#160;mitigate&#160;&#160;the&#160;&#160;risks.&#160;&#160;This&#160;&#160;knowledge&#160;&#160;is&#160;&#160;useful&#160;&#160;both&#160;&#160;for&#160;&#160;crew&#160;&#160;themselves,&#160;&#160;so&#160;&#160;that&#160;</p>
+<p style="position:absolute;top:811px;left:108px;white-space:nowrap" class="ft61">they&#160;may&#160;&#160;adapt&#160;&#160;their&#160;&#160;lifestyle&#160;&#160;and&#160;&#160;behaviours&#160;&#160;accordingly,&#160;&#160;and&#160;&#160;for&#160;&#160;the&#160;&#160;schedulers&#160;&#160;and&#160;&#160;decision&#160;makers&#160;</p>
+<p style="position:absolute;top:835px;left:108px;white-space:nowrap" class="ft61">responsible&#160;for&#160;reducing&#160;fatigue-related&#160;safety&#160;risks&#160;to&#160;organisations.&#160;&#160;</p>
+<p style="position:absolute;top:877px;left:109px;white-space:nowrap" class="ft62">2.7.</p>
+<p style="position:absolute;top:872px;left:141px;white-space:nowrap" class="ft63"><b>&#160;</b></p>
+<p style="position:absolute;top:877px;left:142px;white-space:nowrap" class="ft62">Safety&#160;Investigation&#160;&#160;</p>
+<p style="position:absolute;top:902px;left:108px;white-space:nowrap" class="ft61">Probable&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;levels&#160;&#160;have&#160;&#160;been&#160;&#160;calculated&#160;&#160;for&#160;&#160;crewmembers&#160;&#160;involved&#160;&#160;in&#160;&#160;numerous&#160;&#160;aviation&#160;</p>
+<p style="position:absolute;top:925px;left:108px;white-space:nowrap" class="ft61">incidents&#160;&#160;and&#160;&#160;accidents,&#160;&#160;and&#160;&#160;in&#160;&#160;recent&#160;&#160;years&#160;&#160;biomathematical&#160;&#160;models&#160;&#160;have&#160;&#160;been&#160;&#160;employed&#160;&#160;by&#160;&#160;both&#160;</p>
+<p style="position:absolute;top:948px;left:108px;white-space:nowrap" class="ft61">operators&#160;and&#160;investigation&#160;agencies&#160;to&#160;assist&#160;with&#160;these&#160;calculations.&#160;&#160;</p>
+<p style="position:absolute;top:986px;left:108px;white-space:nowrap" class="ft61">Several&#160;&#160;biomathematical&#160;&#160;models&#160;&#160;claim&#160;&#160;to&#160;&#160;be&#160;&#160;useful&#160;&#160;for&#160;&#160;supporting&#160;&#160;incident/accident&#160;&#160;investigation&#160;&#160;by&#160;</p>
+<p style="position:absolute;top:1010px;left:108px;white-space:nowrap" class="ft61">assessing&#160;the&#160;potential&#160;contribution&#160;of&#160;schedule-related&#160;fatigue&#160;to&#160;safety&#160;events&#160;or&#160;analysing&#160;a&#160;person’s&#160;</p>
+<p style="position:absolute;top:1045px;left:108px;white-space:nowrap" class="ft61">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;</p>
+<p style="position:absolute;top:1061px;left:108px;white-space:nowrap" class="ft65">4</p>
+<p style="position:absolute;top:1065px;left:113px;white-space:nowrap" class="ft66">&#160;Including&#160;the&#160;role&#160;of&#160;circadian&#160;rhythms.&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft70{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft71{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft72{font-size:14px;font-family:GOCSXU+TT15At00;color:#000000;}
+	.ft73{font-size:21px;font-family:LKMKFD+TT15Dt00;color:#16355c;}
+	.ft74{font-size:21px;font-family:RIEUWF+Helvetica;color:#16355c;}
+	.ft75{font-size:21px;font-family:ZPEKLK+TT15Dt00;color:#16355c;}
+	.ft76{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft77{font-size:17px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page7-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc007.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft70">&#160;</p>
+<p style="position:absolute;top:1120px;left:762px;white-space:nowrap" class="ft70">Page&#160;7&#160;</p>
+<p style="position:absolute;top:112px;left:108px;white-space:nowrap" class="ft71">fatigue&#160;&#160;level&#160;&#160;at&#160;&#160;a&#160;&#160;specific&#160;&#160;time&#160;&#160;based&#160;on&#160;&#160;analysis&#160;of&#160;&#160;their&#160;&#160;prior&#160;&#160;sleep.&#160;&#160;It&#160;&#160;is&#160;&#160;important&#160;&#160;to&#160;&#160;note,&#160;&#160;however,&#160;</p>
+<p style="position:absolute;top:135px;left:108px;white-space:nowrap" class="ft71">that&#160;the&#160;application&#160;of&#160;such&#160;models&#160;for&#160;the&#160;post&#160;hoc&#160;identification&#160;and&#160;analysis&#160;of&#160;the&#160;role&#160;of&#160;fatigue&#160;as&#160;a&#160;</p>
+<p style="position:absolute;top:158px;left:108px;white-space:nowrap" class="ft71">contributing&#160;factor&#160;to&#160;aviation&#160;incidents&#160;and&#160;accidents&#160;should&#160;be&#160;undertaken&#160;with&#160;great&#160;caution.&#160;While&#160;</p>
+<p style="position:absolute;top:181px;left:108px;white-space:nowrap" class="ft71">many&#160;authors&#160;have&#160;drawn&#160;links&#160;between&#160;fatigue&#160;and&#160;safety&#160;events&#160;in&#160;various&#160;occupational&#160;settings,&#160;it&#160;is&#160;</p>
+<p style="position:absolute;top:204px;left:108px;white-space:nowrap" class="ft71">extremely&#160;difficult&#160;to&#160;</p>
+<p style="position:absolute;top:205px;left:255px;white-space:nowrap" class="ft72">prove&#160;</p>
+<p style="position:absolute;top:204px;left:298px;white-space:nowrap" class="ft71">that&#160;a&#160;safety&#160;occurrence&#160;was&#160;contributed&#160;to&#160;by&#160;fatigue.&#160;While&#160;the&#160;potential&#160;</p>
+<p style="position:absolute;top:227px;left:108px;white-space:nowrap" class="ft71">for&#160;&#160;fatigue&#160;&#160;and&#160;&#160;its&#160;&#160;effects&#160;&#160;to&#160;&#160;be&#160;&#160;present&#160;&#160;can&#160;&#160;be&#160;&#160;noted,&#160;&#160;a&#160;&#160;causal&#160;&#160;relationship&#160;&#160;is&#160;&#160;extremely&#160;&#160;difficult&#160;&#160;to&#160;</p>
+<p style="position:absolute;top:251px;left:108px;white-space:nowrap" class="ft71">establish.&#160;&#160;</p>
+<p style="position:absolute;top:289px;left:108px;white-space:nowrap" class="ft71">Contemporary&#160;&#160;systemic&#160;&#160;thinking&#160;&#160;on&#160;&#160;safety&#160;&#160;investigation&#160;&#160;and&#160;&#160;analysis&#160;&#160;recognises&#160;&#160;that&#160;&#160;complex&#160;</p>
+<p style="position:absolute;top:312px;left:108px;white-space:nowrap" class="ft71">interactions&#160;between&#160;numerous&#160;factors&#160;contribute&#160;to&#160;most&#160;safety&#160;occurrences.&#160;While&#160;it&#160;may&#160;be&#160;possible&#160;</p>
+<p style="position:absolute;top:335px;left:108px;white-space:nowrap" class="ft71">to&#160;&#160;identify&#160;&#160;the&#160;&#160;potential&#160;&#160;for&#160;&#160;the&#160;&#160;existence&#160;&#160;of&#160;&#160;crew&#160;&#160;fatigue&#160;&#160;and&#160;&#160;related&#160;&#160;performance&#160;&#160;decrements&#160;&#160;using&#160;</p>
+<p style="position:absolute;top:358px;left:108px;white-space:nowrap" class="ft71">such&#160;models&#160;after&#160;an&#160;event,&#160;establishing&#160;a&#160;definitive&#160;evidence-based&#160;link&#160;between&#160;fatigue&#160;and&#160;a&#160;specific&#160;</p>
+<p style="position:absolute;top:381px;left:108px;white-space:nowrap" class="ft71">event&#160;is&#160;problematic.&#160;Isolating&#160;fatigue&#160;from&#160;the&#160;numerous&#160;other&#160;factors&#160;that&#160;may&#160;have&#160;contributed&#160;to&#160;an&#160;</p>
+<p style="position:absolute;top:405px;left:108px;white-space:nowrap" class="ft71">event,&#160;&#160;then&#160;&#160;proving&#160;&#160;its&#160;&#160;contribution&#160;&#160;may&#160;&#160;not&#160;&#160;be&#160;&#160;possible.&#160;&#160;Validating&#160;&#160;this&#160;&#160;potential&#160;&#160;application&#160;&#160;of&#160;</p>
+<p style="position:absolute;top:428px;left:108px;white-space:nowrap" class="ft71">biomathematical&#160;&#160;models&#160;&#160;is&#160;&#160;also&#160;&#160;particularly&#160;&#160;difficult&#160;&#160;in&#160;&#160;the&#160;&#160;aviation&#160;&#160;domain,&#160;&#160;where&#160;&#160;accident&#160;&#160;rates&#160;&#160;are&#160;</p>
+<p style="position:absolute;top:451px;left:108px;white-space:nowrap" class="ft71">generally&#160;&#160;low,&#160;&#160;and&#160;&#160;it&#160;&#160;can&#160;&#160;be&#160;&#160;otherwise&#160;&#160;difficult,&#160;&#160;time&#160;&#160;consuming&#160;&#160;and&#160;&#160;expensive&#160;&#160;to&#160;&#160;measure&#160;&#160;the&#160;&#160;in&#160;&#160;situ&#160;</p>
+<p style="position:absolute;top:474px;left:108px;white-space:nowrap" class="ft71">performance&#160;of&#160;operational&#160;personnel&#160;(for&#160;example,&#160;using&#160;LOSA&#160;[Line&#160;Operations&#160;Safety&#160;Audit]&#160;or&#160;similar&#160;</p>
+<p style="position:absolute;top:497px;left:108px;white-space:nowrap" class="ft71">observational&#160;methods).&#160;</p>
+<p style="position:absolute;top:559px;left:108px;white-space:nowrap" class="ft73">3.</p>
+<p style="position:absolute;top:558px;left:127px;white-space:nowrap" class="ft74">&#160;</p>
+<p style="position:absolute;top:559px;left:135px;white-space:nowrap" class="ft75">Cautions&#160;on&#160;the&#160;use&#160;of&#160;Models&#160;</p>
+<p style="position:absolute;top:610px;left:108px;white-space:nowrap" class="ft72">(Refer&#160;&#160;CASA,&#160;&#160;2014,&#160;&#160;Biomathematical&#160;&#160;Fatigue&#160;&#160;Models&#160;&#160;Guidance&#160;&#160;Document,&#160;&#160;Section&#160;&#160;2.2:&#160;&#160;Cautions&#160;&#160;on&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:634px;left:108px;white-space:nowrap" class="ft72">use&#160;of&#160;Biomathematical&#160;Models&#160;p12)&#160;</p>
+<p style="position:absolute;top:676px;left:109px;white-space:nowrap" class="ft76">3.1.</p>
+<p style="position:absolute;top:671px;left:141px;white-space:nowrap" class="ft77"><b>&#160;</b></p>
+<p style="position:absolute;top:676px;left:142px;white-space:nowrap" class="ft76">Better&#160;for&#160;comparing&#160;scores&#160;rather&#160;than&#160;compliance&#160;with&#160;a&#160;threshold&#160;</p>
+<p style="position:absolute;top:701px;left:108px;white-space:nowrap" class="ft71">BFMs&#160;are&#160;designed&#160;to&#160;take&#160;into&#160;account&#160;a&#160;range&#160;of&#160;factors&#160;relating&#160;to&#160;fatigue&#160;and&#160;to&#160;convert&#160;these&#160;into&#160;</p>
+<p style="position:absolute;top:724px;left:108px;white-space:nowrap" class="ft71">simple&#160;numerical&#160;scores&#160;representing&#160;fatigue&#160;risk.&#160;These&#160;scores&#160;can&#160;be&#160;used&#160;for&#160;performing&#160;comparisons&#160;</p>
+<p style="position:absolute;top:747px;left:108px;white-space:nowrap" class="ft71">(of&#160;&#160;schedules,&#160;&#160;for&#160;&#160;instance)&#160;&#160;or&#160;&#160;for&#160;&#160;evaluating&#160;&#160;a&#160;&#160;schedule&#160;&#160;against&#160;&#160;an&#160;&#160;upper&#160;&#160;fatigue&#160;&#160;limit.&#160;&#160;However,&#160;&#160;it&#160;&#160;is&#160;</p>
+<p style="position:absolute;top:770px;left:108px;white-space:nowrap" class="ft71">vital&#160;to&#160;avoid&#160;overly&#160;simplistic&#160;interpretations&#160;of&#160;the&#160;numerical&#160;estimates&#160;provided&#160;by&#160;the&#160;models.&#160;&#160;</p>
+<p style="position:absolute;top:812px;left:109px;white-space:nowrap" class="ft76">3.2.</p>
+<p style="position:absolute;top:808px;left:141px;white-space:nowrap" class="ft77"><b>&#160;</b></p>
+<p style="position:absolute;top:812px;left:142px;white-space:nowrap" class="ft76">Fatigue&#160;score&#160;limits&#160;must&#160;be&#160;validated&#160;</p>
+<p style="position:absolute;top:838px;left:108px;white-space:nowrap" class="ft71">It&#160;&#160;is&#160;&#160;essential&#160;&#160;for&#160;&#160;any&#160;&#160;specified&#160;&#160;upper&#160;&#160;limit&#160;&#160;for&#160;&#160;fatigue&#160;&#160;scores&#160;&#160;to&#160;&#160;be&#160;&#160;validated&#160;&#160;in&#160;&#160;the&#160;&#160;operational&#160;</p>
+<p style="position:absolute;top:861px;left:108px;white-space:nowrap" class="ft71">environment&#160;in&#160;which&#160;they&#160;are&#160;to&#160;be&#160;used.&#160;The&#160;failure&#160;to&#160;validate&#160;limits&#160;or&#160;‘cut-off’&#160;scores&#160;in&#160;this&#160;manner&#160;</p>
+<p style="position:absolute;top:884px;left:108px;white-space:nowrap" class="ft71">could&#160;&#160;result&#160;&#160;in&#160;&#160;practices&#160;&#160;that&#160;&#160;undermine&#160;the&#160;&#160;quality&#160;of&#160;&#160;the&#160;&#160;FRMS&#160;&#160;and&#160;&#160;result&#160;&#160;in&#160;operational&#160;&#160;staff&#160;&#160;having&#160;</p>
+<p style="position:absolute;top:907px;left:108px;white-space:nowrap" class="ft71">minimal&#160;&#160;confidence&#160;&#160;in&#160;&#160;the&#160;&#160;system.&#160;&#160;In&#160;&#160;the&#160;&#160;worst&#160;&#160;case&#160;&#160;overreliance&#160;&#160;on&#160;&#160;biomathematical&#160;&#160;models&#160;&#160;could&#160;</p>
+<p style="position:absolute;top:930px;left:108px;white-space:nowrap" class="ft71">result&#160;in&#160;an&#160;FRMS&#160;that&#160;actually&#160;degrades&#160;fatigue&#160;management.&#160;</p>
+<p style="position:absolute;top:973px;left:109px;white-space:nowrap" class="ft76">3.3.</p>
+<p style="position:absolute;top:968px;left:141px;white-space:nowrap" class="ft77"><b>&#160;</b></p>
+<p style="position:absolute;top:973px;left:142px;white-space:nowrap" class="ft76">Should&#160;not&#160;be&#160;used&#160;in&#160;isolation&#160;or&#160;as&#160;a&#160;go/no&#160;go&#160;criteria&#160;</p>
+<p style="position:absolute;top:998px;left:108px;white-space:nowrap" class="ft71">When&#160;&#160;a&#160;&#160;biomathematical&#160;&#160;model&#160;&#160;is&#160;&#160;included&#160;&#160;in&#160;&#160;an&#160;&#160;FRMS,&#160;&#160;complementary&#160;&#160;strategies&#160;&#160;to&#160;&#160;pro-actively&#160;</p>
+<p style="position:absolute;top:1021px;left:108px;white-space:nowrap" class="ft71">identify&#160;&#160;and&#160;&#160;manage&#160;&#160;fatigue&#160;&#160;must&#160;&#160;also&#160;&#160;be&#160;&#160;considered.&#160;&#160;Flight&#160;&#160;crews&#160;&#160;and&#160;&#160;operational&#160;&#160;decision&#160;&#160;makers&#160;</p>
+<p style="position:absolute;top:1044px;left:108px;white-space:nowrap" class="ft71">need&#160;&#160;to&#160;&#160;be&#160;&#160;educated&#160;&#160;to&#160;&#160;interpret&#160;&#160;the&#160;&#160;biomathematical&#160;&#160;model’s&#160;&#160;output&#160;&#160;appropriately.&#160;&#160;The&#160;&#160;outputs&#160;&#160;of&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft80{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft81{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft82{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft83{font-size:17px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+	.ft84{font-size:21px;font-family:LKMKFD+TT15Dt00;color:#16355c;}
+	.ft85{font-size:21px;font-family:RIEUWF+Helvetica;color:#16355c;}
+	.ft86{font-size:21px;font-family:ZPEKLK+TT15Dt00;color:#16355c;}
+	.ft87{font-size:14px;font-family:GOCSXU+TT15At00;color:#000000;}
+	.ft88{font-size:14px;font-family:MWUNIP+Symbol;color:#000000;}
+	.ft89{font-size:14px;font-family:RIEUWF+Helvetica;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page8-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc008.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft80">&#160;</p>
+<p style="position:absolute;top:1120px;left:762px;white-space:nowrap" class="ft80">Page&#160;8&#160;</p>
+<p style="position:absolute;top:112px;left:108px;white-space:nowrap" class="ft81">such&#160;&#160;models&#160;&#160;can&#160;&#160;give&#160;&#160;the&#160;&#160;illusion&#160;&#160;of&#160;&#160;being&#160;&#160;precise&#160;&#160;and&#160;&#160;quantitative&#160;&#160;despite&#160;&#160;the&#160;&#160;fact&#160;&#160;that&#160;&#160;they&#160;&#160;simply&#160;</p>
+<p style="position:absolute;top:135px;left:108px;white-space:nowrap" class="ft81">predict&#160;&#160;a&#160;&#160;qualitative&#160;&#160;measure&#160;&#160;such&#160;&#160;as&#160;&#160;subjective&#160;&#160;fatigue.&#160;&#160;Education,&#160;&#160;audits&#160;&#160;and&#160;&#160;the&#160;&#160;use&#160;&#160;of&#160;&#160;additional&#160;</p>
+<p style="position:absolute;top:158px;left:108px;white-space:nowrap" class="ft81">objective&#160;measures&#160;should&#160;ensure&#160;that&#160;a&#160;balanced&#160;view&#160;of&#160;the&#160;opportunities&#160;and&#160;limitations&#160;of&#160;models&#160;is&#160;</p>
+<p style="position:absolute;top:181px;left:108px;white-space:nowrap" class="ft81">maintained&#160;within&#160;an&#160;organisation’s&#160;fatigue&#160;risk&#160;management&#160;culture&#160;and&#160;operational&#160;practices.&#160;Scores&#160;</p>
+<p style="position:absolute;top:204px;left:108px;white-space:nowrap" class="ft81">derived&#160;from&#160;BFMs&#160;cannot&#160;provide&#160;a&#160;“green&#160;light”&#160;for&#160;operational&#160;safety,&#160;but&#160;should&#160;rather&#160;be&#160;used&#160;as&#160;</p>
+<p style="position:absolute;top:227px;left:108px;white-space:nowrap" class="ft81">one&#160;&#160;of&#160;&#160;a&#160;&#160;number&#160;&#160;of&#160;&#160;risk&#160;&#160;management&#160;&#160;controls&#160;&#160;and&#160;&#160;complemented,&#160;&#160;for&#160;&#160;example,&#160;&#160;by&#160;&#160;crew&#160;&#160;fatigue&#160;</p>
+<p style="position:absolute;top:251px;left:108px;white-space:nowrap" class="ft81">monitoring&#160;and&#160;practices&#160;for&#160;ensuring&#160;adequate&#160;rest&#160;and&#160;sleep.&#160;&#160;</p>
+<p style="position:absolute;top:293px;left:109px;white-space:nowrap" class="ft82">3.4.</p>
+<p style="position:absolute;top:288px;left:141px;white-space:nowrap" class="ft83"><b>&#160;</b></p>
+<p style="position:absolute;top:293px;left:142px;white-space:nowrap" class="ft82">Continuous&#160;improvement&#160;</p>
+<p style="position:absolute;top:318px;left:108px;white-space:nowrap" class="ft81">Finally&#160;the&#160;use&#160;of&#160;a&#160;model&#160;within&#160;an&#160;FRMS&#160;should&#160;be&#160;an&#160;iterative&#160;process,&#160;with&#160;fatigue&#160;measurements,&#160;</p>
+<p style="position:absolute;top:341px;left:108px;white-space:nowrap" class="ft81">task&#160;errors&#160;and&#160;incident&#160;data&#160;collected&#160;and&#160;used&#160;to&#160;refine&#160;both&#160;the&#160;model&#160;and&#160;the&#160;overall&#160;FRMS.&#160;</p>
+<p style="position:absolute;top:403px;left:108px;white-space:nowrap" class="ft84">4.</p>
+<p style="position:absolute;top:402px;left:127px;white-space:nowrap" class="ft85">&#160;</p>
+<p style="position:absolute;top:403px;left:135px;white-space:nowrap" class="ft86">Limitations&#160;of&#160;Models&#160;</p>
+<p style="position:absolute;top:454px;left:108px;white-space:nowrap" class="ft87">(Refer&#160;&#160;CASA,&#160;&#160;2014,&#160;&#160;Biomathematical&#160;&#160;Fatigue&#160;&#160;Models&#160;&#160;Guidance&#160;&#160;Document,&#160;&#160;Section&#160;&#160;2.1:&#160;&#160;Regulatory&#160;&#160;and&#160;</p>
+<p style="position:absolute;top:478px;left:108px;white-space:nowrap" class="ft87">FRMS&#160;context&#160;p11)&#160;</p>
+<p style="position:absolute;top:509px;left:108px;white-space:nowrap" class="ft81">BFMs&#160;&#160;have&#160;&#160;limitations&#160;&#160;which&#160;&#160;must&#160;&#160;be&#160;&#160;adequately&#160;&#160;recognised&#160;&#160;and&#160;&#160;considered&#160;&#160;by&#160;&#160;users.&#160;&#160;Fatigue&#160;&#160;model&#160;</p>
+<p style="position:absolute;top:532px;left:108px;white-space:nowrap" class="ft81">predictions&#160;&#160;should&#160;&#160;never&#160;&#160;form&#160;&#160;the&#160;&#160;sole&#160;&#160;means&#160;&#160;upon&#160;&#160;which&#160;&#160;operational&#160;&#160;decisions&#160;&#160;about&#160;&#160;fatigue&#160;&#160;risk&#160;</p>
+<p style="position:absolute;top:556px;left:108px;white-space:nowrap" class="ft81">management&#160;are&#160;made.&#160;The&#160;limitations&#160;of&#160;currently&#160;available&#160;fatigue&#160;models&#160;include:&#160;&#160;</p>
+<p style="position:absolute;top:598px;left:135px;white-space:nowrap" class="ft88">•</p>
+<p style="position:absolute;top:595px;left:143px;white-space:nowrap" class="ft89">&#160;</p>
+<p style="position:absolute;top:595px;left:162px;white-space:nowrap" class="ft81">a&#160;&#160;restriction&#160;&#160;to&#160;&#160;predicting&#160;&#160;risk&#160;&#160;probabilities&#160;&#160;for&#160;&#160;a&#160;&#160;population&#160;&#160;average&#160;&#160;rather&#160;&#160;than&#160;&#160;immediate&#160;&#160;or&#160;</p>
+<p style="position:absolute;top:618px;left:162px;white-space:nowrap" class="ft81">accurate&#160;fatigue&#160;levels&#160;of&#160;specific&#160;individuals,&#160;&#160;</p>
+<p style="position:absolute;top:645px;left:135px;white-space:nowrap" class="ft88">•</p>
+<p style="position:absolute;top:642px;left:143px;white-space:nowrap" class="ft89">&#160;</p>
+<p style="position:absolute;top:642px;left:162px;white-space:nowrap" class="ft81">incomplete&#160;description&#160;of&#160;all&#160;fatigue&#160;physiology&#160;factors,&#160;</p>
+<p style="position:absolute;top:669px;left:135px;white-space:nowrap" class="ft88">•</p>
+<p style="position:absolute;top:666px;left:143px;white-space:nowrap" class="ft89">&#160;</p>
+<p style="position:absolute;top:666px;left:162px;white-space:nowrap" class="ft81">qualitative&#160;data&#160;being&#160;misinterpreted&#160;as&#160;quantitative&#160;data&#160;and&#160;</p>
+<p style="position:absolute;top:693px;left:135px;white-space:nowrap" class="ft88">•</p>
+<p style="position:absolute;top:690px;left:143px;white-space:nowrap" class="ft89">&#160;</p>
+<p style="position:absolute;top:690px;left:162px;white-space:nowrap" class="ft81">limited&#160;validation&#160;against&#160;aviation&#160;specific&#160;data.&#160;&#160;</p>
+<p style="position:absolute;top:728px;left:108px;white-space:nowrap" class="ft81">Due&#160;&#160;to&#160;&#160;these&#160;&#160;limitations&#160;&#160;and&#160;&#160;the&#160;&#160;relatively&#160;&#160;recent&#160;&#160;introduction&#160;&#160;of&#160;&#160;BFMs&#160;&#160;to&#160;&#160;civil&#160;&#160;aviation,&#160;&#160;a&#160;&#160;cautionary&#160;</p>
+<p style="position:absolute;top:751px;left:108px;white-space:nowrap" class="ft81">approach&#160;should&#160;be&#160;taken.&#160;FRMS&#160;should&#160;be&#160;designed&#160;as&#160;comprehensive,&#160;multi-layered&#160;systems,&#160;in&#160;which&#160;</p>
+<p style="position:absolute;top:775px;left:108px;white-space:nowrap" class="ft81">biomathematical&#160;models,&#160;when&#160;used,&#160;provide&#160;a&#160;supporting&#160;role.&#160;</p>
+<p style="position:absolute;top:813px;left:108px;white-space:nowrap" class="ft87">(Refer&#160;&#160;CASA,&#160;&#160;2014,&#160;&#160;Biomathematical&#160;&#160;Fatigue&#160;&#160;Models&#160;&#160;Guidance&#160;&#160;Document,&#160;&#160;Section&#160;&#160;4:&#160;&#160;Limitations&#160;&#160;of&#160;</p>
+<p style="position:absolute;top:836px;left:108px;white-space:nowrap" class="ft87">Biomathematical&#160;Models&#160;pp18-22)&#160;</p>
+<p style="position:absolute;top:874px;left:108px;white-space:nowrap" class="ft81">This&#160;&#160;section&#160;&#160;provides&#160;&#160;a&#160;&#160;detailed&#160;&#160;discussion&#160;&#160;of&#160;&#160;the&#160;&#160;limitations&#160;&#160;of&#160;&#160;biomathematical&#160;&#160;fatigue&#160;&#160;risk&#160;&#160;models&#160;</p>
+<p style="position:absolute;top:897px;left:108px;white-space:nowrap" class="ft81">which&#160;include:&#160;</p>
+<p style="position:absolute;top:939px;left:135px;white-space:nowrap" class="ft88">•</p>
+<p style="position:absolute;top:936px;left:143px;white-space:nowrap" class="ft89">&#160;</p>
+<p style="position:absolute;top:936px;left:162px;white-space:nowrap" class="ft81">Models&#160;predict&#160;fatigue&#160;levels,&#160;which&#160;are&#160;not&#160;necessarily&#160;correlated&#160;with&#160;safety&#160;risk.&#160;</p>
+<p style="position:absolute;top:964px;left:135px;white-space:nowrap" class="ft88">•</p>
+<p style="position:absolute;top:960px;left:143px;white-space:nowrap" class="ft89">&#160;</p>
+<p style="position:absolute;top:960px;left:162px;white-space:nowrap" class="ft81">Models&#160;&#160;consider&#160;&#160;only&#160;&#160;the&#160;&#160;acute&#160;&#160;effects&#160;&#160;of&#160;&#160;work&#160;&#160;schedules&#160;&#160;and&#160;&#160;not&#160;&#160;chronic&#160;&#160;effects,&#160;&#160;and&#160;&#160;may&#160;</p>
+<p style="position:absolute;top:983px;left:162px;white-space:nowrap" class="ft81">underestimate&#160;risk.&#160;</p>
+<p style="position:absolute;top:1011px;left:135px;white-space:nowrap" class="ft88">•</p>
+<p style="position:absolute;top:1007px;left:143px;white-space:nowrap" class="ft89">&#160;</p>
+<p style="position:absolute;top:1007px;left:162px;white-space:nowrap" class="ft81">Models&#160;predict&#160;average&#160;fatigue&#160;levels&#160;for&#160;a&#160;population&#160;and&#160;do&#160;not&#160;consider&#160;individual&#160;variability.&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft90{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft91{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft92{font-size:17px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+	.ft93{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page9-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc009.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft90">&#160;</p>
+<p style="position:absolute;top:1120px;left:762px;white-space:nowrap" class="ft90">Page&#160;9&#160;</p>
+<p style="position:absolute;top:113px;left:109px;white-space:nowrap" class="ft91">4.1.</p>
+<p style="position:absolute;top:108px;left:141px;white-space:nowrap" class="ft92"><b>&#160;</b></p>
+<p style="position:absolute;top:113px;left:142px;white-space:nowrap" class="ft91">From&#160;Fatigue&#160;to&#160;Safety&#160;&#160;</p>
+<p style="position:absolute;top:138px;left:108px;white-space:nowrap" class="ft93">From&#160;an&#160;operational&#160;point&#160;of&#160;view,&#160;an&#160;individual&#160;crew&#160;member’s&#160;level&#160;of&#160;fatigue&#160;is&#160;not&#160;of&#160;direct&#160;concern,&#160;</p>
+<p style="position:absolute;top:161px;left:108px;white-space:nowrap" class="ft93">provided&#160;&#160;that&#160;&#160;they&#160;&#160;perform&#160;&#160;their&#160;&#160;duties&#160;&#160;in&#160;&#160;a&#160;&#160;safe&#160;&#160;and&#160;&#160;effective&#160;&#160;manner.&#160;&#160;Biomathematical&#160;&#160;models&#160;&#160;of&#160;</p>
+<p style="position:absolute;top:184px;left:108px;white-space:nowrap" class="ft93">fatigue&#160;&#160;essentially&#160;&#160;make&#160;&#160;the&#160;&#160;tacit&#160;&#160;assumption&#160;&#160;that&#160;&#160;changes&#160;&#160;in&#160;&#160;levels&#160;&#160;of&#160;&#160;fatigue&#160;&#160;will&#160;&#160;be&#160;&#160;paralleled&#160;&#160;by&#160;</p>
+<p style="position:absolute;top:207px;left:108px;white-space:nowrap" class="ft93">similar&#160;&#160;changes&#160;&#160;in&#160;&#160;risk,&#160;&#160;but&#160;&#160;the&#160;&#160;available&#160;&#160;evidence&#160;&#160;suggests&#160;&#160;that&#160;&#160;this&#160;&#160;may&#160;&#160;not&#160;&#160;always&#160;&#160;be&#160;&#160;the&#160;&#160;case.&#160;&#160;It&#160;&#160;is&#160;</p>
+<p style="position:absolute;top:231px;left:108px;white-space:nowrap" class="ft93">obviously&#160;&#160;true&#160;&#160;that&#160;&#160;if&#160;&#160;an&#160;&#160;individual’s&#160;&#160;level&#160;&#160;of&#160;&#160;fatigue&#160;&#160;is&#160;&#160;such&#160;&#160;that&#160;&#160;they&#160;&#160;fall&#160;&#160;asleep,&#160;&#160;the&#160;&#160;risk&#160;&#160;of&#160;&#160;failing&#160;&#160;to&#160;</p>
+<p style="position:absolute;top:254px;left:108px;white-space:nowrap" class="ft93">respond&#160;&#160;appropriately&#160;&#160;when&#160;&#160;required&#160;&#160;will&#160;&#160;be&#160;&#160;high.&#160;&#160;However,&#160;&#160;most&#160;&#160;accidents&#160;&#160;seem&#160;&#160;to&#160;&#160;occur&#160;&#160;while&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:277px;left:108px;white-space:nowrap" class="ft93">worker&#160;&#160;is&#160;&#160;awake&#160;&#160;and&#160;&#160;are&#160;&#160;linked&#160;&#160;with&#160;&#160;slow&#160;&#160;or&#160;&#160;inappropriate&#160;&#160;responses&#160;&#160;rather&#160;&#160;than&#160;&#160;a&#160;&#160;total&#160;&#160;failure&#160;&#160;to&#160;</p>
+<p style="position:absolute;top:300px;left:108px;white-space:nowrap" class="ft93">respond.&#160;&#160;</p>
+<p style="position:absolute;top:338px;left:108px;white-space:nowrap" class="ft93">Consider&#160;&#160;the&#160;&#160;impact&#160;&#160;of&#160;&#160;three&#160;&#160;categories&#160;&#160;of&#160;&#160;potential&#160;&#160;sources&#160;&#160;of&#160;&#160;fatigue,&#160;&#160;namely&#160;&#160;homeostatic&#160;&#160;factors&#160;</p>
+<p style="position:absolute;top:361px;left:108px;white-space:nowrap" class="ft93">(e.g.,&#160;time&#160;since&#160;sleep),&#160;circadian&#160;influences&#160;(e.g.,&#160;time&#160;of&#160;day)&#160;and&#160;the&#160;nature&#160;of&#160;the&#160;task&#160;(e.g.,&#160;duration,&#160;</p>
+<p style="position:absolute;top:384px;left:108px;white-space:nowrap" class="ft93">workload&#160;and&#160;monotony)&#160;on&#160;(i)&#160;actual&#160;accidents&#160;and&#160;injuries&#160;and&#160;(ii)&#160;performance&#160;decrements&#160;that&#160;might&#160;</p>
+<p style="position:absolute;top:408px;left:108px;white-space:nowrap" class="ft93">plausibly&#160;&#160;result&#160;&#160;in&#160;&#160;accidents&#160;&#160;or&#160;&#160;injuries.&#160;&#160;The&#160;&#160;results&#160;&#160;concerning&#160;&#160;homeostatic&#160;&#160;influences&#160;&#160;are&#160;&#160;fairly&#160;</p>
+<p style="position:absolute;top:431px;left:108px;white-space:nowrap" class="ft93">straightforward&#160;and&#160;consistent:&#160;the&#160;longer&#160;someone&#160;had&#160;been&#160;awake&#160;for,&#160;or&#160;the&#160;shorter&#160;the&#160;duration&#160;of&#160;</p>
+<p style="position:absolute;top:454px;left:108px;white-space:nowrap" class="ft93">their&#160;&#160;sleep&#160;&#160;period,&#160;&#160;the&#160;&#160;higher&#160;&#160;the&#160;&#160;risk&#160;&#160;of&#160;&#160;accidents&#160;&#160;and&#160;&#160;injuries&#160;&#160;and&#160;&#160;the&#160;&#160;greater&#160;&#160;the&#160;&#160;performance&#160;</p>
+<p style="position:absolute;top:477px;left:108px;white-space:nowrap" class="ft93">decrements.&#160;&#160;Likewise,&#160;&#160;the&#160;&#160;performance&#160;&#160;of&#160;&#160;sleep-deprived&#160;&#160;subjects&#160;&#160;is&#160;&#160;poorer&#160;&#160;than&#160;&#160;that&#160;&#160;of&#160;&#160;non&#160;&#160;sleep-</p>
+<p style="position:absolute;top:500px;left:108px;white-space:nowrap" class="ft93">deprived&#160;control&#160;groups,&#160;although&#160;there&#160;is&#160;a&#160;considerable&#160;variation&#160;in&#160;the&#160;magnitude&#160;of&#160;the&#160;effect&#160;across&#160;</p>
+<p style="position:absolute;top:524px;left:108px;white-space:nowrap" class="ft93">studies.&#160;&#160;</p>
+<p style="position:absolute;top:562px;left:108px;white-space:nowrap" class="ft93">The&#160;&#160;evidence&#160;&#160;concerning&#160;&#160;circadian&#160;&#160;influences&#160;&#160;is,&#160;&#160;however,&#160;&#160;rather&#160;&#160;more&#160;&#160;complex.&#160;&#160;It&#160;&#160;is&#160;&#160;well&#160;&#160;established&#160;</p>
+<p style="position:absolute;top:585px;left:108px;white-space:nowrap" class="ft93">that&#160;both&#160;subjective&#160;ratings&#160;of&#160;fatigue&#160;and&#160;objective&#160;sleep&#160;measures&#160;such&#160;as&#160;sleep&#160;latency&#160;show&#160;marked&#160;</p>
+<p style="position:absolute;top:608px;left:108px;white-space:nowrap" class="ft93">circadian&#160;&#160;rhythm&#160;&#160;effects&#160;&#160;with&#160;&#160;a&#160;&#160;maximum&#160;&#160;effect&#160;&#160;occurring&#160;&#160;between&#160;&#160;03:00&#160;&#160;and&#160;&#160;05:00&#160;&#160;hours.&#160;&#160;However,&#160;</p>
+<p style="position:absolute;top:631px;left:108px;white-space:nowrap" class="ft93">after&#160;correcting&#160;for&#160;exposure,&#160;accident&#160;and&#160;injury&#160;propensity&#160;reaches&#160;a&#160;rather&#160;earlier&#160;maximum&#160;at&#160;about&#160;</p>
+<p style="position:absolute;top:654px;left:108px;white-space:nowrap" class="ft93">midnight.&#160;&#160;Thus&#160;&#160;the&#160;&#160;risk&#160;&#160;of&#160;&#160;accidents&#160;&#160;and&#160;&#160;injuries&#160;&#160;would&#160;&#160;appear&#160;&#160;to&#160;&#160;reach&#160;&#160;a&#160;&#160;maximum&#160;&#160;somewhat&#160;&#160;earlier&#160;</p>
+<p style="position:absolute;top:678px;left:108px;white-space:nowrap" class="ft93">during&#160;&#160;the&#160;&#160;night&#160;&#160;than&#160;&#160;does&#160;&#160;fatigue,&#160;&#160;although&#160;&#160;the&#160;&#160;underlying&#160;&#160;reason&#160;&#160;for&#160;&#160;this&#160;&#160;is&#160;&#160;unclear.&#160;&#160;With&#160;&#160;regard&#160;&#160;to&#160;</p>
+<p style="position:absolute;top:701px;left:108px;white-space:nowrap" class="ft93">performance&#160;measures,&#160;laboratory&#160;studies&#160;of&#160;circadian&#160;rhythms&#160;have&#160;obtained&#160;rather&#160;mixed&#160;results&#160;with&#160;</p>
+<p style="position:absolute;top:724px;left:108px;white-space:nowrap" class="ft93">some&#160;&#160;measures&#160;&#160;of&#160;&#160;performance&#160;&#160;showing&#160;&#160;a&#160;&#160;direct&#160;&#160;circadian&#160;&#160;component&#160;&#160;while&#160;&#160;others&#160;&#160;would&#160;&#160;appear&#160;&#160;to&#160;</p>
+<p style="position:absolute;top:747px;left:108px;white-space:nowrap" class="ft93">only&#160;do&#160;so&#160;in&#160;combination&#160;with&#160;homeostatic&#160;factors.&#160;&#160;</p>
+<p style="position:absolute;top:785px;left:108px;white-space:nowrap" class="ft93">A&#160;&#160;recent&#160;comprehensive&#160;&#160;review&#160;&#160;investigated&#160;&#160;the&#160;&#160;significant&#160;&#160;body&#160;of&#160;&#160;research&#160;&#160;linking&#160;&#160;fatigue&#160;&#160;and&#160;&#160;safety&#160;</p>
+<p style="position:absolute;top:808px;left:108px;white-space:nowrap" class="ft93">outcomes&#160;in&#160;detail.&#160;It&#160;was&#160;observed&#160;that,&#160;while&#160;fatigue&#160;is&#160;identified&#160;in&#160;many&#160;countries&#160;as&#160;a&#160;contributing&#160;</p>
+<p style="position:absolute;top:831px;left:108px;white-space:nowrap" class="ft93">factor&#160;&#160;to&#160;&#160;a&#160;&#160;‘significant’&#160;&#160;proportion&#160;of&#160;&#160;road&#160;&#160;accidents,&#160;estimates&#160;of&#160;&#160;the&#160;&#160;role&#160;&#160;of&#160;&#160;fatigue&#160;vary&#160;&#160;considerably&#160;</p>
+<p style="position:absolute;top:855px;left:108px;white-space:nowrap" class="ft93">(from&#160;1&#160;to&#160;20%),&#160;and&#160;they&#160;are&#160;in&#160;fact&#160;merely&#160;estimates,&#160;often&#160;based&#160;on&#160;criteria&#160;that&#160;exclude&#160;other&#160;factors&#160;</p>
+<p style="position:absolute;top:878px;left:108px;white-space:nowrap" class="ft93">rather&#160;&#160;than&#160;&#160;definitively&#160;&#160;identifying&#160;&#160;the&#160;&#160;contribution&#160;&#160;of&#160;&#160;fatigue.&#160;&#160;The&#160;&#160;review&#160;&#160;first&#160;&#160;looked&#160;&#160;for&#160;&#160;evidence&#160;&#160;of&#160;</p>
+<p style="position:absolute;top:901px;left:108px;white-space:nowrap" class="ft93">the&#160;effects&#160;of&#160;various&#160;fatigue&#160;related&#160;inputs&#160;(circadian,&#160;sleep&#160;homeostasis&#160;and&#160;task-related&#160;influences)&#160;on&#160;</p>
+<p style="position:absolute;top:924px;left:108px;white-space:nowrap" class="ft93">fatigue&#160;and&#160;safety&#160;outcomes,&#160;then&#160;examined&#160;the&#160;evidence&#160;for&#160;each&#160;of&#160;these&#160;influences&#160;on&#160;performance&#160;</p>
+<p style="position:absolute;top:948px;left:108px;white-space:nowrap" class="ft93">capability,&#160;before&#160;finally&#160;summarising&#160;evidence&#160;for&#160;the&#160;link&#160;between&#160;performance&#160;and&#160;safety&#160;outcomes.&#160;&#160;</p>
+<p style="position:absolute;top:986px;left:108px;white-space:nowrap" class="ft93">There&#160;&#160;is&#160;&#160;clear&#160;&#160;evidence&#160;&#160;across&#160;&#160;multiple&#160;&#160;studies&#160;&#160;identifying&#160;&#160;links&#160;&#160;between&#160;&#160;sleep&#160;&#160;homeostatic&#160;&#160;factors&#160;</p>
+<p style="position:absolute;top:1009px;left:108px;white-space:nowrap" class="ft93">(including&#160;&#160;sleep&#160;&#160;deprivation&#160;&#160;and&#160;&#160;time&#160;&#160;since&#160;&#160;waking),&#160;&#160;impaired&#160;&#160;performance&#160;&#160;and&#160;&#160;increased&#160;&#160;accident&#160;</p>
+<p style="position:absolute;top:1032px;left:108px;white-space:nowrap" class="ft93">involvement.&#160;&#160;The&#160;&#160;relationships&#160;&#160;between&#160;&#160;both&#160;&#160;task-related&#160;&#160;performance&#160;&#160;decrements,&#160;&#160;and&#160;&#160;circadian-</p>
+<p style="position:absolute;top:1055px;left:108px;white-space:nowrap" class="ft93">related&#160;fatigue&#160;influences,&#160;and&#160;safety&#160;outcomes&#160;were&#160;however&#160;less&#160;clear.&#160;Both&#160;areas&#160;were&#160;identified&#160;as&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft100{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft101{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft102{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft103{font-size:17px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page10-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc010.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft100">&#160;</p>
+<p style="position:absolute;top:1120px;left:754px;white-space:nowrap" class="ft100">Page&#160;10&#160;</p>
+<p style="position:absolute;top:112px;left:108px;white-space:nowrap" class="ft101">requiring&#160;&#160;further&#160;&#160;careful&#160;&#160;research&#160;&#160;and&#160;&#160;the&#160;&#160;development&#160;&#160;of&#160;&#160;enhanced&#160;&#160;methodologies&#160;&#160;and&#160;&#160;measures&#160;&#160;in&#160;</p>
+<p style="position:absolute;top:135px;left:108px;white-space:nowrap" class="ft101">regard&#160;to&#160;the&#160;objective&#160;assessment&#160;of&#160;fatigue.&#160;&#160;</p>
+<p style="position:absolute;top:173px;left:108px;white-space:nowrap" class="ft101">In&#160;short,&#160;biomathematical&#160;models&#160;of&#160;fatigue&#160;may&#160;prove&#160;good&#160;predictors&#160;of&#160;the&#160;homeostatic&#160;component&#160;</p>
+<p style="position:absolute;top:196px;left:108px;white-space:nowrap" class="ft101">of&#160;transient&#160;variations&#160;in&#160;risk,&#160;and&#160;perhaps&#160;even&#160;the&#160;task&#160;demands&#160;component&#160;where&#160;this&#160;is&#160;included&#160;in&#160;</p>
+<p style="position:absolute;top:219px;left:108px;white-space:nowrap" class="ft101">the&#160;model,&#160;but&#160;are&#160;likely&#160;to&#160;perform&#160;less&#160;well&#160;when&#160;estimating&#160;the&#160;circadian&#160;component.&#160;Nor&#160;do&#160;any&#160;of&#160;</p>
+<p style="position:absolute;top:242px;left:108px;white-space:nowrap" class="ft101">the&#160;models&#160;really&#160;attempt&#160;to&#160;define&#160;what&#160;an&#160;“acceptable”&#160;level&#160;of&#160;fatigue,&#160;or&#160;any&#160;other&#160;output,&#160;might&#160;be.&#160;</p>
+<p style="position:absolute;top:266px;left:108px;white-space:nowrap" class="ft101">Thus,&#160;as&#160;they&#160;stand,&#160;the&#160;models&#160;can&#160;be&#160;used&#160;effectively&#160;to&#160;compare&#160;the&#160;relative&#160;merits&#160;of&#160;two&#160;or&#160;more&#160;</p>
+<p style="position:absolute;top:289px;left:108px;white-space:nowrap" class="ft101">work&#160;schedules,&#160;but&#160;cannot&#160;definitively&#160;answer&#160;the&#160;question&#160;as&#160;to&#160;whether&#160;a&#160;particular&#160;work&#160;schedule&#160;is&#160;</p>
+<p style="position:absolute;top:312px;left:108px;white-space:nowrap" class="ft101">acceptable&#160;or&#160;safe.&#160;One&#160;obvious&#160;reason&#160;for&#160;this&#160;failure&#160;is&#160;that&#160;the&#160;level&#160;of&#160;fatigue&#160;or&#160;risk&#160;that&#160;is&#160;deemed&#160;</p>
+<p style="position:absolute;top:335px;left:108px;white-space:nowrap" class="ft101">acceptable&#160;&#160;will&#160;&#160;clearly&#160;&#160;depend&#160;&#160;on&#160;&#160;the&#160;&#160;hazard/s&#160;&#160;associated&#160;&#160;with&#160;&#160;the&#160;&#160;operation.&#160;&#160;What&#160;&#160;may&#160;&#160;be&#160;&#160;an&#160;</p>
+<p style="position:absolute;top:358px;left:108px;white-space:nowrap" class="ft101">acceptable&#160;level&#160;of&#160;fatigue&#160;risk&#160;in&#160;relation&#160;to&#160;an&#160;operator&#160;for&#160;agricultural&#160;crop&#160;spraying&#160;might&#160;be&#160;totally&#160;</p>
+<p style="position:absolute;top:382px;left:108px;white-space:nowrap" class="ft101">unacceptable&#160;in&#160;the&#160;context&#160;of&#160;operating&#160;a&#160;large&#160;passenger-carrying&#160;airliner.&#160;&#160;</p>
+<p style="position:absolute;top:420px;left:108px;white-space:nowrap" class="ft101">As&#160;&#160;observed&#160;&#160;above,&#160;&#160;in&#160;&#160;aviation,&#160;&#160;the&#160;&#160;link&#160;&#160;between&#160;&#160;fatigue&#160;&#160;and&#160;&#160;safety&#160;&#160;is&#160;&#160;particularly&#160;&#160;difficult&#160;&#160;to&#160;&#160;establish&#160;</p>
+<p style="position:absolute;top:443px;left:108px;white-space:nowrap" class="ft101">because&#160;of&#160;the&#160;very&#160;low&#160;accident&#160;rate&#160;and&#160;the&#160;complexity&#160;of&#160;accident&#160;aetiology.&#160;In&#160;fact,&#160;multiple&#160;layers&#160;of&#160;</p>
+<p style="position:absolute;top:466px;left:108px;white-space:nowrap" class="ft101">operational&#160;&#160;defences&#160;&#160;(cockpit&#160;&#160;and&#160;&#160;ATC&#160;&#160;task&#160;&#160;automation,&#160;&#160;checklists,&#160;&#160;Crew&#160;&#160;Resource&#160;&#160;Management&#160;</p>
+<p style="position:absolute;top:489px;left:108px;white-space:nowrap" class="ft101">strategies,&#160;&#160;Standard&#160;&#160;Operating&#160;&#160;Procedures,&#160;&#160;etc.)&#160;&#160;reduce&#160;&#160;the&#160;&#160;probability&#160;&#160;of&#160;&#160;having&#160;&#160;an&#160;&#160;aviation&#160;&#160;accident&#160;</p>
+<p style="position:absolute;top:512px;left:108px;white-space:nowrap" class="ft101">attributable&#160;to&#160;a&#160;single&#160;cause&#160;(here&#160;a&#160;decrease&#160;in&#160;human&#160;performance&#160;due&#160;to&#160;fatigue).&#160;These&#160;operational&#160;</p>
+<p style="position:absolute;top:535px;left:108px;white-space:nowrap" class="ft101">defences&#160;&#160;or&#160;&#160;barriers&#160;&#160;are&#160;&#160;used&#160;&#160;by&#160;&#160;aircrew&#160;&#160;as&#160;&#160;protection&#160;&#160;strategies&#160;&#160;against&#160;&#160;the&#160;&#160;detrimental&#160;&#160;effects&#160;&#160;of&#160;</p>
+<p style="position:absolute;top:559px;left:108px;white-space:nowrap" class="ft101">fatigue.&#160;&#160;The&#160;&#160;use&#160;&#160;of&#160;&#160;these&#160;&#160;strategies&#160;&#160;could&#160;&#160;explain&#160;&#160;the&#160;&#160;non-linear&#160;&#160;relationship&#160;&#160;between&#160;&#160;safety-related&#160;</p>
+<p style="position:absolute;top:582px;left:108px;white-space:nowrap" class="ft101">indicators&#160;and&#160;fatigue-related&#160;indicators.&#160;&#160;</p>
+<p style="position:absolute;top:624px;left:109px;white-space:nowrap" class="ft102">4.2.</p>
+<p style="position:absolute;top:619px;left:141px;white-space:nowrap" class="ft103"><b>&#160;</b></p>
+<p style="position:absolute;top:624px;left:142px;white-space:nowrap" class="ft102">Chronic&#160;Effects&#160;of&#160;Hours&#160;of&#160;Work&#160;on&#160;Safety&#160;&#160;</p>
+<p style="position:absolute;top:649px;left:108px;white-space:nowrap" class="ft101">There&#160;&#160;are&#160;two&#160;&#160;lines&#160;of&#160;&#160;evidence&#160;&#160;that&#160;&#160;suggest&#160;&#160;that&#160;&#160;biomathematical&#160;models&#160;may&#160;&#160;grossly&#160;&#160;underestimate&#160;</p>
+<p style="position:absolute;top:672px;left:108px;white-space:nowrap" class="ft101">risk,&#160;&#160;simply&#160;&#160;because&#160;&#160;they&#160;&#160;consider&#160;&#160;only&#160;&#160;the&#160;&#160;acute&#160;&#160;effects&#160;&#160;of&#160;&#160;work&#160;&#160;schedules&#160;&#160;and&#160;&#160;not&#160;&#160;the&#160;&#160;chronic&#160;&#160;ones.&#160;</p>
+<p style="position:absolute;top:696px;left:108px;white-space:nowrap" class="ft101">The&#160;first&#160;line&#160;of&#160;evidence&#160;is&#160;the&#160;chronic&#160;impact&#160;of&#160;work&#160;schedules&#160;on&#160;performance&#160;capabilities.&#160;One&#160;study&#160;</p>
+<p style="position:absolute;top:719px;left:108px;white-space:nowrap" class="ft101">identified&#160;cognitive&#160;performance&#160;deficits&#160;and&#160;higher&#160;cortisol&#160;levels&#160;in&#160;airline&#160;cabin&#160;crew&#160;with&#160;more&#160;than&#160;</p>
+<p style="position:absolute;top:742px;left:108px;white-space:nowrap" class="ft101">three&#160;years&#160;of&#160;flying&#160;experience,&#160;when&#160;compared&#160;with&#160;a&#160;matched&#160;group&#160;of&#160;ground&#160;crew&#160;working&#160;for&#160;the&#160;</p>
+<p style="position:absolute;top:765px;left:108px;white-space:nowrap" class="ft101">same&#160;&#160;company.&#160;&#160;A&#160;&#160;subsequent&#160;&#160;study&#160;&#160;compared&#160;&#160;two&#160;&#160;groups&#160;&#160;of&#160;&#160;airline&#160;&#160;cabin&#160;&#160;crew&#160;&#160;with&#160;&#160;different&#160;&#160;jet-lag&#160;</p>
+<p style="position:absolute;top:788px;left:108px;white-space:nowrap" class="ft101">(circadian&#160;&#160;dysrhythmia)&#160;&#160;recovery&#160;&#160;periods&#160;&#160;and&#160;&#160;found&#160;&#160;that&#160;&#160;short&#160;&#160;recovery&#160;&#160;intervals&#160;&#160;(≤&#160;&#160;5&#160;&#160;days)&#160;&#160;were&#160;</p>
+<p style="position:absolute;top:811px;left:108px;white-space:nowrap" class="ft101">associated&#160;&#160;with&#160;&#160;a&#160;&#160;range&#160;&#160;of&#160;&#160;symptoms&#160;&#160;including&#160;&#160;lower&#160;&#160;cognitive&#160;&#160;performance,&#160;&#160;higher&#160;&#160;salivary&#160;&#160;cortisol&#160;</p>
+<p style="position:absolute;top:834px;left:108px;white-space:nowrap" class="ft101">levels&#160;&#160;(related&#160;&#160;to&#160;&#160;psychological&#160;&#160;stress)&#160;&#160;and&#160;&#160;a&#160;&#160;smaller&#160;&#160;volume&#160;&#160;of&#160;&#160;the&#160;&#160;right&#160;&#160;temporal&#160;&#160;lobe.&#160;&#160;The&#160;&#160;findings&#160;</p>
+<p style="position:absolute;top:858px;left:108px;white-space:nowrap" class="ft101">indicated&#160;a&#160;cumulative&#160;effect&#160;of&#160;chronic&#160;exposure&#160;to&#160;circadian&#160;disruption&#160;on&#160;cognitive&#160;function&#160;and&#160;the&#160;</p>
+<p style="position:absolute;top:881px;left:108px;white-space:nowrap" class="ft101">underlying&#160;cerebral&#160;structures.&#160;&#160;</p>
+<p style="position:absolute;top:919px;left:108px;white-space:nowrap" class="ft101">Similarly&#160;&#160;a&#160;&#160;cross&#160;&#160;sectional&#160;&#160;study&#160;&#160;of&#160;&#160;a&#160;&#160;large&#160;&#160;sample&#160;&#160;of&#160;&#160;male&#160;&#160;industrial&#160;&#160;workers&#160;&#160;found&#160;&#160;cognitive&#160;&#160;deficits&#160;</p>
+<p style="position:absolute;top:942px;left:108px;white-space:nowrap" class="ft101">among&#160;&#160;those&#160;&#160;who&#160;&#160;had&#160;&#160;been&#160;&#160;exposed&#160;&#160;to&#160;&#160;shift&#160;&#160;work,&#160;&#160;when&#160;&#160;compared&#160;&#160;to&#160;&#160;those&#160;&#160;with&#160;&#160;no&#160;&#160;exposure.&#160;&#160;The&#160;</p>
+<p style="position:absolute;top:965px;left:108px;white-space:nowrap" class="ft101">study&#160;&#160;also&#160;&#160;reported&#160;&#160;a&#160;&#160;decrease&#160;&#160;in&#160;&#160;memory&#160;&#160;performance&#160;&#160;related&#160;&#160;to&#160;&#160;the&#160;&#160;duration&#160;&#160;of&#160;&#160;exposure&#160;&#160;to&#160;&#160;shift&#160;</p>
+<p style="position:absolute;top:988px;left:108px;white-space:nowrap" class="ft101">work.&#160;&#160;These&#160;&#160;effects&#160;&#160;were&#160;&#160;independent&#160;&#160;of&#160;&#160;self-reported&#160;&#160;age&#160;&#160;and&#160;&#160;sleep&#160;&#160;quality,&#160;&#160;suggesting&#160;&#160;that&#160;&#160;chronic&#160;</p>
+<p style="position:absolute;top:1012px;left:108px;white-space:nowrap" class="ft101">exposure&#160;to&#160;circadian&#160;desychronisation&#160;underlay&#160;the&#160;observed&#160;cognitive&#160;impairments.&#160;&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft110{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft111{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft112{font-size:17px;font-family:WYXBDZ+TT160t00;color:#4e81bd;}
+	.ft113{font-size:17px;font-family:SNDABN+Helvetica;color:#4e81bd;}
+	.ft114{font-size:8px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft115{font-size:14px;font-family:GOCSXU+TT15At00;color:#000000;}
+	.ft116{font-size:7px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft117{font-size:12px;font-family:DXGYRQ+TT159t00;color:#000000;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page11-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc011.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft110">&#160;</p>
+<p style="position:absolute;top:1120px;left:754px;white-space:nowrap" class="ft110">Page&#160;11&#160;</p>
+<p style="position:absolute;top:112px;left:108px;white-space:nowrap" class="ft111">The&#160;second&#160;line&#160;of&#160;evidence&#160;concerns&#160;the&#160;risk&#160;of&#160;occupational&#160;injuries&#160;to&#160;shift&#160;workers&#160;on&#160;rotating&#160;shift&#160;</p>
+<p style="position:absolute;top:135px;left:108px;white-space:nowrap" class="ft111">systems&#160;&#160;relative&#160;&#160;to&#160;&#160;that&#160;&#160;for&#160;&#160;day&#160;&#160;workers.&#160;&#160;A&#160;&#160;number&#160;&#160;of&#160;&#160;epidemiological&#160;&#160;studies&#160;&#160;have&#160;&#160;reported&#160;&#160;an&#160;</p>
+<p style="position:absolute;top:158px;left:108px;white-space:nowrap" class="ft111">increased&#160;risk&#160;for&#160;those&#160;on&#160;rotating&#160;shift&#160;with&#160;the&#160;extent&#160;of&#160;this&#160;increase&#160;depending,&#160;at&#160;least&#160;in&#160;part,&#160;on&#160;</p>
+<p style="position:absolute;top:181px;left:108px;white-space:nowrap" class="ft111">whether&#160;the&#160;rotating&#160;shift&#160;system&#160;included&#160;a&#160;night&#160;shift.&#160;When&#160;employed&#160;to&#160;evaluate&#160;the&#160;acute&#160;effects&#160;of&#160;</p>
+<p style="position:absolute;top:204px;left:108px;white-space:nowrap" class="ft111">work&#160;&#160;schedules,&#160;&#160;most&#160;&#160;biomathematical&#160;&#160;models&#160;&#160;cannot&#160;&#160;estimate&#160;&#160;the&#160;&#160;increased&#160;&#160;risk&#160;&#160;of&#160;&#160;occupational&#160;</p>
+<p style="position:absolute;top:228px;left:108px;white-space:nowrap" class="ft111">accidents&#160;and&#160;injuries&#160;on&#160;rotating&#160;shift&#160;systems&#160;relative&#160;to&#160;that&#160;involved&#160;for&#160;day&#160;work.&#160;&#160;</p>
+<p style="position:absolute;top:266px;left:108px;white-space:nowrap" class="ft111">Since&#160;there&#160;are&#160;no&#160;practical&#160;objective&#160;measures&#160;of&#160;fatigue,&#160;it&#160;is&#160;not&#160;possible&#160;to&#160;perform&#160;a&#160;similar&#160;analysis&#160;</p>
+<p style="position:absolute;top:289px;left:108px;white-space:nowrap" class="ft111">of&#160;the&#160;contribution&#160;of&#160;acute&#160;effects&#160;to&#160;the&#160;overall&#160;fatigue&#160;associated&#160;with&#160;work&#160;schedules.&#160;Nevertheless,&#160;</p>
+<p style="position:absolute;top:312px;left:108px;white-space:nowrap" class="ft111">there&#160;&#160;is&#160;&#160;evidence&#160;&#160;that&#160;&#160;shift&#160;&#160;workers&#160;&#160;habituate&#160;&#160;to&#160;&#160;a&#160;&#160;lowered&#160;&#160;level&#160;&#160;of&#160;&#160;general&#160;&#160;well&#160;&#160;being,&#160;&#160;as&#160;&#160;reflected&#160;&#160;in&#160;</p>
+<p style="position:absolute;top:335px;left:108px;white-space:nowrap" class="ft111">their&#160;scores&#160;on&#160;depression&#160;and&#160;anxiety&#160;scales,&#160;and&#160;only&#160;realise&#160;how&#160;bad&#160;they&#160;had&#160;been&#160;feeling&#160;after&#160;they&#160;</p>
+<p style="position:absolute;top:358px;left:108px;white-space:nowrap" class="ft111">have&#160;retired.&#160;It&#160;seems&#160;probable&#160;that&#160;a&#160;similar&#160;habituation&#160;would&#160;take&#160;place&#160;for&#160;their&#160;feelings&#160;of&#160;fatigue,&#160;</p>
+<p style="position:absolute;top:381px;left:108px;white-space:nowrap" class="ft111">such&#160;that&#160;a&#160;given&#160;score&#160;for&#160;a&#160;shift&#160;worker&#160;might&#160;reflect&#160;a&#160;far&#160;higher&#160;level&#160;of&#160;fatigue&#160;than&#160;a&#160;similar&#160;score&#160;</p>
+<p style="position:absolute;top:405px;left:108px;white-space:nowrap" class="ft111">from&#160;a&#160;non-shift&#160;worker.&#160;In&#160;short,&#160;it&#160;would&#160;appear&#160;that&#160;the&#160;majority&#160;of&#160;the&#160;increased&#160;risk&#160;of&#160;occupational&#160;</p>
+<p style="position:absolute;top:428px;left:108px;white-space:nowrap" class="ft111">accidents&#160;&#160;on&#160;&#160;abnormal&#160;&#160;work&#160;&#160;schedules&#160;&#160;stems&#160;&#160;from&#160;&#160;chronic&#160;&#160;effects&#160;&#160;rather&#160;&#160;than&#160;&#160;from&#160;&#160;the&#160;&#160;acute&#160;&#160;effects&#160;</p>
+<p style="position:absolute;top:451px;left:108px;white-space:nowrap" class="ft111">that&#160;form&#160;the&#160;bases&#160;of&#160;the&#160;current&#160;biomathematical&#160;models.&#160;&#160;</p>
+<p style="position:absolute;top:493px;left:109px;white-space:nowrap" class="ft112">4.3.</p>
+<p style="position:absolute;top:488px;left:141px;white-space:nowrap" class="ft113"><b>&#160;</b></p>
+<p style="position:absolute;top:493px;left:142px;white-space:nowrap" class="ft112">Individual&#160;Variability&#160;&#160;</p>
+<p style="position:absolute;top:518px;left:108px;white-space:nowrap" class="ft111">A&#160;major&#160;limitation&#160;of&#160;BFMs&#160;is&#160;that&#160;they&#160;have&#160;typically&#160;been&#160;based&#160;on&#160;averaged&#160;fatigue&#160;ratings&#160;and&#160;other&#160;</p>
+<p style="position:absolute;top:541px;left:108px;white-space:nowrap" class="ft111">measures&#160;obtained&#160;from&#160;a&#160;limited&#160;number&#160;of&#160;individuals.&#160;Indeed,&#160;in&#160;many&#160;cases&#160;these&#160;individuals&#160;have&#160;</p>
+<p style="position:absolute;top:565px;left:108px;white-space:nowrap" class="ft111">been&#160;&#160;university&#160;&#160;students&#160;&#160;or&#160;&#160;military&#160;&#160;personnel&#160;&#160;and&#160;&#160;it&#160;&#160;is&#160;&#160;unclear&#160;&#160;whether&#160;&#160;their&#160;&#160;results&#160;&#160;can&#160;&#160;validly&#160;&#160;be&#160;</p>
+<p style="position:absolute;top:588px;left:108px;white-space:nowrap" class="ft111">generalised&#160;&#160;to&#160;&#160;other&#160;&#160;populations.&#160;&#160;In&#160;&#160;their&#160;&#160;defence,&#160;&#160;some&#160;&#160;of&#160;&#160;the&#160;&#160;models&#160;&#160;provide&#160;&#160;confidence&#160;&#160;intervals&#160;</p>
+<p style="position:absolute;top:611px;left:108px;white-space:nowrap" class="ft111">associated&#160;&#160;with&#160;&#160;each&#160;&#160;predicted&#160;&#160;value,&#160;&#160;allowing&#160;&#160;an&#160;&#160;estimation&#160;&#160;of&#160;&#160;the&#160;&#160;likely&#160;&#160;range&#160;&#160;across&#160;&#160;individuals.&#160;</p>
+<p style="position:absolute;top:634px;left:108px;white-space:nowrap" class="ft111">However,&#160;individuals&#160;clearly&#160;differ&#160;from&#160;one&#160;another&#160;on&#160;an&#160;enormously&#160;wide&#160;range&#160;of&#160;factors,&#160;many&#160;of&#160;</p>
+<p style="position:absolute;top:658px;left:108px;white-space:nowrap" class="ft111">which&#160;may&#160;impact&#160;on&#160;their&#160;fatigue&#160;and&#160;safety&#160;performance&#160;levels.&#160;&#160;</p>
+<p style="position:absolute;top:696px;left:108px;white-space:nowrap" class="ft111">A&#160;review&#160;was&#160;conducted&#160;of&#160;the&#160;association&#160;between&#160;a&#160;wide&#160;range&#160;of&#160;demographic&#160;factors&#160;and&#160;the&#160;risk&#160;of&#160;</p>
+<p style="position:absolute;top:719px;left:108px;white-space:nowrap" class="ft111">involvement&#160;in&#160;road&#160;accidents.&#160;It&#160;should&#160;be&#160;noted&#160;that&#160;it&#160;is&#160;far&#160;easier&#160;to&#160;examine&#160;the&#160;impact&#160;of&#160;various&#160;</p>
+<p style="position:absolute;top:742px;left:108px;white-space:nowrap" class="ft111">factors&#160;&#160;on&#160;&#160;road&#160;&#160;accidents,&#160;&#160;simply&#160;&#160;because&#160;&#160;they&#160;&#160;are&#160;&#160;so&#160;&#160;frequent,&#160;&#160;than&#160;&#160;it&#160;&#160;is&#160;&#160;in&#160;&#160;‘high&#160;&#160;reliability’&#160;&#160;domains&#160;</p>
+<p style="position:absolute;top:765px;left:108px;white-space:nowrap" class="ft111">such&#160;as&#160;commercial&#160;aviation</p>
+<p style="position:absolute;top:762px;left:300px;white-space:nowrap" class="ft114">5</p>
+<p style="position:absolute;top:765px;left:305px;white-space:nowrap" class="ft111">.&#160;The&#160;authors&#160;nonetheless&#160;identified&#160;a&#160;number&#160;of&#160;dimensions&#160;of&#160;individual&#160;</p>
+<p style="position:absolute;top:788px;left:108px;white-space:nowrap" class="ft111">difference&#160;that&#160;were&#160;important&#160;in&#160;determining&#160;road&#160;accident&#160;risk,&#160;namely:&#160;</p>
+<p style="position:absolute;top:788px;left:618px;white-space:nowrap" class="ft115">age,&#160;gender,&#160;socio-economic&#160;</p>
+<p style="position:absolute;top:812px;left:108px;white-space:nowrap" class="ft115">status,&#160;&#160;educational&#160;&#160;level,&#160;&#160;marital&#160;&#160;status,&#160;&#160;race&#160;&#160;and&#160;&#160;ethnicity,&#160;&#160;personality,&#160;&#160;circadian&#160;&#160;chronotype,&#160;</p>
+<p style="position:absolute;top:811px;left:785px;white-space:nowrap" class="ft111">and&#160;</p>
+<p style="position:absolute;top:835px;left:108px;white-space:nowrap" class="ft115">‘accident&#160;&#160;proneness’</p>
+<p style="position:absolute;top:834px;left:249px;white-space:nowrap" class="ft111">.&#160;&#160;Some&#160;&#160;of&#160;&#160;the&#160;&#160;current&#160;&#160;biomathematical&#160;&#160;models&#160;&#160;can&#160;&#160;take&#160;&#160;account&#160;&#160;of&#160;&#160;the&#160;&#160;single&#160;</p>
+<p style="position:absolute;top:858px;left:108px;white-space:nowrap" class="ft111">dimension&#160;of&#160;circadian&#160;chronotype,&#160;but&#160;none&#160;of&#160;them&#160;can&#160;take&#160;account&#160;of&#160;the&#160;range&#160;of&#160;other&#160;dimensions&#160;</p>
+<p style="position:absolute;top:881px;left:108px;white-space:nowrap" class="ft111">covered&#160;&#160;in&#160;&#160;this&#160;&#160;research.&#160;&#160;Indeed,&#160;&#160;the&#160;&#160;only&#160;&#160;dimension&#160;&#160;of&#160;&#160;chronotype&#160;&#160;that&#160;&#160;most&#160;&#160;of&#160;&#160;the&#160;&#160;models&#160;&#160;can&#160;&#160;take&#160;</p>
+<p style="position:absolute;top:904px;left:108px;white-space:nowrap" class="ft111">account&#160;of&#160;is&#160;that&#160;of&#160;morningness-eveningness,&#160;and&#160;there&#160;is,&#160;for&#160;example,&#160;virtually&#160;no&#160;evidence&#160;that&#160;this&#160;</p>
+<p style="position:absolute;top:927px;left:108px;white-space:nowrap" class="ft111">relates&#160;to&#160;adjustment&#160;to&#160;circadian&#160;disruption&#160;or&#160;‘jet-lag’.&#160;&#160;</p>
+<p style="position:absolute;top:965px;left:108px;white-space:nowrap" class="ft111">There&#160;&#160;are&#160;&#160;also&#160;&#160;a&#160;&#160;wide&#160;&#160;range&#160;&#160;of&#160;&#160;individual&#160;&#160;health&#160;&#160;problems,&#160;&#160;including,&#160;&#160;but&#160;&#160;not&#160;&#160;confined&#160;&#160;to,&#160;&#160;sleep&#160;</p>
+<p style="position:absolute;top:988px;left:108px;white-space:nowrap" class="ft111">disorders,&#160;&#160;that&#160;&#160;may&#160;&#160;impact&#160;&#160;on&#160;&#160;fatigue&#160;&#160;and&#160;&#160;safety.&#160;&#160;These&#160;&#160;problems&#160;&#160;were&#160;&#160;recently&#160;&#160;reviewed,&#160;&#160;again&#160;&#160;in&#160;</p>
+<p style="position:absolute;top:1027px;left:108px;white-space:nowrap" class="ft111">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;&#160;</p>
+<p style="position:absolute;top:1043px;left:108px;white-space:nowrap" class="ft116">5</p>
+<p style="position:absolute;top:1047px;left:113px;white-space:nowrap" class="ft117">&#160;No&#160;aviation&#160;variables&#160;have&#160;been&#160;identified&#160;that&#160;are&#160;sensitive&#160;to&#160;sleep&#160;loss&#160;and&#160;fluctuations&#160;in&#160;circadian&#160;rhythm;&#160;</p>
+<p style="position:absolute;top:1065px;left:108px;white-space:nowrap" class="ft117">however&#160;measures&#160;have&#160;been&#160;identified&#160;in&#160;road&#160;transport&#160;(truck&#160;driving).&#160;&#160;</p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>./whatwedo/ops-infra/Documents/condensed-version-of-CASA-biomathematical-models-doc-html.html</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <br/>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft120{font-size:12px;font-family:RIEUWF+Helvetica;color:#000000;}
+	.ft121{font-size:14px;font-family:DXGYRQ+TT159t00;color:#000000;}
+	.ft122{font-size:14px;font-family:GOCSXU+TT15At00;color:#000000;}
+	.ft123{font-size:21px;font-family:LKMKFD+TT15Dt00;color:#16355c;}
+	.ft124{font-size:21px;font-family:RIEUWF+Helvetica;color:#16355c;}
+	.ft125{font-size:21px;font-family:ZPEKLK+TT15Dt00;color:#16355c;}
+	.ft126{font-size:21px;font-family:CXIYKD+TT15Dt00;color:#16355c;}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<div id="page12-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="condensed-version-of-CASA-biomathematical-models-doc012.png" alt="background image"/>
+<p style="position:absolute;top:1120px;left:108px;white-space:nowrap" class="ft120">&#160;</p>
+<p style="position:absolute;top:1120px;left:754px;white-space:nowrap" class="ft120">Page&#160;12&#160;</p>
+<p style="position:absolute;top:112px;left:108px;white-space:nowrap" class="ft121">relation&#160;to&#160;road&#160;accidents.&#160;They&#160;identified&#160;five&#160;types&#160;of&#160;sleep&#160;disorder&#160;that&#160;could&#160;impact&#160;on&#160;fatigue&#160;and&#160;</p>
+<p style="position:absolute;top:135px;left:108px;white-space:nowrap" class="ft121">safety,&#160;&#160;namely:&#160;</p>
+<p style="position:absolute;top:135px;left:218px;white-space:nowrap" class="ft122">Insomnia,&#160;&#160;Narcolepsy,&#160;&#160;Obstructive&#160;&#160;sleep&#160;&#160;apnoea&#160;&#160;syndrome&#160;</p>
+<p style="position:absolute;top:135px;left:622px;white-space:nowrap" class="ft121">(more&#160;&#160;commonly&#160;&#160;known&#160;&#160;as&#160;</p>
+<p style="position:absolute;top:158px;left:108px;white-space:nowrap" class="ft121">sleep&#160;apnoea),&#160;</p>
+<p style="position:absolute;top:158px;left:210px;white-space:nowrap" class="ft122">Periodic&#160;limb&#160;movement&#160;disorder,&#160;</p>
+<p style="position:absolute;top:158px;left:439px;white-space:nowrap" class="ft121">and&#160;</p>
+<p style="position:absolute;top:158px;left:468px;white-space:nowrap" class="ft122">Restless&#160;legs&#160;syndrome</p>
+<p style="position:absolute;top:158px;left:621px;white-space:nowrap" class="ft121">.&#160;However,&#160;they&#160;also&#160;listed&#160;a&#160;</p>
+<p style="position:absolute;top:181px;left:108px;white-space:nowrap" class="ft121">vast&#160;&#160;number&#160;&#160;of&#160;&#160;physical&#160;&#160;and&#160;&#160;mental&#160;&#160;health&#160;&#160;complaints,&#160;&#160;ranging&#160;&#160;from&#160;&#160;allergic&#160;&#160;and&#160;&#160;non-allergic&#160;&#160;rhinitis&#160;</p>
+<p style="position:absolute;top:204px;left:108px;white-space:nowrap" class="ft121">through&#160;&#160;clinical&#160;&#160;depression&#160;&#160;to&#160;&#160;rheumatoid&#160;&#160;arthritis,&#160;&#160;that&#160;&#160;could&#160;&#160;potentially&#160;&#160;compromise&#160;&#160;sleep&#160;&#160;and/or&#160;</p>
+<p style="position:absolute;top:227px;left:108px;white-space:nowrap" class="ft121">elevate&#160;daytime&#160;feelings&#160;of&#160;fatigue.&#160;Finally&#160;it&#160;is&#160;clear&#160;that&#160;a&#160;wide&#160;range&#160;of&#160;other&#160;factors&#160;pertaining&#160;to&#160;the&#160;</p>
+<p style="position:absolute;top:251px;left:108px;white-space:nowrap" class="ft121">individual&#160;&#160;may&#160;&#160;influence&#160;&#160;the&#160;&#160;quality&#160;&#160;and&#160;&#160;duration&#160;&#160;of&#160;&#160;their&#160;&#160;sleep.&#160;&#160;These&#160;&#160;include&#160;&#160;such&#160;&#160;diverse&#160;&#160;factors&#160;&#160;as&#160;</p>
+<p style="position:absolute;top:274px;left:108px;white-space:nowrap" class="ft121">being&#160;&#160;woken&#160;&#160;by&#160;&#160;young&#160;&#160;children,&#160;&#160;having&#160;&#160;a&#160;&#160;long&#160;&#160;commute&#160;&#160;to&#160;&#160;and&#160;&#160;from&#160;&#160;work,&#160;&#160;having&#160;&#160;a&#160;&#160;second&#160;&#160;job&#160;&#160;or&#160;</p>
+<p style="position:absolute;top:297px;left:108px;white-space:nowrap" class="ft121">strenuous&#160;or&#160;time-consuming&#160;pastime,&#160;or&#160;suffering&#160;from&#160;life&#160;stresses&#160;due&#160;to&#160;issues&#160;such&#160;as&#160;bereavement,&#160;</p>
+<p style="position:absolute;top:320px;left:108px;white-space:nowrap" class="ft121">house&#160;moving&#160;or&#160;divorce.&#160;&#160;</p>
+<p style="position:absolute;top:358px;left:108px;white-space:nowrap" class="ft121">In&#160;&#160;short,&#160;&#160;there&#160;&#160;are&#160;&#160;a&#160;&#160;number&#160;&#160;of&#160;&#160;reasons&#160;&#160;why&#160;&#160;current&#160;&#160;biomathematical&#160;&#160;models&#160;&#160;of&#160;&#160;fatigue&#160;&#160;may&#160;&#160;fail&#160;&#160;to&#160;</p>
+<p style="position:absolute;top:381px;left:108px;white-space:nowrap" class="ft121">predict&#160;&#160;safety&#160;&#160;outcomes.&#160;&#160;The&#160;&#160;majority&#160;&#160;fail&#160;&#160;to&#160;&#160;take&#160;&#160;account&#160;&#160;of&#160;&#160;the&#160;&#160;fact&#160;&#160;that&#160;&#160;the&#160;&#160;peak&#160;&#160;of&#160;&#160;the&#160;&#160;circadian&#160;</p>
+<p style="position:absolute;top:405px;left:108px;white-space:nowrap" class="ft121">rhythm&#160;in&#160;the&#160;risk&#160;of&#160;accidents&#160;and&#160;injuries&#160;occurs&#160;rather&#160;earlier&#160;than&#160;that&#160;in&#160;fatigue.&#160;They&#160;all&#160;also&#160;fail&#160;to&#160;</p>
+<p style="position:absolute;top:428px;left:108px;white-space:nowrap" class="ft121">model&#160;&#160;the&#160;&#160;chronic&#160;&#160;components&#160;&#160;of&#160;&#160;fatigue&#160;&#160;and&#160;&#160;risk,&#160;&#160;which&#160;&#160;would&#160;&#160;now&#160;&#160;appear&#160;&#160;to&#160;&#160;account&#160;&#160;for&#160;&#160;a&#160;&#160;large&#160;</p>
+<p style="position:absolute;top:451px;left:108px;white-space:nowrap" class="ft121">majority&#160;&#160;of&#160;&#160;the&#160;&#160;increased&#160;&#160;risk&#160;&#160;of&#160;&#160;accidents&#160;&#160;and&#160;&#160;injuries&#160;&#160;associated&#160;&#160;with&#160;&#160;abnormal&#160;&#160;work&#160;&#160;schedules.&#160;&#160;This&#160;</p>
+<p style="position:absolute;top:474px;left:108px;white-space:nowrap" class="ft121">chronic&#160;component&#160;will&#160;reflect&#160;on&#160;a&#160;large&#160;number&#160;of&#160;factors&#160;including&#160;deterioration&#160;in&#160;health&#160;associated&#160;</p>
+<p style="position:absolute;top:497px;left:108px;white-space:nowrap" class="ft121">with&#160;abnormal&#160;work&#160;schedules&#160;and&#160;a&#160;wide&#160;range&#160;of&#160;individual&#160;factors.&#160;</p>
+<p style="position:absolute;top:559px;left:108px;white-space:nowrap" class="ft123">5.</p>
+<p style="position:absolute;top:558px;left:127px;white-space:nowrap" class="ft124">&#160;</p>
+<p style="position:absolute;top:559px;left:135px;white-space:nowrap" class="ft125">Conclusion&#160;&#160;</p>
+<p style="position:absolute;top:610px;left:108px;white-space:nowrap" class="ft121">As&#160;&#160;stated&#160;&#160;in&#160;&#160;the&#160;&#160;introductory&#160;&#160;section&#160;&#160;of&#160;&#160;this&#160;&#160;document,&#160;&#160;the&#160;&#160;purpose&#160;&#160;of&#160;&#160;this&#160;&#160;paper&#160;&#160;was&#160;&#160;to&#160;&#160;create&#160;&#160;a&#160;</p>
+<p style="position:absolute;top:633px;left:108px;white-space:nowrap" class="ft121">condensed&#160;version&#160;&#160;of&#160;the&#160;</p>
+<p style="position:absolute;top:634px;left:287px;white-space:nowrap" class="ft122">CASA&#160;&#160;Biomathematical&#160;&#160;Fatigue&#160;&#160;Models&#160;&#160;Guidance&#160;&#160;Document</p>
+<p style="position:absolute;top:633px;left:694px;white-space:nowrap" class="ft121">,&#160;&#160;focusing&#160;&#160;on&#160;&#160;the&#160;</p>
+<p style="position:absolute;top:656px;left:108px;white-space:nowrap" class="ft121">applications,&#160;limitations&#160;and&#160;cautions&#160;on&#160;the&#160;use&#160;of&#160;BFMs.&#160;As&#160;discussed&#160;above,&#160;BFMs&#160;can&#160;be&#160;useful&#160;tools&#160;</p>
+<p style="position:absolute;top:680px;left:108px;white-space:nowrap" class="ft121">to&#160;assist&#160;with&#160;the&#160;identification&#160;and&#160;management&#160;of&#160;fatigue&#160;hazards,&#160;but&#160;they&#160;should&#160;only&#160;be&#160;considered&#160;</p>
+<p style="position:absolute;top:703px;left:108px;white-space:nowrap" class="ft121">as&#160;one&#160;element&#160;of&#160;a&#160;comprehensive&#160;FRMS.&#160;</p>
+<p style="position:absolute;top:735px;left:108px;white-space:nowrap" class="ft121">For&#160;&#160;further&#160;&#160;information,&#160;&#160;including&#160;&#160;the&#160;&#160;science&#160;&#160;behind&#160;&#160;fatigue&#160;&#160;modelling,&#160;&#160;model&#160;&#160;characteristics&#160;&#160;and&#160;</p>
+<p style="position:absolute;top:758px;left:108px;white-space:nowrap" class="ft121">structure,&#160;&#160;a&#160;&#160;summary&#160;&#160;of&#160;&#160;seven&#160;&#160;biomathematical&#160;&#160;fatigue&#160;&#160;models&#160;&#160;and&#160;&#160;model&#160;&#160;comparisons,&#160;&#160;analysis&#160;&#160;and&#160;</p>
+<p style="position:absolute;top:781px;left:108px;white-space:nowrap" class="ft121">conclusion,&#160;please&#160;refer&#160;to&#160;the&#160;full&#160;CASA&#160;document.&#160;</p>
+<p style="position:absolute;top:843px;left:108px;white-space:nowrap" class="ft123">6.</p>
+<p style="position:absolute;top:842px;left:127px;white-space:nowrap" class="ft124">&#160;</p>
+<p style="position:absolute;top:843px;left:135px;white-space:nowrap" class="ft126">References&#160;</p>
+<p style="position:absolute;top:894px;left:108px;white-space:nowrap" class="ft121">CASA,&#160;2010,&#160;Biomathematical&#160;Fatigue&#160;Modelling&#160;in&#160;Civil&#160;Aviation&#160;Fatigue&#160;Risk&#160;Management:&#160;Application&#160;</p>
+<p style="position:absolute;top:917px;left:108px;white-space:nowrap" class="ft121">Guidance&#160;</p>
+<p style="position:absolute;top:949px;left:108px;white-space:nowrap" class="ft121">CASA,&#160;2014,&#160;Biomathematical&#160;Fatigue&#160;Models&#160;Guidance&#160;Document&#160;</p>
+</div>
+</body>
+</html>
